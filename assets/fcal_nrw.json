@@ -1,0 +1,101 @@
+{
+  "id": "fcal_nrw",
+  "entries": [
+    {
+      "start": "21.12.2023",
+      "end": "05.01.2024",
+      "label": "Weihnachtsferien",
+      "comment": ""
+    },
+    {
+      "start": "25.03.2024",
+      "end": "06.04.2024",
+      "label": "Osterferien",
+      "comment": ""
+    },
+    {
+      "start": "20.05.2024",
+      "end": "21.05.2024",
+      "label": "Pfingstferien",
+      "comment": ""
+    },
+    {
+      "start": "08.07.2024",
+      "end": "20.08.2024",
+      "label": "Sommerferien",
+      "comment": ""
+    },
+    {
+      "start": "14.10.2024",
+      "end": "26.10.2024",
+      "label": "Herbstferien",
+      "comment": ""
+    },
+    {
+      "start": "23.12.2024",
+      "end": "06.01.2025",
+      "label": "Weihnachtsferien",
+      "comment": ""
+    },
+    {
+      "start": "14.04.2025",
+      "end": "26.04.2025",
+      "label": "Osterferien",
+      "comment": ""
+    },
+    {
+      "start": "09.06.2025",
+      "end": "10.06.2025",
+      "label": "Pfingstferien",
+      "comment": ""
+    },
+    {
+      "start": "14.07.2025",
+      "end": "26.08.2025",
+      "label": "Sommerferien",
+      "comment": ""
+    },
+    {
+      "start": "13.10.2025",
+      "end": "25.10.2025",
+      "label": "Herbstferien",
+      "comment": ""
+    },
+    {
+      "start": "22.12.2025",
+      "end": "06.01.2026",
+      "label": "Weihnachtsferien",
+      "comment": ""
+    },
+    {
+      "start": "30.03.2026",
+      "end": "11.04.2026",
+      "label": "Osterferien",
+      "comment": ""
+    },
+    {
+      "start": "25.05.2026",
+      "end": "26.05.2026",
+      "label": "Pfingstferien",
+      "comment": ""
+    },
+    {
+      "start": "20.07.2026",
+      "end": "01.09.2026",
+      "label": "Sommerferien",
+      "comment": ""
+    },
+    {
+      "start": "17.10.2026",
+      "end": "31.10.2026",
+      "label": "Herbstferien",
+      "comment": ""
+    },
+    {
+      "start": "23.12.2026",
+      "end": "06.01.2027",
+      "label": "Weihnachtsferien",
+      "comment": ""
+    }
+  ]
+}
