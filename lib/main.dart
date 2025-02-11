@@ -1,10 +1,29 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 import 'package:countries_world_map/countries_world_map.dart';
-import 'package:holiday_map/widgets/country_widget.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/classes/entry.dart';
+import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/widgets/my_country_widget.dart';
 
-void main() {
-  runApp(const MyApp());
+// Declare globally
+late SubdivisionHolidays holdata;
+
+// Load data at start
+Future<SubdivisionHolidays> _loadData() async {
+  final String response = await rootBundle.loadString("assets/data.json");
+  final jsonData = json.decode(response);
+  return SubdivisionHolidays.fromJson(jsonData["subdivionHolidays"][0]);
+}
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Load data at start
+  holdata = await _loadData();
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -28,14 +47,14 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends ConsumerStatefulWidget {
   const MyHomePage({super.key});
 
   @override
   MyHomePageState createState() => MyHomePageState();
 }
 
-class MyHomePageState extends State<MyHomePage>
+class MyHomePageState extends ConsumerState<MyHomePage>
     with SingleTickerProviderStateMixin {
   late TabController controller;
 
@@ -55,6 +74,9 @@ class MyHomePageState extends State<MyHomePage>
               ListTile(title: Center(child: Text('Germany'))),
               ListTile(title: Center(child: Text('Austria'))),
             ])),
+        floatingActionButton: FloatingActionButton(onPressed: () async {
+          Log.log(holdata);
+        }),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
@@ -62,8 +84,8 @@ class MyHomePageState extends State<MyHomePage>
               physics: NeverScrollableScrollPhysics(),
               controller: controller,
               children: [
-                CountryPage(country: "de"),
-                CountryPage(country: "at")
+                MyCountryPage(country: "de"),
+                MyCountryPage(country: "at")
               ]),
         ));
   }

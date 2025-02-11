@@ -1,0 +1,4249 @@
+{
+  "subdivionHolidays": [
+    {
+      "iso": "DE-BB",
+      "holidays": [
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-08",
+          "name_en": "Winter holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-02",
+          "end": "2025-05-02",
+          "name_en": "Variable holiday",
+          "name_de": "Variabler Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Variable holiday",
+          "name_de": "Variabler Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-10",
+          "name_en": "Pentecost holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-24",
+          "end": "2025-09-06",
+          "name_en": "Summer holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-21",
+          "end": "2025-11-01",
+          "name_en": "Autumn holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-02",
+          "name_en": "Christmas holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-02-07",
+          "name_en": "Winter holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Variable holiday",
+          "name_de": "Variabler Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-05-26",
+          "name_en": "Pentecost holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-09",
+          "end": "2026-08-22",
+          "name_en": "Summer holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-19",
+          "end": "2026-10-30",
+          "name_en": "Autumn holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-02",
+          "name_en": "Christmas holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-20",
+          "end": "2025-04-20",
+          "name_en": "Easter Sunday",
+          "name_de": "Ostersonntag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-08",
+          "end": "2025-06-08",
+          "name_en": "Pentecost Sunday",
+          "name_de": "Pfingstsonntag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-05",
+          "end": "2026-04-05",
+          "name_en": "Easter Sunday",
+          "name_de": "Ostersonntag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-24",
+          "end": "2026-05-24",
+          "name_en": "Pentecost Sunday",
+          "name_de": "Pfingstsonntag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-BE",
+      "holidays": [
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-08",
+          "name_en": "Winter holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-02",
+          "end": "2025-05-02",
+          "name_en": "Day off",
+          "name_de": "Unterrichtsfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Day off",
+          "name_de": "Unterrichtsfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-10",
+          "name_en": "Pentecost holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-24",
+          "end": "2025-09-06",
+          "name_en": "Summer holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-20",
+          "end": "2025-11-01",
+          "name_en": "Autumn holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-02",
+          "name_en": "Christmas holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-02-07",
+          "name_en": "Winter holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Day off",
+          "name_de": "Unterrichtsfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-05-26",
+          "name_en": "Pentecost holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-09",
+          "end": "2026-08-22",
+          "name_en": "Summer holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-19",
+          "end": "2026-10-31",
+          "name_en": "Autumn holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-02",
+          "name_en": "Christmas holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-03-08",
+          "end": "2025-03-08",
+          "name_en": "International Women's Day",
+          "name_de": "Internationaler Frauentag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-08",
+          "end": "2025-05-08",
+          "name_en": "Liberation Day",
+          "name_de": "Tag der Befreiung",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-03-08",
+          "end": "2026-03-08",
+          "name_en": "International Women's Day",
+          "name_de": "Internationaler Frauentag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-BW",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-04",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-26",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-20",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-31",
+          "end": "2025-09-13",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-27",
+          "end": "2025-10-30",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-11",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-06-05",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-30",
+          "end": "2026-09-12",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-26",
+          "end": "2026-10-30",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-09",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-01-06",
+          "end": "2025-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2025-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-06",
+          "end": "2026-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-BY",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-03-03",
+          "end": "2025-03-07",
+          "name_en": "Spring Holidays",
+          "name_de": "Fr\u00fchjahrsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-20",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-08-01",
+          "end": "2025-09-15",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-11-03",
+          "end": "2025-11-07",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-11-19",
+          "end": "2025-11-19",
+          "name_en": "Repentance Day",
+          "name_de": "Bu\u00df- und Bettag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-16",
+          "end": "2026-02-20",
+          "name_en": "Spring Holidays",
+          "name_de": "Fr\u00fchjahrsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-06-05",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-08-03",
+          "end": "2026-09-14",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-06",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18",
+          "name_en": "Repentance Day",
+          "name_de": "Bu\u00df- und Bettag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-24",
+          "end": "2027-01-08",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-01-06",
+          "end": "2025-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-08-08",
+          "end": "2025-08-08",
+          "name_en": "High Festival of Peace",
+          "name_de": "Friedensfest",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-08-15",
+          "end": "2025-08-15",
+          "name_en": "Assumption Day",
+          "name_de": "Mari\u00e4 Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2025-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-06",
+          "end": "2026-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-08-08",
+          "end": "2026-08-08",
+          "name_en": "High Festival of Peace",
+          "name_de": "Friedensfest",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-08-15",
+          "end": "2026-08-15",
+          "name_en": "Assumption Day",
+          "name_de": "Mari\u00e4 Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-HB",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-04",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-04",
+          "name_en": "Mid-Year Holidays",
+          "name_de": "Halbjahresferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-07",
+          "end": "2025-04-19",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-30",
+          "end": "2025-05-02",
+          "name_en": "Church Day and the Day after 1 May",
+          "name_de": "Kirchentag und Tag nach dem 1. Mai",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Day after Ascension",
+          "name_de": "Tag nach Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-10",
+          "name_en": "Pentecost Holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-03",
+          "end": "2025-08-13",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-25",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-02-03",
+          "name_en": "Mid-Year Holidays",
+          "name_de": "Halbjahresferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-23",
+          "end": "2026-04-07",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Day after Ascension",
+          "name_de": "Tag nach Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-06-26",
+          "end": "2026-06-26",
+          "name_en": "Pentecost Holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-02",
+          "end": "2026-08-12",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-12",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-09",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-HE",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-10",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-07",
+          "end": "2025-04-21",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-07",
+          "end": "2025-08-15",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-06",
+          "end": "2025-10-18",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-10",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-06-29",
+          "end": "2026-08-07",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-05",
+          "end": "2026-10-17",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-12",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-HH",
+      "holidays": [
+        {
+          "start": "2024-12-20",
+          "end": "2025-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-31",
+          "end": "2025-01-31",
+          "name_en": "Mid-Year Break",
+          "name_de": "Halbjahrespause",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-03-10",
+          "end": "2025-03-21",
+          "name_en": "Spring Holidays",
+          "name_de": "Fr\u00fchjahrsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-02",
+          "end": "2025-05-02",
+          "name_en": "Bridge Day",
+          "name_de": "Br\u00fcckentag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-26",
+          "end": "2025-05-30",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-24",
+          "end": "2025-09-03",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-20",
+          "end": "2025-10-31",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-17",
+          "end": "2026-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-01-30",
+          "end": "2026-01-30",
+          "name_en": "Mid-Year Break",
+          "name_de": "Halbjahrespause",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-02",
+          "end": "2026-03-13",
+          "name_en": "Spring Holidays",
+          "name_de": "Fr\u00fchjahrsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-11",
+          "end": "2026-05-15",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-09",
+          "end": "2026-08-19",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-19",
+          "end": "2026-10-30",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-21",
+          "end": "2027-01-01",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-MV",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-04",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-14",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-08",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-23",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-02",
+          "end": "2025-05-02",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-06",
+          "end": "2025-06-10",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-14",
+          "end": "2025-08-30",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-28",
+          "end": "2025-09-06",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-01",
+          "end": "2025-10-01",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-02",
+          "end": "2025-10-02",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-20",
+          "end": "2025-10-25",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-11-03",
+          "end": "2025-11-03",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-11-03",
+          "end": "2025-11-03",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-09",
+          "end": "2026-02-14",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-09",
+          "end": "2026-02-20",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-08",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-22",
+          "end": "2026-05-26",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-08-29",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-13",
+          "end": "2026-08-22",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-19",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-26",
+          "end": "2026-11-26",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-26",
+          "end": "2026-11-26",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-27",
+          "end": "2026-11-27",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-11-27",
+          "end": "2026-11-27",
+          "name_en": "Additional holiday",
+          "name_de": "Zus\u00e4tzlicher Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-19",
+          "end": "2027-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-03-08",
+          "end": "2025-03-08",
+          "name_en": "International Women's Day",
+          "name_de": "Internationaler Frauentag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-03-08",
+          "end": "2026-03-08",
+          "name_en": "International Women's Day",
+          "name_de": "Internationaler Frauentag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-NI",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-04",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-04",
+          "name_en": "Mid-Year Holidays",
+          "name_de": "Halbjahresferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-07",
+          "end": "2025-04-19",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-30",
+          "end": "2025-04-30",
+          "name_en": "Church Day",
+          "name_de": "Kirchentag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-02",
+          "end": "2025-05-02",
+          "name_en": "Day after 1 May",
+          "name_de": "Tag nach dem 1. Mai",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Day after Ascension",
+          "name_de": "Tag nach Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-10",
+          "name_en": "Pentecost Holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-03",
+          "end": "2025-08-13",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-25",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-02",
+          "end": "2026-02-03",
+          "name_en": "Mid-Year Holidays",
+          "name_de": "Halbjahresferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-23",
+          "end": "2026-04-07",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Day after Ascension",
+          "name_de": "Tag nach Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-05-26",
+          "name_en": "Pentecost Holiday",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-02",
+          "end": "2026-08-12",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-12",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-09",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-NW",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-26",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-10",
+          "end": "2025-06-10",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-14",
+          "end": "2025-08-26",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-25",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-11",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-05-26",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-20",
+          "end": "2026-09-01",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-17",
+          "end": "2026-10-31",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2025-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-RP",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-08",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-07",
+          "end": "2025-08-15",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-07",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-06-29",
+          "end": "2026-08-07",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-05",
+          "end": "2026-10-16",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-08",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2025-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-SH",
+      "holidays": [
+        {
+          "start": "2024-12-19",
+          "end": "2025-01-07",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-11",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Ascension",
+          "name_de": "Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-28",
+          "end": "2025-09-06",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-20",
+          "end": "2025-10-30",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-19",
+          "end": "2026-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-26",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Ascension",
+          "name_de": "Himmelfahrt",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-04",
+          "end": "2026-08-15",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-12",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-21",
+          "end": "2027-01-06",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-SL",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-24",
+          "end": "2025-03-04",
+          "name_en": "Carnival Holidays",
+          "name_de": "Fastnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-14",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-07-07",
+          "end": "2025-08-14",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-16",
+          "end": "2026-02-20",
+          "name_en": "Carnival Holidays",
+          "name_de": "Fastnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-04-07",
+          "end": "2026-04-17",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-06-29",
+          "end": "2026-08-07",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-05",
+          "end": "2026-10-16",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-21",
+          "end": "2026-12-31",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-19",
+          "end": "2025-06-19",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-08-15",
+          "end": "2025-08-15",
+          "name_en": "Assumption Day",
+          "name_de": "Mari\u00e4 Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2025-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-06-04",
+          "end": "2026-06-04",
+          "name_en": "Corpus Christi",
+          "name_de": "Fronleichnam",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-08-15",
+          "end": "2026-08-15",
+          "name_en": "Assumption Day",
+          "name_de": "Mari\u00e4 Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01",
+          "name_en": "All Saints' Day",
+          "name_de": "Allerheiligen",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-SN",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-17",
+          "end": "2025-03-01",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-25",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Day off",
+          "name_de": "Unterrichtsfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-28",
+          "end": "2025-08-08",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-06",
+          "end": "2025-10-18",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-09",
+          "end": "2026-02-21",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-10",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Day off",
+          "name_de": "Unterrichtsfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-04",
+          "end": "2026-08-14",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-12",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-11-19",
+          "end": "2025-11-19",
+          "name_en": "Repentance Day",
+          "name_de": "Bu\u00df- und Bettag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18",
+          "name_en": "Repentance Day",
+          "name_de": "Bu\u00df- und Bettag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-ST",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-04",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-27",
+          "end": "2025-01-31",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-07",
+          "end": "2025-04-19",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Holiday Day",
+          "name_de": "Ferientag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-28",
+          "end": "2025-08-08",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-13",
+          "end": "2025-10-25",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-05",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-01-31",
+          "end": "2026-02-06",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-03-30",
+          "end": "2026-04-04",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-26",
+          "end": "2026-05-29",
+          "name_en": "Pentecost Holidays",
+          "name_de": "Pfingstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-04",
+          "end": "2026-08-14",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-19",
+          "end": "2026-10-30",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-21",
+          "end": "2027-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-01-06",
+          "end": "2025-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-06",
+          "end": "2026-01-06",
+          "name_en": "Epiphany",
+          "name_de": "Heilige Drei K\u00f6nige",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    },
+    {
+      "iso": "DE-TH",
+      "holidays": [
+        {
+          "start": "2024-12-23",
+          "end": "2025-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-02-03",
+          "end": "2025-02-08",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-04-07",
+          "end": "2025-04-19",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-05-30",
+          "end": "2025-05-30",
+          "name_en": "Day off from school",
+          "name_de": "Schulfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-06-28",
+          "end": "2025-08-08",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-10-06",
+          "end": "2025-10-18",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-12-22",
+          "end": "2026-01-03",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-02-16",
+          "end": "2026-02-21",
+          "name_en": "Winter Holidays",
+          "name_de": "Winterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-04-07",
+          "end": "2026-04-17",
+          "name_en": "Easter Holidays",
+          "name_de": "Osterferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-05-15",
+          "end": "2026-05-15",
+          "name_en": "Day off from school",
+          "name_de": "Schulfreier Tag",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-07-04",
+          "end": "2026-08-14",
+          "name_en": "Summer Holidays",
+          "name_de": "Sommerferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-10-12",
+          "end": "2026-10-24",
+          "name_en": "Autumn Holidays",
+          "name_de": "Herbstferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2026-12-23",
+          "end": "2027-01-02",
+          "name_en": "Christmas Holidays",
+          "name_de": "Weihnachtsferien",
+          "hol_type": "School"
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-18",
+          "end": "2025-04-18",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-04-21",
+          "end": "2025-04-21",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-05-29",
+          "end": "2025-05-29",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-06-09",
+          "end": "2025-06-09",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-09-20",
+          "end": "2025-09-20",
+          "name_en": "World Children's Day",
+          "name_de": "Weltkindertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-03",
+          "end": "2025-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-10-31",
+          "end": "2025-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-25",
+          "end": "2025-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2025-12-26",
+          "end": "2025-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-03",
+          "end": "2026-04-03",
+          "name_en": "Good Friday",
+          "name_de": "Karfreitag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-04-06",
+          "end": "2026-04-06",
+          "name_en": "Easter Monday",
+          "name_de": "Ostermontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-05-01",
+          "name_en": "Labour Day",
+          "name_de": "Tag der Arbeit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-14",
+          "end": "2026-05-14",
+          "name_en": "Ascension Day",
+          "name_de": "Christi Himmelfahrt",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-05-25",
+          "end": "2026-05-25",
+          "name_en": "Pentecost Monday",
+          "name_de": "Pfingstmontag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-09-20",
+          "end": "2026-09-20",
+          "name_en": "World Children's Day",
+          "name_de": "Weltkindertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-03",
+          "end": "2026-10-03",
+          "name_en": "Day of German Unity",
+          "name_de": "Tag der Deutschen Einheit",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-10-31",
+          "end": "2026-10-31",
+          "name_en": "Reformation Day",
+          "name_de": "Reformationstag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-25",
+          "end": "2026-12-25",
+          "name_en": "Christmas Day",
+          "name_de": "1. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2026-12-26",
+          "end": "2026-12-26",
+          "name_en": "2nd Day of Christmas",
+          "name_de": "2. Weihnachtsfeiertag",
+          "hol_type": "Public"
+        },
+        {
+          "start": "2027-01-01",
+          "end": "2027-01-01",
+          "name_en": "New Year's Day",
+          "name_de": "Neujahr",
+          "hol_type": "Public"
+        }
+      ]
+    }
+  ]
+}
