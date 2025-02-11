@@ -7,16 +7,49 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/providers/germany_provider.dart';
 import 'package:holiday_map/widgets/my_country_widget.dart';
 
 // Declare globally
-late SubdivisionHolidays holdata;
+late AllStateHolidays holdata;
 
 // Load data at start
-Future<SubdivisionHolidays> _loadData() async {
+Future<AllStateHolidays> _loadData() async {
   final String response = await rootBundle.loadString("assets/data.json");
   final jsonData = json.decode(response);
-  return SubdivisionHolidays.fromJson(jsonData["subdivionHolidays"][0]);
+  return AllStateHolidays.fromJson(jsonData);
+}
+
+Map<String, String?> findHolidaysForDate(DateTime selectedDate) {
+  // final Map<String, dynamic> data = jsonDecode(jsonData);
+  //
+  // if (data['entries'] == null) {
+  //   return {}; // Handle the case where 'entries' is missing or null.
+  // }
+  //
+  // final List<dynamic> entries = data['entries'] as List;
+  // final List<SubdivisionHolidays> regionEntries = entries.map((entry) => SubdivisionHolidays.fromJson(entry)).toList();
+
+  final regionEntries = holdata.stateHolidays;
+
+  Map<String, String?> result = {};
+
+  for (final regionEntry in regionEntries) {
+    for (final holiday in regionEntry.holidays) {
+      final startDate = holiday.start;
+      final endDate = holiday.end;
+
+      if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
+          selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
+        // Use the preferred name (e.g., English) or provide both.
+        result[regionEntry.iso] = holiday
+            .nameEN; // Or holiday.nameDe or "${holiday.nameEn} / ${holiday.nameDe}"
+        break; // Exit inner loop once a holiday is found for the region.
+      }
+    }
+  }
+
+  return result;
 }
 
 void main() async {
@@ -76,6 +109,19 @@ class MyHomePageState extends ConsumerState<MyHomePage>
             ])),
         floatingActionButton: FloatingActionButton(onPressed: () async {
           Log.log(holdata);
+          final pickedDate = await showDatePicker(
+              context: context,
+              firstDate: DateTime.utc(2025),
+              lastDate: DateTime.utc(2028));
+          if (pickedDate == null) return;
+          Log.log(pickedDate.toString());
+          final out = findHolidaysForDate(pickedDate);
+          await ref.read(germanyProvider.notifier).resetData();
+          for (final key in out.keys) {
+            final name = out[key];
+            Log.log("State: $key, Holiday:${name!}");
+            await ref.read(germanyProvider.notifier).updateData(key);
+          }
         }),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,

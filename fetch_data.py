@@ -59,8 +59,8 @@ class Subdivision(Country):
 
 @dataclass
 class Holiday:
-    start_date: str
-    end_date: str
+    start: str
+    end: str
     name_en: str
     name_de: str
     hol_type: HolidayType
@@ -68,10 +68,10 @@ class Holiday:
     @classmethod
     def from_dict(cls, data: Dict):
         # Dates
-        start_date = data.get("startDate")
-        end_date = data.get("endDate")
-        assert start_date is not None, f"Could not find key 'startDate' in data: {data}"
-        assert end_date is not None, f"Could not find key 'endDate' in data: {data}"
+        start = data.get("startDate")
+        end = data.get("endDate")
+        assert start is not None, f"Could not find key 'startDate' in data: {data}"
+        assert end is not None, f"Could not find key 'endDate' in data: {data}"
         # Names
         names_list: list[dict[str, str]] = data["name"]
         name_en, name_de = parse_names_from_data(names_list)
@@ -85,8 +85,8 @@ class Holiday:
                 f"Invalid holidayType: {hol_type_str}. Must be 'public' or 'shool'"
             )
         return cls(
-            start_date=start_date,
-            end_date=end_date,
+            start=start,
+            end=end,
             name_en=name_en,
             name_de=name_de,
             hol_type=holiday_type,
@@ -101,7 +101,7 @@ class SubdivionHolidays:
 
 @dataclass
 class AllSubdivionHolidays:
-    subdivionHolidays: list[SubdivionHolidays]
+    state_holidays: list[SubdivionHolidays]
 
 
 def get_countries() -> list[Country]:
@@ -161,7 +161,7 @@ if __name__ == "__main__":
         sub_holidays = SubdivionHolidays(iso=sub.iso, holidays=sub_hols_list)
         all_hols_list.append(sub_holidays)
     # to dataclass
-    all_hols = AllSubdivionHolidays(subdivionHolidays=all_hols_list)
+    all_hols = AllSubdivionHolidays(state_holidays=all_hols_list)
 
     outfile = "parsed_from_openholidaysapi.json"
     with open(outfile, "w", encoding="utf-8") as w:

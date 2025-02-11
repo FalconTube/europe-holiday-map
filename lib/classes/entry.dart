@@ -3,20 +3,36 @@ import 'package:json_annotation/json_annotation.dart';
 part 'entry.g.dart';
 
 @JsonSerializable()
-class SubdivisionHolidays {
+class AllStateHolidays {
+  @JsonKey(name: "state_holidays")
+  final List<StateHolidays> stateHolidays;
+  // Add other relevant data like title, description, etc.
+  AllStateHolidays({
+    required this.stateHolidays,
+  });
+
+  factory AllStateHolidays.fromJson(Map<String, dynamic> json) {
+    return _$AllStateHolidaysFromJson(json);
+  }
+
+  Map<String, dynamic> toJson() => _$AllStateHolidaysToJson(this);
+}
+
+@JsonSerializable()
+class StateHolidays {
   final String iso;
   final List<Holiday> holidays;
   // Add other relevant data like title, description, etc.
-  SubdivisionHolidays({
+  StateHolidays({
     required this.iso,
     required this.holidays,
   });
 
-  factory SubdivisionHolidays.fromJson(Map<String, dynamic> json) {
-    return _$SubdivisionHolidaysFromJson(json);
+  factory StateHolidays.fromJson(Map<String, dynamic> json) {
+    return _$StateHolidaysFromJson(json);
   }
 
-  Map<String, dynamic> toJson() => _$SubdivisionHolidaysToJson(this);
+  Map<String, dynamic> toJson() => _$StateHolidaysToJson(this);
 }
 
 @JsonSerializable()

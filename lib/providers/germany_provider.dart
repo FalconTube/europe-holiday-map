@@ -1,18 +1,18 @@
 import 'dart:convert';
 
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:holiday_map/classes/entry.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:countries_world_map/countries_world_map.dart';
+import 'package:holiday_map/logging/logger.dart';
 
+// Map for access of data
 class MapCountryData {
   final String country;
-  final String instruction;
+  String instruction;
   final List<Map<String, dynamic>> properties;
-  final Map<String, Color?> keyValuesPaires;
+  Map<String, Color?> keyValuesPaires;
 
-  const MapCountryData({
+  MapCountryData({
     required this.country,
     required this.instruction,
     required this.properties,
@@ -20,12 +20,33 @@ class MapCountryData {
   });
 }
 
-class GermanyProvider extends StateNotifier<MapCountryData> {
-  GermanyProvider() : super(initState("de")) {
-    state = initState("de");
-  } // Initial state is an empty string.
+// Provider for consumption
+final germanyProvider =
+    StateNotifierProvider<GermanyProvider, MapCountryData>((ref) {
+  return GermanyProvider();
+});
 
-  Future<void> updateData() async {}
+// State
+class GermanyProvider extends StateNotifier<MapCountryData> {
+  GermanyProvider() : super(initState("de"));
+
+  Future<void> resetData() async {
+    state = initState(state.country);
+  }
+
+  Future<void> updateData(String id) async {
+    if (id == "") return;
+    int i = state.properties.indexWhere((element) => element['id'] == id);
+
+    state.properties[i]['color'] = Colors.deepPurple;
+    state.keyValuesPaires[state.properties[i]['id']] =
+        state.properties[i]['color'];
+    state = MapCountryData(
+        country: state.country,
+        instruction: state.instruction,
+        properties: state.properties,
+        keyValuesPaires: state.keyValuesPaires);
+  }
 
   static String getInstructions(String id) {
     switch (id) {
@@ -486,23 +507,3 @@ class GermanyProvider extends StateNotifier<MapCountryData> {
     } else {}
   }
 }
-
-// @riverpod
-// Future<String> boredSuggestion(Ref ref) async {
-//   final response = await http.get(
-//     Uri.https('boredapi.com', '/api/activity'),
-//   );
-//   final json = jsonDecode(response.body) as Map;
-//   return json['activity']! as String;
-// }
-
-// Future<GermanyProvider> germanyProvider(Ref ref) async {
-//   Log.log("returning provider");
-//   return await GermanyProvider();
-// }
-
-final germanyProvider =
-    StateNotifierProvider<GermanyProvider, MapCountryData>((ref) {
-  Log.log("returning provider");
-  return GermanyProvider();
-});

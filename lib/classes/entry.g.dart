@@ -6,16 +6,27 @@ part of 'entry.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-SubdivisionHolidays _$SubdivisionHolidaysFromJson(Map<String, dynamic> json) =>
-    SubdivisionHolidays(
+AllStateHolidays _$AllStateHolidaysFromJson(Map<String, dynamic> json) =>
+    AllStateHolidays(
+      stateHolidays: (json['state_holidays'] as List<dynamic>)
+          .map((e) => StateHolidays.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$AllStateHolidaysToJson(AllStateHolidays instance) =>
+    <String, dynamic>{
+      'state_holidays': instance.stateHolidays,
+    };
+
+StateHolidays _$StateHolidaysFromJson(Map<String, dynamic> json) =>
+    StateHolidays(
       iso: json['iso'] as String,
       holidays: (json['holidays'] as List<dynamic>)
           .map((e) => Holiday.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$SubdivisionHolidaysToJson(
-        SubdivisionHolidays instance) =>
+Map<String, dynamic> _$StateHolidaysToJson(StateHolidays instance) =>
     <String, dynamic>{
       'iso': instance.iso,
       'holidays': instance.holidays,
