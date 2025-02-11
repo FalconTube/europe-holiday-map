@@ -2,36 +2,33 @@ import 'dart:convert';
 
 import 'package:countries_world_map/countries_world_map.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/providers/germany_provider.dart';
 
-class MyCountryPage extends StatefulWidget {
+class MyCountryPage extends ConsumerStatefulWidget {
   final String country;
 
   const MyCountryPage({required this.country, super.key});
 
   @override
-  _CountryPageState createState() => _CountryPageState();
+  ConsumerState<MyCountryPage> createState() => CountryPageState();
 }
 
-class _CountryPageState extends State<MyCountryPage> {
-  late String state;
-  late String instruction;
-
-  late List<Map<String, dynamic>> properties;
-
-  late Map<String, Color?> keyValuesPaires;
-
+class CountryPageState extends ConsumerState<MyCountryPage> {
   @override
   Widget build(BuildContext context) {
+    final data = ref.watch(germanyProvider);
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
         title: Text(
-          '${widget.country.toUpperCase()} - $state',
+          widget.country.toUpperCase(),
           style: TextStyle(color: Colors.blue),
         ),
       ),
-      body: instruction == "NOT SUPPORTED"
+      body: data.instruction == "NOT SUPPORTED"
           ? Center(child: Text("This country is not supported"))
           : Column(
               children: [
@@ -41,24 +38,11 @@ class _CountryPageState extends State<MyCountryPage> {
                         child: Center(
                             child: SimpleMap(
                       defaultColor: Colors.grey.shade300,
-                      key: Key(properties.toString()),
-                      colors: keyValuesPaires,
-                      instructions: instruction,
+                      key: Key(data.properties.toString()),
+                      colors: data.keyValuesPaires,
+                      instructions: data.instruction,
                       callback: (id, name, tapDetails) {
                         Log.log(id);
-                        setState(() {
-                          state = name;
-
-                          int i = properties
-                              .indexWhere((element) => element['id'] == id);
-
-                          properties[i]['color'] =
-                              properties[i]['color'] == Colors.green
-                                  ? null
-                                  : Colors.green;
-                          keyValuesPaires[properties[i]['id']] =
-                              properties[i]['color'];
-                        });
                       },
                     ))),
                     if (MediaQuery.of(context).size.width > 800)
@@ -70,28 +54,18 @@ class _CountryPageState extends State<MyCountryPage> {
                             elevation: 8,
                             child: ListView(
                               children: [
-                                for (int i = 0; i < properties.length; i++)
+                                for (int i = 0; i < data.properties.length; i++)
                                   ListTile(
-                                    title: Text(properties[i]['name']),
+                                    title: Text(data.properties[i]['name']),
                                     leading: Container(
                                       margin: EdgeInsets.only(top: 8),
                                       width: 20,
                                       height: 20,
-                                      color: properties[i]['color'] ??
+                                      color: data.properties[i]['color'] ??
                                           Colors.grey.shade300,
                                     ),
-                                    subtitle: Text(properties[i]['id']),
-                                    onTap: () {
-                                      setState(() {
-                                        properties[i]['color'] = properties[i]
-                                                    ['color'] ==
-                                                Colors.green
-                                            ? null
-                                            : Colors.green;
-                                        keyValuesPaires[properties[i]['id']] =
-                                            properties[i]['color'];
-                                      });
-                                    },
+                                    subtitle: Text(data.properties[i]['id']),
+                                    onTap: () {},
                                   )
                               ],
                             ),
@@ -106,27 +80,18 @@ class _CountryPageState extends State<MyCountryPage> {
                         elevation: 8,
                         child: ListView(
                           children: [
-                            for (int i = 0; i < properties.length; i++)
+                            for (int i = 0; i < data.properties.length; i++)
                               ListTile(
-                                title: Text(properties[i]['name']),
+                                title: Text(data.properties[i]['name']),
                                 leading: Container(
                                   margin: EdgeInsets.only(top: 8),
                                   width: 20,
                                   height: 20,
-                                  color: properties[i]['color'] ??
+                                  color: data.properties[i]['color'] ??
                                       Colors.grey.shade300,
                                 ),
-                                subtitle: Text(properties[i]['id']),
-                                onTap: () {
-                                  setState(() {
-                                    properties[i]['color'] =
-                                        properties[i]['color'] == Colors.green
-                                            ? null
-                                            : Colors.green;
-                                    keyValuesPaires[properties[i]['id']] =
-                                        properties[i]['color'];
-                                  });
-                                },
+                                subtitle: Text(data.properties[i]['id']),
+                                onTap: () {},
                               )
                           ],
                         ),

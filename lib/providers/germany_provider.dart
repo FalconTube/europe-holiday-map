@@ -6,12 +6,28 @@ import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:countries_world_map/countries_world_map.dart';
 
-class GermanyProvider extends StateNotifier<Map<String, Color?>> {
-  GermanyProvider() : super({}); // Initial state is an empty string.
+class MapCountryData {
+  final String country;
+  final String instruction;
+  final List<Map<String, dynamic>> properties;
+  final Map<String, Color?> keyValuesPaires;
+
+  const MapCountryData({
+    required this.country,
+    required this.instruction,
+    required this.properties,
+    required this.keyValuesPaires,
+  });
+}
+
+class GermanyProvider extends StateNotifier<MapCountryData> {
+  GermanyProvider() : super(initState("de")) {
+    state = initState("de");
+  } // Initial state is an empty string.
 
   Future<void> updateData() async {}
 
-  String getInstructions(String id) {
+  static String getInstructions(String id) {
     switch (id) {
       case 'ar':
         return SMapArgentina.instructions;
@@ -423,7 +439,7 @@ class GermanyProvider extends StateNotifier<Map<String, Color?>> {
     }
   }
 
-  List<Map<String, dynamic>> getProperties(String input) {
+  static List<Map<String, dynamic>> getProperties(String input) {
     Map<String, dynamic> instructions = json.decode(input);
 
     List paths = instructions['i'];
@@ -441,8 +457,19 @@ class GermanyProvider extends StateNotifier<Map<String, Color?>> {
     return properties;
   }
 
-  void initState(String country) {
+  static MapCountryData initState(String country) {
     final instruction = getInstructions(country);
+    final properties = getProperties(instruction);
+    properties.sort((a, b) => a['name'].compareTo(b['name']));
+    final Map<String, Color?> keyValuesPaires = {};
+    for (var element in properties) {
+      keyValuesPaires.addAll({element['id']: element['color']});
+    }
+    return MapCountryData(
+        country: country,
+        instruction: instruction,
+        properties: properties,
+        keyValuesPaires: keyValuesPaires);
     if (instruction != "NOT SUPPORTED") {
       final properties = getProperties(instruction);
       properties.sort((a, b) => a['name'].compareTo(b['name']));
@@ -450,12 +477,32 @@ class GermanyProvider extends StateNotifier<Map<String, Color?>> {
       for (var element in properties) {
         keyValuesPaires.addAll({element['id']: element['color']});
       }
-      state = keyValuesPaires;
+      final thisMapData = MapCountryData(
+          country: country,
+          instruction: instruction,
+          properties: properties,
+          keyValuesPaires: keyValuesPaires);
+      // state = thisMapData;
     } else {}
   }
 }
 
+// @riverpod
+// Future<String> boredSuggestion(Ref ref) async {
+//   final response = await http.get(
+//     Uri.https('boredapi.com', '/api/activity'),
+//   );
+//   final json = jsonDecode(response.body) as Map;
+//   return json['activity']! as String;
+// }
+
+// Future<GermanyProvider> germanyProvider(Ref ref) async {
+//   Log.log("returning provider");
+//   return await GermanyProvider();
+// }
+
 final germanyProvider =
-    StateNotifierProvider<GermanyProvider, Map<String, Color?>>((ref) {
+    StateNotifierProvider<GermanyProvider, MapCountryData>((ref) {
+  Log.log("returning provider");
   return GermanyProvider();
 });
