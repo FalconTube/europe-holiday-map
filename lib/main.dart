@@ -21,15 +21,6 @@ Future<AllStateHolidays> _loadData() async {
 }
 
 Map<String, String?> findHolidaysForDate(DateTime selectedDate) {
-  // final Map<String, dynamic> data = jsonDecode(jsonData);
-  //
-  // if (data['entries'] == null) {
-  //   return {}; // Handle the case where 'entries' is missing or null.
-  // }
-  //
-  // final List<dynamic> entries = data['entries'] as List;
-  // final List<SubdivisionHolidays> regionEntries = entries.map((entry) => SubdivisionHolidays.fromJson(entry)).toList();
-
   final regionEntries = holdata.stateHolidays;
 
   Map<String, String?> result = {};
@@ -41,9 +32,7 @@ Map<String, String?> findHolidaysForDate(DateTime selectedDate) {
 
       if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
           selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
-        // Use the preferred name (e.g., English) or provide both.
-        result[regionEntry.iso] = holiday
-            .nameEN; // Or holiday.nameDe or "${holiday.nameEn} / ${holiday.nameDe}"
+        result[regionEntry.iso] = holiday.nameEN;
         break; // Exit inner loop once a holiday is found for the region.
       }
     }
@@ -117,11 +106,14 @@ class MyHomePageState extends ConsumerState<MyHomePage>
           Log.log(pickedDate.toString());
           final out = findHolidaysForDate(pickedDate);
           await ref.read(germanyProvider.notifier).resetData();
-          for (final key in out.keys) {
-            final name = out[key];
-            Log.log("State: $key, Holiday:${name!}");
-            await ref.read(germanyProvider.notifier).updateData(key);
-          }
+          await ref
+              .read(germanyProvider.notifier)
+              .updateMultipleIDs(out.keys.toList());
+          // for (final key in out.keys) {
+          //   final name = out[key];
+          //   Log.log("State: $key, Holiday:${name!}");
+          //   await ref.read(germanyProvider.notifier).updateData(key);
+          // }
         }),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
