@@ -36,9 +36,7 @@ class MyCountryPage extends ConsumerWidget {
                       key: Key(data.properties.toString()),
                       colors: data.keyValuesPaires,
                       instructions: data.instruction,
-                      callback: (id, name, tapDetails) {
-                        ref.read(germanyProvider.notifier).updateData(id);
-                      },
+                      callback: (id, name, tapDetails) {},
                     ))),
                     if (MediaQuery.of(context).size.width > 800)
                       SizedBox(
@@ -74,14 +72,13 @@ class MyCountryPage extends ConsumerWidget {
                     onDateChanged: (DateTime pickedDate) async {
                       Log.log(pickedDate.toString());
                       final out = findHolidaysForDate(pickedDate);
+                      // Reset
                       await ref.read(germanyProvider.notifier).resetData();
-                      for (final key in out.keys) {
-                        final name = out[key];
-                        Log.log("State: $key, Holiday:${name!}");
-                        await ref
-                            .read(germanyProvider.notifier)
-                            .updateData(key);
-                      }
+
+                      // Update
+                      await ref
+                          .read(germanyProvider.notifier)
+                          .updateMultipleIDs(out.keys.toList());
                     }),
               ],
             ),

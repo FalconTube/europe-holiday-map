@@ -34,13 +34,30 @@ class GermanyProvider extends StateNotifier<MapCountryData> {
     state = initState(state.country);
   }
 
-  Future<void> updateData(String id) async {
+  Future<void> updateSingleID(String id) async {
     if (id == "") return;
     int i = state.properties.indexWhere((element) => element['id'] == id);
 
     state.properties[i]['color'] = Colors.deepPurple;
     state.keyValuesPaires[state.properties[i]['id']] =
         state.properties[i]['color'];
+    state = MapCountryData(
+        country: state.country,
+        instruction: state.instruction,
+        properties: state.properties,
+        keyValuesPaires: state.keyValuesPaires);
+  }
+
+  Future<void> updateMultipleIDs(List<String> ids) async {
+    if (ids.isEmpty) return;
+    for (final id in ids) {
+      if (id == "") continue;
+      int i = state.properties.indexWhere((element) => element['id'] == id);
+
+      state.properties[i]['color'] = Colors.deepPurple;
+      state.keyValuesPaires[state.properties[i]['id']] =
+          state.properties[i]['color'];
+    }
     state = MapCountryData(
         country: state.country,
         instruction: state.instruction,
