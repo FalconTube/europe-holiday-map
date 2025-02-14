@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
-import 'package:holiday_map/providers/germany_provider.dart';
+import 'package:holiday_map/providers/single_country_provider.dart';
 import 'package:holiday_map/widgets/my_country_widget.dart';
 
 // Declare globally
@@ -97,7 +97,6 @@ class MyHomePageState extends ConsumerState<MyHomePage>
               ListTile(title: Center(child: Text('Austria'))),
             ])),
         floatingActionButton: FloatingActionButton(onPressed: () async {
-          Log.log(holdata);
           final pickedDate = await showDatePicker(
               context: context,
               firstDate: DateTime.utc(2025),
@@ -105,15 +104,10 @@ class MyHomePageState extends ConsumerState<MyHomePage>
           if (pickedDate == null) return;
           Log.log(pickedDate.toString());
           final out = findHolidaysForDate(pickedDate);
-          await ref.read(germanyProvider.notifier).resetData();
+          await ref.read(singleCountryProvider("de").notifier).resetData();
           await ref
-              .read(germanyProvider.notifier)
+              .read(singleCountryProvider("de").notifier)
               .updateMultipleIDs(out.keys.toList());
-          // for (final key in out.keys) {
-          //   final name = out[key];
-          //   Log.log("State: $key, Holiday:${name!}");
-          //   await ref.read(germanyProvider.notifier).updateData(key);
-          // }
         }),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,

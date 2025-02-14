@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
-import 'package:holiday_map/providers/germany_provider.dart';
+import 'package:holiday_map/providers/single_country_provider.dart';
 
 class MyCountryPage extends ConsumerWidget {
   final String country;
@@ -13,7 +13,7 @@ class MyCountryPage extends ConsumerWidget {
   const MyCountryPage({super.key, required this.country});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final data = ref.watch(germanyProvider);
+    final data = ref.watch(singleCountryProvider(country));
 
     return Scaffold(
       appBar: AppBar(
@@ -31,12 +31,18 @@ class MyCountryPage extends ConsumerWidget {
                   child: Row(children: [
                     Expanded(
                         child: Center(
-                            child: SimpleMap(
-                      defaultColor: Colors.grey.shade300,
-                      key: Key(data.properties.toString()),
-                      colors: data.keyValuesPaires,
-                      instructions: data.instruction,
-                      callback: (id, name, tapDetails) {},
+                            child: InteractiveViewer(
+                      // alignment: Alignment.topCenter,
+                      maxScale: 10,
+                      child: SimpleMap(
+                        countryBorder:
+                            CountryBorder(color: Colors.grey, width: 1),
+                        defaultColor: Colors.grey.shade300,
+                        key: Key(data.properties.toString()),
+                        colors: data.keyValuesPaires,
+                        instructions: data.instruction,
+                        callback: (id, name, tapDetails) {},
+                      ),
                     ))),
                     if (MediaQuery.of(context).size.width > 800)
                       SizedBox(
@@ -73,11 +79,13 @@ class MyCountryPage extends ConsumerWidget {
                       Log.log(pickedDate.toString());
                       final out = findHolidaysForDate(pickedDate);
                       // Reset
-                      await ref.read(germanyProvider.notifier).resetData();
+                      await ref
+                          .read(singleCountryProvider(country).notifier)
+                          .resetData();
 
                       // Update
                       await ref
-                          .read(germanyProvider.notifier)
+                          .read(singleCountryProvider(country).notifier)
                           .updateMultipleIDs(out.keys.toList());
                     }),
               ],

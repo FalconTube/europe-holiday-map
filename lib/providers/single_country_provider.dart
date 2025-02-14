@@ -21,14 +21,15 @@ class MapCountryData {
 }
 
 // Provider for consumption
-final germanyProvider =
-    StateNotifierProvider<GermanyProvider, MapCountryData>((ref) {
-  return GermanyProvider();
+final singleCountryProvider =
+    StateNotifierProvider.family<SingleCountryProvider, MapCountryData, String>(
+        (ref, country) {
+  return SingleCountryProvider(country);
 });
 
 // State
-class GermanyProvider extends StateNotifier<MapCountryData> {
-  GermanyProvider() : super(initState("de"));
+class SingleCountryProvider extends StateNotifier<MapCountryData> {
+  SingleCountryProvider(String country) : super(initState(country));
 
   Future<void> resetData() async {
     state = initState(state.country);
