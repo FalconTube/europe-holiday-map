@@ -76,8 +76,9 @@ class MyCountryPage extends ConsumerWidget {
                     firstDate: DateTime(2025), // Set appropriate first date
                     lastDate: DateTime(2028), // Set appropriate last date
                     onDateChanged: (DateTime pickedDate) async {
-                      Log.log(pickedDate.toString());
-                      final out = findHolidaysForDate(pickedDate);
+                      // Log.log(pickedDate.toString());
+                      final out = findHolidaysForDate(pickedDate, country);
+                      Log.log(out);
                       // Reset
                       await ref
                           .read(singleCountryProvider(country).notifier)

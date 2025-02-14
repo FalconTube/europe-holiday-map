@@ -11,29 +11,42 @@ import 'package:holiday_map/providers/single_country_provider.dart';
 import 'package:holiday_map/widgets/my_country_widget.dart';
 
 // Declare globally
-late AllStateHolidays holdata;
+// late AllStateHolidays holdata;
+late List<AllStateHolidays> holdata;
 
 // Load data at start
-Future<AllStateHolidays> _loadData() async {
+Future<List<AllStateHolidays>> _loadData() async {
   final String response = await rootBundle.loadString("assets/data.json");
+  List<AllStateHolidays> outList = [];
   final jsonData = json.decode(response);
-  return AllStateHolidays.fromJson(jsonData);
+  for (final entry in jsonData) {
+    final countryHolidays = AllStateHolidays.fromJson(entry);
+    outList.add(countryHolidays);
+  }
+  return outList;
 }
 
-Map<String, String?> findHolidaysForDate(DateTime selectedDate) {
-  final regionEntries = holdata.stateHolidays;
+Map<String, String?> findHolidaysForDate(
+    DateTime selectedDate, String country) {
+  final allCountryEntries = holdata;
 
   Map<String, String?> result = {};
 
-  for (final regionEntry in regionEntries) {
-    for (final holiday in regionEntry.holidays) {
-      final startDate = holiday.start;
-      final endDate = holiday.end;
+  // Sometimes you just have to do a long for loop...
+  // Find all holidays in all subdivisions in all countries
+  for (final countryEntry in allCountryEntries) {
+    Log.log("Compare: ${countryEntry.country}, input: $country");
+    if (countryEntry.country != country) continue;
+    for (final regionEntry in countryEntry.stateHolidays) {
+      for (final holiday in regionEntry.holidays) {
+        final startDate = holiday.start;
+        final endDate = holiday.end;
 
-      if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
-          selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
-        result[regionEntry.iso] = holiday.nameEN;
-        break; // Exit inner loop once a holiday is found for the region.
+        if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
+            selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
+          result[regionEntry.iso] = holiday.nameEN;
+          break; // Exit inner loop once a holiday is found for the region.
+        }
       }
     }
   }
@@ -96,19 +109,19 @@ class MyHomePageState extends ConsumerState<MyHomePage>
               ListTile(title: Center(child: Text('Germany'))),
               ListTile(title: Center(child: Text('Austria'))),
             ])),
-        floatingActionButton: FloatingActionButton(onPressed: () async {
-          final pickedDate = await showDatePicker(
-              context: context,
-              firstDate: DateTime.utc(2025),
-              lastDate: DateTime.utc(2028));
-          if (pickedDate == null) return;
-          Log.log(pickedDate.toString());
-          final out = findHolidaysForDate(pickedDate);
-          await ref.read(singleCountryProvider("de").notifier).resetData();
-          await ref
-              .read(singleCountryProvider("de").notifier)
-              .updateMultipleIDs(out.keys.toList());
-        }),
+        // floatingActionButton: FloatingActionButton(onPressed: () async {
+        //   final pickedDate = await showDatePicker(
+        //       context: context,
+        //       firstDate: DateTime.utc(2025),
+        //       lastDate: DateTime.utc(2028));
+        //   if (pickedDate == null) return;
+        //   Log.log(pickedDate.toString());
+        //   final out = findHolidaysForDate(pickedDate, "de");
+        //   await ref.read(singleCountryProvider("de").notifier).resetData();
+        //   await ref
+        //       .read(singleCountryProvider("de").notifier)
+        //       .updateMultipleIDs(out.keys.toList());
+        // }),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,

@@ -11,11 +11,13 @@ AllStateHolidays _$AllStateHolidaysFromJson(Map<String, dynamic> json) =>
       stateHolidays: (json['state_holidays'] as List<dynamic>)
           .map((e) => StateHolidays.fromJson(e as Map<String, dynamic>))
           .toList(),
+      country: json['country'] as String,
     );
 
 Map<String, dynamic> _$AllStateHolidaysToJson(AllStateHolidays instance) =>
     <String, dynamic>{
       'state_holidays': instance.stateHolidays,
+      'country': instance.country,
     };
 
 StateHolidays _$StateHolidaysFromJson(Map<String, dynamic> json) =>

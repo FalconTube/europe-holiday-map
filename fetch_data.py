@@ -3,6 +3,7 @@ from enum import StrEnum
 from dataclasses import dataclass, asdict
 from typing import Dict, Optional
 import requests
+from pprint import pprint
 
 
 def parse_names_from_data(names_list: list[Dict]) -> tuple[str, str]:
@@ -101,6 +102,7 @@ class SubdivionHolidays:
 
 @dataclass
 class AllSubdivionHolidays:
+    country: str
     state_holidays: list[SubdivionHolidays]
 
 
@@ -150,19 +152,25 @@ def get_holidays(
 
 
 if __name__ == "__main__":
-    all_hols_list: list[SubdivionHolidays] = []
-    subs = get_subdivions("DE")
-    for sub in subs:
-        sub_hols_list: list[Holiday] = []
-        school_hols = get_holidays(HolidayType.SCHOOL, "DE", sub.iso)
-        pub_hols = get_holidays(HolidayType.PUBLIC, "DE", sub.iso)
-        sub_hols_list.extend(school_hols)
-        sub_hols_list.extend(pub_hols)
-        sub_holidays = SubdivionHolidays(iso=sub.iso, holidays=sub_hols_list)
-        all_hols_list.append(sub_holidays)
-    # to dataclass
-    all_hols = AllSubdivionHolidays(state_holidays=all_hols_list)
+    countries = ["DE", "AT"]
+    country_list = []
+    for country_code in countries:
+        all_hols_list: list[SubdivionHolidays] = []
+        subs = get_subdivions(country_code)
+        for sub in subs:
+            sub_hols_list: list[Holiday] = []
+            school_hols = get_holidays(HolidayType.SCHOOL, country_code, sub.iso)
+            pub_hols = get_holidays(HolidayType.PUBLIC, country_code, sub.iso)
+            sub_hols_list.extend(school_hols)
+            sub_hols_list.extend(pub_hols)
+            sub_holidays = SubdivionHolidays(iso=sub.iso, holidays=sub_hols_list)
+            all_hols_list.append(sub_holidays)
+        # to dataclass
+        all_hols = AllSubdivionHolidays(
+            state_holidays=all_hols_list, country=country_code.lower()
+        )
+        country_list.append(asdict(all_hols))
 
     outfile = "parsed_from_openholidaysapi.json"
     with open(outfile, "w", encoding="utf-8") as w:
-        w.write(json.dumps(asdict(all_hols), indent=2))
+        w.write(json.dumps(country_list, indent=2))

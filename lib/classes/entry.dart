@@ -6,9 +6,11 @@ part 'entry.g.dart';
 class AllStateHolidays {
   @JsonKey(name: "state_holidays")
   final List<StateHolidays> stateHolidays;
+  final String country;
   // Add other relevant data like title, description, etc.
   AllStateHolidays({
     required this.stateHolidays,
+    required this.country,
   });
 
   factory AllStateHolidays.fromJson(Map<String, dynamic> json) {
