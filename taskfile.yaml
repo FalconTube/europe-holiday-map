@@ -1,0 +1,29 @@
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - go-task --list-all
+
+  debug:
+    cmds:
+      - flutter run -d chrome
+
+  buildjson:
+    cmds:
+      - dart run build_runner build --delete-conflicting-outputs
+
+  watchjson:
+    cmds:
+      - dart run build_runner watch --delete-conflicting-outputs
+
+  build:
+    cmds:
+      - flutter build web --wasm --release --verbose
+
+  serve:
+    dir: build/web
+    cmds:
+      - task: build
+      - python -m http.server 44322 
