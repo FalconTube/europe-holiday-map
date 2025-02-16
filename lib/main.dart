@@ -26,32 +26,43 @@ Future<List<AllStateHolidays>> _loadData() async {
   return outList;
 }
 
-Map<String, String?> findHolidaysForDate(
-    DateTime selectedDate, String country) {
+class IsoAndCodeResults {
+  Map<String, String?> iso = {};
+  Map<String, String?> code = {};
+}
+
+IsoAndCodeResults findHolidaysForDate(
+// Map<String, String?> findHolidaysForDate(
+    DateTime selectedDate,
+    String country) {
   final allCountryEntries = holdata;
 
-  Map<String, String?> result = {};
+  var iacResults = IsoAndCodeResults();
 
   // Sometimes you just have to do a long for loop...
   // Find all holidays in all subdivisions in all countries
   for (final countryEntry in allCountryEntries) {
     if (countryEntry.country != country) continue;
     for (final regionEntry in countryEntry.stateHolidays) {
-      Log.log(regionEntry.iso);
       for (final holiday in regionEntry.holidays) {
         final startDate = holiday.start;
         final endDate = holiday.end;
 
         if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
             selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
-          result[regionEntry.iso] = holiday.nameEN;
+          if (regionEntry.iso != "") {
+            iacResults.iso[regionEntry.iso!] = holiday.name;
+          }
+          if (regionEntry.code != "") {
+            iacResults.code[regionEntry.code!] = holiday.name;
+          }
           break; // Exit inner loop once a holiday is found for the region.
         }
       }
     }
   }
 
-  return result;
+  return iacResults;
 }
 
 void main() async {
@@ -111,18 +122,5 @@ class MyHomePageState extends ConsumerState<MyHomePage>
           width: MediaQuery.of(context).size.width,
           child: MyCountryPage(country: "world", isWorld: true),
         ));
-  }
-}
-
-class GermanyMap extends StatelessWidget {
-  const GermanyMap({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SimpleMap(
-      instructions: SMapGermany.instructions,
-    );
   }
 }

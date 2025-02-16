@@ -22,11 +22,13 @@ class AllStateHolidays {
 
 @JsonSerializable()
 class StateHolidays {
-  final String iso;
+  final String? iso;
+  final String? code;
   final List<Holiday> holidays;
   // Add other relevant data like title, description, etc.
   StateHolidays({
     required this.iso,
+    required this.code,
     required this.holidays,
   });
 
