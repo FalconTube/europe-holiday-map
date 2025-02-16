@@ -9,8 +9,10 @@ import 'package:holiday_map/providers/single_country_provider.dart';
 
 class MyCountryPage extends ConsumerWidget {
   final String country;
+  final bool isWorld;
 
-  const MyCountryPage({super.key, required this.country});
+  const MyCountryPage(
+      {super.key, required this.country, required this.isWorld});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final data = ref.watch(singleCountryProvider(country));
@@ -41,10 +43,18 @@ class MyCountryPage extends ConsumerWidget {
                         key: Key(data.properties.toString()),
                         colors: data.keyValuesPaires,
                         instructions: data.instruction,
-                        callback: (id, name, tapDetails) {},
+                        callback: (id, name, tapDetails) {
+                          if (country != "world") return;
+                          if (id == "") return;
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return MyCountryPage(country: id, isWorld: false);
+                          }));
+                        },
                       ),
                     ))),
-                    if (MediaQuery.of(context).size.width > 800)
+                    if (MediaQuery.of(context).size.width > 800 &&
+                        isWorld == false)
                       SizedBox(
                           width: 320,
                           height: MediaQuery.of(context).size.height,

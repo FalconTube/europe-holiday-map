@@ -37,15 +37,15 @@ Map<String, dynamic> _$StateHolidaysToJson(StateHolidays instance) =>
 Holiday _$HolidayFromJson(Map<String, dynamic> json) => Holiday(
       start: DateTime.parse(json['start'] as String),
       end: DateTime.parse(json['end'] as String),
-      nameDE: json['name_de'] as String,
-      nameEN: json['name_en'] as String,
+      name: json['name'] as String,
+      nameEN: json['name_en'] as String?,
       type: json['hol_type'] as String,
     );
 
 Map<String, dynamic> _$HolidayToJson(Holiday instance) => <String, dynamic>{
       'start': instance.start.toIso8601String(),
       'end': instance.end.toIso8601String(),
-      'name_de': instance.nameDE,
+      'name': instance.name,
       'name_en': instance.nameEN,
       'hol_type': instance.type,
     };

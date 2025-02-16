@@ -35,9 +35,9 @@ Map<String, String?> findHolidaysForDate(
   // Sometimes you just have to do a long for loop...
   // Find all holidays in all subdivisions in all countries
   for (final countryEntry in allCountryEntries) {
-    Log.log("Compare: ${countryEntry.country}, input: $country");
     if (countryEntry.country != country) continue;
     for (final regionEntry in countryEntry.stateHolidays) {
+      Log.log(regionEntry.iso);
       for (final holiday in regionEntry.holidays) {
         final startDate = holiday.start;
         final endDate = holiday.end;
@@ -95,7 +95,7 @@ class MyHomePageState extends ConsumerState<MyHomePage>
 
   @override
   void initState() {
-    controller = TabController(length: 2, initialIndex: 0, vsync: this);
+    controller = TabController(length: 1, initialIndex: 0, vsync: this);
     super.initState();
   }
 
@@ -103,35 +103,13 @@ class MyHomePageState extends ConsumerState<MyHomePage>
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('Holiday Map'),
-            elevation: 8,
-            bottom: TabBar(controller: controller, tabs: [
-              ListTile(title: Center(child: Text('Germany'))),
-              ListTile(title: Center(child: Text('Austria'))),
-            ])),
-        // floatingActionButton: FloatingActionButton(onPressed: () async {
-        //   final pickedDate = await showDatePicker(
-        //       context: context,
-        //       firstDate: DateTime.utc(2025),
-        //       lastDate: DateTime.utc(2028));
-        //   if (pickedDate == null) return;
-        //   Log.log(pickedDate.toString());
-        //   final out = findHolidaysForDate(pickedDate, "de");
-        //   await ref.read(singleCountryProvider("de").notifier).resetData();
-        //   await ref
-        //       .read(singleCountryProvider("de").notifier)
-        //       .updateMultipleIDs(out.keys.toList());
-        // }),
+          title: Text('Holiday Map'),
+          elevation: 8,
+        ),
         body: SizedBox(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          child: TabBarView(
-              physics: NeverScrollableScrollPhysics(),
-              controller: controller,
-              children: [
-                MyCountryPage(country: "de"),
-                MyCountryPage(country: "at")
-              ]),
+          child: MyCountryPage(country: "world", isWorld: true),
         ));
   }
 }

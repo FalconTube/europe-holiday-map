@@ -41,17 +41,17 @@ class StateHolidays {
 class Holiday {
   final DateTime start;
   final DateTime end;
-  @JsonKey(name: "name_de")
-  final String nameDE;
+  @JsonKey(name: "name")
+  final String name;
   @JsonKey(name: "name_en")
-  final String nameEN;
+  final String? nameEN;
   @JsonKey(name: "hol_type")
   final String type;
   // Add other relevant data like title, description, etc.
   Holiday(
       {required this.start,
       required this.end,
-      required this.nameDE,
+      required this.name,
       required this.nameEN,
       required this.type});
 

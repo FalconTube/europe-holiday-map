@@ -3,42 +3,58 @@ from enum import StrEnum
 from dataclasses import dataclass, asdict
 from typing import Dict, Optional
 import requests
-from pprint import pprint
+from pprint import pprint, pformat
 
 
-def parse_names_from_data(names_list: list[Dict]) -> tuple[str, str]:
+def parse_names_from_data(names_list: list[Dict]) -> tuple[str, Optional[str]]:
+    # Original language should always be first one
+    # TODO: Lookup language by country input
+    name = names_list[0]["text"]
+    # Now find optional english language
     name_en = None
-    name_de = None
     for entry in names_list:
         lang = entry["language"]
-        if lang == "DE":
-            name_de = entry["text"]
         if lang == "EN":
             name_en = entry["text"]
-    assert name_en is not None, f"Could not find English name in data: {names_list}"
-    assert name_de is not None, f"Could not find German name in data: {names_list}"
-    return name_en, name_de
+    assert name is not None, (
+        f"Could not find default language name in data: {names_list}"
+    )
+    return name, name_en
 
 
 class HolidayType(StrEnum):
     PUBLIC = "Public"
     SCHOOL = "School"
+    OTHER = "Other"
 
 
 @dataclass
 class Country:
     iso: str
-    name_en: str
-    name_de: str
+    name: str
+    name_en: Optional[str]
 
     @classmethod
     def from_dict(cls, data: Dict):
         iso = data.get("isoCode")
+        code = data.get("code")
         names_list: list[dict[str, str]] = data["name"]
-        name_en, name_de = parse_names_from_data(names_list)
-        assert iso is not None, f"Could not find key 'isoCode' in data: {data}"
+        name, name_en = parse_names_from_data(names_list)
+        # prefer iso
+        # if iso is None:
+        #     assert code is not None, (
+        #         f"Could not find any keys 'isoCode', 'code' in data: {pformat(data)}"
+        #     )
+        #     iso = code
+        # prefer code
+        if code is None:
+            assert iso is not None, (
+                f"Could not find any keys 'isoCode', 'code' in data: {pformat(data)}"
+            )
+            code = iso
 
-        return cls(iso=iso, name_en=name_en, name_de=name_de)
+        return cls(iso=code, name_en=name_en, name=name)
+        # return cls(iso=iso, name_en=name_en, name=name)
 
 
 @dataclass
@@ -53,7 +69,7 @@ class Subdivision(Country):
         return cls(
             iso=base_data.iso,
             name_en=base_data.name_en,
-            name_de=base_data.name_de,
+            name=base_data.name,
             short_name=short_name,
         )
 
@@ -62,9 +78,9 @@ class Subdivision(Country):
 class Holiday:
     start: str
     end: str
-    name_en: str
-    name_de: str
-    hol_type: HolidayType
+    name: str
+    name_en: Optional[str]
+    hol_type: Optional[HolidayType]
 
     @classmethod
     def from_dict(cls, data: Dict):
@@ -75,21 +91,23 @@ class Holiday:
         assert end is not None, f"Could not find key 'endDate' in data: {data}"
         # Names
         names_list: list[dict[str, str]] = data["name"]
-        name_en, name_de = parse_names_from_data(names_list)
+        name, name_en = parse_names_from_data(names_list)
         # Type
         hol_type_str = data.get("type")
         assert hol_type_str is not None, f"Could not find key 'type' in data: {data}"
+        if hol_type_str not in ["Public", "School"]:
+            hol_type_str = "Other"
         try:
             holiday_type = HolidayType(hol_type_str)
         except ValueError:
             raise ValueError(
-                f"Invalid holidayType: {hol_type_str}. Must be 'public' or 'shool'"
+                f"Invalid holidayType: {hol_type_str}. Must be 'public' or 'school'"
             )
         return cls(
             start=start,
             end=end,
             name_en=name_en,
-            name_de=name_de,
+            name=name,
             hol_type=holiday_type,
         )
 
@@ -152,22 +170,23 @@ def get_holidays(
 
 
 if __name__ == "__main__":
-    countries = ["DE", "AT"]
+    # countries = get_countries()
+    countries = [Country(iso="PL", name="Espania", name_en="Spain")]
     country_list = []
-    for country_code in countries:
+    for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
-        subs = get_subdivions(country_code)
+        subs = get_subdivions(country.iso)
         for sub in subs:
             sub_hols_list: list[Holiday] = []
-            school_hols = get_holidays(HolidayType.SCHOOL, country_code, sub.iso)
-            pub_hols = get_holidays(HolidayType.PUBLIC, country_code, sub.iso)
+            school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.iso)
+            pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.iso)
             sub_hols_list.extend(school_hols)
             sub_hols_list.extend(pub_hols)
             sub_holidays = SubdivionHolidays(iso=sub.iso, holidays=sub_hols_list)
             all_hols_list.append(sub_holidays)
         # to dataclass
         all_hols = AllSubdivionHolidays(
-            state_holidays=all_hols_list, country=country_code.lower()
+            state_holidays=all_hols_list, country=country.iso.lower()
         )
         country_list.append(asdict(all_hols))
 
