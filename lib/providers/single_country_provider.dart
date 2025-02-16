@@ -5,17 +5,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:countries_world_map/countries_world_map.dart';
 import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/main.dart';
 
 // Map for access of data
 class MapCountryData {
   final String country;
   String instruction;
+  // List<String> codes;
   final List<Map<String, dynamic>> properties;
   Map<String, Color?> keyValuesPaires;
 
   MapCountryData({
     required this.country,
     required this.instruction,
+    // required this.codes,
     required this.properties,
     required this.keyValuesPaires,
   });
@@ -50,9 +53,24 @@ class SingleCountryProvider extends StateNotifier<MapCountryData> {
         keyValuesPaires: state.keyValuesPaires);
   }
 
-  Future<void> updateMultipleIDs(List<String> ids) async {
-    if (ids.isEmpty) return;
-    for (final id in ids) {
+  // Future<void> updateMultipleIDs(List<String> ids) async {
+  Future<void> updateMultipleIDs(IsoAndCodeResults potentialIds) async {
+    if (potentialIds.iso.isEmpty && potentialIds.code.isEmpty) return;
+
+    // Check if iso or normal code
+    final countryCodes = getCodes(state.country);
+    bool isIso = true;
+    for (final code in countryCodes) {
+      if (potentialIds.code.keys.toList().contains(code)) {
+        // Found normal code
+        isIso = false;
+
+        break;
+      }
+    }
+    Map<String, String?> codesToUse =
+        isIso ? potentialIds.iso : potentialIds.code;
+    for (final id in codesToUse.keys.toList()) {
       if (id == "") continue;
       int i = state.properties.indexWhere((element) => element['id'] == id);
 
@@ -479,6 +497,421 @@ class SingleCountryProvider extends StateNotifier<MapCountryData> {
 
       default:
         return 'NOT SUPPORTED';
+    }
+  }
+
+  static List<String> getCodes(String id) {
+    switch (id) {
+      case 'world':
+        return SMapWorldColors().toMap().keys.toList();
+
+      case 'ar':
+        return SMapArgentinaColors().toMap().keys.toList();
+
+      case 'at':
+        return SMapAustriaColors().toMap().keys.toList();
+
+      case 'ad':
+        return SMapAndorraColors().toMap().keys.toList();
+
+      case 'ao':
+        return SMapAngolaColors().toMap().keys.toList();
+
+      case 'am':
+        return SMapArmeniaColors().toMap().keys.toList();
+
+      case 'au':
+        return SMapAustraliaColors().toMap().keys.toList();
+
+      case 'az':
+        return SMapAzerbaijanColors().toMap().keys.toList();
+
+      case 'bs':
+        return SMapBahamasColors().toMap().keys.toList();
+
+      case 'bh':
+        return SMapBahrainColors().toMap().keys.toList();
+
+      case 'bd':
+        return SMapBangladeshColors().toMap().keys.toList();
+
+      case 'by':
+        return SMapBelarusColors().toMap().keys.toList();
+
+      case 'be':
+        return SMapBelgiumColors().toMap().keys.toList();
+
+      case 'bt':
+        return SMapBhutanColors().toMap().keys.toList();
+
+      case 'bo':
+        return SMapBoliviaColors().toMap().keys.toList();
+
+      case 'bw':
+        return SMapBotswanaColors().toMap().keys.toList();
+
+      case 'br':
+        return SMapBrazilColors().toMap().keys.toList();
+
+      case 'bn':
+        return SMapBruneiColors().toMap().keys.toList();
+
+      case 'bg':
+        return SMapBulgariaColors().toMap().keys.toList();
+
+      case 'bf':
+        return SMapBurkinaFasoColors().toMap().keys.toList();
+
+      case 'bi':
+        return SMapBurundiColors().toMap().keys.toList();
+
+      case 'ca':
+        return SMapCanadaColors().toMap().keys.toList();
+
+      case 'cm':
+        return SMapCameroonColors().toMap().keys.toList();
+
+      case 'cf':
+        return SMapCentralAfricanRepublicColors().toMap().keys.toList();
+
+      case 'cv':
+        return SMapCapeVerdeColors().toMap().keys.toList();
+
+      case 'td':
+        return SMapChadColors().toMap().keys.toList();
+
+      case 'cn':
+        return SMapChinaColors().toMap().keys.toList();
+
+      case 'ch':
+        return SMapSwitzerlandColors().toMap().keys.toList();
+
+      case 'cd':
+        return SMapCongoDRColors().toMap().keys.toList();
+
+      case 'cg':
+        return SMapCongoBrazzavilleColors().toMap().keys.toList();
+
+      case 'co':
+        return SMapColombiaColors().toMap().keys.toList();
+
+      case 'cr':
+        return SMapCostaRicaColors().toMap().keys.toList();
+
+      case 'hr':
+        return SMapCroatiaColors().toMap().keys.toList();
+
+      case 'cu':
+        return SMapCubaColors().toMap().keys.toList();
+
+      case 'cl':
+        return SMapChileColors().toMap().keys.toList();
+
+      case 'ci':
+        return SMapIvoryCoastColors().toMap().keys.toList();
+
+      case 'cy':
+        return SMapCyprusColors().toMap().keys.toList();
+
+      case 'cz':
+        return SMapCzechRepublicColors().toMap().keys.toList();
+
+      case 'dk':
+        return SMapDenmarkColors().toMap().keys.toList();
+
+      case 'dj':
+        return SMapDjiboutiColors().toMap().keys.toList();
+
+      case 'do':
+        return SMapDominicanRepublicColors().toMap().keys.toList();
+
+      case 'ec':
+        return SMapEcuadorColors().toMap().keys.toList();
+
+      case 'es':
+        return SMapSpainColors().toMap().keys.toList();
+
+      case 'eg':
+        return SMapEgyptColors().toMap().keys.toList();
+
+      case 'et':
+        return SMapEthiopiaColors().toMap().keys.toList();
+
+      case 'sv':
+        return SMapElSalvadorColors().toMap().keys.toList();
+
+      case 'ee':
+        return SMapEstoniaColors().toMap().keys.toList();
+
+      case 'fo':
+        return SMapFaroeIslandsColors().toMap().keys.toList();
+
+      case 'fi':
+        return SMapFinlandColors().toMap().keys.toList();
+
+      case 'fr':
+        return SMapFranceColors().toMap().keys.toList();
+
+      case 'gb':
+        return SMapUnitedKingdomColors().toMap().keys.toList();
+
+      case 'ge':
+        return SMapGeorgiaColors().toMap().keys.toList();
+
+      case 'de':
+        return SMapGermanyColors().toMap().keys.toList();
+
+      case 'gr':
+        return SMapGreeceColors().toMap().keys.toList();
+
+      case 'gt':
+        return SMapGuatemalaColors().toMap().keys.toList();
+
+      case 'gn':
+        return SMapGuineaColors().toMap().keys.toList();
+
+      case 'hi':
+        return SMapHaitiColors().toMap().keys.toList();
+
+      case 'hk':
+        return SMapHongKongColors().toMap().keys.toList();
+
+      case 'hn':
+        return SMapHondurasColors().toMap().keys.toList();
+
+      case 'hu':
+        return SMapHungaryColors().toMap().keys.toList();
+
+      case 'in':
+        return SMapIndiaColors().toMap().keys.toList();
+
+      case 'id':
+        return SMapIndonesiaColors().toMap().keys.toList();
+
+      case 'il':
+        return SMapIsraelColors().toMap().keys.toList();
+
+      case 'ir':
+        return SMapIranColors().toMap().keys.toList();
+
+      case 'iq':
+        return SMapIraqColors().toMap().keys.toList();
+
+      case 'ie':
+        return SMapIrelandColors().toMap().keys.toList();
+
+      case 'it':
+        return SMapItalyColors().toMap().keys.toList();
+
+      case 'jm':
+        return SMapJamaicaColors().toMap().keys.toList();
+
+      case 'jp':
+        return SMapJapanColors().toMap().keys.toList();
+
+      case 'kz':
+        return SMapKazakhstanColors().toMap().keys.toList();
+
+      case 'ke':
+        return SMapKenyaColors().toMap().keys.toList();
+
+      case 'xk':
+        return SMapKosovoColors().toMap().keys.toList();
+
+      case 'kg':
+        return SMapKyrgyzstanColors().toMap().keys.toList();
+
+      case 'la':
+        return SMapLaosColors().toMap().keys.toList();
+
+      case 'lv':
+        return SMapLatviaColors().toMap().keys.toList();
+
+      case 'li':
+        return SMapLiechtensteinColors().toMap().keys.toList();
+
+      case 'lt':
+        return SMapLithuaniaColors().toMap().keys.toList();
+
+      case 'lu':
+        return SMapLuxembourgColors().toMap().keys.toList();
+
+      case 'mk':
+        return SMapMacedoniaColors().toMap().keys.toList();
+
+      case 'ml':
+        return SMapMaliColors().toMap().keys.toList();
+
+      case 'mt':
+        return SMapMaltaColors().toMap().keys.toList();
+
+      case 'mz':
+        return SMapMozambiqueColors().toMap().keys.toList();
+
+      case 'mx':
+        return SMapMexicoColors().toMap().keys.toList();
+
+      case 'md':
+        return SMapMoldovaColors().toMap().keys.toList();
+
+      case 'me':
+        return SMapMontenegroColors().toMap().keys.toList();
+
+      case 'ma':
+        return SMapMoroccoColors().toMap().keys.toList();
+
+      case 'mm':
+        return SMapMyanmarColors().toMap().keys.toList();
+
+      case 'my':
+        return SMapMalaysiaColors().toMap().keys.toList();
+
+      case 'na':
+        return SMapNamibiaColors().toMap().keys.toList();
+
+      case 'np':
+        return SMapNepalColors().toMap().keys.toList();
+
+      case 'nl':
+        return SMapNetherlandsColors().toMap().keys.toList();
+
+      case 'nz':
+        return SMapNewZealandColors().toMap().keys.toList();
+
+      case 'ni':
+        return SMapNicaraguaColors().toMap().keys.toList();
+
+      case 'ng':
+        return SMapNigeriaColors().toMap().keys.toList();
+
+      case 'no':
+        return SMapNorwayColors().toMap().keys.toList();
+
+      case 'om':
+        return SMapOmanColors().toMap().keys.toList();
+
+      case 'ps':
+        return SMapPalestineColors().toMap().keys.toList();
+
+      case 'pk':
+        return SMapPakistanColors().toMap().keys.toList();
+
+      case 'ph':
+        return SMapPhilippinesColors().toMap().keys.toList();
+
+      case 'pa':
+        return SMapPanamaColors().toMap().keys.toList();
+
+      case 'pe':
+        return SMapPeruColors().toMap().keys.toList();
+
+      case 'pr':
+        return SMapPuertoRicoColors().toMap().keys.toList();
+
+      case 'py':
+        return SMapParaguayColors().toMap().keys.toList();
+
+      case 'pl':
+        return SMapPolandColors().toMap().keys.toList();
+
+      case 'pt':
+        return SMapPortugalColors().toMap().keys.toList();
+
+      case 'qa':
+        return SMapQatarColors().toMap().keys.toList();
+
+      case 'ro':
+        return SMapRomaniaColors().toMap().keys.toList();
+
+      case 'ru':
+        return SMapRussiaColors().toMap().keys.toList();
+
+      case 'rw':
+        return SMapRwandaColors().toMap().keys.toList();
+
+      case 'sa':
+        return SMapSaudiArabiaColors().toMap().keys.toList();
+
+      case 'rs':
+        return SMapSerbiaColors().toMap().keys.toList();
+
+      case 'sd':
+        return SMapSudanColors().toMap().keys.toList();
+
+      case 'sg':
+        return SMapSingaporeColors().toMap().keys.toList();
+
+      case 'sl':
+        return SMapSierraLeoneColors().toMap().keys.toList();
+
+      case 'sk':
+        return SMapSlovakiaColors().toMap().keys.toList();
+
+      case 'si':
+        return SMapSloveniaColors().toMap().keys.toList();
+
+      case 'kr':
+        return SMapSouthKoreaColors().toMap().keys.toList();
+
+      case 'lk':
+        return SMapSriLankaColors().toMap().keys.toList();
+
+      case 'se':
+        return SMapSwedenColors().toMap().keys.toList();
+
+      case 'sy':
+        return SMapSyriaColors().toMap().keys.toList();
+
+      case 'tw':
+        return SMapTaiwanColors().toMap().keys.toList();
+
+      case 'tj':
+        return SMapTajikistanColors().toMap().keys.toList();
+
+      case 'th':
+        return SMapThailandColors().toMap().keys.toList();
+
+      case 'tr':
+        return SMapTurkeyColors().toMap().keys.toList();
+
+      case 'ug':
+        return SMapUgandaColors().toMap().keys.toList();
+
+      case 'ua':
+        return SMapUkraineColors().toMap().keys.toList();
+
+      case 'ae':
+        return SMapUnitedArabEmiratesColors().toMap().keys.toList();
+
+      case 'us':
+        return SMapUnitedStatesColors().toMap().keys.toList();
+
+      case 'uy':
+        return SMapUruguayColors().toMap().keys.toList();
+
+      case 'uz':
+        return SMapUzbekistanColors().toMap().keys.toList();
+
+      case 've':
+        return SMapVenezuelaColors().toMap().keys.toList();
+
+      case 'vn':
+        return SMapVietnamColors().toMap().keys.toList();
+
+      case 'ye':
+        return SMapYemenColors().toMap().keys.toList();
+
+      case 'za':
+        return SMapSouthAfricaColors().toMap().keys.toList();
+
+      case 'zm':
+        return SMapZambiaColors().toMap().keys.toList();
+
+      case 'zw':
+        return SMapZimbabweColors().toMap().keys.toList();
+
+      default:
+        return [];
     }
   }
 

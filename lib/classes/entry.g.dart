@@ -22,7 +22,8 @@ Map<String, dynamic> _$AllStateHolidaysToJson(AllStateHolidays instance) =>
 
 StateHolidays _$StateHolidaysFromJson(Map<String, dynamic> json) =>
     StateHolidays(
-      iso: json['iso'] as String,
+      iso: json['iso'] as String?,
+      code: json['code'] as String?,
       holidays: (json['holidays'] as List<dynamic>)
           .map((e) => Holiday.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -31,6 +32,7 @@ StateHolidays _$StateHolidaysFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$StateHolidaysToJson(StateHolidays instance) =>
     <String, dynamic>{
       'iso': instance.iso,
+      'code': instance.code,
       'holidays': instance.holidays,
     };
 
