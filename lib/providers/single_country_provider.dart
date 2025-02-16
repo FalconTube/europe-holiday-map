@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:countries_world_map/countries_world_map.dart';
 import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/main.dart';
 
 // Map for access of data
 class MapCountryData {
@@ -50,9 +51,10 @@ class SingleCountryProvider extends StateNotifier<MapCountryData> {
         keyValuesPaires: state.keyValuesPaires);
   }
 
-  Future<void> updateMultipleIDs(List<String> ids) async {
-    if (ids.isEmpty) return;
-    for (final id in ids) {
+  // Future<void> updateMultipleIDs(List<String> ids) async {
+  Future<void> updateMultipleIDs(IsoAndCodeResults potentialIds) async {
+    if (potentialIds.iso.isEmpty && potentialIds.code.isEmpty) return;
+    for (final id in potentialIds.iso.keys) {
       if (id == "") continue;
       int i = state.properties.indexWhere((element) => element['id'] == id);
 
