@@ -30,7 +30,7 @@ class HolidayType(StrEnum):
 
 @dataclass
 class Country:
-    iso: Optional[str]
+    iso: str
     code: Optional[str]
     name: str
     name_en: Optional[str]
@@ -38,40 +38,35 @@ class Country:
     @classmethod
     def from_dict(cls, data: Dict):
         iso = data.get("isoCode")
+        assert iso is not None, f"Could not parse iso from country data: {data}"
         code = data.get("code")
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
-        # prefer iso
-        # if iso is None:
-        #     assert code is not None, (
-        #         f"Could not find any keys 'isoCode', 'code' in data: {pformat(data)}"
-        #     )
-        #     iso = code
-        # prefer code
-        # if code is None:
-        #     assert iso is not None, (
-        #         f"Could not find any keys 'isoCode', 'code' in data: {pformat(data)}"
-        #     )
-        #     code = iso
 
         return cls(iso=iso, code=code, name_en=name_en, name=name)
-        # return cls(iso=iso, name_en=name_en, name=name)
 
 
 @dataclass
-class Subdivision(Country):
+class Subdivision:
+    iso: Optional[str]
+    code: Optional[str]
+    name: str
+    name_en: Optional[str]
     short_name: str
 
     @classmethod
     def from_dict(cls, data: Dict):
-        base_data = Country.from_dict(data)
+        iso = data.get("isoCode")
+        code = data.get("code")
+        names_list: list[dict[str, str]] = data["name"]
+        name, name_en = parse_names_from_data(names_list)
         short_name = data.get("shortName")
         assert short_name is not None, f"Could not find key 'shortName' in data: {data}"
         return cls(
-            iso=base_data.iso,
-            code=base_data.code,
-            name_en=base_data.name_en,
-            name=base_data.name,
+            iso=iso,
+            code=code,
+            name_en=name_en,
+            name=name,
             short_name=short_name,
         )
 
@@ -174,31 +169,24 @@ def get_holidays(
 
 if __name__ == "__main__":
     countries = get_countries()
-    # countries = [Country(iso="PL", code="PL", name="Espania", name_en="Spain")]
+    # countries = [Country(iso="AT", code="AT", name="Espania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
-        # Prefer iso code, but use normal code otherwise
-        code_to_use = None
-        if country.iso:
-            code_to_use = country.iso
-        else:
-            code_to_use = country.code
-        assert code_to_use is not None, "County has neither iso, nor normal code"
-        subs = get_subdivions(code_to_use)
+        subs = get_subdivions(country.iso)
         for sub in subs:
             sub_hols_list: list[Holiday] = []
             # get via sub code first
-            school_hols = get_holidays(HolidayType.SCHOOL, code_to_use, sub.iso)
+            school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.code)
             if school_hols == []:
                 # if sub code does not return, then use iso
-                school_hols = get_holidays(HolidayType.SCHOOL, code_to_use, sub.code)
+                school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.iso)
             # if still empty, print it
             if school_hols == []:
                 print(f"School holidays empty for sub: {sub}")
-            pub_hols = get_holidays(HolidayType.PUBLIC, code_to_use, sub.iso)
+            pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.code)
             if pub_hols == []:
-                pub_hols = get_holidays(HolidayType.PUBLIC, code_to_use, sub.code)
+                pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.iso)
             if pub_hols == []:
                 print(f"Pub holidays empty for sub: {sub}")
             sub_hols_list.extend(school_hols)
@@ -210,7 +198,7 @@ if __name__ == "__main__":
             all_hols_list.append(sub_holidays)
         # to dataclass
         all_hols = AllSubdivionHolidays(
-            state_holidays=all_hols_list, country=code_to_use.lower()
+            state_holidays=all_hols_list, country=country.iso.lower()
         )
         country_list.append(asdict(all_hols))
 

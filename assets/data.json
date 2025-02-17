@@ -43,6 +43,13 @@
             "hol_type": "School"
           },
           {
+            "start": "2025-06-28",
+            "end": "2025-08-31",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
             "start": "2025-10-27",
             "end": "2025-10-31",
             "name": "Herbstferien",
@@ -322,6 +329,13 @@
             "hol_type": "School"
           },
           {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
             "start": "2025-10-27",
             "end": "2025-10-31",
             "name": "Herbstferien",
@@ -591,6 +605,13 @@
             "end": "2025-06-09",
             "name": "Pfingstferien",
             "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-28",
+            "end": "2025-08-31",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
             "hol_type": "School"
           },
           {
@@ -873,6 +894,13 @@
             "hol_type": "School"
           },
           {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
             "start": "2025-10-27",
             "end": "2025-10-31",
             "name": "Herbstferien",
@@ -1142,6 +1170,13 @@
             "end": "2025-06-09",
             "name": "Pfingstferien",
             "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
             "hol_type": "School"
           },
           {
@@ -1424,6 +1459,13 @@
             "hol_type": "School"
           },
           {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
             "start": "2025-10-27",
             "end": "2025-10-31",
             "name": "Herbstferien",
@@ -1700,6 +1742,13 @@
             "end": "2025-06-09",
             "name": "Pfingstferien",
             "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
             "hol_type": "School"
           },
           {
@@ -1982,6 +2031,13 @@
             "hol_type": "School"
           },
           {
+            "start": "2025-07-05",
+            "end": "2025-09-07",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
             "start": "2025-10-27",
             "end": "2025-10-31",
             "name": "Herbstferien",
@@ -2251,6 +2307,13 @@
             "end": "2025-06-09",
             "name": "Pfingstferien",
             "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-28",
+            "end": "2025-08-31",
+            "name": "Sommerferien",
+            "name_en": "Summer Holidays",
             "hol_type": "School"
           },
           {
@@ -22749,6 +22812,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Vendredi saint",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-04-21",
             "end": "2025-04-21",
             "name": "Lundi de P\u00e2ques",
@@ -22819,10 +22889,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "2\u00e8me jour de No\u00ebl",
+            "name_en": "2nd day of Christmas",
+            "hol_type": "Public"
+          },
+          {
             "start": "2026-01-01",
             "end": "2026-01-01",
             "name": "Jour de l'an",
             "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Vendredi saint",
+            "name_en": "Good Friday",
             "hol_type": "Public"
           },
           {
@@ -22893,6 +22977,13 @@
             "end": "2026-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "2\u00e8me jour de No\u00ebl",
+            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -23007,6 +23098,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-27",
+            "end": "2025-05-27",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-05-29",
             "end": "2025-05-29",
             "name": "Ascension",
@@ -23095,6 +23193,13 @@
             "end": "2026-05-25",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-27",
+            "end": "2026-05-27",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -23251,6 +23356,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-10",
+            "end": "2025-06-10",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-07-14",
             "end": "2025-07-14",
             "name": "F\u00eate nationale",
@@ -23325,6 +23437,13 @@
             "end": "2026-05-25",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-10",
+            "end": "2026-06-10",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -24178,6 +24297,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-22",
+            "end": "2025-05-22",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-05-29",
             "end": "2025-05-29",
             "name": "Ascension",
@@ -24259,6 +24385,13 @@
             "end": "2026-05-14",
             "name": "Ascension",
             "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-22",
+            "end": "2026-05-22",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -25600,6 +25733,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-20",
+            "end": "2025-12-20",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-12-25",
             "end": "2025-12-25",
             "name": "No\u00ebl",
@@ -25674,6 +25814,13 @@
             "end": "2026-11-11",
             "name": "Armistice 1918",
             "name_en": "Armistice Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-20",
+            "end": "2026-12-20",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26011,6 +26158,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-27",
+            "end": "2025-04-27",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "F\u00eate du Travail",
@@ -26085,6 +26239,13 @@
             "end": "2026-04-06",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-27",
+            "end": "2026-04-27",
+            "name": "Abolition de l'esclavage",
+            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26234,24 +26395,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-04-18",
-            "end": "2025-04-18",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-04-21",
             "end": "2025-04-21",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-04-27",
-            "end": "2025-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26269,20 +26416,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-05-22",
-            "end": "2025-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-05-27",
-            "end": "2025-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-05-29",
             "end": "2025-05-29",
             "name": "Ascension",
@@ -26294,13 +26427,6 @@
             "end": "2025-06-09",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-06-10",
-            "end": "2025-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26318,13 +26444,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-10-09",
-            "end": "2025-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Toussaint",
@@ -26339,24 +26458,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-12-20",
-            "end": "2025-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-12-25",
             "end": "2025-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-12-26",
-            "end": "2025-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -26367,24 +26472,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-04-03",
-            "end": "2026-04-03",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-04-06",
             "end": "2026-04-06",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-04-27",
-            "end": "2026-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26409,31 +26500,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-05-22",
-            "end": "2026-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-05-25",
             "end": "2026-05-25",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-05-27",
-            "end": "2026-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-06-10",
-            "end": "2026-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26451,13 +26521,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-10-09",
-            "end": "2026-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-11-01",
             "end": "2026-11-01",
             "name": "Toussaint",
@@ -26472,24 +26535,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-12-20",
-            "end": "2026-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-12-25",
             "end": "2026-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-12-26",
-            "end": "2026-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -26576,24 +26625,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-04-18",
-            "end": "2025-04-18",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-04-21",
             "end": "2025-04-21",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-04-27",
-            "end": "2025-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26611,20 +26646,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-05-22",
-            "end": "2025-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-05-27",
-            "end": "2025-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-05-29",
             "end": "2025-05-29",
             "name": "Ascension",
@@ -26636,13 +26657,6 @@
             "end": "2025-06-09",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-06-10",
-            "end": "2025-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26660,13 +26674,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-10-09",
-            "end": "2025-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Toussaint",
@@ -26681,24 +26688,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-12-20",
-            "end": "2025-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-12-25",
             "end": "2025-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-12-26",
-            "end": "2025-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -26709,24 +26702,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-04-03",
-            "end": "2026-04-03",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-04-06",
             "end": "2026-04-06",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-04-27",
-            "end": "2026-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26751,31 +26730,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-05-22",
-            "end": "2026-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-05-25",
             "end": "2026-05-25",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-05-27",
-            "end": "2026-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-06-10",
-            "end": "2026-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26793,13 +26751,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-10-09",
-            "end": "2026-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-11-01",
             "end": "2026-11-01",
             "name": "Toussaint",
@@ -26814,24 +26765,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-12-20",
-            "end": "2026-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-12-25",
             "end": "2026-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-12-26",
-            "end": "2026-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -26918,24 +26855,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-04-18",
-            "end": "2025-04-18",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-04-21",
             "end": "2025-04-21",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-04-27",
-            "end": "2025-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -26953,20 +26876,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-05-22",
-            "end": "2025-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-05-27",
-            "end": "2025-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-05-29",
             "end": "2025-05-29",
             "name": "Ascension",
@@ -26978,13 +26887,6 @@
             "end": "2025-06-09",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-06-10",
-            "end": "2025-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -27002,13 +26904,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-10-09",
-            "end": "2025-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Toussaint",
@@ -27023,24 +26918,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2025-12-20",
-            "end": "2025-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2025-12-25",
             "end": "2025-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2025-12-26",
-            "end": "2025-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -27051,24 +26932,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-04-03",
-            "end": "2026-04-03",
-            "name": "Vendredi saint",
-            "name_en": "Good Friday",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-04-06",
             "end": "2026-04-06",
             "name": "Lundi de P\u00e2ques",
             "name_en": "Easter Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-04-27",
-            "end": "2026-04-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -27093,31 +26960,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-05-22",
-            "end": "2026-05-22",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-05-25",
             "end": "2026-05-25",
             "name": "Lundi de Pentec\u00f4te",
             "name_en": "Pentecost Monday",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-05-27",
-            "end": "2026-05-27",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-06-10",
-            "end": "2026-06-10",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
             "hol_type": "Public"
           },
           {
@@ -27135,13 +26981,6 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-10-09",
-            "end": "2026-10-09",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-11-01",
             "end": "2026-11-01",
             "name": "Toussaint",
@@ -27156,24 +26995,10 @@
             "hol_type": "Public"
           },
           {
-            "start": "2026-12-20",
-            "end": "2026-12-20",
-            "name": "Abolition de l'esclavage",
-            "name_en": "Abolition of slavery",
-            "hol_type": "Public"
-          },
-          {
             "start": "2026-12-25",
             "end": "2026-12-25",
             "name": "No\u00ebl",
             "name_en": "Christmas Day",
-            "hol_type": "Public"
-          },
-          {
-            "start": "2026-12-26",
-            "end": "2026-12-26",
-            "name": "2\u00e8me jour de No\u00ebl",
-            "name_en": "2nd day of Christmas",
             "hol_type": "Public"
           },
           {
@@ -27897,6 +27722,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-09-19",
+            "end": "2025-09-19",
+            "name": "San Gennaro",
+            "name_en": "St. Januarius",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Ognissanti",
@@ -27971,6 +27803,13 @@
             "end": "2026-08-15",
             "name": "Ferragosto",
             "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-19",
+            "end": "2026-09-19",
+            "name": "San Gennaro",
+            "name_en": "St. Januarius",
             "hol_type": "Public"
           },
           {
@@ -28085,6 +27924,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-10-04",
+            "end": "2025-10-04",
+            "name": "San Petronio",
+            "name_en": "St. Petronius",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Ognissanti",
@@ -28159,6 +28005,13 @@
             "end": "2026-08-15",
             "name": "Ferragosto",
             "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-04",
+            "end": "2026-10-04",
+            "name": "San Petronio",
+            "name_en": "St. Petronius",
             "hol_type": "Public"
           },
           {
@@ -28294,6 +28147,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-11-03",
+            "end": "2025-11-03",
+            "name": "San Giusto",
+            "name_en": "St. Justus",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-12-08",
             "end": "2025-12-08",
             "name": "Immacolata Concezione",
@@ -28368,6 +28228,13 @@
             "end": "2026-11-01",
             "name": "Ognissanti",
             "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-03",
+            "end": "2026-11-03",
+            "name": "San Giusto",
+            "name_en": "St. Justus",
             "hol_type": "Public"
           },
           {
@@ -28468,6 +28335,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Santi Pietro e Paolo",
+            "name_en": "Saints Peter and Paul",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Ferragosto",
@@ -28542,6 +28416,13 @@
             "end": "2026-06-02",
             "name": "Festa della Repubblica",
             "name_en": "Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Santi Pietro e Paolo",
+            "name_en": "Saints Peter and Paul",
             "hol_type": "Public"
           },
           {
@@ -28663,6 +28544,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Ferragosto",
@@ -28737,6 +28625,13 @@
             "end": "2026-06-02",
             "name": "Festa della Repubblica",
             "name_en": "Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
             "hol_type": "Public"
           },
           {
@@ -28872,6 +28767,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-07",
+            "end": "2025-12-07",
+            "name": "Sant'Ambrogio",
+            "name_en": "St. Ambrose",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-12-08",
             "end": "2025-12-08",
             "name": "Immacolata Concezione",
@@ -28946,6 +28848,13 @@
             "end": "2026-11-01",
             "name": "Ognissanti",
             "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-07",
+            "end": "2026-12-07",
+            "name": "Sant'Ambrogio",
+            "name_en": "St. Ambrose",
             "hol_type": "Public"
           },
           {
@@ -29478,6 +29387,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Ferragosto",
@@ -29552,6 +29468,13 @@
             "end": "2026-06-02",
             "name": "Festa della Repubblica",
             "name_en": "Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
             "hol_type": "Public"
           },
           {
@@ -29687,6 +29610,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-06",
+            "end": "2025-12-06",
+            "name": "San Nicola",
+            "name_en": "St. Nicholas",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-12-08",
             "end": "2025-12-08",
             "name": "Immacolata Concezione",
@@ -29761,6 +29691,13 @@
             "end": "2026-11-01",
             "name": "Ognissanti",
             "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-06",
+            "end": "2026-12-06",
+            "name": "San Nicola",
+            "name_en": "St. Nicholas",
             "hol_type": "Public"
           },
           {
@@ -29861,6 +29798,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-28",
+            "end": "2025-04-28",
+            "name": "Sa Die de Sa Sardigna",
+            "name_en": "Sardinia's Day",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Festa del lavoro",
@@ -29879,6 +29823,13 @@
             "end": "2025-08-15",
             "name": "Ferragosto",
             "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-30",
+            "end": "2025-10-30",
+            "name": "San Saturnino",
+            "name_en": "St. Saturninus",
             "hol_type": "Public"
           },
           {
@@ -29938,6 +29889,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-28",
+            "end": "2026-04-28",
+            "name": "Sa Die de Sa Sardigna",
+            "name_en": "Sardinia's Day",
+            "hol_type": "Public"
+          },
+          {
             "start": "2026-05-01",
             "end": "2026-05-01",
             "name": "Festa del lavoro",
@@ -29956,6 +29914,13 @@
             "end": "2026-08-15",
             "name": "Ferragosto",
             "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-30",
+            "end": "2026-10-30",
+            "name": "San Saturnino",
+            "name_en": "St. Saturninus",
             "hol_type": "Public"
           },
           {
@@ -30063,6 +30028,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-07-15",
+            "end": "2025-07-15",
+            "name": "Santa Rosalia",
+            "name_en": "Saint Rosalia",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Ferragosto",
@@ -30137,6 +30109,13 @@
             "end": "2026-06-02",
             "name": "Festa della Repubblica",
             "name_en": "Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-07-15",
+            "end": "2026-07-15",
+            "name": "Santa Rosalia",
+            "name_en": "Saint Rosalia",
             "hol_type": "Public"
           },
           {
@@ -30251,6 +30230,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Ferragosto",
@@ -30325,6 +30311,13 @@
             "end": "2026-06-02",
             "name": "Festa della Repubblica",
             "name_en": "Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "San Giovanni Battista",
+            "name_en": "St. John the Baptist",
             "hol_type": "Public"
           },
           {
@@ -31101,6 +31094,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-25",
+            "end": "2025-04-25",
+            "name": "Festa di San Marco",
+            "name_en": "Feast of St Mark",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Festa del lavoro",
@@ -31175,6 +31175,13 @@
             "end": "2026-04-25",
             "name": "Anniversario della liberazione d'Italia",
             "name_en": "Liberation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-25",
+            "end": "2026-04-25",
+            "name": "Festa di San Marco",
+            "name_en": "Feast of St Mark",
             "hol_type": "Public"
           },
           {
@@ -35912,6 +35919,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2025-04-11",
+            "end": "2025-04-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-18",
             "end": "2025-04-18",
             "name": "Sexta-feira Santa",
@@ -35924,6 +35938,20 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-22",
+            "end": "2025-04-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-23",
+            "end": "2025-04-23",
+            "name": "Dia de S\u00e3o Jorge",
+            "name_en": "St George's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-04-25",
@@ -35947,6 +35975,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Dia dos A\u00e7ores",
+            "name_en": "Azores Day",
+            "hol_type": "Public"
+          },
+          {
             "start": "2025-06-10",
             "end": "2025-06-10",
             "name": "Dia de Portugal / de Cam\u00f5es e das Comunidades Portuguesas",
@@ -35954,11 +35989,74 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-20",
+            "end": "2025-06-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-18",
+            "end": "2025-07-18",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-21",
+            "end": "2025-07-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-22",
+            "end": "2025-07-22",
+            "name": "Dia de Santa Maria Madalena",
+            "name_en": "St Mary Magdalene's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-11",
+            "end": "2025-08-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-16",
+            "end": "2025-08-16",
+            "name": "Dia de S\u00e3o Roque",
+            "name_en": "St Roch's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -36024,6 +36122,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-11",
+            "end": "2026-04-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-22",
+            "end": "2026-04-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-23",
+            "end": "2026-04-23",
+            "name": "Dia de S\u00e3o Jorge",
+            "name_en": "St George's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -36038,11 +36157,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Dia dos A\u00e7ores",
+            "name_en": "Azores Day",
+            "hol_type": "Public"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-05",
+            "end": "2026-06-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-10",
@@ -36052,11 +36185,81 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-20",
+            "end": "2026-06-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-18",
+            "end": "2026-07-18",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-20",
+            "end": "2026-07-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-22",
+            "end": "2026-07-22",
+            "name": "Dia de Santa Maria Madalena",
+            "name_en": "St Mary Magdalene's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-11",
+            "end": "2026-08-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-16",
+            "end": "2026-08-16",
+            "name": "Dia de S\u00e3o Roque",
+            "name_en": "St Roch's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -36205,6 +36408,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-20",
+            "end": "2025-01-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -36226,6 +36436,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -36240,11 +36457,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-02",
+            "end": "2025-05-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-12",
+            "end": "2025-05-12",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-17",
+            "end": "2025-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-04",
+            "end": "2025-06-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Segunda-feira ap\u00f3s o Domingo de Pentecostes",
+            "name_en": "Whit Monday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-10",
@@ -36254,6 +36513,41 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-16",
+            "end": "2025-06-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Crist\u00f3v\u00e3o",
+            "name_en": "St Christopher's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-11",
+            "end": "2025-08-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -36261,11 +36555,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-18",
+            "end": "2025-08-18",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-21",
+            "end": "2025-09-21",
+            "name": "Dia de S\u00e3o Mateus",
+            "name_en": "St Matthew's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-11",
+            "end": "2025-10-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -36303,6 +36625,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-01-20",
+            "end": "2026-01-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-02-17",
             "end": "2026-02-17",
             "name": "Carnaval",
@@ -36324,6 +36653,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -36338,11 +36674,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-02",
+            "end": "2026-05-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-12",
+            "end": "2026-05-12",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-17",
+            "end": "2026-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Segunda-feira ap\u00f3s o Domingo de Pentecostes",
+            "name_en": "Whit Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-04",
+            "end": "2026-06-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-10",
@@ -36352,6 +36730,41 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-16",
+            "end": "2026-06-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Crist\u00f3v\u00e3o",
+            "name_en": "St Christopher's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -36359,11 +36772,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-17",
+            "end": "2026-08-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-21",
+            "end": "2026-09-21",
+            "name": "Dia de S\u00e3o Mateus",
+            "name_en": "St Matthew's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-11",
+            "end": "2026-10-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -36512,6 +36953,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2025-03-19",
+            "end": "2025-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-18",
             "end": "2025-04-18",
             "name": "Sexta-feira Santa",
@@ -36524,6 +36972,13 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-04-25",
@@ -36540,6 +36995,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-20",
+            "end": "2025-05-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-25",
+            "end": "2025-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -36554,6 +37023,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-10",
+            "end": "2025-07-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-10",
+            "end": "2025-08-10",
+            "name": "Dia de S\u00e3o Louren\u00e7o",
+            "name_en": "St Lawrence's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -36561,11 +37058,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-22",
+            "end": "2025-08-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-24",
+            "end": "2025-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-29",
+            "end": "2025-08-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-15",
+            "end": "2025-10-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -36610,6 +37135,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-03-19",
+            "end": "2026-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -36622,6 +37154,13 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-04-25",
@@ -36638,6 +37177,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-20",
+            "end": "2026-05-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -36652,6 +37205,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-10",
+            "end": "2026-07-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Dia de S\u00e3o Louren\u00e7o",
+            "name_en": "St Lawrence's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -36659,11 +37240,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-22",
+            "end": "2026-08-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-24",
+            "end": "2026-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-28",
+            "end": "2026-08-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-15",
+            "end": "2026-10-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -36812,6 +37421,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2025-03-05",
+            "end": "2025-03-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-18",
             "end": "2025-04-18",
             "name": "Sexta-feira Santa",
@@ -36824,6 +37440,20 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-22",
+            "end": "2025-04-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-04-25",
@@ -36840,6 +37470,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-17",
+            "end": "2025-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -36854,11 +37498,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-28",
+            "end": "2025-08-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -36910,6 +37589,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-03-05",
+            "end": "2026-03-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -36922,6 +37608,20 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-07",
+            "end": "2026-04-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-04-25",
@@ -36938,6 +37638,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-17",
+            "end": "2026-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -36952,11 +37666,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-28",
+            "end": "2026-08-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -37112,6 +37861,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2025-03-19",
+            "end": "2025-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-18",
             "end": "2025-04-18",
             "name": "Sexta-feira Santa",
@@ -37140,6 +37896,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-03",
+            "end": "2025-05-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-16",
+            "end": "2025-05-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -37154,6 +37924,41 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Batalha de S\u00e3o Mamede",
+            "name_en": "Battle of S\u00e3o Mamede",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37161,11 +37966,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-19",
+            "end": "2025-08-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-29",
+            "end": "2025-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-06",
+            "end": "2025-10-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-10-20",
+            "end": "2025-10-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -37210,6 +38043,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-03-19",
+            "end": "2026-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -37238,6 +38078,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-03",
+            "end": "2026-05-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-16",
+            "end": "2026-05-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -37252,6 +38106,41 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Batalha de S\u00e3o Mamede",
+            "name_en": "Battle of S\u00e3o Mamede",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37259,11 +38148,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-19",
+            "end": "2026-08-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-29",
+            "end": "2026-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-10-05",
+            "end": "2026-10-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-20",
+            "end": "2026-10-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -37426,6 +38343,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -37433,11 +38357,32 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-26",
+            "end": "2025-04-26",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-05",
+            "end": "2025-05-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-05",
+            "end": "2025-05-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -37454,6 +38399,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Nuno de Santa Maria",
+            "name_en": "St Day of Nuno de Santa Maria",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-11",
+            "end": "2025-08-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37461,11 +38427,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-25",
+            "end": "2025-08-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-15",
+            "end": "2025-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-19",
+            "end": "2025-09-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-20",
+            "end": "2025-10-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -37524,11 +38518,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-20",
+            "end": "2026-04-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-20",
+            "end": "2026-04-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
             "name_en": "Liberty Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-26",
+            "end": "2026-04-26",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-05-01",
@@ -37552,6 +38574,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Nuno de Santa Maria",
+            "name_en": "St Day of Nuno de Santa Maria",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37559,11 +38602,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-24",
+            "end": "2026-08-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-15",
+            "end": "2026-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-19",
+            "end": "2026-09-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-20",
+            "end": "2026-10-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -37705,10 +38776,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-13",
+            "end": "2025-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-10",
+            "end": "2025-04-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -37740,6 +38825,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-01",
+            "end": "2025-06-01",
+            "name": "Nascimento de Jos\u00e9 Falc\u00e3o",
+            "name_en": "Birthday of Jos\u00e9 Falc\u00e3o",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -37754,6 +38846,55 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-04",
+            "end": "2025-07-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-17",
+            "end": "2025-07-17",
+            "name": "Nascimento de Ant\u00f3nio Jos\u00e9 de Almeida",
+            "name_en": "Birthday of Ant\u00f3nio Jos\u00e9 de Almeid",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-24",
+            "end": "2025-07-24",
+            "name": "Dia de Santa Cristina",
+            "name_en": "St Christina's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Tom\u00e9 de Mira",
+            "name_en": "Day of St Thomas of Mira",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-13",
+            "end": "2025-08-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37761,11 +38902,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-09-07",
+            "end": "2025-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-21",
+            "end": "2025-09-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-29",
+            "end": "2025-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-07",
+            "end": "2025-10-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -37803,6 +38979,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-01-13",
+            "end": "2026-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-02-17",
             "end": "2026-02-17",
             "name": "Carnaval",
@@ -37824,6 +39007,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-10",
+            "end": "2026-04-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -37836,6 +39026,13 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-01",
+            "end": "2026-06-01",
+            "name": "Nascimento de Jos\u00e9 Falc\u00e3o",
+            "name_en": "Birthday of Jos\u00e9 Falc\u00e3o",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-04",
@@ -37852,6 +39049,55 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-04",
+            "end": "2026-07-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-17",
+            "end": "2026-07-17",
+            "name": "Nascimento de Ant\u00f3nio Jos\u00e9 de Almeida",
+            "name_en": "Birthday of Ant\u00f3nio Jos\u00e9 de Almeid",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-24",
+            "end": "2026-07-24",
+            "name": "Dia de Santa Cristina",
+            "name_en": "St Christina's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Tom\u00e9 de Mira",
+            "name_en": "Day of St Thomas of Mira",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-13",
+            "end": "2026-08-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -37859,11 +39105,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-09-07",
+            "end": "2026-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-21",
+            "end": "2026-09-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-29",
+            "end": "2026-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-07",
+            "end": "2026-10-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -38005,10 +39286,31 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-13",
+            "end": "2025-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-02-02",
+            "end": "2025-02-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-03-08",
+            "end": "2025-03-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -38026,6 +39328,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -38033,11 +39342,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-28",
+            "end": "2025-04-28",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -38054,11 +39377,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-16",
+            "end": "2025-08-16",
+            "name": "Nascimento de Couto Jardim",
+            "name_en": "Birthday of Couto Jardim",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-07",
+            "end": "2025-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -38103,10 +39454,31 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-01-13",
+            "end": "2026-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-02-02",
+            "end": "2026-02-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-02-17",
             "end": "2026-02-17",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-03-08",
+            "end": "2026-03-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -38124,6 +39496,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -38136,6 +39522,13 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-04",
@@ -38152,11 +39545,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-16",
+            "end": "2026-08-16",
+            "name": "Nascimento de Couto Jardim",
+            "name_en": "Birthday of Couto Jardim",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-07",
+            "end": "2026-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -38305,6 +39726,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-22",
+            "end": "2025-01-22",
+            "name": "Dia de S\u00e3o Vicente",
+            "name_en": "St Vincent's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -38340,6 +39768,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-13",
+            "end": "2025-05-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-25",
+            "end": "2025-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-01",
+            "end": "2025-06-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -38354,6 +39810,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-16",
+            "end": "2025-06-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -38361,11 +39831,60 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-29",
+            "end": "2025-08-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-03",
+            "end": "2025-09-03",
+            "name": "Conquista da cidade aos mouros",
+            "name_en": "Conquest of the city from the Moors",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-07",
+            "end": "2025-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-15",
+            "end": "2025-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-27",
+            "end": "2025-10-27",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -38389,6 +39908,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-11",
+            "end": "2025-12-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-12-25",
             "end": "2025-12-25",
             "name": "Natal",
@@ -38401,6 +39927,13 @@
             "name": "Ano Novo",
             "name_en": "New Year's Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-22",
+            "end": "2026-01-22",
+            "name": "Dia de S\u00e3o Vicente",
+            "name_en": "St Vincent's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-02-17",
@@ -38438,6 +39971,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-13",
+            "end": "2026-05-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-01",
+            "end": "2026-06-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -38452,6 +40013,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-16",
+            "end": "2026-06-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -38459,11 +40034,60 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-29",
+            "end": "2026-08-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-03",
+            "end": "2026-09-03",
+            "name": "Conquista da cidade aos mouros",
+            "name_en": "Conquest of the city from the Moors",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-07",
+            "end": "2026-09-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-15",
+            "end": "2026-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-27",
+            "end": "2026-10-27",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -38485,6 +40109,13 @@
             "name": "Imaculada Concei\u00e7\u00e3o",
             "name_en": "Immaculate Conception Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-11",
+            "end": "2026-12-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-25",
@@ -38605,10 +40236,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-02-10",
+            "end": "2025-02-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-03-04",
+            "end": "2025-03-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -38633,11 +40278,39 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-28",
+            "end": "2025-04-28",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-21",
+            "end": "2025-05-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-23",
+            "end": "2025-05-23",
+            "name": "Nascimento de Sacadura Cabral",
+            "name_en": "Birthday of Sacadura Cabral",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -38654,11 +40327,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-07-02",
+            "end": "2025-07-02",
+            "name": "Batalha do C\u00f4a",
+            "name_en": "Battle of the C\u00f4a",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-03",
+            "end": "2025-07-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-07",
+            "end": "2025-07-07",
+            "name": "Batalha de Salgadela",
+            "name_en": "Battle of Salgadela",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-11",
+            "end": "2025-08-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-25",
+            "end": "2025-08-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-29",
+            "end": "2025-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -38673,6 +40388,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-27",
+            "end": "2025-11-27",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -38703,10 +40432,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-02-10",
+            "end": "2026-02-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-02-17",
             "end": "2026-02-17",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-03-04",
+            "end": "2026-03-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -38724,6 +40467,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -38736,6 +40486,27 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-21",
+            "end": "2026-05-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-23",
+            "end": "2026-05-23",
+            "name": "Nascimento de Sacadura Cabral",
+            "name_en": "Birthday of Sacadura Cabral",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-29",
+            "end": "2026-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-04",
@@ -38752,11 +40523,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-07-02",
+            "end": "2026-07-02",
+            "name": "Batalha do C\u00f4a",
+            "name_en": "Battle of the C\u00f4a",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-07",
+            "end": "2026-07-07",
+            "name": "Batalha de Salgadela",
+            "name_en": "Battle of Salgadela",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-25",
+            "end": "2026-08-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-29",
+            "end": "2026-09-29",
+            "name": "Dia de S\u00e3o Miguel Arcanjo",
+            "name_en": "Day of St Michael the Archangel",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -38771,6 +40584,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-27",
+            "end": "2026-11-27",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -38905,6 +40732,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-11",
+            "end": "2025-01-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -38940,6 +40774,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-15",
+            "end": "2025-05-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-17",
+            "end": "2025-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-22",
+            "end": "2025-05-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -38954,11 +40816,74 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-04",
+            "end": "2025-07-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-24",
+            "end": "2025-07-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-06",
+            "end": "2025-08-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-14",
+            "end": "2025-08-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -38973,6 +40898,13 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -39001,6 +40933,13 @@
             "name": "Ano Novo",
             "name_en": "New Year's Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-11",
+            "end": "2026-01-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-02-17",
@@ -39038,6 +40977,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-15",
+            "end": "2026-05-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-17",
+            "end": "2026-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-22",
+            "end": "2026-05-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -39052,11 +41019,74 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-04",
+            "end": "2026-07-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-24",
+            "end": "2026-07-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-06",
+            "end": "2026-08-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-14",
+            "end": "2026-08-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -39071,6 +41101,13 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -39205,6 +41242,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-13",
+            "end": "2025-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -39240,6 +41284,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-17",
+            "end": "2025-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-07",
+            "end": "2025-06-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -39254,11 +41319,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-26",
+            "end": "2025-07-26",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-11",
+            "end": "2025-09-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -39273,6 +41373,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-19",
+            "end": "2025-11-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -39301,6 +41415,13 @@
             "name": "Ano Novo",
             "name_en": "New Year's Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-13",
+            "end": "2026-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-02-17",
@@ -39338,11 +41459,32 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-17",
+            "end": "2026-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-07",
+            "end": "2026-06-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-10",
@@ -39352,11 +41494,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-26",
+            "end": "2026-07-26",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-11",
+            "end": "2026-09-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -39371,6 +41548,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-19",
+            "end": "2026-11-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -39505,6 +41696,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-15",
+            "end": "2025-01-15",
+            "name": "Dia de Santo Amaro",
+            "name_en": "St Amaro's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-01-22",
+            "end": "2025-01-22",
+            "name": "Dia de S\u00e3o Vicente",
+            "name_en": "St Vincent's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -39540,6 +41745,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-25",
+            "end": "2025-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -39554,6 +41766,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-01",
+            "end": "2025-07-01",
+            "name": "Dia da Madeira",
+            "name_en": "Madeira Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-07-22",
+            "end": "2025-07-22",
+            "name": "Dia de Santa Maria Madalena",
+            "name_en": "St Mary Magdalene's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -39561,11 +41801,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-21",
+            "end": "2025-08-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-09",
+            "end": "2025-10-09",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-10-16",
+            "end": "2025-10-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-10-25",
+            "end": "2025-10-25",
+            "name": "Dia de Santa Catarina",
+            "name_en": "St Catherine's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -39596,11 +41871,32 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Primeira Oitava",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
             "start": "2026-01-01",
             "end": "2026-01-01",
             "name": "Ano Novo",
             "name_en": "New Year's Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-15",
+            "end": "2026-01-15",
+            "name": "Dia de Santo Amaro",
+            "name_en": "St Amaro's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-01-22",
+            "end": "2026-01-22",
+            "name": "Dia de S\u00e3o Vicente",
+            "name_en": "St Vincent's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-02-17",
@@ -39638,6 +41934,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -39652,6 +41955,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-01",
+            "end": "2026-07-01",
+            "name": "Dia da Madeira",
+            "name_en": "Madeira Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-07-22",
+            "end": "2026-07-22",
+            "name": "Dia de Santa Maria Madalena",
+            "name_en": "St Mary Magdalene's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -39659,11 +41990,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-21",
+            "end": "2026-08-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-09",
+            "end": "2026-10-09",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-10-16",
+            "end": "2026-10-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-10-25",
+            "end": "2026-10-25",
+            "name": "Dia de Santa Catarina",
+            "name_en": "St Catherine's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -39691,6 +42057,13 @@
             "end": "2026-12-25",
             "name": "Natal",
             "name_en": "Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Primeira Oitava",
+            "name_en": "Boxing Day",
             "hol_type": "Public"
           },
           {
@@ -39805,10 +42178,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-14",
+            "end": "2025-01-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-06",
+            "end": "2025-04-06",
+            "name": "Batalha dos Atoleiros",
+            "name_en": "Battle of Atoleiros",
             "hol_type": "Other"
           },
           {
@@ -39826,6 +42213,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -39833,11 +42227,32 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-28",
+            "end": "2025-04-28",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-05-01",
             "end": "2025-05-01",
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-23",
+            "end": "2025-05-23",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -39854,11 +42269,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -39873,6 +42302,13 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-23",
+            "end": "2025-11-23",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -39903,6 +42339,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-01-14",
+            "end": "2026-01-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-02-17",
             "end": "2026-02-17",
             "name": "Carnaval",
@@ -39924,6 +42367,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Batalha dos Atoleiros",
+            "name_en": "Battle of Atoleiros",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Segunda-feira ap\u00f3s o primeiro Domingo depois da P\u00e1scoa",
+            "name_en": "Monday after the first Sunday after Easter",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-25",
             "end": "2026-04-25",
             "name": "Dia da Liberdade",
@@ -39936,6 +42400,20 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-23",
+            "end": "2026-05-23",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-04",
@@ -39952,11 +42430,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -39971,6 +42463,13 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-23",
+            "end": "2026-11-23",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -40149,9 +42648,72 @@
           {
             "start": "2025-06-10",
             "end": "2025-06-10",
+            "name": "Ter\u00e7a-feira ap\u00f3s o Domingo de Pentecostes",
+            "name_en": "Whit Tuesday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-10",
+            "end": "2025-06-10",
             "name": "Dia de Portugal / de Cam\u00f5es e das Comunidades Portuguesas",
             "name_en": "Portugal Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-08",
+            "end": "2025-07-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-11",
+            "end": "2025-07-11",
+            "name": "Dia de S\u00e3o Bento",
+            "name_en": "Day of Benedict of Nursia",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-14",
+            "end": "2025-07-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-21",
+            "end": "2025-07-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-28",
+            "end": "2025-07-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-08-15",
@@ -40161,6 +42723,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-24",
+            "end": "2025-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
@@ -40168,11 +42744,32 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-10-06",
+            "end": "2025-10-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-06",
+            "end": "2025-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -40238,6 +42835,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-26",
+            "end": "2026-05-26",
+            "name": "Ter\u00e7a-feira ap\u00f3s o Domingo de Pentecostes",
+            "name_en": "Whit Tuesday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -40252,11 +42856,88 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-08",
+            "end": "2026-07-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-11",
+            "end": "2026-07-11",
+            "name": "Dia de S\u00e3o Bento",
+            "name_en": "Day of Benedict of Nursia",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-13",
+            "end": "2026-07-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-20",
+            "end": "2026-07-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-27",
+            "end": "2026-07-27",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-24",
+            "end": "2026-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-10-05",
+            "end": "2026-10-05",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -40271,6 +42952,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-06",
+            "end": "2026-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -40405,10 +43100,31 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-03-01",
+            "end": "2025-03-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-03-19",
+            "end": "2025-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-02",
+            "end": "2025-04-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -40426,6 +43142,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -40438,6 +43161,27 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-17",
+            "end": "2025-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-25",
+            "end": "2025-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -40454,11 +43198,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-14",
+            "end": "2025-06-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-20",
+            "end": "2025-06-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-17",
+            "end": "2025-08-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-22",
+            "end": "2025-09-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -40473,6 +43252,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-06",
+            "end": "2025-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-24",
+            "end": "2025-11-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -40510,6 +43303,27 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-03-01",
+            "end": "2026-03-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-03-19",
+            "end": "2026-03-19",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-02",
+            "end": "2026-04-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -40522,6 +43336,13 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-04-25",
@@ -40538,6 +43359,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-17",
+            "end": "2026-05-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -40552,11 +43394,46 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-14",
+            "end": "2026-06-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-20",
+            "end": "2026-06-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-17",
+            "end": "2026-08-17",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-22",
+            "end": "2026-09-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -40571,6 +43448,20 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-06",
+            "end": "2026-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-24",
+            "end": "2026-11-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -40740,6 +43631,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-04",
+            "end": "2025-05-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-01",
+            "end": "2025-06-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -40754,11 +43659,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-28",
+            "end": "2025-06-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-11",
+            "end": "2025-09-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-15",
+            "end": "2025-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -40768,11 +43715,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-10-22",
+            "end": "2025-10-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-11-01",
             "end": "2025-11-01",
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-24",
+            "end": "2025-11-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -40838,6 +43799,20 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-04",
+            "end": "2026-05-04",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-01",
+            "end": "2026-06-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -40852,11 +43827,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-28",
+            "end": "2026-06-28",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-11",
+            "end": "2026-09-11",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-15",
+            "end": "2026-09-15",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -40866,11 +43883,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-10-22",
+            "end": "2026-10-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-11-01",
             "end": "2026-11-01",
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-24",
+            "end": "2026-11-24",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
@@ -41005,10 +44036,24 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-02-18",
+            "end": "2025-02-18",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
             "name_en": "Carnival",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-03-12",
+            "end": "2025-03-12",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
             "hol_type": "Other"
           },
           {
@@ -41026,6 +44071,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-04-25",
             "end": "2025-04-25",
             "name": "Dia da Liberdade",
@@ -41038,6 +44090,13 @@
             "name": "Dia do Trabalhador",
             "name_en": "Labor Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-08",
@@ -41054,11 +44113,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-07-10",
+            "end": "2025-07-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-10",
+            "end": "2025-08-10",
+            "name": "Dia de S\u00e3o Louren\u00e7o",
+            "name_en": "St Lawrence's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-24",
+            "end": "2025-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-20",
+            "end": "2025-09-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-10-01",
+            "end": "2025-10-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -41110,6 +44211,20 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-02-18",
+            "end": "2026-02-18",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-03-12",
+            "end": "2026-03-12",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -41122,6 +44237,13 @@
             "name": "Domingo de P\u00e1scoa",
             "name_en": "Easter Sunday",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Segunda-feira ap\u00f3s a P\u00e1scoa",
+            "name_en": "Easter Monday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-04-25",
@@ -41138,6 +44260,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -41152,11 +44281,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-07-10",
+            "end": "2026-07-10",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-10",
+            "end": "2026-08-10",
+            "name": "Dia de S\u00e3o Louren\u00e7o",
+            "name_en": "St Lawrence's Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-24",
+            "end": "2026-08-24",
+            "name": "Dia do padroeiro S\u00e3o Bartolomeu",
+            "name_en": "St Bartholomew's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-20",
+            "end": "2026-09-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-10-01",
+            "end": "2026-10-01",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -41305,6 +44476,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-03-02",
+            "end": "2025-03-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -41340,6 +44518,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-03",
+            "end": "2025-05-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-14",
+            "end": "2025-05-14",
+            "name": "Dia de S\u00e3o Frei Gil",
+            "name_en": "Day of St Giles of Santar\u00e9m",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
@@ -41354,6 +44553,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-21",
+            "end": "2025-07-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -41361,11 +44588,60 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Dia de S\u00e3o Bernardo",
+            "name_en": "Day of St Bernard of Clairvaux",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-08-25",
+            "end": "2025-08-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-16",
+            "end": "2025-09-16",
+            "name": "Dia de Santa Euf\u00e9mia",
+            "name_en": "St Euphemia's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-21",
+            "end": "2025-09-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-29",
+            "end": "2025-09-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-10-05",
             "end": "2025-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-07",
+            "end": "2025-10-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-11-01",
@@ -41410,6 +44686,13 @@
             "hol_type": "Other"
           },
           {
+            "start": "2026-03-02",
+            "end": "2026-03-02",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-04-03",
             "end": "2026-04-03",
             "name": "Sexta-feira Santa",
@@ -41438,6 +44721,27 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-03",
+            "end": "2026-05-03",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Dia de S\u00e3o Frei Gil",
+            "name_en": "Day of St Giles of Santar\u00e9m",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
@@ -41452,6 +44756,34 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Dia de S\u00e3o Jo\u00e3o",
+            "name_en": "St John's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de PT Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Dia de S\u00e3o Pedro",
+            "name_en": "St Peter's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-20",
+            "end": "2026-07-20",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
@@ -41459,11 +44791,60 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Dia de S\u00e3o Bernardo",
+            "name_en": "Day of St Bernard of Clairvaux",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-08-25",
+            "end": "2026-08-25",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-16",
+            "end": "2026-09-16",
+            "name": "Dia de Santa Euf\u00e9mia",
+            "name_en": "St Euphemia's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-21",
+            "end": "2026-09-21",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-29",
+            "end": "2026-09-29",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-10-05",
             "end": "2026-10-05",
             "name": "Implanta\u00e7\u00e3o da Rep\u00fablica",
             "name_en": "Republic Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-07",
+            "end": "2026-10-07",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-11-01",
@@ -41605,6 +44986,13 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-01-13",
+            "end": "2025-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-03-04",
             "end": "2025-03-04",
             "name": "Carnaval",
@@ -41640,11 +45028,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-05-08",
+            "end": "2025-05-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-06-08",
             "end": "2025-06-08",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-06-10",
@@ -41654,11 +45056,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-06-22",
+            "end": "2025-06-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-08",
+            "end": "2025-07-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-07-25",
+            "end": "2025-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2025-08-15",
             "end": "2025-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-16",
+            "end": "2025-08-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2025-10-05",
@@ -41673,6 +45117,27 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-06",
+            "end": "2025-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-11-30",
+            "end": "2025-11-30",
+            "name": "Dia de Santo Andr\u00e9",
+            "name_en": "St Andrew's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2025-12-01",
@@ -41701,6 +45166,13 @@
             "name": "Ano Novo",
             "name_en": "New Year's Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-13",
+            "end": "2026-01-13",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-02-17",
@@ -41738,11 +45210,25 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-05-08",
+            "end": "2026-05-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-06-04",
             "end": "2026-06-04",
             "name": "Corpo de Deus",
             "name_en": "Corpus Christi",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-09",
+            "end": "2026-06-09",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-06-10",
@@ -41752,11 +45238,53 @@
             "hol_type": "Public"
           },
           {
+            "start": "2026-06-13",
+            "end": "2026-06-13",
+            "name": "Dia de Santo Ant\u00f3nio",
+            "name_en": "St Anthony's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-06-22",
+            "end": "2026-06-22",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-08",
+            "end": "2026-07-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-07-25",
+            "end": "2026-07-25",
+            "name": "Dia de S\u00e3o Tiago",
+            "name_en": "St James' Day",
+            "hol_type": "Other"
+          },
+          {
             "start": "2026-08-15",
             "end": "2026-08-15",
             "name": "Assun\u00e7\u00e3o de Nossa Senhora",
             "name_en": "Assumption Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-16",
+            "end": "2026-08-16",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
           },
           {
             "start": "2026-10-05",
@@ -41771,6 +45299,27 @@
             "name": "Todos-os-Santos",
             "name_en": "All Saints' Day",
             "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-06",
+            "end": "2026-11-06",
+            "name": "Feriado Municipal",
+            "name_en": "Municipal holiday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Dia de S\u00e3o Martinho",
+            "name_en": "St Martin's Day",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-11-30",
+            "end": "2026-11-30",
+            "name": "Dia de Santo Andr\u00e9",
+            "name_en": "St Andrew's Day",
+            "hol_type": "Other"
           },
           {
             "start": "2026-12-01",
