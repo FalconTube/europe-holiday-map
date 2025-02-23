@@ -677,5 +677,25 @@
         }
       ]
     },
+    {
+      "country": "NL",
+      "codes": [
+        {
+          "nuts": "NL2",
+          "iso": null,
+          "code": "NL-MI"
+        },
+        {
+          "nuts": "NL1",
+          "iso": null,
+          "code": "NL-NO"
+        },
+        {
+          "nuts": "NL4",
+          "iso": null,
+          "code": "NL-ZU"
+        }
+      ]
+    },
   ]
 }
