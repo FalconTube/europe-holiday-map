@@ -69,3 +69,138 @@
         }
       ]
     },
+    {
+  "country": "CH",
+  "codes": [
+    {
+      "iso": "CH-AG",
+      "code": "CH-AG",
+      "nuts": "CH033"
+    },
+    {
+      "iso": "CH-AI",
+      "code": "CH-AI",
+      "nuts": "CH054"
+    },
+    {
+      "iso": "CH-AR",
+      "code": "CH-AR",
+      "nuts": "CH053"
+    },
+    {
+      "iso": "CH-BE",
+      "code": "CH-BE",
+      "nuts": "CH021"
+    },
+    {
+      "iso": "CH-BL",
+      "code": "CH-BL",
+      "nuts": "CH032"
+    },
+    {
+      "iso": "CH-BS",
+      "code": "CH-BS",
+      "nuts": "CH031"
+    },
+    {
+      "iso": "CH-FR",
+      "code": "CH-FR",
+      "nuts": "CH022"
+    },
+    {
+      "iso": "CH-GE",
+      "code": "CH-GE",
+      "nuts": "CH013"
+    },
+    {
+      "iso": "CH-GL",
+      "code": "CH-GL",
+      "nuts": "CH051"
+    },
+    {
+      "iso": "CH-GR",
+      "code": "CH-GR",
+      "nuts": "CH056"
+    },
+    {
+      "iso": "CH-JU",
+      "code": "CH-JU",
+      "nuts": "CH025"
+    },
+    {
+      "iso": "CH-LU",
+      "code": "CH-LU",
+      "nuts": "CH061"
+    },
+    {
+      "iso": "CH-NE",
+      "code": "CH-NE",
+      "nuts": "CH024"
+    },
+    {
+      "iso": "CH-NW",
+      "code": "CH-NW",
+      "nuts": "CH065"
+    },
+    {
+      "iso": "CH-OW",
+      "code": "CH-OW",
+      "nuts": "CH064"
+    },
+    {
+      "iso": "CH-SG",
+      "code": "CH-SG",
+      "nuts": "CH055"
+    },
+    {
+      "iso": "CH-SH",
+      "code": "CH-SH",
+      "nuts": "CH052"
+    },
+    {
+      "iso": "CH-SO",
+      "code": "CH-SO",
+      "nuts": "CH023"
+    },
+    {
+      "iso": "CH-SZ",
+      "code": "CH-SZ",
+      "nuts": "CH063"
+    },
+    {
+      "iso": "CH-TG",
+      "code": "CH-TG",
+      "nuts": "CH057"
+    },
+    {
+      "iso": "CH-TI",
+      "code": "CH-TI",
+      "nuts": "CH070"
+    },
+    {
+      "iso": "CH-UR",
+      "code": "CH-UR",
+      "nuts": "CH062"
+    },
+    {
+      "iso": "CH-VD",
+      "code": "CH-VD",
+      "nuts": "CH011"
+    },
+    {
+      "iso": "CH-VS",
+      "code": "CH-VS",
+      "nuts": "CH012"
+    },
+    {
+      "iso": "CH-ZG",
+      "code": "CH-ZG",
+      "nuts": "CH066"
+    },
+    {
+      "iso": "CH-ZH",
+      "code": "CH-ZH",
+      "nuts": "CH040"
+    }
+  ]
+}
