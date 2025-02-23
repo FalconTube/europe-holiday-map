@@ -462,5 +462,115 @@
         }
       ]
     },
+    {
+      "country": "FR",
+      "codes": [
+        {
+          "nuts": "FRK",
+          "iso": "FR-ARA",
+          "code": "FR-AR"
+        },
+        {
+          "nuts": "FRC",
+          "iso": "FR-BFC",
+          "code": "FR-BF"
+        },
+        {
+          "nuts": "FR91",
+          "iso": "FR-BL",
+          "code": "FR-BL"
+        },
+        {
+          "nuts": "FRH",
+          "iso": "FR-BRE",
+          "code": "FR-BT"
+        },
+        {
+          "nuts": "FR83",
+          "iso": "FR-20R",
+          "code": "FR-CO"
+        },
+        {
+          "nuts": "FRB",
+          "iso": "FR-CVL",
+          "code": "FR-CV"
+        },
+        {
+          "nuts": "FRF",
+          "iso": "FR-GES",
+          "code": "FR-GE"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-971",
+          "code": "FR-GP"
+        },
+        {
+          "nuts": "FRA3",
+          "iso": "FR-973",
+          "code": "FR-GY"
+        },
+        {
+          "nuts": "FRE",
+          "iso": "FR-HDF",
+          "code": "FR-HF"
+        },
+        {
+          "nuts": "FR1",
+          "iso": "FR-IDF",
+          "code": "FR-IF"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-MF",
+          "code": "FR-MF"
+        },
+        {
+          "nuts": "FRA2",
+          "iso": "FR-972",
+          "code": "FR-MQ"
+        },
+        {
+          "nuts": "FRI",
+          "iso": "FR-NAQ",
+          "code": "FR-NA"
+        },
+        {
+          "nuts": "FRD",
+          "iso": "FR-NOR",
+          "code": "FR-NO"
+        },
+        {
+          "nuts": "FRJ",
+          "iso": "FR-OCC",
+          "code": "FR-OC"
+        },
+        {
+          "nuts": "FRL",
+          "iso": "FR-PAC",
+          "code": "FR-PC"
+        },
+        {
+          "nuts": "FRG",
+          "iso": "FR-PDL",
+          "code": "FR-PL"
+        },
+        {
+          "nuts": "FRA4",
+          "iso": "FR-974",
+          "code": "FR-RU"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-PM",
+          "code": "FR-SP"
+        },
+        {
+          "nuts": "FRY5",
+          "iso": "FR-976",
+          "code": "FR-YT"
+        },
+      ]
+    },
   ]
 }
