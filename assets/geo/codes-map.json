@@ -697,5 +697,90 @@
         }
       ]
     },
+    {
+      "country": "PL",
+      "codes": [
+        {
+          "nuts": "PL02",
+          "iso": "PL-02",
+          "code": "PL-DS"
+        },
+        {
+          "nuts": "PL04",
+          "iso": "PL-04",
+          "code": "PL-KP"
+        },
+        {
+          "nuts": "PL06",
+          "iso": "PL-06",
+          "code": "PL-LB"
+        },
+        {
+          "nuts": "PL08",
+          "iso": "PL-08",
+          "code": "PL-LD"
+        },
+        {
+          "nuts": "PL10",
+          "iso": "PL-10",
+          "code": "PL-LU"
+        },
+        {
+          "nuts": "PL12",
+          "iso": "PL-12",
+          "code": "PL-MA"
+        },
+        {
+          "nuts": "PL14",
+          "iso": "PL-14",
+          "code": "PL-MZ"
+        },
+        {
+          "nuts": "PL16",
+          "iso": "PL-16",
+          "code": "PL-OP"
+        },
+        {
+          "nuts": "PL18",
+          "iso": "PL-18",
+          "code": "PL-PD"
+        },
+        {
+          "nuts": "PL20",
+          "iso": "PL-20",
+          "code": "PL-PK"
+        },
+        {
+          "nuts": "PL22",
+          "iso": "PL-22",
+          "code": "PL-PM"
+        },
+        {
+          "nuts": "PL24",
+          "iso": "PL-24",
+          "code": "PL-SK"
+        },
+        {
+          "nuts": "PL26",
+          "iso": "PL-26",
+          "code": "PL-SL"
+        },
+        {
+          "nuts": "PL28",
+          "iso": "PL-28",
+          "code": "PL-WN"
+        },
+        {
+          "nuts": "PL30",
+          "iso": "PL-30",
+          "code": "PL-WP"
+        },
+        {
+          "nuts": "PL32",
+          "iso": "PL-32",
+          "code": "PL-ZP"
+        }
+      ]
+    },
   ]
 }
