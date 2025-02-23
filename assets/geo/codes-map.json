@@ -276,6 +276,91 @@
           "code": "CZ-ZL"
         }
       ]
-    }
+    },
+    {
+      "country": "DE",
+      "codes": [
+        {
+          "nuts": "DE4",
+          "iso": "DE-BB",
+          "code": "DE-BB"
+        },
+        {
+          "nuts": "DE3",
+          "iso": "DE-BE",
+          "code": "DE-BE"
+        },
+        {
+          "nuts": "DE1",
+          "iso": "DE-BW",
+          "code": "DE-BW"
+        },
+        {
+          "nuts": "DE2",
+          "iso": "DE-BY",
+          "code": "DE-BY"
+        },
+        {
+          "nuts": "DE5",
+          "iso": "DE-HB",
+          "code": "DE-HB"
+        },
+        {
+          "nuts": "DE7",
+          "iso": "DE-HE",
+          "code": "DE-HE"
+        },
+        {
+          "nuts": "DE6",
+          "iso": "DE-HH",
+          "code": "DE-HH"
+        },
+        {
+          "nuts": "DE8",
+          "iso": "DE-MV",
+          "code": "DE-MV"
+        },
+        {
+          "nuts": "DE9",
+          "iso": "DE-NI",
+          "code": "DE-NI"
+        },
+        {
+          "nuts": "DEA",
+          "iso": "DE-NW",
+          "code": "DE-NW"
+        },
+        {
+          "nuts": "DEB",
+          "iso": "DE-RP",
+          "code": "DE-RP"
+        },
+        {
+          "nuts": "DED",
+          "iso": "DE-SH",
+          "code": "DE-SH"
+        },
+        {
+          "nuts": "DEC",
+          "iso": "DE-SL",
+          "code": "DE-SL"
+        },
+        {
+          "nuts": "DEE",
+          "iso": "DE-SN",
+          "code": "DE-SN"
+        },
+        {
+          "nuts": "DEF",
+          "iso": "DE-ST",
+          "code": "DE-ST"
+        },
+        {
+          "nuts": "DEG",
+          "iso": "DE-TH",
+          "code": "DE-TH"
+        }
+      ]
+    },
   ]
 }
