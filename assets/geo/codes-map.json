@@ -1117,5 +1117,50 @@
         }
       ]
     },
+    {
+      "country": "SK",
+      "codes": [
+        {
+          "nuts": "SK032",
+          "iso": "SK-BC",
+          "code": "SK-BC"
+        },
+        {
+          "nuts": "SK011",
+          "iso": "SK-BL",
+          "code": "SK-BL"
+        },
+        {
+          "nuts": "SK042",
+          "iso": "SK-KI",
+          "code": "SK-KI"
+        },
+        {
+          "nuts": "SK023",
+          "iso": "SK-NI",
+          "code": "SK-NI"
+        },
+        {
+          "nuts": "SK041",
+          "iso": "SK-PV",
+          "code": "SK-PV"
+        },
+        {
+          "nuts": "SK021",
+          "iso": "SK-TA",
+          "code": "SK-TA"
+        },
+        {
+          "nuts": "SK022",
+          "iso": "SK-TC",
+          "code": "SK-TC"
+        },
+        {
+          "nuts": "SK031",
+          "iso": "SK-ZI",
+          "code": "SK-ZI"
+        }
+      ]
+    }
   ]
 }
