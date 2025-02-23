@@ -178,13 +178,57 @@ def get_holidays(
     return hol_list
 
 
-def extract_eu_from_world(world_json_file: str):
+def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
     file_str = Path(world_json_file).read_text()
-    ic(file_str)
+    world_json = json.loads(file_str)["features"]
+    countries = get_countries()
+    country_iso_codes = [i.iso for i in countries]
+    if with_provinces:
+        known_features = country_features(world_json, country_iso_codes)
+    else:
+        known_features = world_features(world_json, country_iso_codes)
+    geojson_known = {"type": "FeatureCollection", "features": known_features}
+    return geojson_known
+
+
+def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
+    known_features = []
+    for world_entry in in_json:
+        props = world_entry["properties"]
+        country_code = props["CNTR_CODE"]
+        if country_code not in country_iso_codes:
+            continue
+        # Only main level
+        level = props["LEVL_CODE"]
+        if level != 1:
+            continue
+        known_features.append(world_entry)
+    return known_features
+
+
+def world_features(in_json: Dict, country_iso_codes: list[str]) -> list:
+    known_features = []
+    for world_entry in in_json:
+        country_code = world_entry["properties"]["CNTR_ID"]
+        if country_code not in country_iso_codes:
+            continue
+        known_features.append(world_entry)
+    return known_features
+
+
+def convert_geojson():
+    eu_geojson = extract_eu_from_world(
+        "assets/geo/nuts-world.geojson", with_provinces=True
+    )
+    with open("assets/geo/eu-nuts.geojson", "w", encoding="utf-8") as w:
+        w.write(json.dumps(eu_geojson, indent=2))
+    eu_geojson = extract_eu_from_world("assets/geo/world.geojson")
+    with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
+        w.write(json.dumps(eu_geojson, indent=2))
 
 
 if __name__ == "__main__":
-    extract_eu_from_world("assets/geo/world.geojson")
+    convert_geojson()
     sys.exit()
     countries = get_countries()
     # countries = [Country(iso="AT", code="AT", name="Espania", name_en="Spain")]
