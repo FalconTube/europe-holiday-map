@@ -49,3 +49,23 @@
         }
       ]
     },
+    {
+      "country": "BE",
+      "codes": [
+        {
+          "nuts": "BE3"
+          "iso": null,
+          "code": "BE-DE"
+        },
+        {
+          "nuts": "BE1"
+          "iso": null,
+          "code": "BE-FR"
+        },
+        {
+          "nuts": "BE2"
+          "iso": null,
+          "code": "BE-NL"
+        }
+      ]
+    },
