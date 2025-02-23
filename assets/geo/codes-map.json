@@ -362,5 +362,105 @@
         }
       ]
     },
+    {
+      "country": "ES",
+      "codes": [
+        {
+          "nuts": "ES61",
+          "iso": "ES-AN",
+          "code": "ES-AN"
+        },
+        {
+          "nuts": "ES24",
+          "iso": "ES-AR",
+          "code": "ES-AR"
+        },
+        {
+          "nuts": "ES12",
+          "iso": "ES-AS",
+          "code": "ES-AS"
+        },
+        {
+          "nuts": "ES13",
+          "iso": "ES-CB",
+          "code": "ES-CB"
+        },
+        {
+          "nuts": "ES63",
+          "iso": "ES-CE",
+          "code": "ES-CE"
+        },
+        {
+          "nuts": "ES41",
+          "iso": "ES-CL",
+          "code": "ES-CL"
+        },
+        {
+          "nuts": "ES42",
+          "iso": "ES-CM",
+          "code": "ES-CM"
+        },
+        {
+          "nuts": "ES70",
+          "iso": "ES-CN",
+          "code": "ES-CN"
+        },
+        {
+          "nuts": "ES51",
+          "iso": "ES-CT",
+          "code": "ES-CT"
+        },
+        {
+          "nuts": "ES43",
+          "iso": "ES-EX",
+          "code": "ES-EX"
+        },
+        {
+          "nuts": "ES11",
+          "iso": "ES-GA",
+          "code": "ES-GA"
+        },
+        {
+          "nuts": "ES53",
+          "iso": "ES-IB",
+          "code": "ES-IB"
+        },
+        {
+          "nuts": "ES62",
+          "iso": "ES-MC",
+          "code": "ES-MC"
+        },
+        {
+          "nuts": "ES30",
+          "iso": "ES-MD",
+          "code": "ES-MD"
+        },
+        {
+          "nuts": "ES64",
+          "iso": "ES-ML",
+          "code": "ES-ML"
+        },
+        {
+          "nuts": "ES22",
+          "iso": "ES-NC",
+          "code": "ES-NC"
+        },
+        {
+          "nuts": "ES21",
+          "iso": "ES-PV",
+          "code": "ES-PV"
+        },
+        {
+          "nuts": "ES23",
+          "iso": "ES-RI",
+          "code": "ES-RI"
+        },
+        {
+          "nuts": "ES52",
+          "iso": "ES-VC",
+          "code": "ES-VC"
+        }
+      ]
+    },
   ]
 }
