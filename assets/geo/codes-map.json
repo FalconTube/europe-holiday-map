@@ -887,5 +887,220 @@
         }
       ]
     },
+    {
+      "country": "RO",
+      "codes": [
+        {
+          "nuts": "RO121",
+          "iso": "RO-AB",
+          "code": "RO-AB"
+        },
+        {
+          "nuts": "RO311",
+          "iso": "RO-AG",
+          "code": "RO-AG"
+        },
+        {
+          "nuts": "RO421",
+          "iso": "RO-AR",
+          "code": "RO-AR"
+        },
+        {
+          "nuts": "RO211",
+          "iso": "RO-BC",
+          "code": "RO-BC"
+        },
+        {
+          "nuts": "RO111",
+          "iso": "RO-BH",
+          "code": "RO-BH"
+        },
+        {
+          "nuts": "RO112",
+          "iso": "RO-BN",
+          "code": "RO-BN"
+        },
+        {
+          "nuts": "RO221",
+          "iso": "RO-BR",
+          "code": "RO-BR"
+        },
+        {
+          "nuts": "RO212",
+          "iso": "RO-BT",
+          "code": "RO-BT"
+        },
+        {
+          "nuts": "RO321",
+          "iso": "RO-B",
+          "code": "RO-BU"
+        },
+        {
+          "nuts": "RO122",
+          "iso": "RO-BV",
+          "code": "RO-BV"
+        },
+        {
+          "nuts": "RO222",
+          "iso": "RO-BZ",
+          "code": "RO-BZ"
+        },
+        {
+          "nuts": "RO113",
+          "iso": "RO-CJ",
+          "code": "RO-CJ"
+        },
+        {
+          "nuts": "RO312",
+          "iso": "RO-CL",
+          "code": "RO-CL"
+        },
+        {
+          "nuts": "RO422",
+          "iso": "RO-CS",
+          "code": "RO-CS"
+        },
+        {
+          "nuts": "RO223",
+          "iso": "RO-CT",
+          "code": "RO-CT"
+        },
+        {
+          "nuts": "RO123",
+          "iso": "RO-CV",
+          "code": "RO-CV"
+        },
+        {
+          "nuts": "RO313",
+          "iso": "RO-DB",
+          "code": "RO-DB"
+        },
+        {
+          "nuts": "RO411",
+          "iso": "RO-DJ",
+          "code": "RO-DJ"
+        },
+        {
+          "nuts": "RO412",
+          "iso": "RO-GJ",
+          "code": "RO-GJ"
+        },
+        {
+          "nuts": "RO224",
+          "iso": "RO-GL",
+          "code": "RO-GL"
+        },
+        {
+          "nuts": "RO124",
+          "iso": "RO-GR",
+          "code": "RO-GR"
+        },
+        {
+          "nuts": "RO423",
+          "iso": "RO-HD",
+          "code": "RO-HD"
+        },
+        {
+          "nuts": "RO124",
+          "iso": "RO-HR",
+          "code": "RO-HR"
+        },
+        {
+          "nuts": "RO322",
+          "iso": "RO-IF",
+          "code": "RO-IF"
+        },
+        {
+          "nuts": "RO315",
+          "iso": "RO-IL",
+          "code": "RO-IL"
+        },
+        {
+          "nuts": "RO213",
+          "iso": "RO-IS",
+          "code": "RO-IS"
+        },
+        {
+          "nuts": "RO413",
+          "iso": "RO-MH",
+          "code": "RO-MH"
+        },
+        {
+          "nuts": "RO114",
+          "iso": "RO-MM",
+          "code": "RO-MM"
+        },
+        {
+          "nuts": "RO125",
+          "iso": "RO-MS",
+          "code": "RO-MS"
+        },
+        {
+          "nuts": "RO214",
+          "iso": "RO-NT",
+          "code": "RO-NT"
+        },
+        {
+          "nuts": "RO414",
+          "iso": "RO-OT",
+          "code": "RO-OT"
+        },
+        {
+          "nuts": "RO316",
+          "iso": "RO-PH",
+          "code": "RO-PH"
+        },
+        {
+          "nuts": "RO126",
+          "iso": "RO-SB",
+          "code": "RO-SB"
+        },
+        {
+          "nuts": "RO116",
+          "iso": "RO-SJ",
+          "code": "RO-SJ"
+        },
+        {
+          "nuts": "RO115",
+          "iso": "RO-SM",
+          "code": "RO-SM"
+        },
+        {
+          "nuts": "RO215",
+          "iso": "RO-SV",
+          "code": "RO-SV"
+        },
+        {
+          "nuts": "RO225",
+          "iso": "RO-TL",
+          "code": "RO-TL"
+        },
+        {
+          "nuts": "RO424",
+          "iso": "RO-TM",
+          "code": "RO-TM"
+        },
+        {
+          "nuts": "RO317",
+          "iso": "RO-TR",
+          "code": "RO-TR"
+        },
+        {
+          "nuts": "RO415",
+          "iso": "RO-VL",
+          "code": "RO-VL"
+        },
+        {
+          "nuts": "RO226",
+          "iso": "RO-VN",
+          "code": "RO-VN"
+        },
+        {
+          "nuts": "RO216",
+          "iso": "RO-VS",
+          "code": "RO-VS"
+        }
+      ]
+    },
   ]
 }
