@@ -782,5 +782,110 @@
         }
       ]
     },
+    {
+      "country": "PT",
+      "codes": [
+        {
+          "nuts": "PT20",
+          "iso": "PT-20",
+          "code": "PT-AC"
+        },
+        {
+          "nuts": "PT01",
+          "iso": "PT-01",
+          "code": "PT-AV"
+        },
+        {
+          "nuts": "PT04",
+          "iso": "PT-04",
+          "code": "PT-BA"
+        },
+        {
+          "nuts": "PT02",
+          "iso": "PT-02",
+          "code": "PT-BE"
+        },
+        {
+          "nuts": "PT03",
+          "iso": "PT-03",
+          "code": "PT-BR"
+        },
+        {
+          "nuts": "PT05",
+          "iso": "PT-05",
+          "code": "PT-CB"
+        },
+        {
+          "nuts": "PT06",
+          "iso": "PT-06",
+          "code": "PT-CO"
+        },
+        {
+          "nuts": "PT07",
+          "iso": "PT-07",
+          "code": "PT-EV"
+        },
+        {
+          "nuts": "PT08",
+          "iso": "PT-08",
+          "code": "PT-FA"
+        },
+        {
+          "nuts": "PT09",
+          "iso": "PT-09",
+          "code": "PT-GU"
+        },
+        {
+          "nuts": "PT10",
+          "iso": "PT-10",
+          "code": "PT-LE"
+        },
+        {
+          "nuts": "PT11",
+          "iso": "PT-11",
+          "code": "PT-LI"
+        },
+        {
+          "nuts": "PT30",
+          "iso": "PT-30",
+          "code": "PT-MA"
+        },
+        {
+          "nuts": "PT12",
+          "iso": "PT-12",
+          "code": "PT-PA"
+        },
+        {
+          "nuts": "PT13",
+          "iso": "PT-13",
+          "code": "PT-PO"
+        },
+        {
+          "nuts": "PT14",
+          "iso": "PT-14",
+          "code": "PT-SA"
+        },
+        {
+          "nuts": "PT15",
+          "iso": "PT-15",
+          "code": "PT-SE"
+        },
+        {
+          "nuts": "PT16",
+          "iso": "PT-16",
+          "code": "PT-VC"
+        },
+        {
+          "nuts": "PT18",
+          "iso": "PT-18",
+          "code": "PT-VI"
+        },
+        {
+          "nuts": "PT17",
+          "iso": "PT-17",
+          "code": "PT-VR"
+        }
+      ]
+    },
   ]
 }
