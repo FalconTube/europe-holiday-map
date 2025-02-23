@@ -201,6 +201,81 @@
       "iso": "CH-ZH",
       "code": "CH-ZH",
       "nuts": "CH040"
+    },
+    {
+      "country": "CZ",
+      "codes": [
+        {
+          "nuts": "CZ031",
+          "iso": "CZ-31",
+          "code": "CZ-JC"
+        },
+        {
+          "nuts": "CZ064",
+          "iso": "CZ-64",
+          "code": "CZ-JM"
+        },
+        {
+          "nuts": "CZ041",
+          "iso": "CZ-41",
+          "code": "CZ-KA"
+        },
+        {
+          "nuts": "CZ052",
+          "iso": "CZ-52",
+          "code": "CZ-KR"
+        },
+        {
+          "nuts": "CZ051",
+          "iso": "CZ-51",
+          "code": "CZ-LI"
+        },
+        {
+          "nuts": "CZ080",
+          "iso": "CZ-80",
+          "code": "CZ-MO"
+        },
+        {
+          "nuts": "CZ071",
+          "iso": "CZ-71",
+          "code": "CZ-OL"
+        },
+        {
+          "nuts": "CZ053",
+          "iso": "CZ-53",
+          "code": "CZ-PA"
+        },
+        {
+          "nuts": "CZ032",
+          "iso": "CZ-32",
+          "code": "CZ-PL"
+        },
+        {
+          "nuts": "CZ010",
+          "iso": "CZ-10",
+          "code": "CZ-PR"
+        },
+        {
+          "nuts": "CZ020",
+          "iso": "CZ-20",
+          "code": "CZ-ST"
+        },
+        {
+          "nuts": "CZ042",
+          "iso": "CZ-42",
+          "code": "CZ-US"
+        },
+        {
+          "nuts": "CZ063",
+          "iso": "CZ-63",
+          "code": "CZ-VY"
+        },
+        {
+          "nuts": "CZ072",
+          "iso": "CZ-72",
+          "code": "CZ-ZL"
+        }
+      ]
     }
   ]
 }
