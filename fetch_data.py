@@ -1,9 +1,12 @@
+import sys
 import json
 from enum import StrEnum
 from dataclasses import dataclass, asdict
 from typing import Dict, Optional
 import requests
 from pprint import pprint, pformat
+from pathlib import Path
+from icecream import ic
 
 
 def parse_names_from_data(names_list: list[Dict]) -> tuple[str, Optional[str]]:
@@ -38,7 +41,8 @@ class Country:
     @classmethod
     def from_dict(cls, data: Dict):
         iso = data.get("isoCode")
-        assert iso is not None, f"Could not parse iso from country data: {data}"
+        assert iso is not None, f"Could not parse iso from country data: {
+            data}"
         code = data.get("code")
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
@@ -61,7 +65,8 @@ class Subdivision:
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
         short_name = data.get("shortName")
-        assert short_name is not None, f"Could not find key 'shortName' in data: {data}"
+        assert short_name is not None, f"Could not find key 'shortName' in data: {
+            data}"
         return cls(
             iso=iso,
             code=code,
@@ -84,21 +89,24 @@ class Holiday:
         # Dates
         start = data.get("startDate")
         end = data.get("endDate")
-        assert start is not None, f"Could not find key 'startDate' in data: {data}"
+        assert start is not None, f"Could not find key 'startDate' in data: {
+            data}"
         assert end is not None, f"Could not find key 'endDate' in data: {data}"
         # Names
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
         # Type
         hol_type_str = data.get("type")
-        assert hol_type_str is not None, f"Could not find key 'type' in data: {data}"
+        assert hol_type_str is not None, f"Could not find key 'type' in data: {
+            data}"
         if hol_type_str not in ["Public", "School"]:
             hol_type_str = "Other"
         try:
             holiday_type = HolidayType(hol_type_str)
         except ValueError:
             raise ValueError(
-                f"Invalid holidayType: {hol_type_str}. Must be 'public' or 'school'"
+                f"Invalid holidayType: {
+                    hol_type_str}. Must be 'public' or 'school'"
             )
         return cls(
             start=start,
@@ -134,7 +142,8 @@ def get_countries() -> list[Country]:
 
 def get_subdivions(country_iso: str) -> list[Subdivision]:
     params = {"countryIsoCode": country_iso}
-    res = requests.get("https://openholidaysapi.org/Subdivisions", params=params)
+    res = requests.get(
+        "https://openholidaysapi.org/Subdivisions", params=params)
     data: list[Dict] = res.json()
     sub_list: list[Subdivision] = []
     for sub_obj in data:
@@ -156,9 +165,11 @@ def get_holidays(
         params["subdivisionCode"] = subdivision_code
 
     if hol_type == HolidayType.PUBLIC:
-        res = requests.get("https://openholidaysapi.org/PublicHolidays", params=params)
+        res = requests.get(
+            "https://openholidaysapi.org/PublicHolidays", params=params)
     else:
-        res = requests.get("https://openholidaysapi.org/SchoolHolidays", params=params)
+        res = requests.get(
+            "https://openholidaysapi.org/SchoolHolidays", params=params)
     data: list[Dict] = res.json()
     hol_list: list[Holiday] = []
     for hol_obj in data:
@@ -167,7 +178,14 @@ def get_holidays(
     return hol_list
 
 
+def extract_eu_from_world(world_json_file: str):
+    file_str = Path(world_json_file).read_text()
+    ic(file_str)
+
+
 if __name__ == "__main__":
+    extract_eu_from_world("assets/geo/world.geojson")
+    sys.exit()
     countries = get_countries()
     # countries = [Country(iso="AT", code="AT", name="Espania", name_en="Spain")]
     country_list = []
@@ -177,16 +195,19 @@ if __name__ == "__main__":
         for sub in subs:
             sub_hols_list: list[Holiday] = []
             # get via sub code first
-            school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.code)
+            school_hols = get_holidays(
+                HolidayType.SCHOOL, country.iso, sub.code)
             if school_hols == []:
                 # if sub code does not return, then use iso
-                school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.iso)
+                school_hols = get_holidays(
+                    HolidayType.SCHOOL, country.iso, sub.iso)
             # if still empty, print it
             if school_hols == []:
                 print(f"School holidays empty for sub: {sub}")
             pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.code)
             if pub_hols == []:
-                pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.iso)
+                pub_hols = get_holidays(
+                    HolidayType.PUBLIC, country.iso, sub.iso)
             if pub_hols == []:
                 print(f"Pub holidays empty for sub: {sub}")
             sub_hols_list.extend(school_hols)
