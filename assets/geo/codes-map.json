@@ -1102,5 +1102,20 @@
         }
       ]
     },
+    {
+      "country": "SI",
+      "codes": [
+        {
+          "nuts": "SI03",
+          "iso": "",
+          "code": "SI-VR"
+        },
+        {
+          "nuts": "SI04",
+          "iso": "",
+          "code": "SI-ZR"
+        }
+      ]
+    },
   ]
 }
