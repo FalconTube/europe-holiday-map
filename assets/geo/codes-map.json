@@ -1,0 +1,51 @@
+
+    {
+      "country": "AT",
+      "codes": [
+        {
+          "nuts": "AT11",
+          "iso": "AT-1",
+          "code": "AT-BL"
+        },
+        {
+          "nuts": "AT21",
+          "iso": "AT-2",
+          "code": "AT-K\u00c4"
+        },
+        {
+          "nuts": "AT12",
+          "iso": "AT-3",
+          "code": "AT-N\u00d6"
+        },
+        {
+          "nuts": "AT31",
+          "iso": "AT-4",
+          "code": "AT-O\u00d6"
+        },
+        {
+          "nuts": "AT32",
+          "iso": "AT-5",
+          "code": "AT-SB"
+        },
+        {
+          "nuts": "AT22",
+          "iso": "AT-6",
+          "code": "AT-SM"
+        },
+        {
+          "nuts": "AT33",
+          "iso": "AT-7",
+          "code": "AT-TI"
+        },
+        {
+          "nuts": "AT34",
+          "iso": "AT-8",
+          "code": "AT-VA"
+        },
+        {
+          "nuts": "AT13",
+          "iso": "AT-9",
+          "code": "AT-WI"
+        }
+      ]
+    },
