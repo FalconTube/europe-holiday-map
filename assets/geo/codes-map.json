@@ -572,5 +572,110 @@
         },
       ]
     },
+    {
+      "country": "IT",
+      "codes": [
+        {
+          "nuts": "ITF1",
+          "iso": "IT-65",
+          "code": "IT-AB"
+        },
+        {
+          "nuts": "ITF5",
+          "iso": "IT-77",
+          "code": "IT-BA"
+        },
+        {
+          "nuts": "ITF6",
+          "iso": "IT-78",
+          "code": "IT-CL"
+        },
+        {
+          "nuts": "ITF3",
+          "iso": "IT-72",
+          "code": "IT-CM"
+        },
+        {
+          "nuts": "ITH5",
+          "iso": "IT-45",
+          "code": "IT-ER"
+        },
+        {
+          "nuts": "ITH4",
+          "iso": "IT-36",
+          "code": "IT-FV"
+        },
+        {
+          "nuts": "ITI4",
+          "iso": "IT-62",
+          "code": "IT-LA"
+        },
+        {
+          "nuts": "ITC3",
+          "iso": "IT-42",
+          "code": "IT-LI"
+        },
+        {
+          "nuts": "ITC4",
+          "iso": "IT-25",
+          "code": "IT-LO"
+        },
+        {
+          "nuts": "ITI3",
+          "iso": "IT-57",
+          "code": "IT-MA"
+        },
+        {
+          "nuts": "ITF2",
+          "iso": "IT-67",
+          "code": "IT-MO"
+        },
+        {
+          "nuts": "ITC1",
+          "iso": "IT-21",
+          "code": "IT-PI"
+        },
+        {
+          "nuts": "ITF4",
+          "iso": "IT-75",
+          "code": "IT-PU"
+        },
+        {
+          "nuts": "ITG2",
+          "iso": "IT-88",
+          "code": "IT-SA"
+        },
+        {
+          "nuts": "ITG1",
+          "iso": "IT-82",
+          "code": "IT-SI"
+        },
+        {
+          "nuts": "ITI1",
+          "iso": "IT-52",
+          "code": "IT-TO"
+        },
+        {
+          "nuts": "ITH1",
+          "iso": "IT-32",
+          "code": "IT-TR"
+        },
+        {
+          "nuts": "ITI2",
+          "iso": "IT-55",
+          "code": "IT-UM"
+        },
+        {
+          "nuts": "ITC2",
+          "iso": "IT-23",
+          "code": "IT-VA"
+        },
+        {
+          "nuts": "ITH3",
+          "iso": "IT-34",
+          "code": "IT-VE"
+        }
+      ]
+    },
   ]
 }
