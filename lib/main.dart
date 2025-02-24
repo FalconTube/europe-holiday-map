@@ -2,18 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-import 'package:countries_world_map/countries_world_map.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
-import 'package:holiday_map/providers/single_country_provider.dart';
-import 'package:holiday_map/widgets/my_country_widget.dart';
-import 'package:syncfusion_flutter_maps/maps.dart';
+import 'package:holiday_map/widgets/all_countries_widget.dart';
 
 // Declare globally
 // late AllStateHolidays holdata;
 late List<AllStateHolidays> holdata;
+late Map<String, dynamic> codesMap;
 
 // Load data at start
 Future<List<AllStateHolidays>> _loadData() async {
@@ -27,49 +25,69 @@ Future<List<AllStateHolidays>> _loadData() async {
   return outList;
 }
 
-class IsoAndCodeResults {
-  Map<String, String?> iso = {};
-  Map<String, String?> code = {};
+class CodeAndHoliday {
+  final String nutsCode;
+  final String holiday;
+
+  CodeAndHoliday({
+    required this.nutsCode,
+    required this.holiday,
+  });
 }
 
-IsoAndCodeResults findHolidaysForDate(
+List<CodeAndHoliday> findHolidaysForDate(
 // Map<String, String?> findHolidaysForDate(
-    DateTime selectedDate,
-    String country) {
+    DateTime selectedDate) {
   final allCountryEntries = holdata;
 
-  var iacResults = IsoAndCodeResults();
+  List<CodeAndHoliday> results = [];
 
   // Sometimes you just have to do a long for loop...
   // Find all holidays in all subdivisions in all countries
   for (final countryEntry in allCountryEntries) {
-    if (countryEntry.country != country) continue;
     for (final regionEntry in countryEntry.stateHolidays) {
+      final nutsCode = nutsFromCode(countryEntry.country, regionEntry);
+      if (nutsCode == null) {
+        Log.log(
+            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: $regionEntry");
+        continue;
+      }
       for (final holiday in regionEntry.holidays) {
         final startDate = holiday.start;
         final endDate = holiday.end;
 
         if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
             selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
-          if (regionEntry.iso != "") {
-            iacResults.iso[regionEntry.iso!] = holiday.name;
-          }
-          if (regionEntry.code != "") {
-            iacResults.code[regionEntry.code!] = holiday.name;
-          }
+          results
+              .add(CodeAndHoliday(nutsCode: nutsCode, holiday: holiday.name));
           break; // Exit inner loop once a holiday is found for the region.
         }
       }
     }
   }
 
-  return iacResults;
+  return results;
+}
+
+String? nutsFromCode(String country, StateHolidays regionEntry) {
+  final List<dynamic> subCodes = codesMap[country.toUpperCase()];
+  for (final codeMap in subCodes) {
+    final thisIso = codeMap["iso"];
+    final thisCode = codeMap["code"];
+    if (thisIso == regionEntry.iso || thisCode == regionEntry.code) {
+      return codeMap["nuts"];
+    }
+  }
+  return null;
 }
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Load data at start
   holdata = await _loadData();
+  final String response =
+      await rootBundle.loadString("assets/geo/codes-map.json");
+  codesMap = json.decode(response);
   runApp(ProviderScope(child: MyApp()));
 }
 
@@ -89,7 +107,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           useMaterial3: true),
-      home: MyHomePage(),
+      home: AllCountriesWidget(),
     );
   }
 }
@@ -104,50 +122,15 @@ class MyHomePage extends ConsumerStatefulWidget {
 class MyHomePageState extends ConsumerState<MyHomePage>
     with SingleTickerProviderStateMixin {
   late TabController controller;
-  late MapShapeSource _shapeSource;
-  late MapShapeSource _nutsSource;
-  late MapZoomPanBehavior _zoomPanBehavior;
 
   @override
   void initState() {
     controller = TabController(length: 1, initialIndex: 0, vsync: this);
-    _shapeSource = MapShapeSource.asset('assets/geo/eu-borders.geojson',
-        shapeDataField: 'CNTR_ID');
-    _nutsSource = MapShapeSource.asset('assets/geo/eu-nuts.geojson',
-        shapeDataField: 'NUTS_ID');
-    _zoomPanBehavior = MapZoomPanBehavior(
-      zoomLevel: 2,
-      focalLatLng: const MapLatLng(50.935173, 6.953101),
-      minZoomLevel: 2,
-      maxZoomLevel: 10,
-      enableDoubleTapZooming: true,
-    );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Padding(
-      padding: EdgeInsets.all(20),
-      child: SfMaps(
-        layers: <MapLayer>[
-          MapShapeLayer(
-            source: _nutsSource,
-            strokeWidth: 0.3,
-            color: Colors.grey.withValues(alpha: 0.2),
-            strokeColor: Colors.grey,
-            sublayers: <MapSublayer>[
-              MapShapeSublayer(
-                  source: _shapeSource,
-                  strokeWidth: 1.5,
-                  color: Colors.grey.withValues(alpha: 0.5),
-                  strokeColor: Colors.indigoAccent)
-            ],
-            zoomPanBehavior: _zoomPanBehavior,
-          ),
-        ],
-      ),
-    ));
+    return Scaffold();
   }
 }
