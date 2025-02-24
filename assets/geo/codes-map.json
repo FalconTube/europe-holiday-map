@@ -1,0 +1,1166 @@
+
+    {
+      "country": "AT",
+      "codes": [
+        {
+          "nuts": "AT11",
+          "iso": "AT-1",
+          "code": "AT-BL"
+        },
+        {
+          "nuts": "AT21",
+          "iso": "AT-2",
+          "code": "AT-K\u00c4"
+        },
+        {
+          "nuts": "AT12",
+          "iso": "AT-3",
+          "code": "AT-N\u00d6"
+        },
+        {
+          "nuts": "AT31",
+          "iso": "AT-4",
+          "code": "AT-O\u00d6"
+        },
+        {
+          "nuts": "AT32",
+          "iso": "AT-5",
+          "code": "AT-SB"
+        },
+        {
+          "nuts": "AT22",
+          "iso": "AT-6",
+          "code": "AT-SM"
+        },
+        {
+          "nuts": "AT33",
+          "iso": "AT-7",
+          "code": "AT-TI"
+        },
+        {
+          "nuts": "AT34",
+          "iso": "AT-8",
+          "code": "AT-VA"
+        },
+        {
+          "nuts": "AT13",
+          "iso": "AT-9",
+          "code": "AT-WI"
+        }
+      ]
+    },
+    {
+      "country": "BE",
+      "codes": [
+        {
+          "nuts": "BE3"
+          "iso": null,
+          "code": "BE-DE"
+        },
+        {
+          "nuts": "BE1"
+          "iso": null,
+          "code": "BE-FR"
+        },
+        {
+          "nuts": "BE2"
+          "iso": null,
+          "code": "BE-NL"
+        }
+      ]
+    },
+    {
+  "country": "CH",
+  "codes": [
+    {
+      "nuts": "CH033"
+      "iso": "CH-AG",
+      "code": "CH-AG",
+    },
+    {
+      "nuts": "CH054"
+      "iso": "CH-AI",
+      "code": "CH-AI",
+    },
+    {
+      "nuts": "CH053"
+      "iso": "CH-AR",
+      "code": "CH-AR",
+    },
+    {
+      "nuts": "CH021"
+      "iso": "CH-BE",
+      "code": "CH-BE",
+    },
+    {
+      "nuts": "CH032"
+      "iso": "CH-BL",
+      "code": "CH-BL",
+    },
+    {
+      "nuts": "CH031"
+      "iso": "CH-BS",
+      "code": "CH-BS",
+    },
+    {
+      "nuts": "CH022"
+      "iso": "CH-FR",
+      "code": "CH-FR",
+    },
+    {
+      "nuts": "CH013"
+      "iso": "CH-GE",
+      "code": "CH-GE",
+    },
+    {
+      "nuts": "CH051"
+      "iso": "CH-GL",
+      "code": "CH-GL",
+    },
+    {
+      "nuts": "CH056"
+      "iso": "CH-GR",
+      "code": "CH-GR",
+    },
+    {
+      "nuts": "CH025"
+      "iso": "CH-JU",
+      "code": "CH-JU",
+    },
+    {
+      "nuts": "CH061"
+      "iso": "CH-LU",
+      "code": "CH-LU",
+    },
+    {
+      "nuts": "CH024"
+      "iso": "CH-NE",
+      "code": "CH-NE",
+    },
+    {
+      "nuts": "CH065"
+      "iso": "CH-NW",
+      "code": "CH-NW",
+    },
+    {
+      "nuts": "CH064"
+      "iso": "CH-OW",
+      "code": "CH-OW",
+    },
+    {
+      "nuts": "CH055"
+      "iso": "CH-SG",
+      "code": "CH-SG",
+    },
+    {
+      "nuts": "CH052"
+      "iso": "CH-SH",
+      "code": "CH-SH",
+    },
+    {
+      "nuts": "CH023"
+      "iso": "CH-SO",
+      "code": "CH-SO",
+    },
+    {
+      "nuts": "CH063"
+      "iso": "CH-SZ",
+      "code": "CH-SZ",
+    },
+    {
+      "nuts": "CH057"
+      "iso": "CH-TG",
+      "code": "CH-TG",
+    },
+    {
+      "nuts": "CH070"
+      "iso": "CH-TI",
+      "code": "CH-TI",
+    },
+    {
+      "nuts": "CH062"
+      "iso": "CH-UR",
+      "code": "CH-UR",
+    },
+    {
+      "nuts": "CH011"
+      "iso": "CH-VD",
+      "code": "CH-VD",
+    },
+    {
+      "nuts": "CH012"
+      "iso": "CH-VS",
+      "code": "CH-VS",
+    },
+    {
+      "nuts": "CH066"
+      "iso": "CH-ZG",
+      "code": "CH-ZG",
+    },
+    {
+      "nuts": "CH040"
+      "iso": "CH-ZH",
+      "code": "CH-ZH",
+    },
+    {
+      "country": "CZ",
+      "codes": [
+        {
+          "nuts": "CZ031",
+          "iso": "CZ-31",
+          "code": "CZ-JC"
+        },
+        {
+          "nuts": "CZ064",
+          "iso": "CZ-64",
+          "code": "CZ-JM"
+        },
+        {
+          "nuts": "CZ041",
+          "iso": "CZ-41",
+          "code": "CZ-KA"
+        },
+        {
+          "nuts": "CZ052",
+          "iso": "CZ-52",
+          "code": "CZ-KR"
+        },
+        {
+          "nuts": "CZ051",
+          "iso": "CZ-51",
+          "code": "CZ-LI"
+        },
+        {
+          "nuts": "CZ080",
+          "iso": "CZ-80",
+          "code": "CZ-MO"
+        },
+        {
+          "nuts": "CZ071",
+          "iso": "CZ-71",
+          "code": "CZ-OL"
+        },
+        {
+          "nuts": "CZ053",
+          "iso": "CZ-53",
+          "code": "CZ-PA"
+        },
+        {
+          "nuts": "CZ032",
+          "iso": "CZ-32",
+          "code": "CZ-PL"
+        },
+        {
+          "nuts": "CZ010",
+          "iso": "CZ-10",
+          "code": "CZ-PR"
+        },
+        {
+          "nuts": "CZ020",
+          "iso": "CZ-20",
+          "code": "CZ-ST"
+        },
+        {
+          "nuts": "CZ042",
+          "iso": "CZ-42",
+          "code": "CZ-US"
+        },
+        {
+          "nuts": "CZ063",
+          "iso": "CZ-63",
+          "code": "CZ-VY"
+        },
+        {
+          "nuts": "CZ072",
+          "iso": "CZ-72",
+          "code": "CZ-ZL"
+        }
+      ]
+    },
+    {
+      "country": "DE",
+      "codes": [
+        {
+          "nuts": "DE4",
+          "iso": "DE-BB",
+          "code": "DE-BB"
+        },
+        {
+          "nuts": "DE3",
+          "iso": "DE-BE",
+          "code": "DE-BE"
+        },
+        {
+          "nuts": "DE1",
+          "iso": "DE-BW",
+          "code": "DE-BW"
+        },
+        {
+          "nuts": "DE2",
+          "iso": "DE-BY",
+          "code": "DE-BY"
+        },
+        {
+          "nuts": "DE5",
+          "iso": "DE-HB",
+          "code": "DE-HB"
+        },
+        {
+          "nuts": "DE7",
+          "iso": "DE-HE",
+          "code": "DE-HE"
+        },
+        {
+          "nuts": "DE6",
+          "iso": "DE-HH",
+          "code": "DE-HH"
+        },
+        {
+          "nuts": "DE8",
+          "iso": "DE-MV",
+          "code": "DE-MV"
+        },
+        {
+          "nuts": "DE9",
+          "iso": "DE-NI",
+          "code": "DE-NI"
+        },
+        {
+          "nuts": "DEA",
+          "iso": "DE-NW",
+          "code": "DE-NW"
+        },
+        {
+          "nuts": "DEB",
+          "iso": "DE-RP",
+          "code": "DE-RP"
+        },
+        {
+          "nuts": "DED",
+          "iso": "DE-SH",
+          "code": "DE-SH"
+        },
+        {
+          "nuts": "DEC",
+          "iso": "DE-SL",
+          "code": "DE-SL"
+        },
+        {
+          "nuts": "DEE",
+          "iso": "DE-SN",
+          "code": "DE-SN"
+        },
+        {
+          "nuts": "DEF",
+          "iso": "DE-ST",
+          "code": "DE-ST"
+        },
+        {
+          "nuts": "DEG",
+          "iso": "DE-TH",
+          "code": "DE-TH"
+        }
+      ]
+    },
+    {
+      "country": "ES",
+      "codes": [
+        {
+          "nuts": "ES61",
+          "iso": "ES-AN",
+          "code": "ES-AN"
+        },
+        {
+          "nuts": "ES24",
+          "iso": "ES-AR",
+          "code": "ES-AR"
+        },
+        {
+          "nuts": "ES12",
+          "iso": "ES-AS",
+          "code": "ES-AS"
+        },
+        {
+          "nuts": "ES13",
+          "iso": "ES-CB",
+          "code": "ES-CB"
+        },
+        {
+          "nuts": "ES63",
+          "iso": "ES-CE",
+          "code": "ES-CE"
+        },
+        {
+          "nuts": "ES41",
+          "iso": "ES-CL",
+          "code": "ES-CL"
+        },
+        {
+          "nuts": "ES42",
+          "iso": "ES-CM",
+          "code": "ES-CM"
+        },
+        {
+          "nuts": "ES70",
+          "iso": "ES-CN",
+          "code": "ES-CN"
+        },
+        {
+          "nuts": "ES51",
+          "iso": "ES-CT",
+          "code": "ES-CT"
+        },
+        {
+          "nuts": "ES43",
+          "iso": "ES-EX",
+          "code": "ES-EX"
+        },
+        {
+          "nuts": "ES11",
+          "iso": "ES-GA",
+          "code": "ES-GA"
+        },
+        {
+          "nuts": "ES53",
+          "iso": "ES-IB",
+          "code": "ES-IB"
+        },
+        {
+          "nuts": "ES62",
+          "iso": "ES-MC",
+          "code": "ES-MC"
+        },
+        {
+          "nuts": "ES30",
+          "iso": "ES-MD",
+          "code": "ES-MD"
+        },
+        {
+          "nuts": "ES64",
+          "iso": "ES-ML",
+          "code": "ES-ML"
+        },
+        {
+          "nuts": "ES22",
+          "iso": "ES-NC",
+          "code": "ES-NC"
+        },
+        {
+          "nuts": "ES21",
+          "iso": "ES-PV",
+          "code": "ES-PV"
+        },
+        {
+          "nuts": "ES23",
+          "iso": "ES-RI",
+          "code": "ES-RI"
+        },
+        {
+          "nuts": "ES52",
+          "iso": "ES-VC",
+          "code": "ES-VC"
+        }
+      ]
+    },
+    {
+      "country": "FR",
+      "codes": [
+        {
+          "nuts": "FRK",
+          "iso": "FR-ARA",
+          "code": "FR-AR"
+        },
+        {
+          "nuts": "FRC",
+          "iso": "FR-BFC",
+          "code": "FR-BF"
+        },
+        {
+          "nuts": "FR91",
+          "iso": "FR-BL",
+          "code": "FR-BL"
+        },
+        {
+          "nuts": "FRH",
+          "iso": "FR-BRE",
+          "code": "FR-BT"
+        },
+        {
+          "nuts": "FR83",
+          "iso": "FR-20R",
+          "code": "FR-CO"
+        },
+        {
+          "nuts": "FRB",
+          "iso": "FR-CVL",
+          "code": "FR-CV"
+        },
+        {
+          "nuts": "FRF",
+          "iso": "FR-GES",
+          "code": "FR-GE"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-971",
+          "code": "FR-GP"
+        },
+        {
+          "nuts": "FRA3",
+          "iso": "FR-973",
+          "code": "FR-GY"
+        },
+        {
+          "nuts": "FRE",
+          "iso": "FR-HDF",
+          "code": "FR-HF"
+        },
+        {
+          "nuts": "FR1",
+          "iso": "FR-IDF",
+          "code": "FR-IF"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-MF",
+          "code": "FR-MF"
+        },
+        {
+          "nuts": "FRA2",
+          "iso": "FR-972",
+          "code": "FR-MQ"
+        },
+        {
+          "nuts": "FRI",
+          "iso": "FR-NAQ",
+          "code": "FR-NA"
+        },
+        {
+          "nuts": "FRD",
+          "iso": "FR-NOR",
+          "code": "FR-NO"
+        },
+        {
+          "nuts": "FRJ",
+          "iso": "FR-OCC",
+          "code": "FR-OC"
+        },
+        {
+          "nuts": "FRL",
+          "iso": "FR-PAC",
+          "code": "FR-PC"
+        },
+        {
+          "nuts": "FRG",
+          "iso": "FR-PDL",
+          "code": "FR-PL"
+        },
+        {
+          "nuts": "FRA4",
+          "iso": "FR-974",
+          "code": "FR-RU"
+        },
+        {
+          "nuts": "FRA1",
+          "iso": "FR-PM",
+          "code": "FR-SP"
+        },
+        {
+          "nuts": "FRY5",
+          "iso": "FR-976",
+          "code": "FR-YT"
+        },
+      ]
+    },
+    {
+      "country": "IT",
+      "codes": [
+        {
+          "nuts": "ITF1",
+          "iso": "IT-65",
+          "code": "IT-AB"
+        },
+        {
+          "nuts": "ITF5",
+          "iso": "IT-77",
+          "code": "IT-BA"
+        },
+        {
+          "nuts": "ITF6",
+          "iso": "IT-78",
+          "code": "IT-CL"
+        },
+        {
+          "nuts": "ITF3",
+          "iso": "IT-72",
+          "code": "IT-CM"
+        },
+        {
+          "nuts": "ITH5",
+          "iso": "IT-45",
+          "code": "IT-ER"
+        },
+        {
+          "nuts": "ITH4",
+          "iso": "IT-36",
+          "code": "IT-FV"
+        },
+        {
+          "nuts": "ITI4",
+          "iso": "IT-62",
+          "code": "IT-LA"
+        },
+        {
+          "nuts": "ITC3",
+          "iso": "IT-42",
+          "code": "IT-LI"
+        },
+        {
+          "nuts": "ITC4",
+          "iso": "IT-25",
+          "code": "IT-LO"
+        },
+        {
+          "nuts": "ITI3",
+          "iso": "IT-57",
+          "code": "IT-MA"
+        },
+        {
+          "nuts": "ITF2",
+          "iso": "IT-67",
+          "code": "IT-MO"
+        },
+        {
+          "nuts": "ITC1",
+          "iso": "IT-21",
+          "code": "IT-PI"
+        },
+        {
+          "nuts": "ITF4",
+          "iso": "IT-75",
+          "code": "IT-PU"
+        },
+        {
+          "nuts": "ITG2",
+          "iso": "IT-88",
+          "code": "IT-SA"
+        },
+        {
+          "nuts": "ITG1",
+          "iso": "IT-82",
+          "code": "IT-SI"
+        },
+        {
+          "nuts": "ITI1",
+          "iso": "IT-52",
+          "code": "IT-TO"
+        },
+        {
+          "nuts": "ITH1",
+          "iso": "IT-32",
+          "code": "IT-TR"
+        },
+        {
+          "nuts": "ITI2",
+          "iso": "IT-55",
+          "code": "IT-UM"
+        },
+        {
+          "nuts": "ITC2",
+          "iso": "IT-23",
+          "code": "IT-VA"
+        },
+        {
+          "nuts": "ITH3",
+          "iso": "IT-34",
+          "code": "IT-VE"
+        }
+      ]
+    },
+    {
+      "country": "NL",
+      "codes": [
+        {
+          "nuts": "NL2",
+          "iso": null,
+          "code": "NL-MI"
+        },
+        {
+          "nuts": "NL1",
+          "iso": null,
+          "code": "NL-NO"
+        },
+        {
+          "nuts": "NL4",
+          "iso": null,
+          "code": "NL-ZU"
+        }
+      ]
+    },
+    {
+      "country": "PL",
+      "codes": [
+        {
+          "nuts": "PL02",
+          "iso": "PL-02",
+          "code": "PL-DS"
+        },
+        {
+          "nuts": "PL04",
+          "iso": "PL-04",
+          "code": "PL-KP"
+        },
+        {
+          "nuts": "PL06",
+          "iso": "PL-06",
+          "code": "PL-LB"
+        },
+        {
+          "nuts": "PL08",
+          "iso": "PL-08",
+          "code": "PL-LD"
+        },
+        {
+          "nuts": "PL10",
+          "iso": "PL-10",
+          "code": "PL-LU"
+        },
+        {
+          "nuts": "PL12",
+          "iso": "PL-12",
+          "code": "PL-MA"
+        },
+        {
+          "nuts": "PL14",
+          "iso": "PL-14",
+          "code": "PL-MZ"
+        },
+        {
+          "nuts": "PL16",
+          "iso": "PL-16",
+          "code": "PL-OP"
+        },
+        {
+          "nuts": "PL18",
+          "iso": "PL-18",
+          "code": "PL-PD"
+        },
+        {
+          "nuts": "PL20",
+          "iso": "PL-20",
+          "code": "PL-PK"
+        },
+        {
+          "nuts": "PL22",
+          "iso": "PL-22",
+          "code": "PL-PM"
+        },
+        {
+          "nuts": "PL24",
+          "iso": "PL-24",
+          "code": "PL-SK"
+        },
+        {
+          "nuts": "PL26",
+          "iso": "PL-26",
+          "code": "PL-SL"
+        },
+        {
+          "nuts": "PL28",
+          "iso": "PL-28",
+          "code": "PL-WN"
+        },
+        {
+          "nuts": "PL30",
+          "iso": "PL-30",
+          "code": "PL-WP"
+        },
+        {
+          "nuts": "PL32",
+          "iso": "PL-32",
+          "code": "PL-ZP"
+        }
+      ]
+    },
+    {
+      "country": "PT",
+      "codes": [
+        {
+          "nuts": "PT20",
+          "iso": "PT-20",
+          "code": "PT-AC"
+        },
+        {
+          "nuts": "PT01",
+          "iso": "PT-01",
+          "code": "PT-AV"
+        },
+        {
+          "nuts": "PT04",
+          "iso": "PT-04",
+          "code": "PT-BA"
+        },
+        {
+          "nuts": "PT02",
+          "iso": "PT-02",
+          "code": "PT-BE"
+        },
+        {
+          "nuts": "PT03",
+          "iso": "PT-03",
+          "code": "PT-BR"
+        },
+        {
+          "nuts": "PT05",
+          "iso": "PT-05",
+          "code": "PT-CB"
+        },
+        {
+          "nuts": "PT06",
+          "iso": "PT-06",
+          "code": "PT-CO"
+        },
+        {
+          "nuts": "PT07",
+          "iso": "PT-07",
+          "code": "PT-EV"
+        },
+        {
+          "nuts": "PT08",
+          "iso": "PT-08",
+          "code": "PT-FA"
+        },
+        {
+          "nuts": "PT09",
+          "iso": "PT-09",
+          "code": "PT-GU"
+        },
+        {
+          "nuts": "PT10",
+          "iso": "PT-10",
+          "code": "PT-LE"
+        },
+        {
+          "nuts": "PT11",
+          "iso": "PT-11",
+          "code": "PT-LI"
+        },
+        {
+          "nuts": "PT30",
+          "iso": "PT-30",
+          "code": "PT-MA"
+        },
+        {
+          "nuts": "PT12",
+          "iso": "PT-12",
+          "code": "PT-PA"
+        },
+        {
+          "nuts": "PT13",
+          "iso": "PT-13",
+          "code": "PT-PO"
+        },
+        {
+          "nuts": "PT14",
+          "iso": "PT-14",
+          "code": "PT-SA"
+        },
+        {
+          "nuts": "PT15",
+          "iso": "PT-15",
+          "code": "PT-SE"
+        },
+        {
+          "nuts": "PT16",
+          "iso": "PT-16",
+          "code": "PT-VC"
+        },
+        {
+          "nuts": "PT18",
+          "iso": "PT-18",
+          "code": "PT-VI"
+        },
+        {
+          "nuts": "PT17",
+          "iso": "PT-17",
+          "code": "PT-VR"
+        }
+      ]
+    },
+    {
+      "country": "RO",
+      "codes": [
+        {
+          "nuts": "RO121",
+          "iso": "RO-AB",
+          "code": "RO-AB"
+        },
+        {
+          "nuts": "RO311",
+          "iso": "RO-AG",
+          "code": "RO-AG"
+        },
+        {
+          "nuts": "RO421",
+          "iso": "RO-AR",
+          "code": "RO-AR"
+        },
+        {
+          "nuts": "RO211",
+          "iso": "RO-BC",
+          "code": "RO-BC"
+        },
+        {
+          "nuts": "RO111",
+          "iso": "RO-BH",
+          "code": "RO-BH"
+        },
+        {
+          "nuts": "RO112",
+          "iso": "RO-BN",
+          "code": "RO-BN"
+        },
+        {
+          "nuts": "RO221",
+          "iso": "RO-BR",
+          "code": "RO-BR"
+        },
+        {
+          "nuts": "RO212",
+          "iso": "RO-BT",
+          "code": "RO-BT"
+        },
+        {
+          "nuts": "RO321",
+          "iso": "RO-B",
+          "code": "RO-BU"
+        },
+        {
+          "nuts": "RO122",
+          "iso": "RO-BV",
+          "code": "RO-BV"
+        },
+        {
+          "nuts": "RO222",
+          "iso": "RO-BZ",
+          "code": "RO-BZ"
+        },
+        {
+          "nuts": "RO113",
+          "iso": "RO-CJ",
+          "code": "RO-CJ"
+        },
+        {
+          "nuts": "RO312",
+          "iso": "RO-CL",
+          "code": "RO-CL"
+        },
+        {
+          "nuts": "RO422",
+          "iso": "RO-CS",
+          "code": "RO-CS"
+        },
+        {
+          "nuts": "RO223",
+          "iso": "RO-CT",
+          "code": "RO-CT"
+        },
+        {
+          "nuts": "RO123",
+          "iso": "RO-CV",
+          "code": "RO-CV"
+        },
+        {
+          "nuts": "RO313",
+          "iso": "RO-DB",
+          "code": "RO-DB"
+        },
+        {
+          "nuts": "RO411",
+          "iso": "RO-DJ",
+          "code": "RO-DJ"
+        },
+        {
+          "nuts": "RO412",
+          "iso": "RO-GJ",
+          "code": "RO-GJ"
+        },
+        {
+          "nuts": "RO224",
+          "iso": "RO-GL",
+          "code": "RO-GL"
+        },
+        {
+          "nuts": "RO124",
+          "iso": "RO-GR",
+          "code": "RO-GR"
+        },
+        {
+          "nuts": "RO423",
+          "iso": "RO-HD",
+          "code": "RO-HD"
+        },
+        {
+          "nuts": "RO124",
+          "iso": "RO-HR",
+          "code": "RO-HR"
+        },
+        {
+          "nuts": "RO322",
+          "iso": "RO-IF",
+          "code": "RO-IF"
+        },
+        {
+          "nuts": "RO315",
+          "iso": "RO-IL",
+          "code": "RO-IL"
+        },
+        {
+          "nuts": "RO213",
+          "iso": "RO-IS",
+          "code": "RO-IS"
+        },
+        {
+          "nuts": "RO413",
+          "iso": "RO-MH",
+          "code": "RO-MH"
+        },
+        {
+          "nuts": "RO114",
+          "iso": "RO-MM",
+          "code": "RO-MM"
+        },
+        {
+          "nuts": "RO125",
+          "iso": "RO-MS",
+          "code": "RO-MS"
+        },
+        {
+          "nuts": "RO214",
+          "iso": "RO-NT",
+          "code": "RO-NT"
+        },
+        {
+          "nuts": "RO414",
+          "iso": "RO-OT",
+          "code": "RO-OT"
+        },
+        {
+          "nuts": "RO316",
+          "iso": "RO-PH",
+          "code": "RO-PH"
+        },
+        {
+          "nuts": "RO126",
+          "iso": "RO-SB",
+          "code": "RO-SB"
+        },
+        {
+          "nuts": "RO116",
+          "iso": "RO-SJ",
+          "code": "RO-SJ"
+        },
+        {
+          "nuts": "RO115",
+          "iso": "RO-SM",
+          "code": "RO-SM"
+        },
+        {
+          "nuts": "RO215",
+          "iso": "RO-SV",
+          "code": "RO-SV"
+        },
+        {
+          "nuts": "RO225",
+          "iso": "RO-TL",
+          "code": "RO-TL"
+        },
+        {
+          "nuts": "RO424",
+          "iso": "RO-TM",
+          "code": "RO-TM"
+        },
+        {
+          "nuts": "RO317",
+          "iso": "RO-TR",
+          "code": "RO-TR"
+        },
+        {
+          "nuts": "RO415",
+          "iso": "RO-VL",
+          "code": "RO-VL"
+        },
+        {
+          "nuts": "RO226",
+          "iso": "RO-VN",
+          "code": "RO-VN"
+        },
+        {
+          "nuts": "RO216",
+          "iso": "RO-VS",
+          "code": "RO-VS"
+        }
+      ]
+    },
+    {
+      "country": "SI",
+      "codes": [
+        {
+          "nuts": "SI03",
+          "iso": "",
+          "code": "SI-VR"
+        },
+        {
+          "nuts": "SI04",
+          "iso": "",
+          "code": "SI-ZR"
+        }
+      ]
+    },
+    {
+      "country": "SK",
+      "codes": [
+        {
+          "nuts": "SK032",
+          "iso": "SK-BC",
+          "code": "SK-BC"
+        },
+        {
+          "nuts": "SK011",
+          "iso": "SK-BL",
+          "code": "SK-BL"
+        },
+        {
+          "nuts": "SK042",
+          "iso": "SK-KI",
+          "code": "SK-KI"
+        },
+        {
+          "nuts": "SK023",
+          "iso": "SK-NI",
+          "code": "SK-NI"
+        },
+        {
+          "nuts": "SK041",
+          "iso": "SK-PV",
+          "code": "SK-PV"
+        },
+        {
+          "nuts": "SK021",
+          "iso": "SK-TA",
+          "code": "SK-TA"
+        },
+        {
+          "nuts": "SK022",
+          "iso": "SK-TC",
+          "code": "SK-TC"
+        },
+        {
+          "nuts": "SK031",
+          "iso": "SK-ZI",
+          "code": "SK-ZI"
+        }
+      ]
+    }
+  ]
+}
