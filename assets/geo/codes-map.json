@@ -450,42 +450,42 @@
   ],
   "FR": [
     {
-      "nuts": "FRK",
+      "nuts": "FRK2",
       "iso": "FR-ARA",
       "code": "FR-AR"
     },
     {
-      "nuts": "FRC",
+      "nuts": "FRC1",
       "iso": "FR-BFC",
       "code": "FR-BF"
     },
     {
-      "nuts": "FR91",
+      "nuts": "FRY1",
       "iso": "FR-BL",
       "code": "FR-BL"
     },
     {
-      "nuts": "FRH",
+      "nuts": "FRH0",
       "iso": "FR-BRE",
       "code": "FR-BT"
     },
     {
-      "nuts": "FR83",
+      "nuts": "FRM0",
       "iso": "FR-20R",
       "code": "FR-CO"
     },
     {
-      "nuts": "FRB",
+      "nuts": "FRB0",
       "iso": "FR-CVL",
       "code": "FR-CV"
     },
     {
-      "nuts": "FRF",
+      "nuts": "FRF2",
       "iso": "FR-GES",
       "code": "FR-GE"
     },
     {
-      "nuts": "FRA1",
+      "nuts": "FRY1",
       "iso": "FR-971",
       "code": "FR-GP"
     },
@@ -495,17 +495,17 @@
       "code": "FR-GY"
     },
     {
-      "nuts": "FRE",
+      "nuts": "FRE1",
       "iso": "FR-HDF",
       "code": "FR-HF"
     },
     {
-      "nuts": "FR1",
+      "nuts": "FR10",
       "iso": "FR-IDF",
       "code": "FR-IF"
     },
     {
-      "nuts": "FRA1",
+      "nuts": "FRY1",
       "iso": "FR-MF",
       "code": "FR-MF"
     },
@@ -515,27 +515,27 @@
       "code": "FR-MQ"
     },
     {
-      "nuts": "FRI",
+      "nuts": "FRI1",
       "iso": "FR-NAQ",
       "code": "FR-NA"
     },
     {
-      "nuts": "FRD",
+      "nuts": "FRD1",
       "iso": "FR-NOR",
       "code": "FR-NO"
     },
     {
-      "nuts": "FRJ",
+      "nuts": "FRJ1",
       "iso": "FR-OCC",
       "code": "FR-OC"
     },
     {
-      "nuts": "FRL",
+      "nuts": "FRL0",
       "iso": "FR-PAC",
       "code": "FR-PC"
     },
     {
-      "nuts": "FRG",
+      "nuts": "FRG0",
       "iso": "FR-PDL",
       "code": "FR-PL"
     },
@@ -545,7 +545,7 @@
       "code": "FR-RU"
     },
     {
-      "nuts": "FRA1",
+      "nuts": "FRY1",
       "iso": "FR-PM",
       "code": "FR-SP"
     },
