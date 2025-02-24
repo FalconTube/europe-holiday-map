@@ -2,17 +2,16 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-import 'package:countries_world_map/countries_world_map.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
-import 'package:holiday_map/providers/single_country_provider.dart';
-import 'package:holiday_map/widgets/my_country_widget.dart';
+import 'package:holiday_map/widgets/all_countries_widget.dart';
 
 // Declare globally
 // late AllStateHolidays holdata;
 late List<AllStateHolidays> holdata;
+late Map<String, dynamic> codesMap;
 
 // Load data at start
 Future<List<AllStateHolidays>> _loadData() async {
@@ -26,49 +25,69 @@ Future<List<AllStateHolidays>> _loadData() async {
   return outList;
 }
 
-class IsoAndCodeResults {
-  Map<String, String?> iso = {};
-  Map<String, String?> code = {};
+class CodeAndHoliday {
+  final String nutsCode;
+  final String holiday;
+
+  CodeAndHoliday({
+    required this.nutsCode,
+    required this.holiday,
+  });
 }
 
-IsoAndCodeResults findHolidaysForDate(
+List<CodeAndHoliday> findHolidaysForDate(
 // Map<String, String?> findHolidaysForDate(
-    DateTime selectedDate,
-    String country) {
+    DateTime selectedDate) {
   final allCountryEntries = holdata;
 
-  var iacResults = IsoAndCodeResults();
+  List<CodeAndHoliday> results = [];
 
   // Sometimes you just have to do a long for loop...
   // Find all holidays in all subdivisions in all countries
   for (final countryEntry in allCountryEntries) {
-    if (countryEntry.country != country) continue;
     for (final regionEntry in countryEntry.stateHolidays) {
+      final nutsCode = nutsFromCode(countryEntry.country, regionEntry);
+      if (nutsCode == null) {
+        Log.log(
+            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: $regionEntry");
+        continue;
+      }
       for (final holiday in regionEntry.holidays) {
         final startDate = holiday.start;
         final endDate = holiday.end;
 
         if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
             selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
-          if (regionEntry.iso != "") {
-            iacResults.iso[regionEntry.iso!] = holiday.name;
-          }
-          if (regionEntry.code != "") {
-            iacResults.code[regionEntry.code!] = holiday.name;
-          }
+          results
+              .add(CodeAndHoliday(nutsCode: nutsCode, holiday: holiday.name));
           break; // Exit inner loop once a holiday is found for the region.
         }
       }
     }
   }
 
-  return iacResults;
+  return results;
+}
+
+String? nutsFromCode(String country, StateHolidays regionEntry) {
+  final List<dynamic> subCodes = codesMap[country.toUpperCase()];
+  for (final codeMap in subCodes) {
+    final thisIso = codeMap["iso"];
+    final thisCode = codeMap["code"];
+    if (thisIso == regionEntry.iso || thisCode == regionEntry.code) {
+      return codeMap["nuts"];
+    }
+  }
+  return null;
 }
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Load data at start
   holdata = await _loadData();
+  final String response =
+      await rootBundle.loadString("assets/geo/codes-map.json");
+  codesMap = json.decode(response);
   runApp(ProviderScope(child: MyApp()));
 }
 
@@ -88,7 +107,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark,
           ),
           useMaterial3: true),
-      home: MyHomePage(),
+      home: AllCountriesWidget(),
     );
   }
 }
@@ -112,15 +131,6 @@ class MyHomePageState extends ConsumerState<MyHomePage>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Holiday Map'),
-          elevation: 8,
-        ),
-        body: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child: MyCountryPage(country: "world", isWorld: true),
-        ));
+    return Scaffold();
   }
 }

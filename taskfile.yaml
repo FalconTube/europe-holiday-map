@@ -20,7 +20,7 @@ tasks:
 
   build:
     cmds:
-      - flutter build web --wasm --release --verbose
+      - flutter build web --wasm --release
 
   serve:
     dir: build/web
