@@ -9,6 +9,7 @@ import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/providers/single_country_provider.dart';
 import 'package:holiday_map/widgets/my_country_widget.dart';
+import 'package:syncfusion_flutter_maps/maps.dart';
 
 // Declare globally
 // late AllStateHolidays holdata;
@@ -103,24 +104,50 @@ class MyHomePage extends ConsumerStatefulWidget {
 class MyHomePageState extends ConsumerState<MyHomePage>
     with SingleTickerProviderStateMixin {
   late TabController controller;
+  late MapShapeSource _shapeSource;
+  late MapShapeSource _nutsSource;
+  late MapZoomPanBehavior _zoomPanBehavior;
 
   @override
   void initState() {
     controller = TabController(length: 1, initialIndex: 0, vsync: this);
+    _shapeSource = MapShapeSource.asset('assets/geo/eu-borders.geojson',
+        shapeDataField: 'CNTR_ID');
+    _nutsSource = MapShapeSource.asset('assets/geo/eu-nuts.geojson',
+        shapeDataField: 'NUTS_ID');
+    _zoomPanBehavior = MapZoomPanBehavior(
+      zoomLevel: 2,
+      focalLatLng: const MapLatLng(50.935173, 6.953101),
+      minZoomLevel: 2,
+      maxZoomLevel: 10,
+      enableDoubleTapZooming: true,
+    );
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Holiday Map'),
-          elevation: 8,
-        ),
-        body: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child: MyCountryPage(country: "world", isWorld: true),
-        ));
+        body: Padding(
+      padding: EdgeInsets.all(20),
+      child: SfMaps(
+        layers: <MapLayer>[
+          MapShapeLayer(
+            source: _nutsSource,
+            strokeWidth: 0.3,
+            color: Colors.grey.withValues(alpha: 0.2),
+            strokeColor: Colors.grey,
+            sublayers: <MapSublayer>[
+              MapShapeSublayer(
+                  source: _shapeSource,
+                  strokeWidth: 1.5,
+                  color: Colors.grey.withValues(alpha: 0.5),
+                  strokeColor: Colors.indigoAccent)
+            ],
+            zoomPanBehavior: _zoomPanBehavior,
+          ),
+        ],
+      ),
+    ));
   }
 }
