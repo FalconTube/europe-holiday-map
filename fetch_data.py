@@ -192,15 +192,28 @@ def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
 
 
 def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
+    levels_map = {
+        "AT": 2,
+        "IT": 2,
+        "CH": 2,
+        "FR": 2,
+        "PL": 2,
+        "RO": 3,
+        "SK": 3,
+    }
     known_features = []
     for world_entry in in_json:
+        default_level = 1
         props = world_entry["properties"]
         country_code = props["CNTR_CODE"]
         if country_code not in country_iso_codes:
             continue
         # Only main level
+        if country_code.upper() in levels_map.keys():
+            default_level = levels_map[country_code]
+
         level = props["LEVL_CODE"]
-        if level != 1:
+        if level != default_level:
             continue
         known_features.append(world_entry)
     return known_features
@@ -227,8 +240,31 @@ def convert_geojson():
         w.write(json.dumps(eu_geojson, indent=2))
 
 
+def short():
+    file_str = Path("assets/data.json").read_text()
+    inj = json.loads(file_str)
+    out = []
+    for i in inj:
+        hol = i.get("state_holidays")
+        if hol == []:
+            continue
+        country = i["country"].upper()
+        country_entries = []
+        for h in hol:
+            iso = h.get("iso")
+            code = h.get("code")
+            ic(f"Iso: {iso}, Code: {code}")
+            outdict = {"iso": iso, "code": code}
+            country_entries.append(outdict)
+        out.append({"country": country, "codes": country_entries})
+    final = {"all-codes": out}
+    with open("assets/geo/data-for-map.json", "w", encoding="utf-8") as w:
+        w.write(json.dumps(final, indent=2))
+
+
 if __name__ == "__main__":
     convert_geojson()
+    # short()
     sys.exit()
     countries = get_countries()
     # countries = [Country(iso="AT", code="AT", name="Espania", name_en="Spain")]
