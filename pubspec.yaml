@@ -39,6 +39,7 @@ dependencies:
   flutter_riverpod: ^2.6.1
   json_annotation: ^4.9.0
   syncfusion_flutter_maps: ^28.2.6
+  syncfusion_flutter_datepicker: ^28.2.7
 
 dev_dependencies:
   flutter_test:

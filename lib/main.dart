@@ -37,7 +37,8 @@ class CodeAndHoliday {
 
 List<CodeAndHoliday> findHolidaysForDate(
 // Map<String, String?> findHolidaysForDate(
-    DateTime selectedDate) {
+    DateTime firstSelectedDate,
+    DateTime lastSelectedDate) {
   final allCountryEntries = holdata;
 
   List<CodeAndHoliday> results = [];
@@ -55,9 +56,24 @@ List<CodeAndHoliday> findHolidaysForDate(
       for (final holiday in regionEntry.holidays) {
         final startDate = holiday.start;
         final endDate = holiday.end;
+        // final firstSelectedDate = selectedDate;
+        // final lastSelectedDate = selectedDate;
+        final cleanFirstSelectedDate =
+            firstSelectedDate.subtract(Duration(seconds: 1));
+        final cleanLastSelectedDate =
+            lastSelectedDate.add(Duration(seconds: 1));
+        final startIsInRange = startDate.isAfter(cleanFirstSelectedDate) &&
+            startDate.isBefore(cleanLastSelectedDate);
+        final endIsInRange = endDate.isAfter(cleanFirstSelectedDate) &&
+            endDate.isBefore(cleanLastSelectedDate);
+        if (startIsInRange || endIsInRange)
 
-        if (selectedDate.isAfter(startDate.subtract(const Duration(days: 1))) &&
-            selectedDate.isBefore(endDate.add(const Duration(days: 1)))) {
+        // if (selectedDate.isAfter(startDate
+        //         .subtract(const Duration(seconds: 1))) // after or equal to
+        //     &&
+        //     selectedDate.isBefore(
+        //         endDate.add(const Duration(seconds: 1)))) // before or equal to
+        {
           results
               .add(CodeAndHoliday(nutsCode: nutsCode, holiday: holiday.name));
           break; // Exit inner loop once a holiday is found for the region.

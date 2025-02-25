@@ -4,6 +4,7 @@ import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
+import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
@@ -81,13 +82,18 @@ class AllCountriesWidget extends ConsumerWidget {
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 3,
-            child: CalendarDatePicker(
-                initialDate: DateTime.now(),
-                firstDate: DateTime(2025), // Set appropriate first date
-                lastDate: DateTime(2028), // Set appropriate last date
-                onDateChanged: (DateTime pickedDate) async {
-                  final out = findHolidaysForDate(pickedDate);
-                  Log.log(out.length);
+            child: SfDateRangePicker(
+                selectionMode: DateRangePickerSelectionMode.range,
+                initialSelectedDate: DateTime.now(),
+                minDate: DateTime(2025), // Set appropriate first date
+                maxDate: DateTime(2028), // Set appropriate last date
+                onSelectionChanged:
+                    (DateRangePickerSelectionChangedArgs args) async {
+                  final PickerDateRange range = args.value;
+                  final startDate = range.startDate;
+                  final endDate = range.endDate;
+                  if (startDate == null || endDate == null) return;
+                  final out = findHolidaysForDate(startDate, endDate);
                   // Reset
                   await ref.read(nutsDataProvider.notifier).resetData();
 
