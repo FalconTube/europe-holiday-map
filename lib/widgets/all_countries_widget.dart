@@ -79,21 +79,24 @@ class AllCountriesWidget extends ConsumerWidget {
               // if (MediaQuery.of(context).size.width > 800)
             ]),
           ),
-          CalendarDatePicker(
-              initialDate: DateTime.now(),
-              firstDate: DateTime(2025), // Set appropriate first date
-              lastDate: DateTime(2028), // Set appropriate last date
-              onDateChanged: (DateTime pickedDate) async {
-                final out = findHolidaysForDate(pickedDate);
-                Log.log(out.length);
-                // Reset
-                await ref.read(nutsDataProvider.notifier).resetData();
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 3,
+            child: CalendarDatePicker(
+                initialDate: DateTime.now(),
+                firstDate: DateTime(2025), // Set appropriate first date
+                lastDate: DateTime(2028), // Set appropriate last date
+                onDateChanged: (DateTime pickedDate) async {
+                  final out = findHolidaysForDate(pickedDate);
+                  Log.log(out.length);
+                  // Reset
+                  await ref.read(nutsDataProvider.notifier).resetData();
 
-                // Update
-                await ref
-                    .read(nutsDataProvider.notifier)
-                    .updateMultipleIDs(out);
-              }),
+                  // Update
+                  await ref
+                      .read(nutsDataProvider.notifier)
+                      .updateMultipleIDs(out);
+                }),
+          ),
         ],
       ),
     );
