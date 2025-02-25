@@ -48,7 +48,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "AL",
-        "CNTR_NAME": "Shqip\u00ebria",
+        "CNTR_NAME": "Shqipëria",
         "NAME_ENGL": "Albania",
         "NAME_FREN": "Albanie",
         "ISO3_CODE": "ALB",
@@ -251,7 +251,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "AT",
-        "CNTR_NAME": "\u00d6sterreich",
+        "CNTR_NAME": "Österreich",
         "NAME_ENGL": "Austria",
         "NAME_FREN": "Autriche",
         "ISO3_CODE": "AUT",
@@ -260,7 +260,7 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "\u00d6sterreich"
+        "NAME_GERM": "Österreich"
       },
       "geometry": {
         "type": "Polygon",
@@ -690,7 +690,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BE",
-        "CNTR_NAME": "Belgien-Belgique-Belgi\u00eb",
+        "CNTR_NAME": "Belgien-Belgique-België",
         "NAME_ENGL": "Belgium",
         "NAME_FREN": "Belgique",
         "ISO3_CODE": "BEL",
@@ -925,7 +925,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BG",
-        "CNTR_NAME": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f",
+        "CNTR_NAME": "България",
         "NAME_ENGL": "Bulgaria",
         "NAME_FREN": "Bulgarie",
         "ISO3_CODE": "BGR",
@@ -1184,9 +1184,9 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BY",
-        "CNTR_NAME": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c",
+        "CNTR_NAME": "Беларусь",
         "NAME_ENGL": "Belarus",
-        "NAME_FREN": "Bi\u00e9lorussie",
+        "NAME_FREN": "Biélorussie",
         "ISO3_CODE": "BLR",
         "SVRG_UN": "UN Member State",
         "CAPT": "Minsk",
@@ -1968,7 +1968,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "HU",
-        "CNTR_NAME": "Magyarorsz\u00e1g",
+        "CNTR_NAME": "Magyarország",
         "NAME_ENGL": "Hungary",
         "NAME_FREN": "Hongrie",
         "ISO3_CODE": "HUN",
@@ -2466,9 +2466,9 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "CZ",
-        "CNTR_NAME": "\u010cesk\u00e1 Republika",
+        "CNTR_NAME": "Česká Republika",
         "NAME_ENGL": "Czechia",
-        "NAME_FREN": "Tch\u00e9quie",
+        "NAME_FREN": "Tchéquie",
         "ISO3_CODE": "CZE",
         "SVRG_UN": "UN Member State",
         "CAPT": "Prague",
@@ -3547,7 +3547,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "ES",
-        "CNTR_NAME": "Espa\u00f1a",
+        "CNTR_NAME": "España",
         "NAME_ENGL": "Spain",
         "NAME_FREN": "Espagne",
         "ISO3_CODE": "ESP",
@@ -5141,7 +5141,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "IE",
-        "CNTR_NAME": "Ireland-\u00c9ire",
+        "CNTR_NAME": "Ireland-Éire",
         "NAME_ENGL": "Ireland",
         "NAME_FREN": "Irlande",
         "ISO3_CODE": "IRL",
@@ -6128,7 +6128,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "LU",
-        "CNTR_NAME": "Luxemburg-Luxembourg-L\u00ebtzebuerg",
+        "CNTR_NAME": "Luxemburg-Luxembourg-Lëtzebuerg",
         "NAME_ENGL": "Luxembourg",
         "NAME_FREN": "Luxembourg",
         "ISO3_CODE": "LUX",
@@ -8002,7 +8002,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "RO",
-        "CNTR_NAME": "Rom\u00e2nia",
+        "CNTR_NAME": "România",
         "NAME_ENGL": "Romania",
         "NAME_FREN": "Roumanie",
         "ISO3_CODE": "ROU",
@@ -8011,7 +8011,7 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Rum\u00e4nien"
+        "NAME_GERM": "Rumänien"
       },
       "geometry": {
         "type": "Polygon",
@@ -8297,7 +8297,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "RS",
-        "CNTR_NAME": "\u0421\u0440\u0431\u0438\u0458\u0430",
+        "CNTR_NAME": "Србија",
         "NAME_ENGL": "Serbia",
         "NAME_FREN": "Serbie",
         "ISO3_CODE": "SRB",
@@ -8580,7 +8580,7 @@
         "CNTR_ID": "SE",
         "CNTR_NAME": "Sverige",
         "NAME_ENGL": "Sweden",
-        "NAME_FREN": "Su\u00e8de",
+        "NAME_FREN": "Suède",
         "ISO3_CODE": "SWE",
         "SVRG_UN": "UN Member State",
         "CAPT": "Stockholm",
@@ -9025,7 +9025,7 @@
         "CNTR_ID": "SI",
         "CNTR_NAME": "Slovinsko",
         "NAME_ENGL": "Slovenia",
-        "NAME_FREN": "Slov\u00e9nie",
+        "NAME_FREN": "Slovénie",
         "ISO3_CODE": "SVN",
         "SVRG_UN": "UN Member State",
         "CAPT": "Ljubljana",
@@ -9740,9 +9740,9 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "VA",
-        "CNTR_NAME": "Stato Della Citt\u00e0 Del Vaticano-Status Civitatis Vaticanae",
+        "CNTR_NAME": "Stato Della Città Del Vaticano-Status Civitatis Vaticanae",
         "NAME_ENGL": "Vatican City",
-        "NAME_FREN": "Cit\u00e9 du Vatican",
+        "NAME_FREN": "Cité du Vatican",
         "ISO3_CODE": "VAT",
         "SVRG_UN": "The City of Vatican",
         "CAPT": "Vaticano",

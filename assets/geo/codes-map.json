@@ -8,17 +8,17 @@
     {
       "nuts": "AT21",
       "iso": "AT-2",
-      "code": "AT-K\u00c4"
+      "code": "AT-KÄ"
     },
     {
       "nuts": "AT12",
       "iso": "AT-3",
-      "code": "AT-N\u00d6"
+      "code": "AT-NÖ"
     },
     {
       "nuts": "AT31",
       "iso": "AT-4",
-      "code": "AT-O\u00d6"
+      "code": "AT-OÖ"
     },
     {
       "nuts": "AT32",
@@ -46,7 +46,6 @@
       "code": "AT-WI"
     }
   ],
-
   "BE": [
     {
       "nuts": "BE3",
@@ -196,7 +195,6 @@
       "code": "CH-ZH"
     }
   ],
-
   "CZ": [
     {
       "nuts": "CZ031",
