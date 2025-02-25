@@ -41,6 +41,16 @@ jobs:
           channel: stable
           flutter-version: 3.27.1
 
+      - name: Install Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Minify json and geojson
+        run: task mini
+        working-directory: ${{env.working-directory}}
+
       - name: Install dependencies
         run: flutter pub get
         working-directory: ${{env.working-directory}}
@@ -53,7 +63,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload build/web directory
-          path: 'build/web'
+          path: "build/web"
 
       - name: Deploy to GitHub Pages
         id: deployment
