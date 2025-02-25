@@ -1,5 +1,4 @@
-
-version: '3'
+version: "3"
 
 tasks:
   default:
@@ -26,4 +25,29 @@ tasks:
     dir: build/web
     cmds:
       - task: build
-      - python -m http.server 44322 
+      - python -m http.server 44322
+
+  mini:
+    dir: assets
+    cmds: # Take all json and geosjon and minify via jq
+      - |
+        files=$(find . | grep json)
+        for i in $files; do
+          tmpfile=${i}_tmp
+          echo "Will minify $i ..."
+          cat $i | jq -r tostring > $tmpfile
+          mv $tmpfile $i
+          echo "Successfully minified $i!"
+        done
+
+  expand:
+    dir: assets
+    cmds: # Take all *.json and minify via jq
+      - |
+        files=$(find . | grep json)
+        for i in $files; do
+          tmpfile=${i}_tmp
+          echo "Will prettify $i ..."
+          cat $i | jq '.' > $tmpfile
+          mv $tmpfile $i
+        done
