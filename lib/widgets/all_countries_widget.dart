@@ -83,6 +83,11 @@ class AllCountriesWidget extends ConsumerWidget {
           SizedBox(
             height: MediaQuery.of(context).size.height / 3,
             child: SfDateRangePicker(
+                headerHeight: 50,
+                showNavigationArrow: true,
+                monthViewSettings: DateRangePickerMonthViewSettings(
+                    enableSwipeSelection: false),
+                toggleDaySelection: true,
                 selectionMode: DateRangePickerSelectionMode.range,
                 initialSelectedDate: DateTime.now(),
                 minDate: DateTime(2025), // Set appropriate first date
