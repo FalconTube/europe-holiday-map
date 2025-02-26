@@ -37,15 +37,25 @@ class AllCountriesWidget extends ConsumerWidget {
         : MapShapeSource.asset('assets/geo/eu-nuts.geojson',
             dataCount: data.length,
             primaryValueMapper: (int index) => data[index].division,
-            shapeColorValueMapper: (int index) =>
-                "true", //all values in list have holiday
-            shapeColorMappers: <MapColorMapper>[
-              MapColorMapper(
-                value: "true",
-                color: const Color(0xFF4DAAFF),
-                text: 'No Holiday',
-              ),
-            ],
+            // shapeColorValueMapper: (int index) =>
+            //     "true", //all values in list have holiday
+
+            // shapeColorValueMapper: (int index) {
+            //   Log.log("Num days: ${data[index].days}");
+            //
+            //   return data[index].days;
+            // },
+            // shapeColorMappers: [
+            //   MapColorMapper(from: 6, to: 10, color: Colors.red),
+            //   MapColorMapper(from: 0, to: 5, color: Colors.yellow)
+            // ],
+            // shapeColorMappers: <MapColorMapper>[
+            //   MapColorMapper(
+            //     value: "true",
+            //     color: Color(0xFF4DAAFF).withAlpha(data[index].days * 10),
+            //     text: 'No Holiday',
+            //   ),
+            // ],
             shapeDataField: 'NUTS_ID');
 
     return Scaffold(

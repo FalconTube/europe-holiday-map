@@ -4,8 +4,10 @@ import 'package:holiday_map/main.dart';
 class MapCountryData {
   final String division;
   final String holiday;
+  final int days;
 
-  MapCountryData({required this.division, required this.holiday});
+  MapCountryData(
+      {required this.division, required this.holiday, required this.days});
 }
 
 // Provider for consumption
@@ -39,7 +41,8 @@ class NutsDataProvider extends StateNotifier<List<MapCountryData>> {
   Future<void> updateMultipleIDs(List<CodeAndHoliday> entries) async {
     List<MapCountryData> data = [];
     for (final e in entries) {
-      data.add(MapCountryData(division: e.nutsCode, holiday: e.holiday));
+      data.add(MapCountryData(
+          division: e.nutsCode, holiday: e.holiday, days: e.days));
     }
     state = data;
   }
