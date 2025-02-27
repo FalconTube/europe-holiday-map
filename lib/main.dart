@@ -54,24 +54,25 @@ List<CodeAndHoliday> findHolidaysForDate(
       final nutsCode = nutsFromCode(countryEntry.country, regionEntry);
       if (nutsCode == null) {
         Log.log(
-            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: $regionEntry");
+            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
         continue;
       }
       for (final holiday in regionEntry.holidays) {
-        final startDate = holiday.start;
-        final endDate = holiday.end;
+        final startDateHol = holiday.start;
+        final endDateHol = holiday.end;
         final cleanFirstSelectedDate =
             firstSelectedDate.subtract(Duration(seconds: 1));
         final cleanLastSelectedDate =
             lastSelectedDate.add(Duration(seconds: 1));
-        final startIsInRange = startDate.isAfter(cleanFirstSelectedDate) &&
-            startDate.isBefore(cleanLastSelectedDate);
-        final endIsInRange = endDate.isAfter(cleanFirstSelectedDate) &&
-            endDate.isBefore(cleanLastSelectedDate);
+        final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
+            startDateHol.isBefore(cleanLastSelectedDate);
+        final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
+            endDateHol.isBefore(cleanLastSelectedDate);
         if (startIsInRange || endIsInRange) {
           // Found a matching holiday
           // Now get amount of days
-          final dates = daysInSelection(holiday, startDate, endDate);
+          final dates =
+              daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
           results.add(CodeAndHoliday(
               nutsCode: nutsCode,
               holiday: holiday.name,
@@ -89,7 +90,8 @@ List<CodeAndHoliday> findHolidaysForDate(
 List<DateTime> datesList(DateTime start, DateTime end) {
   var i = start;
   List<DateTime> allDates = [];
-  for (i; i.isBefore(end); i.add(Duration(days: 1))) {
+  final cleanEnd = end.add(Duration(seconds: 1));
+  for (i; i.isBefore(cleanEnd); i = i.add(Duration(days: 1))) {
     allDates.add(i);
   }
   return allDates;

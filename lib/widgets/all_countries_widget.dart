@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/logging/logger.dart';
@@ -5,6 +7,8 @@ import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+import 'package:color_map/color_map.dart';
+import 'package:vector_math/vector_math_64.dart' show Vector4;
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
@@ -18,44 +22,25 @@ class AllCountriesWidget extends ConsumerWidget {
     maxZoomLevel: 10,
     enableDoubleTapZooming: true,
   );
+  final cmap = Colormaps.Purples;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final data = ref.watch(nutsDataProvider);
-
-    // final data = [
-    //   MapCountryData(division: "DE1", holiday: "Foo"),
-    //   MapCountryData(division: "DE2", holiday: "Foo"),
-    //   MapCountryData(division: "DE3", holiday: "Foo"),
-    // ];
-    final nutsSource = data.isEmpty
+    final nutsSource = data.data.isEmpty
         // If no data, just return empty map
         ? MapShapeSource.asset('assets/geo/eu-nuts.geojson',
             shapeDataField: 'NUTS_ID')
 
         // Else return map with filled fields
         : MapShapeSource.asset('assets/geo/eu-nuts.geojson',
-            dataCount: data.length,
-            primaryValueMapper: (int index) => data[index].division,
-            // shapeColorValueMapper: (int index) =>
-            //     "true", //all values in list have holiday
-
-            // shapeColorValueMapper: (int index) {
-            //   Log.log("Num days: ${data[index].days}");
-            //
-            //   return data[index].days;
-            // },
-            // shapeColorMappers: [
-            //   MapColorMapper(from: 6, to: 10, color: Colors.red),
-            //   MapColorMapper(from: 0, to: 5, color: Colors.yellow)
-            // ],
-            // shapeColorMappers: <MapColorMapper>[
-            //   MapColorMapper(
-            //     value: "true",
-            //     color: Color(0xFF4DAAFF).withAlpha(data[index].days * 10),
-            //     text: 'No Holiday',
-            //   ),
-            // ],
+            dataCount: data.data.length,
+            primaryValueMapper: (int index) => data.data[index].division,
+            shapeColorValueMapper: (int index) {
+              final numdays = data.data[index].days - 1;
+              return numdays.toString();
+            },
+            shapeColorMappers: genColorMap(data.numSelectedDays, cmap),
             shapeDataField: 'NUTS_ID');
 
     return Scaffold(
@@ -72,13 +57,12 @@ class AllCountriesWidget extends ConsumerWidget {
                     MapShapeLayer(
                       source: nutsSource,
                       strokeWidth: 0.3,
-                      color: Colors.grey.withValues(alpha: 0.2),
                       strokeColor: Colors.grey,
                       sublayers: <MapSublayer>[
                         MapShapeSublayer(
                             source: borderSource,
                             strokeWidth: 1.5,
-                            color: Colors.grey.withValues(alpha: 0.5),
+                            color: Colors.grey.withValues(alpha: 0.0),
                             strokeColor: Colors.indigoAccent)
                       ],
                       zoomPanBehavior: zoomPanBehavior,
@@ -100,14 +84,19 @@ class AllCountriesWidget extends ConsumerWidget {
                 toggleDaySelection: true,
                 selectionMode: DateRangePickerSelectionMode.range,
                 initialSelectedDate: DateTime.now(),
-                minDate: DateTime(2025), // Set appropriate first date
-                maxDate: DateTime(2028), // Set appropriate last date
+                minDate: DateTime(2025),
+                maxDate: DateTime(2028),
+                extendableRangeSelectionDirection:
+                    ExtendableRangeSelectionDirection.forward,
                 onSelectionChanged:
                     (DateRangePickerSelectionChangedArgs args) async {
-                  final PickerDateRange range = args.value;
-                  final startDate = range.startDate;
-                  final endDate = range.endDate;
+                  final PickerDateRange selectedRange = args.value;
+                  final startDate = selectedRange.startDate;
+                  final endDate = selectedRange.endDate;
                   if (startDate == null || endDate == null) return;
+                  final days = DateTimeRange(start: startDate, end: endDate)
+                      .duration
+                      .inDays;
                   final out = findHolidaysForDate(startDate, endDate);
                   // Reset
                   await ref.read(nutsDataProvider.notifier).resetData();
@@ -115,11 +104,43 @@ class AllCountriesWidget extends ConsumerWidget {
                   // Update
                   await ref
                       .read(nutsDataProvider.notifier)
-                      .updateMultipleIDs(out);
+                      .updateMultipleIDs(out, days);
                 }),
           ),
         ],
       ),
+    );
+  }
+}
+
+List<MapColorMapper> genColorMap(int length, Colormap cmap) {
+  final List<MapColorMapper> out = [];
+  for (int i = 0; i <= length; i++) {
+    final alpha = intToAlpha(i, length);
+    // final colorval = clampDouble(alpha / 255, 0.8, 1);
+    final colorval = alpha / 256;
+    final thisMap =
+        MapColorMapper(value: i.toString(), color: cmap(colorval).toColor());
+    out.add(thisMap);
+  }
+
+  return out;
+}
+
+double intToAlpha(int value, int maxValue) {
+  final out = 155 + 100 / maxValue * value;
+  // final out = clampDouble(value, 200, 255);
+  return out;
+}
+
+extension ColorTransform on Vector4 {
+  /// Convert Vector4 to Color
+  Color toColor() {
+    return Color.fromARGB(
+      (w * 255).toInt(),
+      (x * 255).toInt(),
+      (y * 255).toInt(),
+      (z * 255).toInt(),
     );
   }
 }
