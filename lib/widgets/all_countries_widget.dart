@@ -61,12 +61,6 @@ class AllCountriesWidget extends ConsumerWidget {
                       // color: Colors.grey.withValues(alpha: 0.0),
                       strokeWidth: 1.3,
                       strokeColor: Colors.indigoAccent,
-                      shapeTooltipBuilder: (BuildContext context, int index) {
-                        Log.log(index);
-                        return Container(
-                          child: Text("foo"),
-                        );
-                      },
 
                       tooltipSettings: MapTooltipSettings(
                         color: true
@@ -77,13 +71,13 @@ class AllCountriesWidget extends ConsumerWidget {
                       // tooltipSettings: MapTooltipSettings(hideDelay: 0.5),
                       sublayers: <MapSublayer>[
                         MapShapeSublayer(
+                            key: UniqueKey(),
                             source: nutsSource,
                             strokeWidth: 1.5,
                             color: Colors.grey.withValues(alpha: 0.0),
                             shapeTooltipBuilder:
                                 (BuildContext context, int index) {
-                              Log.log(index);
-                              return Container();
+                              return Container(child: Text("foo"));
                             },
                             strokeColor: Colors.grey.withValues(alpha: 0.2))
                       ],
