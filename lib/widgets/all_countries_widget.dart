@@ -14,6 +14,7 @@ class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
   final MapShapeSource borderSource = MapShapeSource.asset(
       'assets/geo/eu-borders.geojson',
+      dataCount: 5,
       shapeDataField: 'CNTR_ID');
   final MapZoomPanBehavior zoomPanBehavior = MapZoomPanBehavior(
     zoomLevel: 2,
@@ -42,6 +43,7 @@ class AllCountriesWidget extends ConsumerWidget {
             },
             shapeColorMappers: genColorMap(data.numSelectedDays, cmap),
             shapeDataField: 'NUTS_ID');
+    Log.log(data.data.length);
 
     return Scaffold(
       appBar: AppBar(
@@ -55,15 +57,35 @@ class AllCountriesWidget extends ConsumerWidget {
                 child: SfMaps(
                   layers: <MapLayer>[
                     MapShapeLayer(
-                      source: nutsSource,
-                      strokeWidth: 0.3,
-                      strokeColor: Colors.grey,
+                      source: borderSource,
+                      // color: Colors.grey.withValues(alpha: 0.0),
+                      strokeWidth: 1.3,
+                      strokeColor: Colors.indigoAccent,
+                      shapeTooltipBuilder: (BuildContext context, int index) {
+                        Log.log(index);
+                        return Container(
+                          child: Text("foo"),
+                        );
+                      },
+
+                      tooltipSettings: MapTooltipSettings(
+                        color: true
+                            ? const Color.fromRGBO(45, 45, 45, 1)
+                            : const Color.fromRGBO(242, 242, 242, 1),
+                      ),
+
+                      // tooltipSettings: MapTooltipSettings(hideDelay: 0.5),
                       sublayers: <MapSublayer>[
                         MapShapeSublayer(
-                            source: borderSource,
+                            source: nutsSource,
                             strokeWidth: 1.5,
                             color: Colors.grey.withValues(alpha: 0.0),
-                            strokeColor: Colors.indigoAccent)
+                            shapeTooltipBuilder:
+                                (BuildContext context, int index) {
+                              Log.log(index);
+                              return Container();
+                            },
+                            strokeColor: Colors.grey.withValues(alpha: 0.2))
                       ],
                       zoomPanBehavior: zoomPanBehavior,
                     ),
