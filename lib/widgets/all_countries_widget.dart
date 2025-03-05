@@ -98,6 +98,7 @@ class AllCountriesWidget extends ConsumerWidget {
               ),
               // Expanded(),
               // if (MediaQuery.of(context).size.width > 800)
+              ColorLegend(cmap: cmap, min: 1, max: data.numSelectedDays + 1)
             ]),
           ),
           SizedBox(
@@ -134,6 +135,60 @@ class AllCountriesWidget extends ConsumerWidget {
                 }),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class ColorLegend extends StatelessWidget {
+  const ColorLegend({
+    super.key,
+    required this.cmap,
+    required this.min,
+    required this.max,
+  });
+
+  final Colormap cmap;
+  final int min;
+  final int max;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Row(
+        spacing: 10,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [Text(max.toString()), Text(min.toString())],
+          ),
+          LinearColorBox(cmap: cmap),
+        ],
+      ),
+    );
+  }
+}
+
+class LinearColorBox extends StatelessWidget {
+  const LinearColorBox({
+    super.key,
+    required this.cmap,
+  });
+
+  final Colormap cmap;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: double.infinity,
+      width: 20,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                colors: [cmap(0).toColor(), cmap(1).toColor()])),
       ),
     );
   }
