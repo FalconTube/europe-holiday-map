@@ -12,9 +12,11 @@ import 'package:vector_math/vector_math_64.dart' show Vector4;
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
+
+  final _mapController = MapShapeLayerController();
+
   final MapShapeSource borderSource = MapShapeSource.asset(
       'assets/geo/eu-borders.geojson',
-      dataCount: 5,
       shapeDataField: 'CNTR_ID');
   final MapZoomPanBehavior zoomPanBehavior = MapZoomPanBehavior(
     zoomLevel: 2,
@@ -22,12 +24,14 @@ class AllCountriesWidget extends ConsumerWidget {
     minZoomLevel: 2,
     maxZoomLevel: 10,
     enableDoubleTapZooming: true,
+    enableMouseWheelZooming: true,
   );
   final cmap = Colormaps.Purples;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final data = ref.watch(nutsDataProvider);
+
     final nutsSource = data.data.isEmpty
         // If no data, just return empty map
         ? MapShapeSource.asset('assets/geo/eu-nuts.geojson',
@@ -43,7 +47,6 @@ class AllCountriesWidget extends ConsumerWidget {
             },
             shapeColorMappers: genColorMap(data.numSelectedDays, cmap),
             shapeDataField: 'NUTS_ID');
-    Log.log(data.data.length);
 
     return Scaffold(
       appBar: AppBar(
@@ -58,26 +61,33 @@ class AllCountriesWidget extends ConsumerWidget {
                   layers: <MapLayer>[
                     MapShapeLayer(
                       source: borderSource,
-                      // color: Colors.grey.withValues(alpha: 0.0),
+                      controller: _mapController,
                       strokeWidth: 1.3,
                       strokeColor: Colors.indigoAccent,
-
                       tooltipSettings: MapTooltipSettings(
                         color: true
                             ? const Color.fromRGBO(45, 45, 45, 1)
                             : const Color.fromRGBO(242, 242, 242, 1),
                       ),
-
-                      // tooltipSettings: MapTooltipSettings(hideDelay: 0.5),
                       sublayers: <MapSublayer>[
                         MapShapeSublayer(
                             key: UniqueKey(),
                             source: nutsSource,
+                            controller: _mapController,
                             strokeWidth: 1.5,
                             color: Colors.grey.withValues(alpha: 0.0),
                             shapeTooltipBuilder:
                                 (BuildContext context, int index) {
-                              return Container(child: Text("foo"));
+                              final days = data.data[index].days;
+                              final division = data.data[index].division;
+                              final holiday = data.data[index].holiday;
+                              final text = Text(
+                                  'Division: $division\nDays: $days\nHoliday: $holiday');
+                              return Container(
+                                  child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: text,
+                              ));
                             },
                             strokeColor: Colors.grey.withValues(alpha: 0.2))
                       ],

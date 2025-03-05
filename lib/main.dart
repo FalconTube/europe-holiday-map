@@ -141,6 +141,7 @@ class MyApp extends StatelessWidget {
       themeAnimationDuration: Durations.short3,
       title: 'Holiday Map',
       theme: ThemeData(
+          fontFamily: "Roboto",
           colorScheme: ColorScheme.fromSeed(
             dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
             seedColor: Colors.deepPurple,
