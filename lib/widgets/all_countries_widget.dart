@@ -20,9 +20,9 @@ class AllCountriesWidget extends ConsumerWidget {
       'assets/geo/eu-borders.geojson',
       shapeDataField: 'CNTR_ID');
   final MapZoomPanBehavior zoomPanBehavior = MapZoomPanBehavior(
-    zoomLevel: 2,
+    zoomLevel: 2.5,
     focalLatLng: const MapLatLng(50.935173, 6.953101),
-    minZoomLevel: 2,
+    minZoomLevel: 2.5,
     maxZoomLevel: 10,
     enableDoubleTapZooming: true,
     enableMouseWheelZooming: true,
@@ -50,55 +50,59 @@ class AllCountriesWidget extends ConsumerWidget {
             shapeDataField: 'NUTS_ID');
 
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-      ),
       body: Column(
         children: [
           Expanded(
-            child: SfMaps(
-              layers: <MapLayer>[
-                MapShapeLayer(
-                  source: borderSource,
-                  controller: _mapController,
-                  strokeWidth: 1.3,
-                  strokeColor: Colors.indigoAccent,
-                  tooltipSettings: MapTooltipSettings(
-                    color: true
-                        ? const Color.fromRGBO(45, 45, 45, 1)
-                        : const Color.fromRGBO(242, 242, 242, 1),
+            child:
+                Stack(alignment: AlignmentDirectional.bottomCenter, children: [
+              SfMaps(
+                layers: <MapLayer>[
+                  MapShapeLayer(
+                    source: borderSource,
+                    controller: _mapController,
+                    strokeWidth: 3.0,
+                    strokeColor: Colors.indigoAccent,
+                    tooltipSettings: MapTooltipSettings(
+                      color: true
+                          ? const Color.fromRGBO(45, 45, 45, 1)
+                          : const Color.fromRGBO(242, 242, 242, 1),
+                    ),
+                    sublayers: <MapSublayer>[
+                      MapShapeSublayer(
+                          key: UniqueKey(),
+                          source: nutsSource,
+                          controller: _mapController,
+                          strokeWidth: 1.5,
+                          color: Colors.grey.withValues(alpha: 0.0),
+                          shapeTooltipBuilder:
+                              (BuildContext context, int index) {
+                            final days = data.data[index].days;
+                            final division = data.data[index].division;
+                            final holiday = data.data[index].holiday;
+                            final text = Text(
+                                'Division: $division\nDays: $days\nHoliday: $holiday');
+                            return Container(
+                                child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: text,
+                            ));
+                          },
+                          strokeColor: Colors.grey.withValues(alpha: 0.2))
+                    ],
+                    zoomPanBehavior: zoomPanBehavior,
                   ),
-                  sublayers: <MapSublayer>[
-                    MapShapeSublayer(
-                        key: UniqueKey(),
-                        source: nutsSource,
-                        controller: _mapController,
-                        strokeWidth: 1.5,
-                        color: Colors.grey.withValues(alpha: 0.0),
-                        shapeTooltipBuilder: (BuildContext context, int index) {
-                          final days = data.data[index].days;
-                          final division = data.data[index].division;
-                          final holiday = data.data[index].holiday;
-                          final text = Text(
-                              'Division: $division\nDays: $days\nHoliday: $holiday');
-                          return Container(
-                              child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: text,
-                          ));
-                        },
-                        strokeColor: Colors.grey.withValues(alpha: 0.2))
-                  ],
-                  zoomPanBehavior: zoomPanBehavior,
+                ],
+              ),
+              Positioned(
+                bottom: 0,
+                child: ColorLegend(
+                  cmap: cmap,
+                  min: 1,
+                  max: data.numSelectedDays + 1,
+                  vertical: false,
                 ),
-              ],
-            ),
-          ),
-          ColorLegend(
-            cmap: cmap,
-            min: 1,
-            max: data.numSelectedDays + 1,
-            vertical: false,
+              )
+            ]),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 3,
@@ -175,7 +179,7 @@ class ColorLegend extends StatelessWidget {
                   width: 300,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text(max.toString()), Text(min.toString())],
+                    children: [Text(min.toString()), Text(max.toString())],
                   ),
                 ),
                 LinearColorBox(

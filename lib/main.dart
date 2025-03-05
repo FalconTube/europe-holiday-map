@@ -138,7 +138,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeAnimationDuration: Durations.short3,
       title: 'Holiday Map',
       theme: ThemeData(
           fontFamily: "Roboto",
