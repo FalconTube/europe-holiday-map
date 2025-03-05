@@ -28,10 +28,14 @@ Future<List<AllStateHolidays>> _loadData() async {
 class CodeAndHoliday {
   final String nutsCode;
   final String holiday;
+  final List<DateTime> dayList;
+  final int days;
 
   CodeAndHoliday({
     required this.nutsCode,
     required this.holiday,
+    required this.dayList,
+    required this.days,
   });
 }
 
@@ -50,32 +54,30 @@ List<CodeAndHoliday> findHolidaysForDate(
       final nutsCode = nutsFromCode(countryEntry.country, regionEntry);
       if (nutsCode == null) {
         Log.log(
-            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: $regionEntry");
+            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
         continue;
       }
       for (final holiday in regionEntry.holidays) {
-        final startDate = holiday.start;
-        final endDate = holiday.end;
-        // final firstSelectedDate = selectedDate;
-        // final lastSelectedDate = selectedDate;
+        final startDateHol = holiday.start;
+        final endDateHol = holiday.end;
         final cleanFirstSelectedDate =
             firstSelectedDate.subtract(Duration(seconds: 1));
         final cleanLastSelectedDate =
             lastSelectedDate.add(Duration(seconds: 1));
-        final startIsInRange = startDate.isAfter(cleanFirstSelectedDate) &&
-            startDate.isBefore(cleanLastSelectedDate);
-        final endIsInRange = endDate.isAfter(cleanFirstSelectedDate) &&
-            endDate.isBefore(cleanLastSelectedDate);
-        if (startIsInRange || endIsInRange)
-
-        // if (selectedDate.isAfter(startDate
-        //         .subtract(const Duration(seconds: 1))) // after or equal to
-        //     &&
-        //     selectedDate.isBefore(
-        //         endDate.add(const Duration(seconds: 1)))) // before or equal to
-        {
-          results
-              .add(CodeAndHoliday(nutsCode: nutsCode, holiday: holiday.name));
+        final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
+            startDateHol.isBefore(cleanLastSelectedDate);
+        final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
+            endDateHol.isBefore(cleanLastSelectedDate);
+        if (startIsInRange || endIsInRange) {
+          // Found a matching holiday
+          // Now get amount of days
+          final dates =
+              daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
+          results.add(CodeAndHoliday(
+              nutsCode: nutsCode,
+              holiday: holiday.name,
+              dayList: dates,
+              days: dates.length));
           break; // Exit inner loop once a holiday is found for the region.
         }
       }
@@ -83,6 +85,28 @@ List<CodeAndHoliday> findHolidaysForDate(
   }
 
   return results;
+}
+
+List<DateTime> datesList(DateTime start, DateTime end) {
+  var i = start;
+  List<DateTime> allDates = [];
+  final cleanEnd = end.add(Duration(seconds: 1));
+  for (i; i.isBefore(cleanEnd); i = i.add(Duration(days: 1))) {
+    allDates.add(i);
+  }
+  return allDates;
+}
+
+List<DateTime> daysInSelection(
+    Holiday holiday, DateTime selectStart, DateTime selectEnd) {
+  final holDays = datesList(holiday.start, holiday.end);
+  final selectDays = datesList(selectStart, selectEnd);
+  List<DateTime> matchingDates = [];
+  for (final i in holDays) {
+    if (selectDays.contains(i)) matchingDates.add(i);
+  }
+
+  return matchingDates;
 }
 
 String? nutsFromCode(String country, StateHolidays regionEntry) {
@@ -114,9 +138,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeAnimationDuration: Durations.short3,
       title: 'Holiday Map',
       theme: ThemeData(
+          fontFamily: "Roboto",
           colorScheme: ColorScheme.fromSeed(
             dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
             seedColor: Colors.deepPurple,

@@ -150,6 +150,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
+  color_map:
+    dependency: "direct main"
+    description:
+      name: color_map
+      sha256: "54515bc912d9a50a77db0c75e6cdff889c5f84ce4b7c2f0c130dbc2fb168689c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   convert:
     dependency: transitive
     description:
@@ -614,7 +622,7 @@ packages:
     source: hosted
     version: "1.4.0"
   vector_math:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: vector_math
       sha256: "80b3257d1492ce4d091729e3a67a60407d227c27241d6927be0130c98e741803"
