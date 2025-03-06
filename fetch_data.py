@@ -318,19 +318,15 @@ def short():
 
 
 if __name__ == "__main__":
-    convert_geojson()
-    # short()
-    sys.exit()
+    # convert_geojson()
+    # # short()
+    # sys.exit()
     countries = get_countries()
     # countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
         subs = get_subdivions(country.iso)
-        if len(subs) != 0:
-            continue
-        ic(subs)
-        ic(country.iso)
         for sub in subs:
             sub_hols_list: list[Holiday] = []
             # get via sub code first
@@ -361,4 +357,4 @@ if __name__ == "__main__":
 
     outfile = "parsed_from_openholidaysapi.json"
     with open(outfile, "w", encoding="utf-8") as w:
-        w.write(json.dumps(country_list, indent=2))
+        w.write(json.dumps(country_list, indent=2, ensure_ascii=False))
