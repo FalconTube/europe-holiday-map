@@ -4,13 +4,803 @@
     {
       "type": "Feature",
       "properties": {
+        "NUTS_ID": "CZ020",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Středočeský kraj",
+        "NUTS_NAME": "Středočeský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.765590470000063,
+              49.51399046500006
+            ],
+            [
+              13.764844228000072,
+              49.90826579000003
+            ],
+            [
+              13.407053290000022,
+              50.089617049000026
+            ],
+            [
+              14.48648554600004,
+              50.505027082000026
+            ],
+            [
+              15.146770550000042,
+              50.522942595000075
+            ],
+            [
+              15.43758662600004,
+              50.109857549000026
+            ],
+            [
+              15.496953093000059,
+              49.86118464900005
+            ],
+            [
+              14.93201872700007,
+              49.54910091800008
+            ],
+            [
+              13.765590470000063,
+              49.51399046500006
+            ]
+          ],
+          [
+            [
+              14.28997666500004,
+              50.09162600900004
+            ],
+            [
+              14.621395863000032,
+              49.940415536000046
+            ],
+            [
+              14.812636265000037,
+              50.09407561200004
+            ],
+            [
+              14.584676713000022,
+              50.218157905000055
+            ],
+            [
+              14.28997666500004,
+              50.09162600900004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ031",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Jihočeský kraj",
+        "NUTS_NAME": "Jihočeský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 3,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.691013827000063,
+              48.58430192900005
+            ],
+            [
+              14.175554162000026,
+              48.585297843000035
+            ],
+            [
+              13.839507129000026,
+              48.77160502800007
+            ],
+            [
+              13.551578318000054,
+              48.96778749400005
+            ],
+            [
+              13.765590470000063,
+              49.51399046500006
+            ],
+            [
+              14.93201872700007,
+              49.54910091800008
+            ],
+            [
+              15.022369518000062,
+              49.304995475000055
+            ],
+            [
+              15.586756448000074,
+              48.94715961600008
+            ],
+            [
+              15.542449604000069,
+              48.90769691100007
+            ],
+            [
+              15.039224508000075,
+              48.96587176500003
+            ],
+            [
+              14.691013827000063,
+              48.58430192900005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ032",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Plzeňský kraj",
+        "NUTS_NAME": "Plzeňský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 3,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.765590470000063,
+              49.51399046500006
+            ],
+            [
+              13.551578318000054,
+              48.96778749400005
+            ],
+            [
+              13.41665153300005,
+              48.980035368000074
+            ],
+            [
+              13.170907943000032,
+              49.17357963100005
+            ],
+            [
+              12.63376343300007,
+              49.47619511100004
+            ],
+            [
+              12.593778745000066,
+              49.542191357000036
+            ],
+            [
+              12.401524209000058,
+              49.758373121000034
+            ],
+            [
+              12.550988701000051,
+              49.90508807900005
+            ],
+            [
+              13.301367235000043,
+              50.09964337900004
+            ],
+            [
+              13.407053290000022,
+              50.089617049000026
+            ],
+            [
+              13.764844228000072,
+              49.90826579000003
+            ],
+            [
+              13.765590470000063,
+              49.51399046500006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ041",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Karlovarský kraj",
+        "NUTS_NAME": "Karlovarský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.260798923000038,
+              50.05815665500006
+            ],
+            [
+              12.160679129000073,
+              50.21984910300006
+            ],
+            [
+              12.100900625000065,
+              50.31802807500003
+            ],
+            [
+              12.583778453000036,
+              50.407078916000046
+            ],
+            [
+              12.948144599000045,
+              50.40431146900005
+            ],
+            [
+              13.301367235000043,
+              50.09964337900004
+            ],
+            [
+              12.550988701000051,
+              49.90508807900005
+            ],
+            [
+              12.260798923000038,
+              50.05815665500006
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ042",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Ústecký kraj",
+        "NUTS_NAME": "Ústecký kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.407053290000022,
+              50.089617049000026
+            ],
+            [
+              13.301367235000043,
+              50.09964337900004
+            ],
+            [
+              12.948144599000045,
+              50.40431146900005
+            ],
+            [
+              13.501846054000055,
+              50.633643033000055
+            ],
+            [
+              13.65217407800003,
+              50.73035993500008
+            ],
+            [
+              14.17319767500004,
+              50.86210556600008
+            ],
+            [
+              14.317873514000041,
+              51.05469913300004
+            ],
+            [
+              14.491221239000026,
+              51.04353041100006
+            ],
+            [
+              14.61879975900007,
+              50.85780447700006
+            ],
+            [
+              14.420087970000054,
+              50.69058754900004
+            ],
+            [
+              14.48648554600004,
+              50.505027082000026
+            ],
+            [
+              13.407053290000022,
+              50.089617049000026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ051",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Liberecký kraj",
+        "NUTS_NAME": "Liberecký kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.146770550000042,
+              50.522942595000075
+            ],
+            [
+              14.48648554600004,
+              50.505027082000026
+            ],
+            [
+              14.420087970000054,
+              50.69058754900004
+            ],
+            [
+              14.61879975900007,
+              50.85780447700006
+            ],
+            [
+              14.823362001000078,
+              50.87055037200008
+            ],
+            [
+              15.148394351000036,
+              50.982682476000036
+            ],
+            [
+              15.535267653000062,
+              50.779375997000045
+            ],
+            [
+              15.475709602000052,
+              50.53965858000004
+            ],
+            [
+              15.146770550000042,
+              50.522942595000075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ052",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Královéhradecký kraj",
+        "NUTS_NAME": "Královéhradecký kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 3,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.58028997300005,
+              50.14278809900003
+            ],
+            [
+              15.43758662600004,
+              50.109857549000026
+            ],
+            [
+              15.146770550000042,
+              50.522942595000075
+            ],
+            [
+              15.475709602000052,
+              50.53965858000004
+            ],
+            [
+              15.535267653000062,
+              50.779375997000045
+            ],
+            [
+              16.107318043000078,
+              50.66207301900005
+            ],
+            [
+              16.365058297000076,
+              50.57408407100007
+            ],
+            [
+              16.58028997300005,
+              50.14278809900003
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ053",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Pardubický kraj",
+        "NUTS_NAME": "Pardubický kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.43758662600004,
+              50.109857549000026
+            ],
+            [
+              16.58028997300005,
+              50.14278809900003
+            ],
+            [
+              16.863269831000025,
+              50.19812310000003
+            ],
+            [
+              16.80420003200004,
+              49.598813017000055
+            ],
+            [
+              16.393628169000067,
+              49.58061059900007
+            ],
+            [
+              15.496953093000059,
+              49.86118464900005
+            ],
+            [
+              15.43758662600004,
+              50.109857549000026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ063",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Kraj Vysočina",
+        "NUTS_NAME": "Kraj Vysočina",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 3,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.393628169000067,
+              49.58061059900007
+            ],
+            [
+              16.131796266000038,
+              49.09914205100006
+            ],
+            [
+              15.586756448000074,
+              48.94715961600008
+            ],
+            [
+              15.022369518000062,
+              49.304995475000055
+            ],
+            [
+              14.93201872700007,
+              49.54910091800008
+            ],
+            [
+              15.496953093000059,
+              49.86118464900005
+            ],
+            [
+              16.393628169000067,
+              49.58061059900007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ064",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Jihomoravský kraj",
+        "NUTS_NAME": "Jihomoravský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              15.586756448000074,
+              48.94715961600008
+            ],
+            [
+              16.131796266000038,
+              49.09914205100006
+            ],
+            [
+              16.393628169000067,
+              49.58061059900007
+            ],
+            [
+              16.80420003200004,
+              49.598813017000055
+            ],
+            [
+              17.159901390000073,
+              49.275057401000026
+            ],
+            [
+              17.64693006600004,
+              48.85426588300004
+            ],
+            [
+              17.39672547600003,
+              48.81335011900006
+            ],
+            [
+              16.940278026000044,
+              48.61724544700007
+            ],
+            [
+              15.753633425000032,
+              48.85217844500005
+            ],
+            [
+              15.542449604000069,
+              48.90769691100007
+            ],
+            [
+              15.586756448000074,
+              48.94715961600008
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ071",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Olomoucký kraj",
+        "NUTS_NAME": "Olomoucký kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              16.863269831000025,
+              50.19812310000003
+            ],
+            [
+              16.907924286000025,
+              50.44945407800003
+            ],
+            [
+              17.42960512700006,
+              50.254512987000055
+            ],
+            [
+              17.21745325100005,
+              49.89680387300007
+            ],
+            [
+              17.91685655300006,
+              49.53780894000005
+            ],
+            [
+              17.159901390000073,
+              49.275057401000026
+            ],
+            [
+              16.80420003200004,
+              49.598813017000055
+            ],
+            [
+              16.863269831000025,
+              50.19812310000003
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ072",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Zlínský kraj",
+        "NUTS_NAME": "Zlínský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              17.159901390000073,
+              49.275057401000026
+            ],
+            [
+              17.91685655300006,
+              49.53780894000005
+            ],
+            [
+              18.40359555400005,
+              49.396745484000064
+            ],
+            [
+              18.322436011000036,
+              49.31505901100007
+            ],
+            [
+              17.64693006600004,
+              48.85426588300004
+            ],
+            [
+              17.159901390000073,
+              49.275057401000026
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ080",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Moravskoslezský kraj",
+        "NUTS_NAME": "Moravskoslezský kraj",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 2,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              18.575724146000027,
+              49.91042295900007
+            ],
+            [
+              18.78213291900005,
+              49.68352174100005
+            ],
+            [
+              18.851551020000045,
+              49.51718893800006
+            ],
+            [
+              18.40359555400005,
+              49.396745484000064
+            ],
+            [
+              17.91685655300006,
+              49.53780894000005
+            ],
+            [
+              17.21745325100005,
+              49.89680387300007
+            ],
+            [
+              17.42960512700006,
+              50.254512987000055
+            ],
+            [
+              18.03506107900006,
+              50.06577202200003
+            ],
+            [
+              18.575724146000027,
+              49.91042295900007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NUTS_ID": "CZ010",
+        "LEVL_CODE": 3,
+        "CNTR_CODE": "CZ",
+        "NAME_LATN": "Hlavní město Praha",
+        "NUTS_NAME": "Hlavní město Praha",
+        "MOUNT_TYPE": null,
+        "URBN_TYPE": 1,
+        "COAST_TYPE": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.28997666500004,
+              50.09162600900004
+            ],
+            [
+              14.584676713000022,
+              50.218157905000055
+            ],
+            [
+              14.812636265000037,
+              50.09407561200004
+            ],
+            [
+              14.621395863000032,
+              49.940415536000046
+            ],
+            [
+              14.28997666500004,
+              50.09162600900004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "NUTS_ID": "SK010",
         "LEVL_CODE": 3,
         "CNTR_CODE": "SK",
         "NAME_LATN": "Bratislavský kraj",
         "NUTS_NAME": "Bratislavský kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 1,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -70,7 +860,7 @@
         "NAME_LATN": "Trnavský kraj",
         "NUTS_NAME": "Trnavský kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -134,7 +924,7 @@
         "NAME_LATN": "Trenčiansky kraj",
         "NUTS_NAME": "Trenčiansky kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -182,7 +972,7 @@
         "NAME_LATN": "Nitriansky kraj",
         "NUTS_NAME": "Nitriansky kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -242,7 +1032,7 @@
         "NAME_LATN": "Žilinský kraj",
         "NUTS_NAME": "Žilinský kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -298,7 +1088,7 @@
         "NAME_LATN": "Banskobystrický kraj",
         "NUTS_NAME": "Banskobystrický kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -354,7 +1144,7 @@
         "NAME_LATN": "Prešovský kraj",
         "NUTS_NAME": "Prešovský kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -410,7 +1200,7 @@
         "NAME_LATN": "Košický kraj",
         "NUTS_NAME": "Košický kraj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -462,7 +1252,7 @@
         "NAME_LATN": "Bihor",
         "NUTS_NAME": "Bihor",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -518,7 +1308,7 @@
         "NAME_LATN": "Bistriţa-Năsăud",
         "NUTS_NAME": "Bistriţa-Năsăud",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -566,7 +1356,7 @@
         "NAME_LATN": "Cluj",
         "NUTS_NAME": "Cluj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -618,7 +1408,7 @@
         "NAME_LATN": "Maramureş",
         "NUTS_NAME": "Maramureş",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -686,7 +1476,7 @@
         "NAME_LATN": "Satu Mare",
         "NUTS_NAME": "Satu Mare",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -738,7 +1528,7 @@
         "NAME_LATN": "Sălaj",
         "NUTS_NAME": "Sălaj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -782,7 +1572,7 @@
         "NAME_LATN": "Alba",
         "NUTS_NAME": "Alba",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -842,7 +1632,7 @@
         "NAME_LATN": "Braşov",
         "NUTS_NAME": "Braşov",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -902,7 +1692,7 @@
         "NAME_LATN": "Covasna",
         "NUTS_NAME": "Covasna",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -946,7 +1736,7 @@
         "NAME_LATN": "Harghita",
         "NUTS_NAME": "Harghita",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1002,7 +1792,7 @@
         "NAME_LATN": "Mureş",
         "NUTS_NAME": "Mureş",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1070,7 +1860,7 @@
         "NAME_LATN": "Sibiu",
         "NUTS_NAME": "Sibiu",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1126,7 +1916,7 @@
         "NAME_LATN": "Bacău",
         "NUTS_NAME": "Bacău",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1170,7 +1960,7 @@
         "NAME_LATN": "Botoşani",
         "NUTS_NAME": "Botoşani",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1226,7 +2016,7 @@
         "NAME_LATN": "Iaşi",
         "NUTS_NAME": "Iaşi",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1286,7 +2076,7 @@
         "NAME_LATN": "Neamţ",
         "NUTS_NAME": "Neamţ",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1334,7 +2124,7 @@
         "NAME_LATN": "Suceava",
         "NUTS_NAME": "Suceava",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1398,7 +2188,7 @@
         "NAME_LATN": "Vaslui",
         "NUTS_NAME": "Vaslui",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1454,7 +2244,7 @@
         "NAME_LATN": "Brăila",
         "NUTS_NAME": "Brăila",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1510,7 +2300,7 @@
         "NAME_LATN": "Buzău",
         "NUTS_NAME": "Buzău",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1562,8 +2352,8 @@
         "NAME_LATN": "Constanţa",
         "NUTS_NAME": "Constanţa",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
-        "COAST_TYPE": null
+        "URBN_TYPE": 2,
+        "COAST_TYPE": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -1630,7 +2420,7 @@
         "NAME_LATN": "Galaţi",
         "NUTS_NAME": "Galaţi",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1682,8 +2472,8 @@
         "NAME_LATN": "Tulcea",
         "NUTS_NAME": "Tulcea",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
-        "COAST_TYPE": null
+        "URBN_TYPE": 3,
+        "COAST_TYPE": 1
       },
       "geometry": {
         "type": "Polygon",
@@ -1746,7 +2536,7 @@
         "NAME_LATN": "Vrancea",
         "NUTS_NAME": "Vrancea",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1802,7 +2592,7 @@
         "NAME_LATN": "Argeş",
         "NUTS_NAME": "Argeş",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1854,7 +2644,7 @@
         "NAME_LATN": "Călăraşi",
         "NUTS_NAME": "Călăraşi",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1910,7 +2700,7 @@
         "NAME_LATN": "Dâmboviţa",
         "NUTS_NAME": "Dâmboviţa",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -1966,7 +2756,7 @@
         "NAME_LATN": "Giurgiu",
         "NUTS_NAME": "Giurgiu",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2022,7 +2812,7 @@
         "NAME_LATN": "Ialomiţa",
         "NUTS_NAME": "Ialomiţa",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2086,7 +2876,7 @@
         "NAME_LATN": "Prahova",
         "NUTS_NAME": "Prahova",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2134,7 +2924,7 @@
         "NAME_LATN": "Teleorman",
         "NUTS_NAME": "Teleorman",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2190,7 +2980,7 @@
         "NAME_LATN": "Bucureşti",
         "NUTS_NAME": "Bucureşti",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 1,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2230,7 +3020,7 @@
         "NAME_LATN": "Ilfov",
         "NUTS_NAME": "Ilfov",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 1,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2300,7 +3090,7 @@
         "NAME_LATN": "Dolj",
         "NUTS_NAME": "Dolj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2356,7 +3146,7 @@
         "NAME_LATN": "Gorj",
         "NUTS_NAME": "Gorj",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2404,7 +3194,7 @@
         "NAME_LATN": "Mehedinţi",
         "NUTS_NAME": "Mehedinţi",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2452,7 +3242,7 @@
         "NAME_LATN": "Olt",
         "NUTS_NAME": "Olt",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2516,7 +3306,7 @@
         "NAME_LATN": "Vâlcea",
         "NUTS_NAME": "Vâlcea",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2576,7 +3366,7 @@
         "NAME_LATN": "Arad",
         "NUTS_NAME": "Arad",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2628,7 +3418,7 @@
         "NAME_LATN": "Caraş-Severin",
         "NUTS_NAME": "Caraş-Severin",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 3,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2688,7 +3478,7 @@
         "NAME_LATN": "Hunedoara",
         "NUTS_NAME": "Hunedoara",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -2740,7 +3530,7 @@
         "NAME_LATN": "Timiş",
         "NUTS_NAME": "Timiş",
         "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
+        "URBN_TYPE": 2,
         "COAST_TYPE": null
       },
       "geometry": {
@@ -14384,198 +15174,6 @@
             [
               23.971440546000053,
               43.062282319000076
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "NUTS_ID": "CZ0",
-        "LEVL_CODE": 1,
-        "CNTR_CODE": "CZ",
-        "NAME_LATN": "Česko",
-        "NUTS_NAME": "Česko",
-        "MOUNT_TYPE": null,
-        "URBN_TYPE": null,
-        "COAST_TYPE": null
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.491221239000026,
-              51.04353041100006
-            ],
-            [
-              14.61879975900007,
-              50.85780447700006
-            ],
-            [
-              14.823362001000078,
-              50.87055037200008
-            ],
-            [
-              15.148394351000036,
-              50.982682476000036
-            ],
-            [
-              15.535267653000062,
-              50.779375997000045
-            ],
-            [
-              16.107318043000078,
-              50.66207301900005
-            ],
-            [
-              16.365058297000076,
-              50.57408407100007
-            ],
-            [
-              16.58028997300005,
-              50.14278809900003
-            ],
-            [
-              16.863269831000025,
-              50.19812310000003
-            ],
-            [
-              16.907924286000025,
-              50.44945407800003
-            ],
-            [
-              17.42960512700006,
-              50.254512987000055
-            ],
-            [
-              18.03506107900006,
-              50.06577202200003
-            ],
-            [
-              18.575724146000027,
-              49.91042295900007
-            ],
-            [
-              18.78213291900005,
-              49.68352174100005
-            ],
-            [
-              18.851551020000045,
-              49.51718893800006
-            ],
-            [
-              18.40359555400005,
-              49.396745484000064
-            ],
-            [
-              18.322436011000036,
-              49.31505901100007
-            ],
-            [
-              17.64693006600004,
-              48.85426588300004
-            ],
-            [
-              17.39672547600003,
-              48.81335011900006
-            ],
-            [
-              16.940278026000044,
-              48.61724544700007
-            ],
-            [
-              15.753633425000032,
-              48.85217844500005
-            ],
-            [
-              15.542449604000069,
-              48.90769691100007
-            ],
-            [
-              15.039224508000075,
-              48.96587176500003
-            ],
-            [
-              14.691013827000063,
-              48.58430192900005
-            ],
-            [
-              14.175554162000026,
-              48.585297843000035
-            ],
-            [
-              13.839507129000026,
-              48.77160502800007
-            ],
-            [
-              13.551578318000054,
-              48.96778749400005
-            ],
-            [
-              13.41665153300005,
-              48.980035368000074
-            ],
-            [
-              13.170907943000032,
-              49.17357963100005
-            ],
-            [
-              12.63376343300007,
-              49.47619511100004
-            ],
-            [
-              12.593778745000066,
-              49.542191357000036
-            ],
-            [
-              12.401524209000058,
-              49.758373121000034
-            ],
-            [
-              12.550988701000051,
-              49.90508807900005
-            ],
-            [
-              12.260798923000038,
-              50.05815665500006
-            ],
-            [
-              12.160679129000073,
-              50.21984910300006
-            ],
-            [
-              12.100900625000065,
-              50.31802807500003
-            ],
-            [
-              12.583778453000036,
-              50.407078916000046
-            ],
-            [
-              12.948144599000045,
-              50.40431146900005
-            ],
-            [
-              13.501846054000055,
-              50.633643033000055
-            ],
-            [
-              13.65217407800003,
-              50.73035993500008
-            ],
-            [
-              14.17319767500004,
-              50.86210556600008
-            ],
-            [
-              14.317873514000041,
-              51.05469913300004
-            ],
-            [
-              14.491221239000026,
-              51.04353041100006
             ]
           ]
         ]
