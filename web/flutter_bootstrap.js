@@ -6,22 +6,33 @@ Read more: https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"e3ea776da3f78d504df7ea76c8066f6a67a2e68c","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
+// _flutter.buildConfig = {"engineRevision":"e3ea776da3f78d504df7ea76c8066f6a67a2e68c","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 {{flutter_js}}
 {{flutter_build_config}}
 
-const userConfig =  {"canvasKitBaseUrl": "/canvaskit/","renderer": "canvaskit"};
+const useCanvasKit = false;
 
+const config = {
+  renderer: useCanvasKit ? "canvaskit" : "skwasm",
+};
 _flutter.loader.load({
-  config: userConfig,
-  serviceWorkerSettings: {
-    serviceWorkerVersion: {{flutter_service_worker_version}},
-  },
-  onEntrypointLoaded: async function(engineInitializer) {
-    const amaRunner = await engineInitializer.initializeEngine();
-    await amaRunner.runApp();
-  }
+  config: config,
 });
+
+
+// const userConfig =  {"canvasKitBaseUrl": "/canvaskit/","renderer": "canvaskit"};
+
+
+// _flutter.loader.load({
+//   config: userConfig,
+//   serviceWorkerSettings: {
+//     serviceWorkerVersion: {{flutter_service_worker_version}},
+//   },
+//   onEntrypointLoaded: async function(engineInitializer) {
+//     const amaRunner = await engineInitializer.initializeEngine();
+//     await amaRunner.runApp();
+//   }
+// });
 
 
