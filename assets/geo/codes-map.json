@@ -1121,5 +1121,22 @@
       "iso": "SK-ZI",
       "code": "SK-ZI"
     }
+  ],
+  "SE": [
+    {
+      "nuts": "SE1",
+      "iso": "",
+      "code": "SE1"
+    },
+    {
+      "nuts": "SE2",
+      "iso": "",
+      "code": "SE2"
+    },
+    {
+      "nuts": "SE3",
+      "iso": "",
+      "code": "SE3"
+    }
   ]
 }
