@@ -159,7 +159,43 @@ def get_subdivions(country_iso: str) -> list[Subdivision]:
                 name_en="North Sweden",
                 short_name="NS",
             ),
-        ]
+        ],
+        "EE": [
+            Subdivision(
+                iso="EE0",
+                code="EE0",
+                name="Eestni",
+                name_en="Estonia",
+                short_name="EE",
+            ),
+        ],
+        "LV": [
+            Subdivision(
+                iso="LV0",
+                code="LV0",
+                name="Latvija",
+                name_en="Latvia",
+                short_name="LV",
+            ),
+        ],
+        "LT": [
+            Subdivision(
+                iso="LT0",
+                code="LT0",
+                name="Lietuva",
+                name_en="Lithuania",
+                short_name="LT",
+            ),
+        ],
+        "IE": [
+            Subdivision(
+                iso="IE0",
+                code="IE0",
+                name="Ireland",
+                name_en="Ireland",
+                short_name="IE",
+            ),
+        ],
     }
     if country_iso in missing_countries.keys():
         return missing_countries[country_iso]
@@ -215,7 +251,7 @@ def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
     levels_map = {
         "AT": 2,
         "IT": 2,
-        "CH": 2,
+        "CH": 3,
         "FR": 2,
         "PL": 2,
         "RO": 3,
@@ -285,13 +321,16 @@ if __name__ == "__main__":
     convert_geojson()
     # short()
     sys.exit()
-    # countries = get_countries()
-    countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
+    countries = get_countries()
+    # countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
         subs = get_subdivions(country.iso)
+        if len(subs) != 0:
+            continue
         ic(subs)
+        ic(country.iso)
         for sub in subs:
             sub_hols_list: list[Holiday] = []
             # get via sub code first
