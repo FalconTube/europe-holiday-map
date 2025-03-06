@@ -1138,5 +1138,33 @@
       "iso": "",
       "code": "SE3"
     }
+  ],
+  "EE": [
+    {
+      "nuts": "EE0",
+      "iso": "",
+      "code": "EE0"
+    }
+  ],
+  "LV": [
+    {
+      "nuts": "LV0",
+      "iso": "",
+      "code": "LV0"
+    }
+  ],
+  "LT": [
+    {
+      "nuts": "LT0",
+      "iso": "",
+      "code": "LT0"
+    }
+  ],
+  "IE": [
+    {
+      "nuts": "IE0",
+      "iso": "",
+      "code": "IE0"
+    }
   ]
 }
