@@ -11,7 +11,7 @@ if (!window._flutter) {
 {{flutter_js}}
 {{flutter_build_config}}
 
-const useCanvasKit = false;
+const useCanvasKit = true;
 
 const config = {
   renderer: useCanvasKit ? "canvaskit" : "skwasm",
