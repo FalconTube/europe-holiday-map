@@ -41,8 +41,7 @@ class Country:
     @classmethod
     def from_dict(cls, data: Dict):
         iso = data.get("isoCode")
-        assert iso is not None, f"Could not parse iso from country data: {
-            data}"
+        assert iso is not None, f"Could not parse iso from country data: {data}"
         code = data.get("code")
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
@@ -65,8 +64,7 @@ class Subdivision:
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
         short_name = data.get("shortName")
-        assert short_name is not None, f"Could not find key 'shortName' in data: {
-            data}"
+        assert short_name is not None, f"Could not find key 'shortName' in data: {data}"
         return cls(
             iso=iso,
             code=code,
@@ -89,24 +87,21 @@ class Holiday:
         # Dates
         start = data.get("startDate")
         end = data.get("endDate")
-        assert start is not None, f"Could not find key 'startDate' in data: {
-            data}"
+        assert start is not None, f"Could not find key 'startDate' in data: {data}"
         assert end is not None, f"Could not find key 'endDate' in data: {data}"
         # Names
         names_list: list[dict[str, str]] = data["name"]
         name, name_en = parse_names_from_data(names_list)
         # Type
         hol_type_str = data.get("type")
-        assert hol_type_str is not None, f"Could not find key 'type' in data: {
-            data}"
+        assert hol_type_str is not None, f"Could not find key 'type' in data: {data}"
         if hol_type_str not in ["Public", "School"]:
             hol_type_str = "Other"
         try:
             holiday_type = HolidayType(hol_type_str)
         except ValueError:
             raise ValueError(
-                f"Invalid holidayType: {
-                    hol_type_str}. Must be 'public' or 'school'"
+                f"Invalid holidayType: {hol_type_str}. Must be 'public' or 'school'"
             )
         return cls(
             start=start,
@@ -141,9 +136,72 @@ def get_countries() -> list[Country]:
 
 
 def get_subdivions(country_iso: str) -> list[Subdivision]:
+    missing_countries = {
+        "SE": [
+            Subdivision(
+                iso="SE1",
+                code="SE1",
+                name="Östra Sverige",
+                name_en="East Sweden",
+                short_name="ES",
+            ),
+            Subdivision(
+                iso="SE2",
+                code="SE2",
+                name="Södra Sverige",
+                name_en="South Sweden",
+                short_name="SS",
+            ),
+            Subdivision(
+                iso="SE3",
+                code="SE3",
+                name="Norra Sverige",
+                name_en="North Sweden",
+                short_name="NS",
+            ),
+        ],
+        "EE": [
+            Subdivision(
+                iso="EE0",
+                code="EE0",
+                name="Eestni",
+                name_en="Estonia",
+                short_name="EE",
+            ),
+        ],
+        "LV": [
+            Subdivision(
+                iso="LV0",
+                code="LV0",
+                name="Latvija",
+                name_en="Latvia",
+                short_name="LV",
+            ),
+        ],
+        "LT": [
+            Subdivision(
+                iso="LT0",
+                code="LT0",
+                name="Lietuva",
+                name_en="Lithuania",
+                short_name="LT",
+            ),
+        ],
+        "IE": [
+            Subdivision(
+                iso="IE0",
+                code="IE0",
+                name="Ireland",
+                name_en="Ireland",
+                short_name="IE",
+            ),
+        ],
+    }
+    if country_iso in missing_countries.keys():
+        return missing_countries[country_iso]
+
     params = {"countryIsoCode": country_iso}
-    res = requests.get(
-        "https://openholidaysapi.org/Subdivisions", params=params)
+    res = requests.get("https://openholidaysapi.org/Subdivisions", params=params)
     data: list[Dict] = res.json()
     sub_list: list[Subdivision] = []
     for sub_obj in data:
@@ -165,11 +223,9 @@ def get_holidays(
         params["subdivisionCode"] = subdivision_code
 
     if hol_type == HolidayType.PUBLIC:
-        res = requests.get(
-            "https://openholidaysapi.org/PublicHolidays", params=params)
+        res = requests.get("https://openholidaysapi.org/PublicHolidays", params=params)
     else:
-        res = requests.get(
-            "https://openholidaysapi.org/SchoolHolidays", params=params)
+        res = requests.get("https://openholidaysapi.org/SchoolHolidays", params=params)
     data: list[Dict] = res.json()
     hol_list: list[Holiday] = []
     for hol_obj in data:
@@ -195,11 +251,12 @@ def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
     levels_map = {
         "AT": 2,
         "IT": 2,
-        "CH": 2,
+        "CH": 3,
         "FR": 2,
         "PL": 2,
         "RO": 3,
         "SK": 3,
+        "CZ": 3,
     }
     known_features = []
     for world_entry in in_json:
@@ -230,14 +287,12 @@ def world_features(in_json: Dict, country_iso_codes: list[str]) -> list:
 
 
 def convert_geojson():
-    eu_geojson = extract_eu_from_world(
-        "assets/geo/nuts-world.geojson", with_provinces=True
-    )
+    eu_geojson = extract_eu_from_world("nuts-world.geojson", with_provinces=True)
     with open("assets/geo/eu-nuts.geojson", "w", encoding="utf-8") as w:
-        w.write(json.dumps(eu_geojson, indent=2))
-    eu_geojson = extract_eu_from_world("assets/geo/world.geojson")
-    with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
-        w.write(json.dumps(eu_geojson, indent=2))
+        w.write(json.dumps(eu_geojson, indent=2, ensure_ascii=False))
+    # eu_geojson = extract_eu_from_world("nuts-world.geojson")
+    # with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
+    #     w.write(json.dumps(eu_geojson, indent=2))
 
 
 def short():
@@ -263,11 +318,11 @@ def short():
 
 
 if __name__ == "__main__":
-    convert_geojson()
-    # short()
-    sys.exit()
+    # convert_geojson()
+    # # short()
+    # sys.exit()
     countries = get_countries()
-    # countries = [Country(iso="AT", code="AT", name="Espania", name_en="Spain")]
+    # countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
@@ -275,19 +330,16 @@ if __name__ == "__main__":
         for sub in subs:
             sub_hols_list: list[Holiday] = []
             # get via sub code first
-            school_hols = get_holidays(
-                HolidayType.SCHOOL, country.iso, sub.code)
+            school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.code)
             if school_hols == []:
                 # if sub code does not return, then use iso
-                school_hols = get_holidays(
-                    HolidayType.SCHOOL, country.iso, sub.iso)
+                school_hols = get_holidays(HolidayType.SCHOOL, country.iso, sub.iso)
             # if still empty, print it
             if school_hols == []:
                 print(f"School holidays empty for sub: {sub}")
             pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.code)
             if pub_hols == []:
-                pub_hols = get_holidays(
-                    HolidayType.PUBLIC, country.iso, sub.iso)
+                pub_hols = get_holidays(HolidayType.PUBLIC, country.iso, sub.iso)
             if pub_hols == []:
                 print(f"Pub holidays empty for sub: {sub}")
             sub_hols_list.extend(school_hols)
@@ -305,4 +357,4 @@ if __name__ == "__main__":
 
     outfile = "parsed_from_openholidaysapi.json"
     with open(outfile, "w", encoding="utf-8") as w:
-        w.write(json.dumps(country_list, indent=2))
+        w.write(json.dumps(country_list, indent=2, ensure_ascii=False))

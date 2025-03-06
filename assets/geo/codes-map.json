@@ -674,82 +674,82 @@
   ],
   "PL": [
     {
-      "nuts": "PL02",
+      "nuts": "PL51",
       "iso": "PL-02",
       "code": "PL-DS"
     },
     {
-      "nuts": "PL04",
+      "nuts": "PL61",
       "iso": "PL-04",
       "code": "PL-KP"
     },
     {
-      "nuts": "PL06",
+      "nuts": "PL43",
       "iso": "PL-06",
       "code": "PL-LB"
     },
     {
-      "nuts": "PL08",
+      "nuts": "PL71",
       "iso": "PL-08",
       "code": "PL-LD"
     },
     {
-      "nuts": "PL10",
+      "nuts": "PL81",
       "iso": "PL-10",
       "code": "PL-LU"
     },
     {
-      "nuts": "PL12",
+      "nuts": "PL21",
       "iso": "PL-12",
       "code": "PL-MA"
     },
     {
-      "nuts": "PL14",
+      "nuts": "PL92",
       "iso": "PL-14",
       "code": "PL-MZ"
     },
     {
-      "nuts": "PL16",
+      "nuts": "PL52",
       "iso": "PL-16",
       "code": "PL-OP"
     },
     {
-      "nuts": "PL18",
+      "nuts": "PL84",
       "iso": "PL-18",
       "code": "PL-PD"
     },
     {
-      "nuts": "PL20",
+      "nuts": "PL82",
       "iso": "PL-20",
       "code": "PL-PK"
     },
     {
-      "nuts": "PL22",
+      "nuts": "PL63",
       "iso": "PL-22",
       "code": "PL-PM"
     },
     {
-      "nuts": "PL24",
+      "nuts": "PL72",
       "iso": "PL-24",
       "code": "PL-SK"
     },
     {
-      "nuts": "PL26",
+      "nuts": "PL22",
       "iso": "PL-26",
       "code": "PL-SL"
     },
     {
-      "nuts": "PL28",
+      "nuts": "PL62",
       "iso": "PL-28",
       "code": "PL-WN"
     },
     {
-      "nuts": "PL30",
+      "nuts": "PL41",
       "iso": "PL-30",
       "code": "PL-WP"
     },
     {
-      "nuts": "PL32",
+      "nuts": "PL42",
       "iso": "PL-32",
       "code": "PL-ZP"
     }
@@ -1120,6 +1120,51 @@
       "nuts": "SK031",
       "iso": "SK-ZI",
       "code": "SK-ZI"
+    }
+  ],
+  "SE": [
+    {
+      "nuts": "SE1",
+      "iso": "",
+      "code": "SE1"
+    },
+    {
+      "nuts": "SE2",
+      "iso": "",
+      "code": "SE2"
+    },
+    {
+      "nuts": "SE3",
+      "iso": "",
+      "code": "SE3"
+    }
+  ],
+  "EE": [
+    {
+      "nuts": "EE0",
+      "iso": "",
+      "code": "EE0"
+    }
+  ],
+  "LV": [
+    {
+      "nuts": "LV0",
+      "iso": "",
+      "code": "LV0"
+    }
+  ],
+  "LT": [
+    {
+      "nuts": "LT0",
+      "iso": "",
+      "code": "LT0"
+    }
+  ],
+  "IE": [
+    {
+      "nuts": "IE0",
+      "iso": "",
+      "code": "IE0"
     }
   ]
 }

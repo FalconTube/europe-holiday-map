@@ -18489,7 +18489,266 @@
   },
   {
     "country": "ee",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "EE0",
+        "code": "EE0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-05",
+            "name": "jõulupühad",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-24",
+            "end": "2025-03-02",
+            "name": "talvepuhkus",
+            "name_en": "Winter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-14",
+            "end": "2025-04-20",
+            "name": "kevadpühad",
+            "name_en": "Spring Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-10",
+            "end": "2025-08-31",
+            "name": "suvepuhkus",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-10-20",
+            "end": "2025-10-26",
+            "name": "sügispuhkus",
+            "name_en": "Autumn Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-12-22",
+            "end": "2026-01-11",
+            "name": "jõulupühad",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-23",
+            "end": "2026-03-01",
+            "name": "talvepuhkus",
+            "name_en": "Winter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-19",
+            "name": "kevadpühad",
+            "name_en": "Spring Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-06-17",
+            "end": "2026-08-31",
+            "name": "suvepuhkus",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-10-26",
+            "end": "2026-11-01",
+            "name": "sügispuhkus",
+            "name_en": "Autumn Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-12-23",
+            "end": "2027-01-10",
+            "name": "jõulupühad",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "uusaasta",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-24",
+            "end": "2025-02-24",
+            "name": "iseseisvuspäev",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "suur reede",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "ülestõusmispühade 1. püha",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "kevadpüha",
+            "name_en": "Spring Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-08",
+            "end": "2025-06-08",
+            "name": "nelipühade 1. püha",
+            "name_en": "Pentecost",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-23",
+            "end": "2025-06-23",
+            "name": "võidupüha",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "jaanipäev",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "taasiseseisvumispäev",
+            "name_en": "Day of Restoration of Independence",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2025-12-24",
+            "name": "jõululaupäev",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "esimene jõulupüha",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "teine jõulupüha",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "uusaasta",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-24",
+            "end": "2026-02-24",
+            "name": "iseseisvuspäev",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "suur reede",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "ülestõusmispühade 1. püha",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "kevadpüha",
+            "name_en": "Spring Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "nelipühade 1. püha",
+            "name_en": "Pentecost",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-23",
+            "end": "2026-06-23",
+            "name": "võidupüha",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "jaanipäev",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "taasiseseisvumispäev",
+            "name_en": "Day of Restoration of Independence",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2026-12-24",
+            "name": "jõululaupäev",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "esimene jõulupüha",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "teine jõulupüha",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "uusaasta",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "es",
@@ -27022,7 +27281,224 @@
   },
   {
     "country": "ie",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "IE0",
+        "code": "IE0",
+        "holidays": [
+          {
+            "start": "2024-12-20",
+            "end": "2025-01-05",
+            "name": "Christmas",
+            "name_en": "Christmas",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-17",
+            "end": "2025-02-21",
+            "name": "February mid-term break",
+            "name_en": "February mid-term break",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-20",
+            "end": "2025-02-21",
+            "name": "February mid-term break",
+            "name_en": "February mid-term break",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-11",
+            "end": "2025-04-27",
+            "name": "Easter",
+            "name_en": "Easter",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-10-27",
+            "end": "2025-10-31",
+            "name": "October mid-term break",
+            "name_en": "October mid-term break",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-12-19",
+            "end": "2026-01-04",
+            "name": "Christmas",
+            "name_en": "Christmas",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-16",
+            "end": "2026-02-20",
+            "name": "February mid-term break",
+            "name_en": "February mid-term break",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-19",
+            "end": "2026-02-20",
+            "name": "February mid-term break",
+            "name_en": "February mid-term break",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-03-27",
+            "end": "2026-04-12",
+            "name": "Easter",
+            "name_en": "Easter",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Lá Caille",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-03",
+            "end": "2025-02-03",
+            "name": "Lá Fhéile Bríde",
+            "name_en": "Saint Brigid's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-17",
+            "end": "2025-03-17",
+            "name": "Lá Fhéile Pádraig",
+            "name_en": "Saint Patrick's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Luan Cásca",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-05",
+            "end": "2025-05-05",
+            "name": "Lá Bealtaine",
+            "name_en": "May Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-02",
+            "end": "2025-06-02",
+            "name": "Lá Saoire i mí an Mheithimh",
+            "name_en": "June Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-04",
+            "end": "2025-08-04",
+            "name": "Lá Saoire i mí Lúnasa",
+            "name_en": "August Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-27",
+            "end": "2025-10-27",
+            "name": "Lá Saoire i mí Dheireadh Fómhair",
+            "name_en": "October Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Lá Nollag",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Lá Fhéile Stiofáin",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Lá Caille",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-02",
+            "end": "2026-02-02",
+            "name": "Lá Fhéile Bríde",
+            "name_en": "Saint Brigid's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-17",
+            "end": "2026-03-17",
+            "name": "Lá Fhéile Pádraig",
+            "name_en": "Saint Patrick's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Luan Cásca",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-04",
+            "end": "2026-05-04",
+            "name": "Lá Bealtaine",
+            "name_en": "May Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-01",
+            "end": "2026-06-01",
+            "name": "Lá Saoire i mí an Mheithimh",
+            "name_en": "June Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-03",
+            "end": "2026-08-03",
+            "name": "Lá Saoire i mí Lúnasa",
+            "name_en": "August Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-26",
+            "end": "2026-10-26",
+            "name": "Lá Saoire i mí Dheireadh Fómhair",
+            "name_en": "October Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Lá Nollag",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Lá Fhéile Stiofáin",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Lá Caille",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "it",
@@ -31250,7 +31726,245 @@
   },
   {
     "country": "lt",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "LT0",
+        "code": "LT0",
+        "holidays": [
+          {
+            "start": "2024-12-27",
+            "end": "2025-01-03",
+            "name": "Žiemos atostogos",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-17",
+            "end": "2025-02-21",
+            "name": "Žiemos atostogos",
+            "name_en": "Winter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-22",
+            "end": "2025-04-25",
+            "name": "Pavasario atostogos",
+            "name_en": "Spring Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-09-01",
+            "end": "2025-09-01",
+            "name": "Atgal į mokyklą",
+            "name_en": "First Day of School",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Naujieji metai",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-16",
+            "end": "2025-02-16",
+            "name": "Lietuvos valstybės atkūrimo diena",
+            "name_en": "Day of restoration of the Lithuanian state",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-11",
+            "end": "2025-03-11",
+            "name": "Lietuvos nepriklausomybės atkūrimo diena",
+            "name_en": "Day of Restoration of Independence of Lithuania",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Velykos",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Antroji Velykų diena",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Tarptautinė darbo diena",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Rasos ir Joninių diena",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-07-06",
+            "end": "2025-07-06",
+            "name": "Valstybės diena",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Žolinė",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Visų šventųjų diena",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-02",
+            "end": "2025-11-02",
+            "name": "Vėlinės",
+            "name_en": "All Souls' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2025-12-24",
+            "name": "Šv. Kūčios",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Šv. Kalėdos",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Šv. Kalėdos",
+            "name_en": "2nd Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Naujieji metai",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-16",
+            "end": "2026-02-16",
+            "name": "Lietuvos valstybės atkūrimo diena",
+            "name_en": "Day of restoration of the Lithuanian state",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-11",
+            "end": "2026-03-11",
+            "name": "Lietuvos nepriklausomybės atkūrimo diena",
+            "name_en": "Day of Restoration of Independence of Lithuania",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Velykos",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Antroji Velykų diena",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Tarptautinė darbo diena",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Rasos ir Joninių diena",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-07-06",
+            "end": "2026-07-06",
+            "name": "Valstybės diena",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Žolinė",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Visų šventųjų diena",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-02",
+            "end": "2026-11-02",
+            "name": "Vėlinės",
+            "name_en": "All Souls' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2026-12-24",
+            "name": "Šv. Kūčios",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Šv. Kalėdos",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Šv. Kalėdos",
+            "name_en": "2nd Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Naujieji metai",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "lu",
@@ -31258,7 +31972,252 @@
   },
   {
     "country": "lv",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "LV0",
+        "code": "LV0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-05",
+            "name": "Ziemas brīvdienas",
+            "name_en": "Winter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-10",
+            "end": "2025-03-16",
+            "name": "Pavasara brīvdienas",
+            "name_en": "Spring Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-05-31",
+            "end": "2025-08-31",
+            "name": "Vasaras brīvdienas",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Jaungada dienu",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Lielo Piektdienu",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Pirmās Lieldienas",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Lieldienu dienu",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Darba svētkus",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-04",
+            "end": "2025-05-04",
+            "name": "Latvijas Republikas Neatkarības atjaunošanas dienu",
+            "name_en": "Day of the Restoration of Independence",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-11",
+            "end": "2025-05-11",
+            "name": "Mātes dienu",
+            "name_en": "Mother's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-08",
+            "end": "2025-06-08",
+            "name": "Vasarsvētkus",
+            "name_en": "Pentecost",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-23",
+            "end": "2025-06-23",
+            "name": "Līgo dienu",
+            "name_en": "Midsummer's Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-24",
+            "end": "2025-06-24",
+            "name": "Jāņu dienu",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-18",
+            "end": "2025-11-18",
+            "name": "Latvijas Republikas Proklamēšanas dienu",
+            "name_en": "Day of the Proclamation of the Republic of Latvia",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2025-12-24",
+            "name": "Ziemassvētku vakars",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Ziemassvētki",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Otrie Ziemassvētki",
+            "name_en": "2nd Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-31",
+            "end": "2025-12-31",
+            "name": "Vecgada dienu",
+            "name_en": "New Year's Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Jaungada dienu",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Lielo Piektdienu",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Pirmās Lieldienas",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Lieldienu dienu",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Darba svētkus",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-04",
+            "end": "2026-05-04",
+            "name": "Latvijas Republikas Neatkarības atjaunošanas dienu",
+            "name_en": "Day of the Restoration of Independence",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-10",
+            "end": "2026-05-10",
+            "name": "Mātes dienu",
+            "name_en": "Mother's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Vasarsvētkus",
+            "name_en": "Pentecost",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-23",
+            "end": "2026-06-23",
+            "name": "Līgo dienu",
+            "name_en": "Midsummer's Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-24",
+            "end": "2026-06-24",
+            "name": "Jāņu dienu",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-18",
+            "end": "2026-11-18",
+            "name": "Latvijas Republikas Proklamēšanas dienu",
+            "name_en": "Day of the Proclamation of the Republic of Latvia",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2026-12-24",
+            "name": "Ziemassvētku vakars",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Ziemassvētki",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Otrie Ziemassvētki",
+            "name_en": "2nd Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-31",
+            "end": "2026-12-31",
+            "name": "Vecgada dienu",
+            "name_en": "New Year's Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Jaungada dienu",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "mc",
@@ -56200,7 +57159,593 @@
   },
   {
     "country": "se",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "SE1",
+        "code": "SE1",
+        "holidays": [
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-06",
+            "end": "2025-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-08",
+            "end": "2025-06-08",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-06-21",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-06",
+            "end": "2026-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-20",
+            "end": "2026-06-20",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-31",
+            "end": "2026-10-31",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "iso": "SE2",
+        "code": "SE2",
+        "holidays": [
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-06",
+            "end": "2025-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-08",
+            "end": "2025-06-08",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-06-21",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-06",
+            "end": "2026-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-20",
+            "end": "2026-06-20",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-31",
+            "end": "2026-10-31",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "iso": "SE3",
+        "code": "SE3",
+        "holidays": [
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-06",
+            "end": "2025-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-08",
+            "end": "2025-06-08",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-06-21",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Trettondedag jul",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Långfredagen",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Påskdagen",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Annandag påsk",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Första maj",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Kristi himmelsfärds dag",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Pingstdagen",
+            "name_en": "Whit Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-06",
+            "end": "2026-06-06",
+            "name": "Nationaldagen",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-20",
+            "end": "2026-06-20",
+            "name": "Midsommardagen",
+            "name_en": "Midsummer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-31",
+            "end": "2026-10-31",
+            "name": "Alla helgons dag",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Juldagen",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Annandag jul",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Nyårsdagen",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "si",
