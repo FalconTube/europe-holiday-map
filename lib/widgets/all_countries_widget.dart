@@ -1,6 +1,7 @@
 import 'dart:js_interop';
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/logging/logger.dart';
@@ -110,7 +111,7 @@ class AllCountriesWidget extends ConsumerWidget {
                 headerHeight: 50,
                 showNavigationArrow: true,
                 monthViewSettings: DateRangePickerMonthViewSettings(
-                    enableSwipeSelection: false),
+                    enableSwipeSelection: kIsWeb ? true : false),
                 toggleDaySelection: true,
                 selectionMode: DateRangePickerSelectionMode.range,
                 initialSelectedDate: DateTime.now(),
@@ -214,7 +215,7 @@ class LinearColorBox extends StatelessWidget {
             gradient: LinearGradient(
                 begin: vertical ? Alignment.bottomCenter : Alignment.centerLeft,
                 end: vertical ? Alignment.topCenter : Alignment.centerRight,
-                colors: [cmap(0).toColor(), cmap(1).toColor()])),
+                colors: [cmap(200 / 255).toColor(), cmap(1).toColor()])),
       ),
     );
   }
@@ -225,12 +226,10 @@ List<MapColorMapper> genColorMap(int length, Colormap cmap) {
   if (length == 0) {
     return [
       MapColorMapper(value: 0.toString(), color: cmap(1).toColor()),
-      MapColorMapper(value: 0.toString(), color: cmap(0).toColor())
     ];
   }
   for (int i = 0; i <= length; i++) {
-    final alpha = intToAlpha(i, length);
-    // final colorval = clampDouble(alpha / 255, 0.8, 1);
+    final alpha = convert255To1(i, length);
     final colorval = alpha / 256;
     final thisMap =
         MapColorMapper(value: i.toString(), color: cmap(colorval).toColor());
@@ -240,9 +239,8 @@ List<MapColorMapper> genColorMap(int length, Colormap cmap) {
   return out;
 }
 
-double intToAlpha(int value, int maxValue) {
-  final out = 155 + 100 / maxValue * value;
-  // final out = clampDouble(value, 200, 255);
+double convert255To1(int value, int maxValue, {int offset = 200}) {
+  final out = offset + (255 - offset) / maxValue * value;
   return out;
 }
 
