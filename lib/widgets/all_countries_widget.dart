@@ -43,7 +43,7 @@ class AllCountriesWidget extends ConsumerWidget {
             dataCount: data.data.length,
             primaryValueMapper: (int index) => data.data[index].division,
             shapeColorValueMapper: (int index) {
-              final numdays = data.data[index].days - 1;
+              final numdays = data.data[index].totalDays - 1;
               return numdays.toString();
             },
             shapeColorMappers: genColorMap(data.numSelectedDays, cmap),
@@ -76,11 +76,11 @@ class AllCountriesWidget extends ConsumerWidget {
                           color: Colors.grey.withValues(alpha: 0.0),
                           shapeTooltipBuilder:
                               (BuildContext context, int index) {
-                            final days = data.data[index].days;
+                            final totalDays = data.data[index].totalDays;
                             final division = data.data[index].division;
-                            final holiday = data.data[index].holiday;
+                            final holiday = data.data[index].holidays;
                             final text = Text(
-                                'Division: $division\nDays: $days\nHoliday: $holiday');
+                                'Division: $division\nDays: $totalDays\nHoliday: $holiday');
                             return Container(
                                 child: Padding(
                               padding: const EdgeInsets.all(8.0),

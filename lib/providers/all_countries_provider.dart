@@ -1,13 +1,20 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
+import 'package:collection/collection.dart';
 
+/// Every holiday has a number of days attached to it
 class MapCountryData {
   final String division;
-  final String holiday;
-  final int days;
+  final List<String> holidays;
+  // final List<int> days;
+  final int totalDays;
 
   MapCountryData(
-      {required this.division, required this.holiday, required this.days});
+      {required this.division,
+      required this.holidays,
+      // required this.days,
+      required this.totalDays});
 }
 
 class MapCountryDataAndDays {
@@ -47,11 +54,26 @@ class NutsDataProvider extends StateNotifier<MapCountryDataAndDays> {
   // }
 
   // Future<void> updateMultipleIDs(List<String> ids) async {
-  Future<void> updateMultipleIDs(List<CodeAndHoliday> entries, int days) async {
+  Future<void> updateMultipleIDs(
+      List<List<CodeAndHoliday>> entries, int days) async {
     List<MapCountryData> data = [];
-    for (final e in entries) {
+    for (final nutsEntry in entries) {
+      List<String> foundHolidays = [];
+      List<DateTime> foundDays = [];
+      String nutsCode = '';
+      for (final n in nutsEntry) {
+        foundHolidays.add(n.holiday);
+        foundDays = foundDays + n.dayList;
+        nutsCode = n.nutsCode;
+      }
+      // Remove duplicate dates and get total amount
+      int totalDays = foundDays.toSet().length;
+
       data.add(MapCountryData(
-          division: e.nutsCode, holiday: e.holiday, days: e.days));
+          division: nutsCode,
+          holidays: foundHolidays,
+          // days: foundDays,
+          totalDays: totalDays));
     }
     state = MapCountryDataAndDays(data: data, numSelectedDays: days);
   }

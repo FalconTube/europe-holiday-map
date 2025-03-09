@@ -39,13 +39,13 @@ class CodeAndHoliday {
   });
 }
 
-List<CodeAndHoliday> findHolidaysForDate(
+List<List<CodeAndHoliday>> findHolidaysForDate(
 // Map<String, String?> findHolidaysForDate(
     DateTime firstSelectedDate,
     DateTime lastSelectedDate) {
   final allCountryEntries = holdata;
 
-  List<CodeAndHoliday> results = [];
+  List<List<CodeAndHoliday>> results = [];
 
   // Sometimes you just have to do a long for loop...
   // Find all holidays in all subdivisions in all countries
@@ -57,7 +57,13 @@ List<CodeAndHoliday> findHolidaysForDate(
             "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
         continue;
       }
+      List<CodeAndHoliday> regionResults = [];
+      List<String> foundHolidayNames = [];
       for (final holiday in regionEntry.holidays) {
+        // Check if found this holiday already
+        if (foundHolidayNames.contains(holiday.name)) {
+          continue;
+        }
         final startDateHol = holiday.start;
         final endDateHol = holiday.end;
         final cleanFirstSelectedDate =
@@ -71,16 +77,22 @@ List<CodeAndHoliday> findHolidaysForDate(
         if (startIsInRange || endIsInRange) {
           // Found a matching holiday
           // Now get amount of days
-          final dates =
+          final theoreticalDates = daysInSelection(
+              holiday, firstSelectedDate, lastSelectedDate,
+              includeOutOfRange: true);
+          final inRangeDates =
               daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
-          results.add(CodeAndHoliday(
+          regionResults.add(CodeAndHoliday(
               nutsCode: nutsCode,
               holiday: holiday.name,
-              dayList: dates,
-              days: dates.length));
-          break; // Exit inner loop once a holiday is found for the region.
+              dayList: inRangeDates,
+              days: inRangeDates.length));
+          // Helper function for found holidays
+          foundHolidayNames.add(holiday.name);
+          // break; // Exit inner loop once a holiday is found for the region.
         }
       }
+      results.add(regionResults);
     }
   }
 
@@ -97,13 +109,17 @@ List<DateTime> datesList(DateTime start, DateTime end) {
   return allDates;
 }
 
+/// If includeOutOfRange is true, returns the full range dates, where a holiday is "hit".
 List<DateTime> daysInSelection(
-    Holiday holiday, DateTime selectStart, DateTime selectEnd) {
+    Holiday holiday, DateTime selectStart, DateTime selectEnd,
+    {bool includeOutOfRange = false}) {
   final holDays = datesList(holiday.start, holiday.end);
   final selectDays = datesList(selectStart, selectEnd);
+  final iteratorDates = includeOutOfRange ? holDays : selectDays;
+  final compareDates = includeOutOfRange ? selectDays : holDays;
   List<DateTime> matchingDates = [];
-  for (final i in holDays) {
-    if (selectDays.contains(i)) matchingDates.add(i);
+  for (final i in iteratorDates) {
+    if (compareDates.contains(i)) matchingDates.add(i);
   }
 
   return matchingDates;
