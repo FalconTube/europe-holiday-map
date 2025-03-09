@@ -222,6 +222,12 @@ class LinearColorBox extends StatelessWidget {
 
 List<MapColorMapper> genColorMap(int length, Colormap cmap) {
   final List<MapColorMapper> out = [];
+  if (length == 0) {
+    return [
+      MapColorMapper(value: 0.toString(), color: cmap(1).toColor()),
+      MapColorMapper(value: 0.toString(), color: cmap(0).toColor())
+    ];
+  }
   for (int i = 0; i <= length; i++) {
     final alpha = intToAlpha(i, length);
     // final colorval = clampDouble(alpha / 255, 0.8, 1);
