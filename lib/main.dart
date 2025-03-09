@@ -84,7 +84,8 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
               daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
           regionResults.add(CodeAndHoliday(
               nutsCode: nutsCode,
-              holiday: holiday.name,
+              holiday: holiday.nameEN ??
+                  holiday.name, // Fall back to non-english name, if not exist
               dayList: inRangeDates,
               days: inRangeDates.length));
           // Helper function for found holidays
