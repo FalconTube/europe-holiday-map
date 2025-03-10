@@ -1067,7 +1067,7 @@
     },
     {
       "nuts": [
-        "PT16D"
+        "PT191"
       ],
       "iso": "PT-01",
       "code": "PT-AV"
@@ -1081,14 +1081,16 @@
     },
     {
       "nuts": [
-        "PT184"
+        "PT1C1",
+        "PT1C2"
       ],
       "iso": "PT-02",
       "code": "PT-BE"
     },
     {
       "nuts": [
-        "PT112"
+        "PT112",
+        "PT119"
       ],
       "iso": "PT-03",
       "code": "PT-BR"
@@ -1102,14 +1104,14 @@
     },
     {
       "nuts": [
-        "PT16"
+        "PT192"
       ],
       "iso": "PT-06",
       "code": "PT-CO"
     },
     {
       "nuts": [
-        "PT187"
+        "PT1C4"
       ],
       "iso": "PT-07",
       "code": "PT-EV"
@@ -1123,21 +1125,24 @@
     },
     {
       "nuts": [
-        "PT16J"
+        "PT16J",
+        "PT196",
+        "PT195"
       ],
       "iso": "PT-09",
       "code": "PT-GU"
     },
     {
       "nuts": [
-        "PT16F"
+        "PT1D1",
+        "PT193"
       ],
       "iso": "PT-10",
       "code": "PT-LE"
     },
     {
       "nuts": [
-        "PT170"
+        "PT1A0"
       ],
       "iso": "PT-11",
       "code": "PT-LI"
@@ -1151,28 +1156,30 @@
     },
     {
       "nuts": [
-        "PT186"
+        "PT1C3"
       ],
       "iso": "PT-12",
       "code": "PT-PA"
     },
     {
       "nuts": [
-        "PT11A"
+        "PT11A",
+        "PT11C"
       ],
       "iso": "PT-13",
       "code": "PT-PO"
     },
     {
       "nuts": [
-        "PT185"
+        "PT1D3",
+        "PT1D2"
       ],
       "iso": "PT-14",
       "code": "PT-SA"
     },
     {
       "nuts": [
-        "PT181"
+        "PT1B0"
       ],
       "iso": "PT-15",
       "code": "PT-SE"
@@ -1186,14 +1193,15 @@
     },
     {
       "nuts": [
-        "PT16G"
+        "PT194"
       ],
       "iso": "PT-18",
       "code": "PT-VI"
     },
     {
       "nuts": [
-        "PT11D"
+        "PT11D",
+        "PT11B"
       ],
       "iso": "PT-17",
       "code": "PT-VR"
