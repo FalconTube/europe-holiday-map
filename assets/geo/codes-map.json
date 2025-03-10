@@ -623,6 +623,7 @@
   "FR": [
     {
       "nuts": [
+        "FRK1",
         "FRK2"
       ],
       "iso": "FR-ARA",
@@ -630,7 +631,8 @@
     },
     {
       "nuts": [
-        "FRC1"
+        "FRC1",
+        "FRC2"
       ],
       "iso": "FR-BFC",
       "code": "FR-BF"
@@ -665,7 +667,9 @@
     },
     {
       "nuts": [
-        "FRF2"
+        "FRF1",
+        "FRF2",
+        "FRF3"
       ],
       "iso": "FR-GES",
       "code": "FR-GE"
@@ -686,7 +690,8 @@
     },
     {
       "nuts": [
-        "FRE1"
+        "FRE1",
+        "FRE2"
       ],
       "iso": "FR-HDF",
       "code": "FR-HF"
@@ -714,21 +719,25 @@
     },
     {
       "nuts": [
-        "FRI1"
+        "FRI1",
+        "FRI2",
+        "FRI3"
       ],
       "iso": "FR-NAQ",
       "code": "FR-NA"
     },
     {
       "nuts": [
-        "FRD1"
+        "FRD1",
+        "FRD2"
       ],
       "iso": "FR-NOR",
       "code": "FR-NO"
     },
     {
       "nuts": [
-        "FRJ1"
+        "FRJ1",
+        "FRJ2"
       ],
       "iso": "FR-OCC",
       "code": "FR-OC"
@@ -1093,9 +1102,7 @@
     },
     {
       "nuts": [
-        [
-          "PT16"
-        ]
+        "PT16"
       ],
       "iso": "PT-06",
       "code": "PT-CO"
@@ -1349,9 +1356,7 @@
     },
     {
       "nuts": [
-        [
-          "RO124"
-        ]
+        "RO124"
       ],
       "iso": "RO-HR",
       "code": "RO-HR"
