@@ -257,6 +257,8 @@ def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
         "RO": 3,
         "SK": 3,
         "CZ": 3,
+        "PT": 3,
+        "ES": 2,
     }
     known_features = []
     for world_entry in in_json:
@@ -318,9 +320,9 @@ def short():
 
 
 if __name__ == "__main__":
-    # convert_geojson()
-    # # short()
-    # sys.exit()
+    convert_geojson()
+    # short()
+    sys.exit()
     countries = get_countries()
     # countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
     country_list = []

@@ -756,102 +756,102 @@
   ],
   "PT": [
     {
-      "nuts": "PT20",
+      "nuts": "PT200",
       "iso": "PT-20",
       "code": "PT-AC"
     },
     {
-      "nuts": "PT01",
+      "nuts": "PT16D",
       "iso": "PT-01",
       "code": "PT-AV"
     },
     {
-      "nuts": "PT04",
+      "nuts": "PT11E",
       "iso": "PT-04",
       "code": "PT-BA"
     },
     {
-      "nuts": "PT02",
+      "nuts": "PT184",
       "iso": "PT-02",
       "code": "PT-BE"
     },
     {
-      "nuts": "PT03",
+      "nuts": "PT112",
       "iso": "PT-03",
       "code": "PT-BR"
     },
     {
-      "nuts": "PT05",
+      "nuts": "PT16H",
       "iso": "PT-05",
       "code": "PT-CB"
     },
     {
-      "nuts": "PT06",
+      "nuts": "PT16",
       "iso": "PT-06",
       "code": "PT-CO"
     },
     {
-      "nuts": "PT07",
+      "nuts": "PT187",
       "iso": "PT-07",
       "code": "PT-EV"
     },
     {
-      "nuts": "PT08",
+      "nuts": "PT150",
       "iso": "PT-08",
       "code": "PT-FA"
     },
     {
-      "nuts": "PT09",
+      "nuts": "PT16J",
       "iso": "PT-09",
       "code": "PT-GU"
     },
     {
-      "nuts": "PT10",
+      "nuts": "PT16F",
       "iso": "PT-10",
       "code": "PT-LE"
     },
     {
-      "nuts": "PT11",
+      "nuts": "PT170",
       "iso": "PT-11",
       "code": "PT-LI"
     },
     {
-      "nuts": "PT30",
+      "nuts": "PT300",
       "iso": "PT-30",
       "code": "PT-MA"
     },
     {
-      "nuts": "PT12",
+      "nuts": "PT186",
       "iso": "PT-12",
       "code": "PT-PA"
     },
     {
-      "nuts": "PT13",
+      "nuts": "PT11A",
       "iso": "PT-13",
       "code": "PT-PO"
     },
     {
-      "nuts": "PT14",
+      "nuts": "PT185",
       "iso": "PT-14",
       "code": "PT-SA"
     },
     {
-      "nuts": "PT15",
+      "nuts": "PT181",
       "iso": "PT-15",
       "code": "PT-SE"
     },
     {
-      "nuts": "PT16",
+      "nuts": "PT111",
       "iso": "PT-16",
       "code": "PT-VC"
     },
     {
-      "nuts": "PT18",
+      "nuts": "PT16G",
       "iso": "PT-18",
       "code": "PT-VI"
     },
     {
-      "nuts": "PT17",
+      "nuts": "PT11D",
       "iso": "PT-17",
       "code": "PT-VR"
     }
