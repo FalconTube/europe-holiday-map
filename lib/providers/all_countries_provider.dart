@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:collection/collection.dart';
@@ -6,7 +7,7 @@ import 'package:collection/collection.dart';
 /// Every holiday has a number of days attached to it
 class MapCountryData {
   final String division;
-  final List<String> holidays;
+  final List<Holiday> holidays;
   // final List<int> days;
   final int totalDays;
 
@@ -58,7 +59,7 @@ class NutsDataProvider extends StateNotifier<MapCountryDataAndDays> {
       List<List<CodeAndHoliday>> entries, int days) async {
     List<MapCountryData> data = [];
     for (final nutsEntry in entries) {
-      List<String> foundHolidays = [];
+      List<Holiday> foundHolidays = [];
       List<DateTime> foundDays = [];
       String nutsCode = '';
       for (final n in nutsEntry) {

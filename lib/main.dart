@@ -27,7 +27,7 @@ Future<List<AllStateHolidays>> _loadData() async {
 
 class CodeAndHoliday {
   final String nutsCode;
-  final String holiday;
+  final Holiday holiday;
   final List<DateTime> dayList;
   final int days;
 
@@ -84,11 +84,11 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
             final inRangeDates =
                 daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
             regionResults.add(CodeAndHoliday(
-                nutsCode: nutsCode,
-                holiday: holiday.nameEN ??
-                    holiday.name, // Fall back to non-english name, if not exist
-                dayList: inRangeDates,
-                days: inRangeDates.length));
+              nutsCode: nutsCode,
+              holiday: holiday, // Fall back to non-english name, if not exist
+              dayList: inRangeDates,
+              days: inRangeDates.length,
+            ));
             // Helper function for found holidays
             foundHolidayNames.add(holiday.name);
             // break; // Exit inner loop once a holiday is found for the region.

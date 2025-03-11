@@ -74,17 +74,31 @@ class AllCountriesWidget extends ConsumerWidget {
                         shapeTooltipBuilder: (BuildContext context, int index) {
                           final totalDays = data.data[index].totalDays;
                           final division = data.data[index].division;
-                          final holiday = data.data[index].holidays;
+                          final holidays = data.data[index].holidays;
+                          // Build holiday display text
+                          String holFormatted = "";
+                          for (final h in holidays) {
+                            final name = h.nameEN ?? h.name;
+                            final start = h.start.toString().split(' ')[0];
+                            final end = h.end.toString().split(' ')[0];
+                            final thisHol = "\n\n$name\n$start \u2014 $end";
+                            holFormatted += thisHol;
+                          }
                           final text = Text(
-                            'Division: $division\nOverlap Days: $totalDays\nHoliday: $holiday',
+                            'Division: $division\nOverlap Days: $totalDays$holFormatted',
+                            textAlign: TextAlign.center,
+                            softWrap: true,
                             style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.w400),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                            ),
                           );
-                          return Container(
+                          return ConstrainedBox(
+                              constraints: BoxConstraints(maxWidth: 300),
                               child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: text,
-                          ));
+                                padding: const EdgeInsets.all(8.0),
+                                child: text,
+                              ));
                         },
                       )
                     ],
