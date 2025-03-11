@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:color_map/color_map.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:vector_math/vector_math_64.dart' show Vector4;
 import 'package:syncfusion_flutter_maps/maps.dart';
 

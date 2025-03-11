@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
@@ -40,10 +41,10 @@ class AllCountriesWidget extends ConsumerWidget {
             dataCount: data.data.length,
             primaryValueMapper: (int index) => data.data[index].division,
             shapeColorValueMapper: (int index) {
-              final numdays = data.data[index].totalDays - 1;
+              final numdays = data.data[index].totalDays;
               return numdays.toString();
             },
-            shapeColorMappers: genColorMap(data.numSelectedDays, cmap),
+            shapeColorMappers: genColorMap(data.numSelectedDays + 1, cmap),
             shapeDataField: 'NUTS_ID');
 
     return Scaffold(
