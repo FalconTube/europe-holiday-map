@@ -1,16 +1,12 @@
-import 'dart:js_interop';
-import 'dart:ui';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:color_map/color_map.dart';
-import 'package:vector_math/vector_math_64.dart' show Vector4;
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
@@ -24,7 +20,7 @@ class AllCountriesWidget extends ConsumerWidget {
     zoomLevel: 2.5,
     focalLatLng: const MapLatLng(50.935173, 6.953101),
     minZoomLevel: 2.5,
-    maxZoomLevel: 10,
+    maxZoomLevel: 45,
     enableDoubleTapZooming: true,
     enableMouseWheelZooming: true,
   );
@@ -59,36 +55,38 @@ class AllCountriesWidget extends ConsumerWidget {
               SfMaps(
                 layers: <MapLayer>[
                   MapShapeLayer(
+                    color: Color.fromRGBO(30, 28, 37, 1),
                     source: borderSource,
                     controller: _mapController,
-                    strokeWidth: 3.0,
-                    strokeColor: Colors.indigoAccent,
+                    strokeWidth: 2.0,
+                    strokeColor: Colors.grey.withValues(alpha: 0.8),
                     tooltipSettings: MapTooltipSettings(
-                      color: true
-                          ? const Color.fromRGBO(45, 45, 45, 1)
-                          : const Color.fromRGBO(242, 242, 242, 1),
-                    ),
+                        color: const Color.fromRGBO(30, 28, 37, 1)),
                     sublayers: <MapSublayer>[
                       MapShapeSublayer(
-                          key: UniqueKey(),
-                          source: nutsSource,
-                          controller: _mapController,
-                          strokeWidth: 1.5,
-                          color: Colors.grey.withValues(alpha: 0.0),
-                          shapeTooltipBuilder:
-                              (BuildContext context, int index) {
-                            final totalDays = data.data[index].totalDays;
-                            final division = data.data[index].division;
-                            final holiday = data.data[index].holidays;
-                            final text = Text(
-                                'Division: $division\nDays: $totalDays\nHoliday: $holiday');
-                            return Container(
-                                child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: text,
-                            ));
-                          },
-                          strokeColor: Colors.grey.withValues(alpha: 0.2))
+                        key: UniqueKey(),
+                        source: nutsSource,
+                        controller: _mapController,
+                        strokeWidth: 1.5,
+                        // showDataLabels: true,
+                        color: Colors.grey.withValues(alpha: 0.0),
+                        strokeColor: Colors.grey.withValues(alpha: 0.2),
+                        shapeTooltipBuilder: (BuildContext context, int index) {
+                          final totalDays = data.data[index].totalDays;
+                          final division = data.data[index].division;
+                          final holiday = data.data[index].holidays;
+                          final text = Text(
+                            'Division: $division\nOverlap Days: $totalDays\nHoliday: $holiday',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w400),
+                          );
+                          return Container(
+                              child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: text,
+                          ));
+                        },
+                      )
                     ],
                     zoomPanBehavior: zoomPanBehavior,
                   ),
@@ -140,118 +138,6 @@ class AllCountriesWidget extends ConsumerWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class ColorLegend extends StatelessWidget {
-  const ColorLegend({
-    super.key,
-    required this.cmap,
-    required this.min,
-    required this.max,
-    this.vertical = true,
-  });
-
-  final Colormap cmap;
-  final int min;
-  final int max;
-  final bool vertical;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
-      child: vertical
-          ? Row(
-              spacing: 10,
-              children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text(max.toString()), Text(min.toString())],
-                ),
-                LinearColorBox(cmap: cmap),
-              ],
-            )
-          : Column(
-              spacing: 10,
-              children: [
-                SizedBox(
-                  width: 300,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text(min.toString()), Text(max.toString())],
-                  ),
-                ),
-                LinearColorBox(
-                  cmap: cmap,
-                  maxExtent: 300,
-                  vertical: false,
-                ),
-              ],
-            ),
-    );
-  }
-}
-
-class LinearColorBox extends StatelessWidget {
-  const LinearColorBox(
-      {super.key,
-      required this.cmap,
-      this.vertical = true,
-      this.maxExtent = double.infinity});
-
-  final Colormap cmap;
-  final bool vertical;
-  final double maxExtent;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: vertical ? maxExtent : 10,
-      width: vertical ? 10 : maxExtent,
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: vertical ? Alignment.bottomCenter : Alignment.centerLeft,
-                end: vertical ? Alignment.topCenter : Alignment.centerRight,
-                colors: [cmap(200 / 255).toColor(), cmap(1).toColor()])),
-      ),
-    );
-  }
-}
-
-List<MapColorMapper> genColorMap(int length, Colormap cmap) {
-  final List<MapColorMapper> out = [];
-  if (length == 0) {
-    return [
-      MapColorMapper(value: 0.toString(), color: cmap(1).toColor()),
-    ];
-  }
-  for (int i = 0; i <= length; i++) {
-    final alpha = convert255To1(i, length);
-    final colorval = alpha / 256;
-    final thisMap =
-        MapColorMapper(value: i.toString(), color: cmap(colorval).toColor());
-    out.add(thisMap);
-  }
-
-  return out;
-}
-
-double convert255To1(int value, int maxValue, {int offset = 200}) {
-  final out = offset + (255 - offset) / maxValue * value;
-  return out;
-}
-
-extension ColorTransform on Vector4 {
-  /// Convert Vector4 to Color
-  Color toColor() {
-    return Color.fromARGB(
-      (w * 255).toInt(),
-      (x * 255).toInt(),
-      (y * 255).toInt(),
-      (z * 255).toInt(),
     );
   }
 }
