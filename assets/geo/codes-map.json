@@ -635,7 +635,7 @@
       "code": "IT-TO"
     },
     {
-      "nuts": ["ITH1"],
+      "nuts": ["ITH1", "ITH2"],
       "iso": "IT-32",
       "code": "IT-TR"
     },
@@ -1071,12 +1071,12 @@
   "SI": [
     {
       "nuts": ["SI03"],
-      "iso": "",
+      "iso": "SI-VR",
       "code": "SI-VR"
     },
     {
       "nuts": ["SI04"],
-      "iso": "",
+      "iso": "SI-ZR",
       "code": "SI-ZR"
     }
   ],
@@ -1087,7 +1087,7 @@
       "code": "SK-BC"
     },
     {
-      "nuts": ["SK011"],
+      "nuts": ["SK010"],
       "iso": "SK-BL",
       "code": "SK-BL"
     },
@@ -1139,6 +1139,23 @@
       "code": "SE3"
     }
   ],
+  "HU": [
+    {
+      "nuts": ["HU1"],
+      "iso": "",
+      "code": "HU1"
+    },
+    {
+      "nuts": ["HU2"],
+      "iso": "",
+      "code": "HU2"
+    },
+    {
+      "nuts": ["HU3"],
+      "iso": "",
+      "code": "HU3"
+    }
+  ],
   "EE": [
     {
       "nuts": ["EE0"],
@@ -1179,6 +1196,13 @@
       "nuts": ["LI0"],
       "iso": "LI0",
       "code": "LI0"
+    }
+  ],
+  "HR": [
+    {
+      "nuts": ["HR0"],
+      "iso": "HR0",
+      "code": "HR0"
     }
   ]
 }

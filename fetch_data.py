@@ -160,6 +160,29 @@ def get_subdivions(country_iso: str) -> list[Subdivision]:
                 short_name="NS",
             ),
         ],
+        "HU": [
+            Subdivision(
+                iso="HU1",
+                code="HU1",
+                name="Közép-Magyarország",
+                name_en="Central Hungary",
+                short_name="CH",
+            ),
+            Subdivision(
+                iso="HU2",
+                code="HU2",
+                name="Dunántúl",
+                name_en="Transdanubia",
+                short_name="WH",
+            ),
+            Subdivision(
+                iso="HU3",
+                code="HU3",
+                name="Alföld és Észak)",
+                name_en="Great Plain and North",
+                short_name="EH",
+            ),
+        ],
         "EE": [
             Subdivision(
                 iso="EE0",
@@ -196,6 +219,33 @@ def get_subdivions(country_iso: str) -> list[Subdivision]:
                 short_name="IE",
             ),
         ],
+        "LU": [
+            Subdivision(
+                iso="LU0",
+                code="LU0",
+                name="Luxembourg",
+                name_en="Luxembourg",
+                short_name="LU",
+            ),
+        ],
+        "LI": [
+            Subdivision(
+                iso="LI0",
+                code="LI0",
+                name="Liechtenstein",
+                name_en="Liechtenstein",
+                short_name="LI",
+            ),
+        ],
+        "HR": [
+            Subdivision(
+                iso="HR0",
+                code="HR0",
+                name="Hrvatska",
+                name_en="Croatia",
+                short_name="HR",
+            ),
+        ]
     }
     if country_iso in missing_countries.keys():
         return missing_countries[country_iso]
@@ -259,6 +309,7 @@ def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
         "CZ": 3,
         "PT": 3,
         "ES": 2,
+        "SI": 2,
     }
     known_features = []
     for world_entry in in_json:
@@ -324,7 +375,7 @@ if __name__ == "__main__":
     # short()
     sys.exit()
     countries = get_countries()
-    # countries = [Country(iso="CZ", code="CZ", name="Espania", name_en="Spain")]
+    # countries = [Country(iso="LU", code="LU", name="Espania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
@@ -357,6 +408,6 @@ if __name__ == "__main__":
         )
         country_list.append(asdict(all_hols))
 
-    outfile = "parsed_from_openholidaysapi.json"
+    outfile = "assets/data.json"
     with open(outfile, "w", encoding="utf-8") as w:
         w.write(json.dumps(country_list, indent=2, ensure_ascii=False))
