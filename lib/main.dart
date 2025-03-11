@@ -51,49 +51,51 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
   // Find all holidays in all subdivisions in all countries
   for (final countryEntry in allCountryEntries) {
     for (final regionEntry in countryEntry.stateHolidays) {
-      final nutsCode = nutsFromCode(countryEntry.country, regionEntry);
-      if (nutsCode == null) {
+      final nutsCodes = nutsFromCode(countryEntry.country, regionEntry);
+      if (nutsCodes == null) {
         Log.log(
             "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
         continue;
       }
-      List<CodeAndHoliday> regionResults = [];
-      List<String> foundHolidayNames = [];
-      for (final holiday in regionEntry.holidays) {
-        // Check if found this holiday already
-        if (foundHolidayNames.contains(holiday.name)) {
-          continue;
-        }
-        final startDateHol = holiday.start;
-        final endDateHol = holiday.end;
-        final cleanFirstSelectedDate =
-            firstSelectedDate.subtract(Duration(seconds: 1));
-        final cleanLastSelectedDate =
-            lastSelectedDate.add(Duration(seconds: 1));
-        final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
-            startDateHol.isBefore(cleanLastSelectedDate);
-        final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
-            endDateHol.isBefore(cleanLastSelectedDate);
-        if (startIsInRange || endIsInRange) {
-          // Found a matching holiday
-          // Now get amount of days
-          final theoreticalDates = daysInSelection(
-              holiday, firstSelectedDate, lastSelectedDate,
-              includeOutOfRange: true);
-          final inRangeDates =
-              daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
-          regionResults.add(CodeAndHoliday(
-              nutsCode: nutsCode,
-              holiday: holiday.nameEN ??
-                  holiday.name, // Fall back to non-english name, if not exist
-              dayList: inRangeDates,
-              days: inRangeDates.length));
-          // Helper function for found holidays
-          foundHolidayNames.add(holiday.name);
-          // break; // Exit inner loop once a holiday is found for the region.
+      for (final nutsCode in nutsCodes) {
+        List<CodeAndHoliday> regionResults = [];
+        List<String> foundHolidayNames = [];
+        for (final holiday in regionEntry.holidays) {
+          // Check if found this holiday already
+          if (foundHolidayNames.contains(holiday.name)) {
+            continue;
+          }
+          final startDateHol = holiday.start;
+          final endDateHol = holiday.end;
+          final cleanFirstSelectedDate =
+              firstSelectedDate.subtract(Duration(seconds: 1));
+          final cleanLastSelectedDate =
+              lastSelectedDate.add(Duration(seconds: 1));
+          final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
+              startDateHol.isBefore(cleanLastSelectedDate);
+          final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
+              endDateHol.isBefore(cleanLastSelectedDate);
+          if (startIsInRange || endIsInRange) {
+            // Found a matching holiday
+            // Now get amount of days
+            final theoreticalDates = daysInSelection(
+                holiday, firstSelectedDate, lastSelectedDate,
+                includeOutOfRange: true);
+            final inRangeDates =
+                daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
+            regionResults.add(CodeAndHoliday(
+                nutsCode: nutsCode,
+                holiday: holiday.nameEN ??
+                    holiday.name, // Fall back to non-english name, if not exist
+                dayList: inRangeDates,
+                days: inRangeDates.length));
+            // Helper function for found holidays
+            foundHolidayNames.add(holiday.name);
+            // break; // Exit inner loop once a holiday is found for the region.
+          }
+          results.add(regionResults);
         }
       }
-      results.add(regionResults);
     }
   }
 
@@ -126,13 +128,15 @@ List<DateTime> daysInSelection(
   return matchingDates;
 }
 
-String? nutsFromCode(String country, StateHolidays regionEntry) {
+//TODO: Map this into a proper class, instead of just casting stuff around
+List<String>? nutsFromCode(String country, StateHolidays regionEntry) {
   final List<dynamic> subCodes = codesMap[country.toUpperCase()];
   for (final codeMap in subCodes) {
     final thisIso = codeMap["iso"];
     final thisCode = codeMap["code"];
     if (thisIso == regionEntry.iso || thisCode == regionEntry.code) {
-      return codeMap["nuts"];
+      final dynamicList = codeMap["nuts"];
+      return dynamicList.cast<String>();
     }
   }
   return null;

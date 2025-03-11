@@ -27273,11 +27273,800 @@
   },
   {
     "country": "hr",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "HR0",
+        "code": "HR0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-06",
+            "name": "Zimski odmor (prvi dio)",
+            "name_en": "Winter holidays (part 2)",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-24",
+            "end": "2025-02-28",
+            "name": "Zimski odmor (drugi dio)",
+            "name_en": "Winter holidays (part 2)",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-04-25",
+            "name": "Proljetni odmor",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-19",
+            "end": "2025-08-31",
+            "name": "Ljetni odmor",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Nova Godina",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Bogojavljanje ili Sveta tri kralja",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Uskrsni ponedjeljak",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Praznik rada",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-30",
+            "end": "2025-05-30",
+            "name": "Dan državnosti",
+            "name_en": "Statehood Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-19",
+            "end": "2025-06-19",
+            "name": "Tijelovo",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-22",
+            "end": "2025-06-22",
+            "name": "Dan antifašističke borbe",
+            "name_en": "Anti-Fascist Struggle Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-05",
+            "end": "2025-08-05",
+            "name": "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja",
+            "name_en": "Victory and Homeland Thanksgiving Day and the Day of Croatian Defenders",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Velika Gospa",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Svi sveti",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-18",
+            "end": "2025-11-18",
+            "name": "Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje",
+            "name_en": "Remembrance Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Božić",
+            "name_en": "Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Božić",
+            "name_en": "Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Nova Godina",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Bogojavljanje ili Sveta tri kralja",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Uskrsni ponedjeljak",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Praznik rada",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-30",
+            "end": "2026-05-30",
+            "name": "Dan državnosti",
+            "name_en": "Statehood Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-04",
+            "end": "2026-06-04",
+            "name": "Tijelovo",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-22",
+            "end": "2026-06-22",
+            "name": "Dan antifašističke borbe",
+            "name_en": "Anti-Fascist Struggle Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-05",
+            "end": "2026-08-05",
+            "name": "Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja",
+            "name_en": "Victory and Homeland Thanksgiving Day and the Day of Croatian Defenders",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Velika Gospa",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Svi sveti",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-18",
+            "end": "2026-11-18",
+            "name": "Dan sjećanja na žrtve Domovinskog rata i Dan sjećanja na žrtvu Vukovara i Škabrnje",
+            "name_en": "Remembrance Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Božić",
+            "name_en": "Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Božić",
+            "name_en": "Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Nova Godina",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "hu",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "HU1",
+        "code": "HU1",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-05",
+            "name": "Téli szünet",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-04-27",
+            "name": "Tavaszi szünet",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-08-31",
+            "name": "Nyári szünet",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-15",
+            "end": "2025-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-23",
+            "end": "2025-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-15",
+            "end": "2026-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-23",
+            "end": "2026-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "iso": "HU2",
+        "code": "HU2",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-05",
+            "name": "Téli szünet",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-04-27",
+            "name": "Tavaszi szünet",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-08-31",
+            "name": "Nyári szünet",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-15",
+            "end": "2025-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-23",
+            "end": "2025-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-15",
+            "end": "2026-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-23",
+            "end": "2026-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "iso": "HU3",
+        "code": "HU3",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-05",
+            "name": "Téli szünet",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-04-27",
+            "name": "Tavaszi szünet",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-21",
+            "end": "2025-08-31",
+            "name": "Nyári szünet",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-15",
+            "end": "2025-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-20",
+            "end": "2025-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-23",
+            "end": "2025-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-15",
+            "end": "2026-03-15",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Nagypéntek",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Húsvéthétfő",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "A munka ünnepe",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Pünkösdhétfő",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-20",
+            "end": "2026-08-20",
+            "name": "Az államalapítás ünnepe",
+            "name_en": "State Foundation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-23",
+            "end": "2026-10-23",
+            "name": "Nemzeti ünnep",
+            "name_en": "National Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Mindenszentek",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Karácsony",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Karácsony másnapja",
+            "name_en": "Second Day of Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Újév",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "ie",
@@ -31722,7 +32511,322 @@
   },
   {
     "country": "li",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "LI0",
+        "code": "LI0",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-06",
+            "name": "Winterferien",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-01",
+            "end": "2025-03-09",
+            "name": "Sportferien",
+            "name_en": "Sport holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-04-17",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-05-04",
+            "name": "Frühlingsferien",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-05-30",
+            "end": "2025-05-30",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-20",
+            "end": "2025-06-20",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-07-05",
+            "end": "2025-08-17",
+            "name": "Sommerferien",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-10-04",
+            "end": "2025-10-19",
+            "name": "Herbstferien",
+            "name_en": "Autumn holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2026-01-06",
+            "name": "Winterferien",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-14",
+            "end": "2026-02-22",
+            "name": "Sportferien",
+            "name_en": "Sport holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-04-02",
+            "end": "2026-04-02",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-19",
+            "name": "Frühlingsferien",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-05-15",
+            "end": "2026-05-15",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-06-05",
+            "end": "2026-06-05",
+            "name": "Schulfrei",
+            "name_en": "No lessons",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-07-04",
+            "end": "2026-08-16",
+            "name": "Sommerferien",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-10-03",
+            "end": "2026-10-18",
+            "name": "Herbstferien",
+            "name_en": "Autumn holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2027-01-06",
+            "name": "Winterferien",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Heilige Drei Könige",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Ostermontag",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Tag der Arbeit",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Christi Himmelfahrt",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Pfingstmontag",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-19",
+            "end": "2025-06-19",
+            "name": "Fronleichnam",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Staatsfeiertag (Maria Himmelfahrt)",
+            "name_en": "National Day (Assumption)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Mariä Geburt",
+            "name_en": "Nativity of Mary",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Allerheiligen",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-08",
+            "end": "2025-12-08",
+            "name": "Mariä Empfängnis",
+            "name_en": "Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Weihnachten",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Stephanstag",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Heilige Drei Könige",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Ostermontag",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Tag der Arbeit",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Christi Himmelfahrt",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Pfingstmontag",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-04",
+            "end": "2026-06-04",
+            "name": "Fronleichnam",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Staatsfeiertag (Maria Himmelfahrt)",
+            "name_en": "National Day (Assumption)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Mariä Geburt",
+            "name_en": "Nativity of Mary",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Allerheiligen",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-08",
+            "end": "2026-12-08",
+            "name": "Mariä Empfängnis",
+            "name_en": "Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Weihnachten",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Stephanstag",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "lt",
@@ -31968,7 +33072,266 @@
   },
   {
     "country": "lu",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "iso": "LU0",
+        "code": "LU0",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-05",
+            "name": "Vacances de Noël",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-15",
+            "end": "2025-02-23",
+            "name": "Congé de Carnaval",
+            "name_en": "Carnival Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-05",
+            "end": "2025-04-20",
+            "name": "Vacances de Pâques",
+            "name_en": "Easter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-05-24",
+            "end": "2025-06-01",
+            "name": "Congé de la Pentecôte",
+            "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-07-16",
+            "end": "2025-09-14",
+            "name": "Vacances d’été",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-09",
+            "name": "Congé de la Toussaint",
+            "name_en": "All Saints Day Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-12-20",
+            "end": "2026-01-04",
+            "name": "Vacances de Noël",
+            "name_en": "Christmas Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-14",
+            "end": "2026-02-22",
+            "name": "Congé de Carnaval",
+            "name_en": "Carnival Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-03-28",
+            "end": "2026-04-12",
+            "name": "Vacances de Pâques",
+            "name_en": "Easter Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-05-23",
+            "end": "2026-05-31",
+            "name": "Congé de la Pentecôte",
+            "name_en": "Pentecost Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-07-16",
+            "end": "2026-09-14",
+            "name": "Vacances d’été",
+            "name_en": "Summer Holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Karfreitag",
+            "name_en": "Good Friday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Ostermontag",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "1. Mai",
+            "name_en": "Mayday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-09",
+            "end": "2025-05-09",
+            "name": "Europatag",
+            "name_en": "Europe Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "Christi Himmelfahrt",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Pfingstmontag",
+            "name_en": "Whit Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-23",
+            "end": "2025-06-23",
+            "name": "Großherzogsgeburtstag",
+            "name_en": "Grand Duke's Birthday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Mariä Himmelfahrt",
+            "name_en": "Assumption",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Allerheiligen",
+            "name_en": "All Saints",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Erster Weihnachtsfeiertag",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Zweiter Weihnachtsfeiertag",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Karfreitag",
+            "name_en": "Good Friday",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Ostermontag",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "1. Mai",
+            "name_en": "Mayday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-09",
+            "end": "2026-05-09",
+            "name": "Europatag",
+            "name_en": "Europe Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Christi Himmelfahrt",
+            "name_en": "Ascension Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Pfingstmontag",
+            "name_en": "Whit Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-23",
+            "end": "2026-06-23",
+            "name": "Großherzogsgeburtstag",
+            "name_en": "Grand Duke's Birthday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Mariä Himmelfahrt",
+            "name_en": "Assumption",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Allerheiligen",
+            "name_en": "All Saints",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Erster Weihnachtsfeiertag",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Zweiter Weihnachtsfeiertag",
+            "name_en": "Boxing Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Neujahr",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "lv",
