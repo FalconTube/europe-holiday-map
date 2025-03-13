@@ -51,72 +51,80 @@ class AllCountriesWidget extends ConsumerWidget {
       body: Column(
         children: [
           Expanded(
-            child:
-                Stack(alignment: AlignmentDirectional.bottomCenter, children: [
-              SfMaps(
-                layers: <MapLayer>[
-                  MapShapeLayer(
-                    color: Color.fromRGBO(30, 28, 37, 1),
-                    source: borderSource,
-                    controller: _mapController,
-                    strokeWidth: 2.0,
-                    strokeColor: Colors.grey.withValues(alpha: 0.8),
-                    tooltipSettings: MapTooltipSettings(
-                        color: const Color.fromRGBO(30, 28, 37, 1)),
-                    sublayers: <MapSublayer>[
-                      MapShapeSublayer(
-                        key: UniqueKey(),
-                        source: nutsSource,
-                        controller: _mapController,
-                        strokeWidth: 1.5,
-                        // showDataLabels: true,
-                        color: Colors.grey.withValues(alpha: 0.0),
-                        strokeColor: Colors.grey.withValues(alpha: 0.2),
-                        shapeTooltipBuilder: (BuildContext context, int index) {
-                          final totalDays = data.data[index].totalDays;
-                          final division = data.data[index].division;
-                          final holidays = data.data[index].holidays;
-                          // Build holiday display text
-                          String holFormatted = "";
-                          for (final h in holidays) {
-                            final name = h.nameEN ?? h.name;
-                            final start = h.start.toString().split(' ')[0];
-                            final end = h.end.toString().split(' ')[0];
-                            final thisHol = "\n\n$name\n$start \u2014 $end";
-                            holFormatted += thisHol;
-                          }
-                          final text = Text(
-                            'Division: $division\nOverlap Days: $totalDays$holFormatted',
-                            textAlign: TextAlign.center,
-                            softWrap: true,
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                            ),
-                          );
-                          return ConstrainedBox(
-                              constraints: BoxConstraints(maxWidth: 300),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: text,
-                              ));
-                        },
-                      )
-                    ],
-                    zoomPanBehavior: zoomPanBehavior,
-                  ),
-                ],
-              ),
-              Positioned(
-                bottom: 0,
-                child: ColorLegend(
-                  cmap: cmap,
-                  min: 1,
-                  max: data.numSelectedDays + 1,
-                  vertical: false,
-                ),
-              )
-            ]),
+            child: ColoredBox(
+              color: Color(0xFF65C9FE),
+              child: Stack(
+                  alignment: AlignmentDirectional.bottomCenter,
+                  children: [
+                    SfMaps(
+                      layers: <MapLayer>[
+                        MapShapeLayer(
+                          color: Color(0xffD2EBCA),
+                          // color: Color.fromRGBO(30, 28, 37, 1),
+                          source: borderSource,
+                          controller: _mapController,
+                          strokeWidth: 1.5,
+                          strokeColor: Colors.black.withValues(alpha: 0.8),
+                          tooltipSettings: MapTooltipSettings(
+                              color: const Color.fromRGBO(30, 28, 37, 1)),
+                          sublayers: <MapSublayer>[
+                            MapShapeSublayer(
+                              key: UniqueKey(),
+                              source: nutsSource,
+                              controller: _mapController,
+                              strokeWidth: 0.5,
+                              // showDataLabels: true,
+                              color: Colors.grey.withValues(alpha: 0.0),
+                              strokeColor: Colors.black.withValues(alpha: 0.1),
+                              shapeTooltipBuilder:
+                                  (BuildContext context, int index) {
+                                final totalDays = data.data[index].totalDays;
+                                final division = data.data[index].division;
+                                final holidays = data.data[index].holidays;
+                                // Build holiday display text
+                                String holFormatted = "";
+                                for (final h in holidays) {
+                                  final name = h.nameEN ?? h.name;
+                                  final start =
+                                      h.start.toString().split(' ')[0];
+                                  final end = h.end.toString().split(' ')[0];
+                                  final thisHol =
+                                      "\n\n$name\n$start \u2014 $end";
+                                  holFormatted += thisHol;
+                                }
+                                final text = Text(
+                                  'Division: $division\nOverlap Days: $totalDays$holFormatted',
+                                  textAlign: TextAlign.center,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                );
+                                return ConstrainedBox(
+                                    constraints: BoxConstraints(maxWidth: 300),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: text,
+                                    ));
+                              },
+                            )
+                          ],
+                          zoomPanBehavior: zoomPanBehavior,
+                        ),
+                      ],
+                    ),
+                    Positioned(
+                      bottom: 0,
+                      child: ColorLegend(
+                        cmap: cmap,
+                        min: 1,
+                        max: data.numSelectedDays + 1,
+                        vertical: false,
+                      ),
+                    )
+                  ]),
+            ),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height / 3,
