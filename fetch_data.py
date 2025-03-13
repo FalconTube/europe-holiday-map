@@ -34,9 +34,9 @@ class HolidayType(StrEnum):
 @dataclass
 class Country:
     iso: str
-    code: Optional[str]
     name: str
-    name_en: Optional[str]
+    code: Optional[str] = ""
+    name_en: Optional[str] = ""
 
     @classmethod
     def from_dict(cls, data: Dict):
@@ -245,7 +245,7 @@ def get_subdivions(country_iso: str) -> list[Subdivision]:
                 name_en="Croatia",
                 short_name="HR",
             ),
-        ]
+        ],
     }
     if country_iso in missing_countries.keys():
         return missing_countries[country_iso]
@@ -285,6 +285,7 @@ def get_holidays(
 
 
 def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
+    # Some countries are not in the dataset, but we want them displayed
     file_str = Path(world_json_file).read_text()
     world_json = json.loads(file_str)["features"]
     countries = get_countries()
@@ -292,6 +293,19 @@ def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
     if with_provinces:
         known_features = country_features(world_json, country_iso_codes)
     else:
+        additional_countries = [
+            Country(iso="UK", name="Great Britain"),
+            Country(iso="DK", name="Denmark"),
+            Country(iso="NO", name="Norway"),
+            Country(iso="FI", name="Finland"),
+            Country(iso="UA", name="Ukraine"),
+            Country(iso="EL", name="Greece"),
+            Country(iso="MK", name="North Macedonia"),
+            Country(iso="TR", name="Türkiye"),
+        ]
+        countries += additional_countries
+        country_iso_codes = [i.iso for i in countries]
+
         known_features = world_features(world_json, country_iso_codes)
     geojson_known = {"type": "FeatureCollection", "features": known_features}
     return geojson_known
@@ -340,12 +354,14 @@ def world_features(in_json: Dict, country_iso_codes: list[str]) -> list:
 
 
 def convert_geojson():
-    eu_geojson = extract_eu_from_world("nuts-world.geojson", with_provinces=True)
+    eu_geojson = extract_eu_from_world(
+        "./NUTS_RG_20M_2024_4326.geojson", with_provinces=True
+    )
     with open("assets/geo/eu-nuts.geojson", "w", encoding="utf-8") as w:
         w.write(json.dumps(eu_geojson, indent=2, ensure_ascii=False))
-    # eu_geojson = extract_eu_from_world("nuts-world.geojson")
-    # with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
-    #     w.write(json.dumps(eu_geojson, indent=2))
+    eu_geojson = extract_eu_from_world("./CNTR_RG_20M_2024_4326.geojson")
+    with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
+        w.write(json.dumps(eu_geojson, indent=2))
 
 
 def short():
