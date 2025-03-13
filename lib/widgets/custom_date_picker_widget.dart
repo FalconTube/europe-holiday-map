@@ -24,7 +24,7 @@ class MyDatePicker extends ConsumerWidget {
           monthViewSettings: DateRangePickerMonthViewSettings(
               enableSwipeSelection: isWebMobile ? false : true),
           toggleDaySelection: true,
-          selectionMode: DateRangePickerSelectionMode.range,
+          selectionMode: DateRangePickerSelectionMode.extendableRange,
           initialSelectedDate: DateTime.now(),
           minDate: DateTime(2025),
           maxDate: DateTime(2028),
