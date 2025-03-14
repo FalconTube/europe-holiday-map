@@ -14,7 +14,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Andorra"
+        "NAME_GERM": "Andorra",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -52,7 +53,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "AL",
-        "CNTR_NAME": "Shqip\u00ebria",
+        "CNTR_NAME": "Shqipëria",
         "NAME_ENGL": "Albania",
         "NAME_FREN": "Albanie",
         "ISO3_CODE": "ALB",
@@ -61,7 +62,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "Albanien"
+        "NAME_GERM": "Albanien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -299,16 +301,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BY",
-        "CNTR_NAME": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c",
+        "CNTR_NAME": "Беларусь",
         "NAME_ENGL": "Belarus",
-        "NAME_FREN": "Bi\u00e9lorussie",
+        "NAME_FREN": "Biélorussie",
         "ISO3_CODE": "BLR",
         "SVRG_UN": "UN Member State",
         "CAPT": "Minsk",
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Belarus"
+        "NAME_GERM": "Belarus",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -846,7 +849,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "AT",
-        "CNTR_NAME": "\u00d6sterreich",
+        "CNTR_NAME": "Österreich",
         "NAME_ENGL": "Austria",
         "NAME_FREN": "Autriche",
         "ISO3_CODE": "AUT",
@@ -855,7 +858,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "\u00d6sterreich"
+        "NAME_GERM": "Österreich",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1413,7 +1417,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BE",
-        "CNTR_NAME": "Belgien-Belgique-Belgi\u00eb",
+        "CNTR_NAME": "Belgien-Belgique-België",
         "NAME_ENGL": "Belgium",
         "NAME_FREN": "Belgique",
         "ISO3_CODE": "BEL",
@@ -1422,7 +1426,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Belgien"
+        "NAME_GERM": "Belgien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -1748,7 +1753,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "BG",
-        "CNTR_NAME": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f",
+        "CNTR_NAME": "България",
         "NAME_ENGL": "Bulgaria",
         "NAME_FREN": "Bulgarie",
         "ISO3_CODE": "BGR",
@@ -1757,7 +1762,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Bulgarien"
+        "NAME_GERM": "Bulgarien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -2147,16 +2153,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "CZ",
-        "CNTR_NAME": "\u010cesk\u00e1 Republika",
+        "CNTR_NAME": "Česká Republika",
         "NAME_ENGL": "Czechia",
-        "NAME_FREN": "Tch\u00e9quie",
+        "NAME_FREN": "Tchéquie",
         "ISO3_CODE": "CZE",
         "SVRG_UN": "UN Member State",
         "CAPT": "Prague",
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Tschechien"
+        "NAME_GERM": "Tschechien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -2507,7 +2514,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Deutschland"
+        "NAME_GERM": "Deutschland",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3736,7 +3744,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "D\u00e4nemark"
+        "NAME_GERM": "Dänemark",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4461,7 +4470,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "T",
         "CC_STAT": "F",
-        "NAME_GERM": "Schweiz"
+        "NAME_GERM": "Schweiz",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -4868,7 +4878,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Finnland"
+        "NAME_GERM": "Finnland",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6153,7 +6164,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Frankreich"
+        "NAME_GERM": "Frankreich",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7736,7 +7748,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Estland"
+        "NAME_GERM": "Estland",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8132,16 +8145,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "EL",
-        "CNTR_NAME": "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1",
+        "CNTR_NAME": "Ελλάδα",
         "NAME_ENGL": "Greece",
-        "NAME_FREN": "Gr\u00e8ce",
+        "NAME_FREN": "Grèce",
         "ISO3_CODE": "GRC",
         "SVRG_UN": "UN Member State",
         "CAPT": "Athens",
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Griechenland"
+        "NAME_GERM": "Griechenland",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10753,7 +10767,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "ES",
-        "CNTR_NAME": "Espa\u00f1a",
+        "CNTR_NAME": "España",
         "NAME_ENGL": "Spain",
         "NAME_FREN": "Espagne",
         "ISO3_CODE": "ESP",
@@ -10762,7 +10776,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Spanien"
+        "NAME_GERM": "Spanien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11874,7 +11889,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "IE",
-        "CNTR_NAME": "Ireland-\u00c9ire",
+        "CNTR_NAME": "Ireland-Éire",
         "NAME_ENGL": "Ireland",
         "NAME_FREN": "Irlande",
         "ISO3_CODE": "IRL",
@@ -11883,7 +11898,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Irland"
+        "NAME_GERM": "Irland",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12320,7 +12336,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Kroatien"
+        "NAME_GERM": "Kroatien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13396,7 +13413,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "HU",
-        "CNTR_NAME": "Magyarorsz\u00e1g",
+        "CNTR_NAME": "Magyarország",
         "NAME_ENGL": "Hungary",
         "NAME_FREN": "Hongrie",
         "ISO3_CODE": "HUN",
@@ -13405,7 +13422,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Ungarn"
+        "NAME_GERM": "Ungarn",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -13788,7 +13806,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "T",
         "CC_STAT": "F",
-        "NAME_GERM": "Liechtenstein"
+        "NAME_GERM": "Liechtenstein",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -13891,7 +13910,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Italien"
+        "NAME_GERM": "Italien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15320,7 +15340,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Niederlande"
+        "NAME_GERM": "Niederlande",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15729,7 +15750,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Litauen"
+        "NAME_GERM": "Litauen",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16073,7 +16095,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "LU",
-        "CNTR_NAME": "Luxemburg-Luxembourg-L\u00ebtzebuerg",
+        "CNTR_NAME": "Luxemburg-Luxembourg-Lëtzebuerg",
         "NAME_ENGL": "Luxembourg",
         "NAME_FREN": "Luxembourg",
         "ISO3_CODE": "LUX",
@@ -16082,7 +16104,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Luxemburg"
+        "NAME_GERM": "Luxemburg",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -16161,7 +16184,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Lettland"
+        "NAME_GERM": "Lettland",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -16420,7 +16444,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Monaco"
+        "NAME_GERM": "Monaco",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -16475,7 +16500,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "Moldau"
+        "NAME_GERM": "Moldau",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -16809,16 +16835,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "MK",
-        "CNTR_NAME": "\u0421\u0435\u0432\u0435\u0440\u043d\u0430 \u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430",
+        "CNTR_NAME": "Северна Македонија",
         "NAME_ENGL": "North Macedonia",
-        "NAME_FREN": "Mac\u00e9doine du Nord",
+        "NAME_FREN": "Macédoine du Nord",
         "ISO3_CODE": "MKD",
         "SVRG_UN": "UN Member State",
         "CAPT": "Skopje",
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "Nordmazedonien"
+        "NAME_GERM": "Nordmazedonien",
+        "DISABLED": true
       },
       "geometry": {
         "type": "Polygon",
@@ -17097,7 +17124,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Malta"
+        "NAME_GERM": "Malta",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17394,7 +17422,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Polen"
+        "NAME_GERM": "Polen",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -17925,7 +17954,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Portugal"
+        "NAME_GERM": "Portugal",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18517,7 +18547,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "RO",
-        "CNTR_NAME": "Rom\u00e2nia",
+        "CNTR_NAME": "România",
         "NAME_ENGL": "Romania",
         "NAME_FREN": "Roumanie",
         "ISO3_CODE": "ROU",
@@ -18526,7 +18556,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Rum\u00e4nien"
+        "NAME_GERM": "Rumänien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -18996,7 +19027,7 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "RS",
-        "CNTR_NAME": "\u0421\u0440\u0431\u0438\u0458\u0430",
+        "CNTR_NAME": "Србија",
         "NAME_ENGL": "Serbia",
         "NAME_FREN": "Serbie",
         "ISO3_CODE": "SRB",
@@ -19005,7 +19036,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "Serbien"
+        "NAME_GERM": "Serbien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -19463,14 +19495,15 @@
         "CNTR_ID": "NO",
         "CNTR_NAME": "Norga-Noreg-Norge",
         "NAME_ENGL": "Norway",
-        "NAME_FREN": "Norv\u00e8ge",
+        "NAME_FREN": "Norvège",
         "ISO3_CODE": "NOR",
         "SVRG_UN": "UN Member State",
         "CAPT": "Oslo",
         "EU_STAT": "F",
         "EFTA_STAT": "T",
         "CC_STAT": "F",
-        "NAME_GERM": "Norwegen"
+        "NAME_GERM": "Norwegen",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22160,14 +22193,15 @@
         "CNTR_ID": "SE",
         "CNTR_NAME": "Sverige",
         "NAME_ENGL": "Sweden",
-        "NAME_FREN": "Su\u00e8de",
+        "NAME_FREN": "Suède",
         "ISO3_CODE": "SWE",
         "SVRG_UN": "UN Member State",
         "CAPT": "Stockholm",
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Schweden"
+        "NAME_GERM": "Schweden",
+        "DISABLED": false
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23433,14 +23467,15 @@
         "CNTR_ID": "SI",
         "CNTR_NAME": "Slovinsko",
         "NAME_ENGL": "Slovenia",
-        "NAME_FREN": "Slov\u00e9nie",
+        "NAME_FREN": "Slovénie",
         "ISO3_CODE": "SVN",
         "SVRG_UN": "UN Member State",
         "CAPT": "Ljubljana",
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Slowenien"
+        "NAME_GERM": "Slowenien",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -23958,8 +23993,8 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "TR",
-        "CNTR_NAME": "T\u00fcrkiye",
-        "NAME_ENGL": "T\u00fcrkiye",
+        "CNTR_NAME": "Türkiye",
+        "NAME_ENGL": "Türkiye",
         "NAME_FREN": "Turquie",
         "ISO3_CODE": "TUR",
         "SVRG_UN": "UN Member State",
@@ -23967,7 +24002,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "T\u00fcrkei"
+        "NAME_GERM": "Türkei",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26139,16 +26175,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "UA",
-        "CNTR_NAME": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+        "CNTR_NAME": "Україна",
         "NAME_ENGL": "Ukraine",
         "NAME_FREN": "Ukraine",
         "ISO3_CODE": "UKR",
         "SVRG_UN": "UN Member State",
-        "CAPT": "Ky\u00efv",
+        "CAPT": "Kyïv",
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "T",
-        "NAME_GERM": "Ukraine"
+        "NAME_GERM": "Ukraine",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -27645,7 +27682,8 @@
         "EU_STAT": "T",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Slowakei"
+        "NAME_GERM": "Slowakei",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -27908,7 +27946,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "San Marino"
+        "NAME_GERM": "San Marino",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -27950,16 +27989,17 @@
       "type": "Feature",
       "properties": {
         "CNTR_ID": "VA",
-        "CNTR_NAME": "Stato Della Citt\u00e0 Del Vaticano-Status Civitatis Vaticanae",
+        "CNTR_NAME": "Stato Della Città Del Vaticano-Status Civitatis Vaticanae",
         "NAME_ENGL": "Vatican City",
-        "NAME_FREN": "Cit\u00e9 du Vatican",
+        "NAME_FREN": "Cité du Vatican",
         "ISO3_CODE": "VAT",
         "SVRG_UN": "The City of Vatican",
         "CAPT": "Vaticano",
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Vatikanstadt"
+        "NAME_GERM": "Vatikanstadt",
+        "DISABLED": false
       },
       "geometry": {
         "type": "Polygon",
@@ -28002,7 +28042,8 @@
         "EU_STAT": "F",
         "EFTA_STAT": "F",
         "CC_STAT": "F",
-        "NAME_GERM": "Vereinigtes K\u00f6nigreich"
+        "NAME_GERM": "Vereinigtes Königreich",
+        "DISABLED": true
       },
       "geometry": {
         "type": "MultiPolygon",

@@ -29,7 +29,7 @@ class MyDatePicker extends ConsumerWidget {
           minDate: DateTime(2025),
           maxDate: DateTime(2028),
           extendableRangeSelectionDirection:
-              ExtendableRangeSelectionDirection.forward,
+              ExtendableRangeSelectionDirection.both,
           onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
             final PickerDateRange selectedRange = args.value;
             final startDate = selectedRange.startDate;

@@ -3,6 +3,31 @@ import 'package:json_annotation/json_annotation.dart';
 part 'entry.g.dart';
 
 @JsonSerializable()
+class BorderCountry {
+  @JsonKey(name: "CNTR_ID")
+  final String countryID;
+  @JsonKey(name: "CNTR_NAME")
+  final String countryName;
+  @JsonKey(name: "NAME_ENGL")
+  final String countryNameEn;
+  @JsonKey(name: "DISABLED")
+  final bool isDisabled;
+  // Add other relevant data like title, description, etc.
+  BorderCountry({
+    required this.countryID,
+    required this.countryName,
+    required this.countryNameEn,
+    required this.isDisabled,
+  });
+
+  factory BorderCountry.fromJson(Map<String, dynamic> json) {
+    return _$BorderCountryFromJson(json);
+  }
+
+  Map<String, dynamic> toJson() => _$BorderCountryToJson(this);
+}
+
+@JsonSerializable()
 class AllStateHolidays {
   @JsonKey(name: "state_holidays")
   final List<StateHolidays> stateHolidays;

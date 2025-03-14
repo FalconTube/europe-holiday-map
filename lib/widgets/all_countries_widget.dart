@@ -1,10 +1,13 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
-
+import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
@@ -12,9 +15,23 @@ class AllCountriesWidget extends ConsumerWidget {
 
   final _mapController = MapShapeLayerController();
 
-  final MapShapeSource borderSource = MapShapeSource.asset(
-      'assets/geo/eu-borders.geojson',
-      shapeDataField: 'CNTR_ID');
+  final MapShapeSource borderSource =
+      MapShapeSource.asset('assets/geo/eu-borders.geojson',
+          dataCount: borderdat.length,
+          shapeColorValueMapper: (int index) {
+            return borderdat[index].isDisabled.toString().toUpperCase();
+          },
+          shapeColorMappers: [
+            MapColorMapper(value: "TRUE", color: Colors.grey),
+            MapColorMapper(value: "FALSE", color: Color(0xffD2EBCA)),
+          ],
+          dataLabelMapper: (int index) {
+            return borderdat[index].countryNameEn;
+          },
+
+          /// This must be the same as CNTR_ID
+          primaryValueMapper: (int index) => borderdat[index].countryID,
+          shapeDataField: 'CNTR_ID');
   final MapZoomPanBehavior zoomPanBehavior = MapZoomPanBehavior(
     zoomLevel: 2.5,
     focalLatLng: const MapLatLng(50.935173, 6.953101),
@@ -57,7 +74,11 @@ class AllCountriesWidget extends ConsumerWidget {
                     SfMaps(
                       layers: <MapLayer>[
                         MapShapeLayer(
-                          color: Color(0xffD2EBCA),
+                          showDataLabels: true,
+                          dataLabelSettings: MapDataLabelSettings(
+                              textStyle: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w600),
+                              overflowMode: MapLabelOverflow.hide),
                           source: borderSource,
                           controller: _mapController,
                           strokeWidth: 1.5,
@@ -65,10 +86,47 @@ class AllCountriesWidget extends ConsumerWidget {
                           tooltipSettings: MapTooltipSettings(
                               color: const Color.fromRGBO(30, 28, 37, 1)),
                           sublayers: <MapSublayer>[
-                            NutsSublayer(
-                                nutsSource: nutsSource,
-                                mapController: _mapController,
-                                data: data)
+                            MapShapeSublayer(
+                              key: UniqueKey(),
+                              source: nutsSource,
+                              controller: _mapController,
+                              strokeWidth: 0.5,
+                              // showDataLabels: true,
+                              color: Colors.grey.withValues(alpha: 0.0),
+                              strokeColor: Colors.black.withValues(alpha: 0.1),
+                              shapeTooltipBuilder:
+                                  (BuildContext context, int index) {
+                                final totalDays = data.data[index].totalDays;
+                                final division = data.data[index].division;
+                                final holidays = data.data[index].holidays;
+                                // Build holiday display text
+                                String holFormatted = "";
+                                for (final h in holidays) {
+                                  final name = h.nameEN ?? h.name;
+                                  final start =
+                                      h.start.toString().split(' ')[0];
+                                  final end = h.end.toString().split(' ')[0];
+                                  final thisHol =
+                                      "\n\n$name\n$start \u2014 $end";
+                                  holFormatted += thisHol;
+                                }
+                                final text = Text(
+                                  'Division: $division\nOverlap Days: $totalDays$holFormatted',
+                                  textAlign: TextAlign.center,
+                                  softWrap: true,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                );
+                                return ConstrainedBox(
+                                    constraints: BoxConstraints(maxWidth: 300),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: text,
+                                    ));
+                              },
+                            )
                           ],
                           zoomPanBehavior: zoomPanBehavior,
                         ),
@@ -89,61 +147,6 @@ class AllCountriesWidget extends ConsumerWidget {
           MyDatePicker(),
         ],
       ),
-    );
-  }
-}
-
-class NutsSublayer extends MapSublayer {
-  const NutsSublayer({
-    super.key,
-    required this.nutsSource,
-    required MapShapeLayerController mapController,
-    required this.data,
-  }) : _mapController = mapController;
-
-  final MapShapeSource nutsSource;
-  final MapShapeLayerController _mapController;
-  final MapCountryDataAndDays data;
-
-  @override
-  Widget build(BuildContext context) {
-    return MapShapeSublayer(
-      key: UniqueKey(),
-      source: nutsSource,
-      controller: _mapController,
-      strokeWidth: 0.5,
-      // showDataLabels: true,
-      color: Colors.grey.withValues(alpha: 0.0),
-      strokeColor: Colors.black.withValues(alpha: 0.1),
-      shapeTooltipBuilder: (BuildContext context, int index) {
-        final totalDays = data.data[index].totalDays;
-        final division = data.data[index].division;
-        final holidays = data.data[index].holidays;
-        // Build holiday display text
-        String holFormatted = "";
-        for (final h in holidays) {
-          final name = h.nameEN ?? h.name;
-          final start = h.start.toString().split(' ')[0];
-          final end = h.end.toString().split(' ')[0];
-          final thisHol = "\n\n$name\n$start \u2014 $end";
-          holFormatted += thisHol;
-        }
-        final text = Text(
-          'Division: $division\nOverlap Days: $totalDays$holFormatted',
-          textAlign: TextAlign.center,
-          softWrap: true,
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w400,
-          ),
-        );
-        return ConstrainedBox(
-            constraints: BoxConstraints(maxWidth: 300),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: text,
-            ));
-      },
     );
   }
 }
