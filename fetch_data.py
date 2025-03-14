@@ -1,3 +1,4 @@
+from inspect import iscoroutine
 import sys
 import json
 from enum import StrEnum
@@ -288,10 +289,10 @@ def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
     # Some countries are not in the dataset, but we want them displayed
     file_str = Path(world_json_file).read_text()
     world_json = json.loads(file_str)["features"]
+
     countries = get_countries()
-    country_iso_codes = [i.iso for i in countries]
     if with_provinces:
-        known_features = country_features(world_json, country_iso_codes)
+        known_features = country_features(world_json, countries)
     else:
         additional_countries = [
             Country(iso="UK", name="Great Britain"),
@@ -303,15 +304,16 @@ def extract_eu_from_world(world_json_file: str, with_provinces: bool = False):
             Country(iso="MK", name="North Macedonia"),
             Country(iso="TR", name="Türkiye"),
         ]
-        countries += additional_countries
-        country_iso_codes = [i.iso for i in countries]
 
-        known_features = world_features(world_json, country_iso_codes)
+        known_features = world_features(
+            world_json, countries, extra_countries=additional_countries
+        )
     geojson_known = {"type": "FeatureCollection", "features": known_features}
     return geojson_known
 
 
-def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
+def country_features(in_json: Dict, countries: list[Country]) -> list:
+    country_iso_codes = [i.iso for i in countries]
     levels_map = {
         "AT": 2,
         "IT": 2,
@@ -343,12 +345,33 @@ def country_features(in_json: Dict, country_iso_codes: list[str]) -> list:
     return known_features
 
 
-def world_features(in_json: Dict, country_iso_codes: list[str]) -> list:
+def world_features(
+    in_json: Dict, countries: list[Country], extra_countries: list[Country]
+) -> list:
     known_features = []
+
+    country_iso_codes = [i.iso for i in countries]
+    extra_iso_codes = [i.iso for i in extra_countries]
+    ic(country_iso_codes)
+    ic(extra_iso_codes)
     for world_entry in in_json:
-        country_code = world_entry["properties"]["CNTR_ID"]
-        if country_code not in country_iso_codes:
+        props = world_entry["properties"]
+        country_code = props["CNTR_ID"]
+        # Skip if not required
+        if (
+            country_code not in country_iso_codes
+            and country_code not in extra_iso_codes
+        ):
             continue
+        ic(f"is in {country_code}")
+
+        # Mark extra country as disabled
+        if country_code in extra_iso_codes:
+            props["DISABLED"] = True
+        else:
+            props["DISABLED"] = False
+
+        # Now add to list
         known_features.append(world_entry)
     return known_features
 
@@ -361,7 +384,7 @@ def convert_geojson():
         w.write(json.dumps(eu_geojson, indent=2, ensure_ascii=False))
     eu_geojson = extract_eu_from_world("./CNTR_RG_20M_2024_4326.geojson")
     with open("assets/geo/eu-borders.geojson", "w", encoding="utf-8") as w:
-        w.write(json.dumps(eu_geojson, indent=2))
+        w.write(json.dumps(eu_geojson, indent=2, ensure_ascii=False))
 
 
 def short():
