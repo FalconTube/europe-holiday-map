@@ -6,6 +6,22 @@ part of 'entry.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
+BorderCountry _$BorderCountryFromJson(Map<String, dynamic> json) =>
+    BorderCountry(
+      countryID: json['CNTR_ID'] as String,
+      countryName: json['CNTR_NAME'] as String,
+      countryNameEn: json['NAME_ENGL'] as String,
+      isDisabled: json['DISABLED'] as bool,
+    );
+
+Map<String, dynamic> _$BorderCountryToJson(BorderCountry instance) =>
+    <String, dynamic>{
+      'CNTR_ID': instance.countryID,
+      'CNTR_NAME': instance.countryName,
+      'NAME_ENGL': instance.countryNameEn,
+      'DISABLED': instance.isDisabled,
+    };
+
 AllStateHolidays _$AllStateHolidaysFromJson(Map<String, dynamic> json) =>
     AllStateHolidays(
       stateHolidays: (json['state_holidays'] as List<dynamic>)

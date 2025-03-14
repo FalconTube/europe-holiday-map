@@ -11,6 +11,7 @@ import 'package:holiday_map/widgets/all_countries_widget.dart';
 // Declare globally
 // late AllStateHolidays holdata;
 late List<AllStateHolidays> holdata;
+late List<BorderCountry> borderdat;
 late Map<String, dynamic> codesMap;
 
 // Load data at start
@@ -21,6 +22,18 @@ Future<List<AllStateHolidays>> _loadData() async {
   for (final entry in jsonData) {
     final countryHolidays = AllStateHolidays.fromJson(entry);
     outList.add(countryHolidays);
+  }
+  return outList;
+}
+
+Future<List<BorderCountry>> _loadBorderData() async {
+  final String response =
+      await rootBundle.loadString("assets/geo/eu-borders.geojson");
+  List<BorderCountry> outList = [];
+  final jsonData = json.decode(response);
+  for (final entry in jsonData["features"]) {
+    final borderData = BorderCountry.fromJson(entry["properties"]);
+    outList.add(borderData);
   }
   return outList;
 }
@@ -78,9 +91,6 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
           if (startIsInRange || endIsInRange) {
             // Found a matching holiday
             // Now get amount of days
-            final theoreticalDates = daysInSelection(
-                holiday, firstSelectedDate, lastSelectedDate,
-                includeOutOfRange: true);
             final inRangeDates =
                 daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
             regionResults.add(CodeAndHoliday(
@@ -146,6 +156,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // Load data at start
   holdata = await _loadData();
+  borderdat = await _loadBorderData();
   final String response =
       await rootBundle.loadString("assets/geo/codes-map.json");
   codesMap = json.decode(response);

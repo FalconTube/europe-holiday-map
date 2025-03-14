@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
@@ -12,9 +14,23 @@ class AllCountriesWidget extends ConsumerWidget {
 
   final _mapController = MapShapeLayerController();
 
-  final MapShapeSource borderSource = MapShapeSource.asset(
-      'assets/geo/eu-borders.geojson',
-      shapeDataField: 'CNTR_ID');
+  final MapShapeSource borderSource =
+      MapShapeSource.asset('assets/geo/eu-borders.geojson',
+          dataCount: borderdat.length,
+          shapeColorValueMapper: (int index) {
+            return borderdat[index].isDisabled.toString().toUpperCase();
+          },
+          shapeColorMappers: [
+            MapColorMapper(value: "TRUE", color: Colors.grey),
+            MapColorMapper(value: "FALSE", color: Color(0xffD2EBCA)),
+          ],
+          dataLabelMapper: (int index) {
+            return borderdat[index].countryNameEn;
+          },
+
+          /// This must be the same as CNTR_ID
+          primaryValueMapper: (int index) => borderdat[index].countryID,
+          shapeDataField: 'CNTR_ID');
   final MapZoomPanBehavior zoomPanBehavior = MapZoomPanBehavior(
     zoomLevel: 2.5,
     focalLatLng: const MapLatLng(50.935173, 6.953101),
@@ -57,7 +73,7 @@ class AllCountriesWidget extends ConsumerWidget {
                     SfMaps(
                       layers: <MapLayer>[
                         MapShapeLayer(
-                          color: Color(0xffD2EBCA),
+                          showDataLabels: true,
                           source: borderSource,
                           controller: _mapController,
                           strokeWidth: 1.5,
