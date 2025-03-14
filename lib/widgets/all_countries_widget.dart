@@ -40,7 +40,7 @@ class AllCountriesWidget extends ConsumerWidget {
     enableDoubleTapZooming: true,
     enableMouseWheelZooming: true,
   );
-  final cmap = Colormaps.Purples;
+  final cmap = Colormaps.seismic;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -54,7 +54,7 @@ class AllCountriesWidget extends ConsumerWidget {
         // Else return map with filled fields
         : MapShapeSource.asset('assets/geo/eu-nuts.geojson',
             dataCount: data.data.length,
-            primaryValueMapper: (int index) => data.data[index].division,
+            primaryValueMapper: (int index) => data.data[index].nuts,
             shapeColorValueMapper: (int index) {
               final numdays = data.data[index].totalDays;
               return numdays.toString();
@@ -76,8 +76,7 @@ class AllCountriesWidget extends ConsumerWidget {
                         MapShapeLayer(
                           showDataLabels: true,
                           dataLabelSettings: MapDataLabelSettings(
-                              textStyle: TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.w600),
+                              textStyle: TextStyle(fontSize: 14),
                               overflowMode: MapLabelOverflow.hide),
                           source: borderSource,
                           controller: _mapController,
@@ -111,7 +110,7 @@ class AllCountriesWidget extends ConsumerWidget {
                                   holFormatted += thisHol;
                                 }
                                 final text = Text(
-                                  'Division: $division\nOverlap Days: $totalDays$holFormatted',
+                                  '$division\nOverlap: $totalDays days$holFormatted',
                                   textAlign: TextAlign.center,
                                   softWrap: true,
                                   style: TextStyle(

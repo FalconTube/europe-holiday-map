@@ -40,12 +40,14 @@ Future<List<BorderCountry>> _loadBorderData() async {
 
 class CodeAndHoliday {
   final String nutsCode;
+  final String division;
   final Holiday holiday;
   final List<DateTime> dayList;
   final int days;
 
   CodeAndHoliday({
     required this.nutsCode,
+    required this.division,
     required this.holiday,
     required this.dayList,
     required this.days,
@@ -66,10 +68,11 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
     for (final regionEntry in countryEntry.stateHolidays) {
       final nutsCodes = nutsFromCode(countryEntry.country, regionEntry);
       if (nutsCodes == null) {
-        Log.log(
-            "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
+        // Log.log(
+        //     "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
         continue;
       }
+      final divisionName = regionEntry.name;
       for (final nutsCode in nutsCodes) {
         List<CodeAndHoliday> regionResults = [];
         List<String> foundHolidayNames = [];
@@ -95,6 +98,7 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
                 daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
             regionResults.add(CodeAndHoliday(
               nutsCode: nutsCode,
+              division: divisionName,
               holiday: holiday, // Fall back to non-english name, if not exist
               dayList: inRangeDates,
               days: inRangeDates.length,

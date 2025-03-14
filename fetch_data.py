@@ -115,6 +115,7 @@ class Holiday:
 
 @dataclass
 class SubdivionHolidays:
+    name: str
     iso: Optional[str]
     code: Optional[str]
     holidays: list[Holiday]
@@ -410,9 +411,9 @@ def short():
 
 
 if __name__ == "__main__":
-    convert_geojson()
-    # short()
-    sys.exit()
+    # convert_geojson()
+    # # short()
+    # sys.exit()
     countries = get_countries()
     # countries = [Country(iso="LU", code="LU", name="Espania", name_en="Spain")]
     country_list = []
@@ -438,7 +439,7 @@ if __name__ == "__main__":
             sub_hols_list.extend(pub_hols)
             # assert sub.iso is not None, f"Could not get iso for sub: {sub}"
             sub_holidays = SubdivionHolidays(
-                iso=sub.iso, code=sub.code, holidays=sub_hols_list
+                name=sub.name, iso=sub.iso, code=sub.code, holidays=sub_hols_list
             )
             all_hols_list.append(sub_holidays)
         # to dataclass

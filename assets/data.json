@@ -11,6 +11,7 @@
     "country": "at",
     "state_holidays": [
       {
+        "name": "Burgenland",
         "iso": "AT-1",
         "code": "AT-BL",
         "holidays": [
@@ -290,6 +291,7 @@
         ]
       },
       {
+        "name": "Kärnten",
         "iso": "AT-2",
         "code": "AT-KÄ",
         "holidays": [
@@ -576,6 +578,7 @@
         ]
       },
       {
+        "name": "Niederösterreich",
         "iso": "AT-3",
         "code": "AT-NÖ",
         "holidays": [
@@ -855,6 +858,7 @@
         ]
       },
       {
+        "name": "Oberösterreich",
         "iso": "AT-4",
         "code": "AT-OÖ",
         "holidays": [
@@ -1141,6 +1145,7 @@
         ]
       },
       {
+        "name": "Salzburg",
         "iso": "AT-5",
         "code": "AT-SB",
         "holidays": [
@@ -1420,6 +1425,7 @@
         ]
       },
       {
+        "name": "Steiermark",
         "iso": "AT-6",
         "code": "AT-SM",
         "holidays": [
@@ -1706,6 +1712,7 @@
         ]
       },
       {
+        "name": "Tirol",
         "iso": "AT-7",
         "code": "AT-TI",
         "holidays": [
@@ -1992,6 +1999,7 @@
         ]
       },
       {
+        "name": "Vorarlberg",
         "iso": "AT-8",
         "code": "AT-VA",
         "holidays": [
@@ -2278,6 +2286,7 @@
         ]
       },
       {
+        "name": "Wien",
         "iso": "AT-9",
         "code": "AT-WI",
         "holidays": [
@@ -2562,6 +2571,7 @@
     "country": "be",
     "state_holidays": [
       {
+        "name": "Deutschsprachige Gemeinschaft",
         "iso": null,
         "code": "BE-DE",
         "holidays": [
@@ -2813,6 +2823,7 @@
         ]
       },
       {
+        "name": "Communauté française",
         "iso": null,
         "code": "BE-FR",
         "holidays": [
@@ -3064,6 +3075,7 @@
         ]
       },
       {
+        "name": "Vlaamse Gemeenschap",
         "iso": null,
         "code": "BE-NL",
         "holidays": [
@@ -3335,6 +3347,7 @@
     "country": "ch",
     "state_holidays": [
       {
+        "name": "Aargau",
         "iso": "CH-AG",
         "code": "CH-AG",
         "holidays": [
@@ -3579,6 +3592,7 @@
         ]
       },
       {
+        "name": "Appenzell Innerrhoden",
         "iso": "CH-AI",
         "code": "CH-AI",
         "holidays": [
@@ -3809,6 +3823,7 @@
         ]
       },
       {
+        "name": "Appenzell Ausserrhoden",
         "iso": "CH-AR",
         "code": "CH-AR",
         "holidays": [
@@ -3976,6 +3991,7 @@
         ]
       },
       {
+        "name": "Bern",
         "iso": "CH-BE",
         "code": "CH-BE",
         "holidays": [
@@ -4199,6 +4215,7 @@
         ]
       },
       {
+        "name": "Basel-Landschaft",
         "iso": "CH-BL",
         "code": "CH-BL",
         "holidays": [
@@ -4443,6 +4460,7 @@
         ]
       },
       {
+        "name": "Basel-Stadt",
         "iso": "CH-BS",
         "code": "CH-BS",
         "holidays": [
@@ -4687,6 +4705,7 @@
         ]
       },
       {
+        "name": "Fribourg",
         "iso": "CH-FR",
         "code": "CH-FR",
         "holidays": [
@@ -4931,6 +4950,7 @@
         ]
       },
       {
+        "name": "Genève",
         "iso": "CH-GE",
         "code": "CH-GE",
         "holidays": [
@@ -5112,6 +5132,7 @@
         ]
       },
       {
+        "name": "Glarus",
         "iso": "CH-GL",
         "code": "CH-GL",
         "holidays": [
@@ -5335,6 +5356,7 @@
         ]
       },
       {
+        "name": "Graubünden",
         "iso": "CH-GR",
         "code": "CH-GR",
         "holidays": [
@@ -5488,6 +5510,7 @@
         ]
       },
       {
+        "name": "Jura",
         "iso": "CH-JU",
         "code": "CH-JU",
         "holidays": [
@@ -5774,6 +5797,7 @@
         ]
       },
       {
+        "name": "Luzern",
         "iso": "CH-LU",
         "code": "CH-LU",
         "holidays": [
@@ -6025,6 +6049,7 @@
         ]
       },
       {
+        "name": "Neuchâtel",
         "iso": "CH-NE",
         "code": "CH-NE",
         "holidays": [
@@ -6234,6 +6259,7 @@
         ]
       },
       {
+        "name": "Nidwalden",
         "iso": "CH-NW",
         "code": "CH-NW",
         "holidays": [
@@ -6499,6 +6525,7 @@
         ]
       },
       {
+        "name": "Obwalden",
         "iso": "CH-OW",
         "code": "CH-OW",
         "holidays": [
@@ -6778,6 +6805,7 @@
         ]
       },
       {
+        "name": "St. Gallen",
         "iso": "CH-SG",
         "code": "CH-SG",
         "holidays": [
@@ -6980,6 +7008,7 @@
         ]
       },
       {
+        "name": "Schaffhausen",
         "iso": "CH-SH",
         "code": "CH-SH",
         "holidays": [
@@ -7189,6 +7218,7 @@
         ]
       },
       {
+        "name": "Solothurn",
         "iso": "CH-SO",
         "code": "CH-SO",
         "holidays": [
@@ -7503,6 +7533,7 @@
         ]
       },
       {
+        "name": "Schwyz",
         "iso": "CH-SZ",
         "code": "CH-SZ",
         "holidays": [
@@ -7880,6 +7911,7 @@
         ]
       },
       {
+        "name": "Thurgau",
         "iso": "CH-TG",
         "code": "CH-TG",
         "holidays": [
@@ -8089,6 +8121,7 @@
         ]
       },
       {
+        "name": "Ticino",
         "iso": "CH-TI",
         "code": "CH-TI",
         "holidays": [
@@ -8354,6 +8387,7 @@
         ]
       },
       {
+        "name": "Uri",
         "iso": "CH-UR",
         "code": "CH-UR",
         "holidays": [
@@ -8619,6 +8653,7 @@
         ]
       },
       {
+        "name": "Vaud",
         "iso": "CH-VD",
         "code": "CH-VD",
         "holidays": [
@@ -8800,6 +8835,7 @@
         ]
       },
       {
+        "name": "Valais",
         "iso": "CH-VS",
         "code": "CH-VS",
         "holidays": [
@@ -9107,6 +9143,7 @@
         ]
       },
       {
+        "name": "Zug",
         "iso": "CH-ZG",
         "code": "CH-ZG",
         "holidays": [
@@ -9358,6 +9395,7 @@
         ]
       },
       {
+        "name": "Zürich",
         "iso": "CH-ZH",
         "code": "CH-ZH",
         "holidays": [
@@ -9600,6 +9638,7 @@
     "country": "cz",
     "state_holidays": [
       {
+        "name": "Jihočeský kraj",
         "iso": "CZ-31",
         "code": "CZ-JC",
         "holidays": [
@@ -9949,6 +9988,7 @@
         ]
       },
       {
+        "name": "Jihomoravský kraj",
         "iso": "CZ-64",
         "code": "CZ-JM",
         "holidays": [
@@ -10256,6 +10296,7 @@
         ]
       },
       {
+        "name": "Karlovarský kraj",
         "iso": "CZ-41",
         "code": "CZ-KA",
         "holidays": [
@@ -10563,6 +10604,7 @@
         ]
       },
       {
+        "name": "Královéhradecký kraj",
         "iso": "CZ-52",
         "code": "CZ-KR",
         "holidays": [
@@ -10912,6 +10954,7 @@
         ]
       },
       {
+        "name": "Liberecký kraj",
         "iso": "CZ-51",
         "code": "CZ-LI",
         "holidays": [
@@ -11219,6 +11262,7 @@
         ]
       },
       {
+        "name": "Moravskoslezský kraj",
         "iso": "CZ-80",
         "code": "CZ-MO",
         "holidays": [
@@ -11596,6 +11640,7 @@
         ]
       },
       {
+        "name": "Olomoucký kraj",
         "iso": "CZ-71",
         "code": "CZ-OL",
         "holidays": [
@@ -11931,6 +11976,7 @@
         ]
       },
       {
+        "name": "Pardubický kraj",
         "iso": "CZ-53",
         "code": "CZ-PA",
         "holidays": [
@@ -12238,6 +12284,7 @@
         ]
       },
       {
+        "name": "Plzeňský kraj",
         "iso": "CZ-32",
         "code": "CZ-PL",
         "holidays": [
@@ -12573,6 +12620,7 @@
         ]
       },
       {
+        "name": "Praha",
         "iso": "CZ-10",
         "code": "CZ-PR",
         "holidays": [
@@ -12894,6 +12942,7 @@
         ]
       },
       {
+        "name": "Středočeský kraj",
         "iso": "CZ-20",
         "code": "CZ-ST",
         "holidays": [
@@ -13257,6 +13306,7 @@
         ]
       },
       {
+        "name": "Ústecký kraj",
         "iso": "CZ-42",
         "code": "CZ-US",
         "holidays": [
@@ -13606,6 +13656,7 @@
         ]
       },
       {
+        "name": "Kraj Vysočina",
         "iso": "CZ-63",
         "code": "CZ-VY",
         "holidays": [
@@ -13913,6 +13964,7 @@
         ]
       },
       {
+        "name": "Zlínský kraj",
         "iso": "CZ-72",
         "code": "CZ-ZL",
         "holidays": [
@@ -14225,6 +14277,7 @@
     "country": "de",
     "state_holidays": [
       {
+        "name": "Brandenburg",
         "iso": "DE-BB",
         "code": "DE-BB",
         "holidays": [
@@ -14511,6 +14564,7 @@
         ]
       },
       {
+        "name": "Berlin",
         "iso": "DE-BE",
         "code": "DE-BE",
         "holidays": [
@@ -14776,6 +14830,7 @@
         ]
       },
       {
+        "name": "Baden-Württemberg",
         "iso": "DE-BW",
         "code": "DE-BW",
         "holidays": [
@@ -15034,6 +15089,7 @@
         ]
       },
       {
+        "name": "Bayern",
         "iso": "DE-BY",
         "code": "DE-BY",
         "holidays": [
@@ -15348,6 +15404,7 @@
         ]
       },
       {
+        "name": "Bremen",
         "iso": "DE-HB",
         "code": "DE-HB",
         "holidays": [
@@ -15613,6 +15670,7 @@
         ]
       },
       {
+        "name": "Hessen",
         "iso": "DE-HE",
         "code": "DE-HE",
         "holidays": [
@@ -15829,6 +15887,7 @@
         ]
       },
       {
+        "name": "Hamburg",
         "iso": "DE-HH",
         "code": "DE-HH",
         "holidays": [
@@ -16080,6 +16139,7 @@
         ]
       },
       {
+        "name": "Mecklenburg-Vorpommern",
         "iso": "DE-MV",
         "code": "DE-MV",
         "holidays": [
@@ -16478,6 +16538,7 @@
         ]
       },
       {
+        "name": "Niedersachsen",
         "iso": "DE-NI",
         "code": "DE-NI",
         "holidays": [
@@ -16750,6 +16811,7 @@
         ]
       },
       {
+        "name": "Nordrhein-Westfalen",
         "iso": "DE-NW",
         "code": "DE-NW",
         "holidays": [
@@ -16994,6 +17056,7 @@
         ]
       },
       {
+        "name": "Rheinland-Pfalz",
         "iso": "DE-RP",
         "code": "DE-RP",
         "holidays": [
@@ -17224,6 +17287,7 @@
         ]
       },
       {
+        "name": "Schleswig-Holstein",
         "iso": "DE-SH",
         "code": "DE-SH",
         "holidays": [
@@ -17454,6 +17518,7 @@
         ]
       },
       {
+        "name": "Saarland",
         "iso": "DE-SL",
         "code": "DE-SL",
         "holidays": [
@@ -17712,6 +17777,7 @@
         ]
       },
       {
+        "name": "Sachsen",
         "iso": "DE-SN",
         "code": "DE-SN",
         "holidays": [
@@ -17970,6 +18036,7 @@
         ]
       },
       {
+        "name": "Sachsen-Anhalt",
         "iso": "DE-ST",
         "code": "DE-ST",
         "holidays": [
@@ -18228,6 +18295,7 @@
         ]
       },
       {
+        "name": "Thüringen",
         "iso": "DE-TH",
         "code": "DE-TH",
         "holidays": [
@@ -18491,6 +18559,7 @@
     "country": "ee",
     "state_holidays": [
       {
+        "name": "Eestni",
         "iso": "EE0",
         "code": "EE0",
         "holidays": [
@@ -18754,6 +18823,7 @@
     "country": "es",
     "state_holidays": [
       {
+        "name": "Andalucía",
         "iso": "ES-AN",
         "code": "ES-AN",
         "holidays": [
@@ -19159,6 +19229,7 @@
         ]
       },
       {
+        "name": "Aragón",
         "iso": "ES-AR",
         "code": "ES-AR",
         "holidays": [
@@ -19305,6 +19376,7 @@
         ]
       },
       {
+        "name": "Asturias",
         "iso": "ES-AS",
         "code": "ES-AS",
         "holidays": [
@@ -19451,6 +19523,7 @@
         ]
       },
       {
+        "name": "Cantabria",
         "iso": "ES-CB",
         "code": "ES-CB",
         "holidays": [
@@ -19583,6 +19656,7 @@
         ]
       },
       {
+        "name": "Ceuta",
         "iso": "ES-CE",
         "code": "ES-CE",
         "holidays": [
@@ -19743,6 +19817,7 @@
         ]
       },
       {
+        "name": "Castilla y León",
         "iso": "ES-CL",
         "code": "ES-CL",
         "holidays": [
@@ -19868,6 +19943,7 @@
         ]
       },
       {
+        "name": "Castilla-La Mancha",
         "iso": "ES-CM",
         "code": "ES-CM",
         "holidays": [
@@ -20014,6 +20090,7 @@
         ]
       },
       {
+        "name": "Canarias",
         "iso": "ES-CN",
         "code": "ES-CN",
         "holidays": [
@@ -20174,6 +20251,7 @@
         ]
       },
       {
+        "name": "Catalunya",
         "iso": "ES-CT",
         "code": "ES-CT",
         "holidays": [
@@ -20299,6 +20377,7 @@
         ]
       },
       {
+        "name": "Extremadura",
         "iso": "ES-EX",
         "code": "ES-EX",
         "holidays": [
@@ -20431,6 +20510,7 @@
         ]
       },
       {
+        "name": "Galicia",
         "iso": "ES-GA",
         "code": "ES-GA",
         "holidays": [
@@ -20563,6 +20643,7 @@
         ]
       },
       {
+        "name": "Illes Balears",
         "iso": "ES-IB",
         "code": "ES-IB",
         "holidays": [
@@ -20695,6 +20776,7 @@
         ]
       },
       {
+        "name": "Región de Murcia",
         "iso": "ES-MC",
         "code": "ES-MC",
         "holidays": [
@@ -20806,6 +20888,7 @@
         ]
       },
       {
+        "name": "Comunidad de Madrid",
         "iso": "ES-MD",
         "code": "ES-MD",
         "holidays": [
@@ -20959,6 +21042,7 @@
         ]
       },
       {
+        "name": "Melilla",
         "iso": "ES-ML",
         "code": "ES-ML",
         "holidays": [
@@ -21119,6 +21203,7 @@
         ]
       },
       {
+        "name": "Nafarroako Foru Komunitatea",
         "iso": "ES-NC",
         "code": "ES-NC",
         "holidays": [
@@ -21223,6 +21308,7 @@
         ]
       },
       {
+        "name": "Euskal Herria",
         "iso": "ES-PV",
         "code": "ES-PV",
         "holidays": [
@@ -21341,6 +21427,7 @@
         ]
       },
       {
+        "name": "La Rioja",
         "iso": "ES-RI",
         "code": "ES-RI",
         "holidays": [
@@ -21473,6 +21560,7 @@
         ]
       },
       {
+        "name": "Comunitat Valenciana",
         "iso": "ES-VC",
         "code": "ES-VC",
         "holidays": [
@@ -21603,6 +21691,7 @@
     "country": "fr",
     "state_holidays": [
       {
+        "name": "Auvergne-Rhône-Alpes",
         "iso": "FR-ARA",
         "code": "FR-AR",
         "holidays": [
@@ -21833,6 +21922,7 @@
         ]
       },
       {
+        "name": "Bourgogne-Franche-Comté",
         "iso": "FR-BFC",
         "code": "FR-BF",
         "holidays": [
@@ -22063,6 +22153,7 @@
         ]
       },
       {
+        "name": "Saint-Barthélemy",
         "iso": "FR-BL",
         "code": "FR-BL",
         "holidays": [
@@ -22314,6 +22405,7 @@
         ]
       },
       {
+        "name": "Bretagne",
         "iso": "FR-BRE",
         "code": "FR-BT",
         "holidays": [
@@ -22544,6 +22636,7 @@
         ]
       },
       {
+        "name": "Corse",
         "iso": "FR-20R",
         "code": "FR-CO",
         "holidays": [
@@ -22767,6 +22860,7 @@
         ]
       },
       {
+        "name": "Centre-Val de Loire",
         "iso": "FR-CVL",
         "code": "FR-CV",
         "holidays": [
@@ -22997,6 +23091,7 @@
         ]
       },
       {
+        "name": "Grand Est",
         "iso": "FR-GES",
         "code": "FR-GE",
         "holidays": [
@@ -23255,6 +23350,7 @@
         ]
       },
       {
+        "name": "Guadeloupe",
         "iso": "FR-971",
         "code": "FR-GP",
         "holidays": [
@@ -23506,6 +23602,7 @@
         ]
       },
       {
+        "name": "Guyane",
         "iso": "FR-973",
         "code": "FR-GY",
         "holidays": [
@@ -23750,6 +23847,7 @@
         ]
       },
       {
+        "name": "Hauts-de-France",
         "iso": "FR-HDF",
         "code": "FR-HF",
         "holidays": [
@@ -23980,6 +24078,7 @@
         ]
       },
       {
+        "name": "Île-de-France",
         "iso": "FR-IDF",
         "code": "FR-IF",
         "holidays": [
@@ -24210,6 +24309,7 @@
         ]
       },
       {
+        "name": "Saint-Martin",
         "iso": "FR-MF",
         "code": "FR-MF",
         "holidays": [
@@ -24461,6 +24561,7 @@
         ]
       },
       {
+        "name": "Martinique",
         "iso": "FR-972",
         "code": "FR-MQ",
         "holidays": [
@@ -24705,6 +24806,7 @@
         ]
       },
       {
+        "name": "Nouvelle-Aquitaine",
         "iso": "FR-NAQ",
         "code": "FR-NA",
         "holidays": [
@@ -24935,6 +25037,7 @@
         ]
       },
       {
+        "name": "Normandie",
         "iso": "FR-NOR",
         "code": "FR-NO",
         "holidays": [
@@ -25165,6 +25268,7 @@
         ]
       },
       {
+        "name": "Occitanie",
         "iso": "FR-OCC",
         "code": "FR-OC",
         "holidays": [
@@ -25395,6 +25499,7 @@
         ]
       },
       {
+        "name": "Provence-Alpes-Côte d'Azur",
         "iso": "FR-PAC",
         "code": "FR-PC",
         "holidays": [
@@ -25625,6 +25730,7 @@
         ]
       },
       {
+        "name": "Pays de la Loire",
         "iso": "FR-PDL",
         "code": "FR-PL",
         "holidays": [
@@ -25855,6 +25961,7 @@
         ]
       },
       {
+        "name": "La Réunion",
         "iso": "FR-974",
         "code": "FR-RU",
         "holidays": [
@@ -26099,6 +26206,7 @@
         ]
       },
       {
+        "name": "Saint-Pierre-et-Miquelon",
         "iso": "FR-PM",
         "code": "FR-SP",
         "holidays": [
@@ -26329,6 +26437,7 @@
         ]
       },
       {
+        "name": "Mayotte",
         "iso": "FR-976",
         "code": "FR-YT",
         "holidays": [
@@ -26580,6 +26689,7 @@
         ]
       },
       {
+        "name": "Zone A",
         "iso": "",
         "code": "FR-ZA",
         "holidays": [
@@ -26810,6 +26920,7 @@
         ]
       },
       {
+        "name": "Zone B",
         "iso": "",
         "code": "FR-ZB",
         "holidays": [
@@ -27040,6 +27151,7 @@
         ]
       },
       {
+        "name": "Zone C",
         "iso": "",
         "code": "FR-ZC",
         "holidays": [
@@ -27275,6 +27387,7 @@
     "country": "hr",
     "state_holidays": [
       {
+        "name": "Hrvatska",
         "iso": "HR0",
         "code": "HR0",
         "holidays": [
@@ -27503,6 +27616,7 @@
     "country": "hu",
     "state_holidays": [
       {
+        "name": "Közép-Magyarország",
         "iso": "HU1",
         "code": "HU1",
         "holidays": [
@@ -27691,6 +27805,7 @@
         ]
       },
       {
+        "name": "Dunántúl",
         "iso": "HU2",
         "code": "HU2",
         "holidays": [
@@ -27879,6 +27994,7 @@
         ]
       },
       {
+        "name": "Alföld és Észak)",
         "iso": "HU3",
         "code": "HU3",
         "holidays": [
@@ -28072,6 +28188,7 @@
     "country": "ie",
     "state_holidays": [
       {
+        "name": "Ireland",
         "iso": "IE0",
         "code": "IE0",
         "holidays": [
@@ -28293,6 +28410,7 @@
     "country": "it",
     "state_holidays": [
       {
+        "name": "Abruzzo",
         "iso": "IT-65",
         "code": "IT-AB",
         "holidays": [
@@ -28488,6 +28606,7 @@
         ]
       },
       {
+        "name": "Basilicata",
         "iso": "IT-77",
         "code": "IT-BA",
         "holidays": [
@@ -28690,6 +28809,7 @@
         ]
       },
       {
+        "name": "Calabria",
         "iso": "IT-78",
         "code": "IT-CL",
         "holidays": [
@@ -28892,6 +29012,7 @@
         ]
       },
       {
+        "name": "Campania",
         "iso": "IT-72",
         "code": "IT-CM",
         "holidays": [
@@ -29115,6 +29236,7 @@
         ]
       },
       {
+        "name": "Emilia-Romagna",
         "iso": "IT-45",
         "code": "IT-ER",
         "holidays": [
@@ -29317,6 +29439,7 @@
         ]
       },
       {
+        "name": "Friuli Venezia Giulia",
         "iso": "IT-36",
         "code": "IT-FV",
         "holidays": [
@@ -29533,6 +29656,7 @@
         ]
       },
       {
+        "name": "Lazio",
         "iso": "IT-62",
         "code": "IT-LA",
         "holidays": [
@@ -29735,6 +29859,7 @@
         ]
       },
       {
+        "name": "Liguria",
         "iso": "IT-42",
         "code": "IT-LI",
         "holidays": [
@@ -29944,6 +30069,7 @@
         ]
       },
       {
+        "name": "Lombardia",
         "iso": "IT-25",
         "code": "IT-LO",
         "holidays": [
@@ -30153,6 +30279,7 @@
         ]
       },
       {
+        "name": "Marche",
         "iso": "IT-57",
         "code": "IT-MA",
         "holidays": [
@@ -30355,6 +30482,7 @@
         ]
       },
       {
+        "name": "Molise",
         "iso": "IT-67",
         "code": "IT-MO",
         "holidays": [
@@ -30564,6 +30692,7 @@
         ]
       },
       {
+        "name": "Piemonte",
         "iso": "IT-21",
         "code": "IT-PI",
         "holidays": [
@@ -30787,6 +30916,7 @@
         ]
       },
       {
+        "name": "Puglia",
         "iso": "IT-75",
         "code": "IT-PU",
         "holidays": [
@@ -30996,6 +31126,7 @@
         ]
       },
       {
+        "name": "Sardegna",
         "iso": "IT-88",
         "code": "IT-SA",
         "holidays": [
@@ -31226,6 +31357,7 @@
         ]
       },
       {
+        "name": "Sicilia",
         "iso": "IT-82",
         "code": "IT-SI",
         "holidays": [
@@ -31428,6 +31560,7 @@
         ]
       },
       {
+        "name": "Toscana",
         "iso": "IT-52",
         "code": "IT-TO",
         "holidays": [
@@ -31630,6 +31763,7 @@
         ]
       },
       {
+        "name": "Trentino-Alto Adige",
         "iso": "IT-32",
         "code": "IT-TR",
         "holidays": [
@@ -31874,6 +32008,7 @@
         ]
       },
       {
+        "name": "Umbria",
         "iso": "IT-55",
         "code": "IT-UM",
         "holidays": [
@@ -32069,6 +32204,7 @@
         ]
       },
       {
+        "name": "Valle d'Aosta",
         "iso": "IT-23",
         "code": "IT-VA",
         "holidays": [
@@ -32285,6 +32421,7 @@
         ]
       },
       {
+        "name": "Veneto",
         "iso": "IT-34",
         "code": "IT-VE",
         "holidays": [
@@ -32513,6 +32650,7 @@
     "country": "li",
     "state_holidays": [
       {
+        "name": "Liechtenstein",
         "iso": "LI0",
         "code": "LI0",
         "holidays": [
@@ -32832,6 +32970,7 @@
     "country": "lt",
     "state_holidays": [
       {
+        "name": "Lietuva",
         "iso": "LT0",
         "code": "LT0",
         "holidays": [
@@ -33074,6 +33213,7 @@
     "country": "lu",
     "state_holidays": [
       {
+        "name": "Luxembourg",
         "iso": "LU0",
         "code": "LU0",
         "holidays": [
@@ -33337,6 +33477,7 @@
     "country": "lv",
     "state_holidays": [
       {
+        "name": "Latvija",
         "iso": "LV0",
         "code": "LV0",
         "holidays": [
@@ -33598,6 +33739,7 @@
     "country": "nl",
     "state_holidays": [
       {
+        "name": "Regio Midden",
         "iso": null,
         "code": "NL-MI",
         "holidays": [
@@ -33842,6 +33984,7 @@
         ]
       },
       {
+        "name": "Regio Noord",
         "iso": null,
         "code": "NL-NO",
         "holidays": [
@@ -34086,6 +34229,7 @@
         ]
       },
       {
+        "name": "Regio Zuid",
         "iso": null,
         "code": "NL-ZU",
         "holidays": [
@@ -34335,6 +34479,7 @@
     "country": "pl",
     "state_holidays": [
       {
+        "name": "Dolnośląskie",
         "iso": "PL-02",
         "code": "PL-DS",
         "holidays": [
@@ -34572,6 +34717,7 @@
         ]
       },
       {
+        "name": "Kujawsko-pomorskie",
         "iso": "PL-04",
         "code": "PL-KP",
         "holidays": [
@@ -34809,6 +34955,7 @@
         ]
       },
       {
+        "name": "Lubelskie",
         "iso": "PL-06",
         "code": "PL-LB",
         "holidays": [
@@ -35046,6 +35193,7 @@
         ]
       },
       {
+        "name": "Lubuskie",
         "iso": "PL-08",
         "code": "PL-LD",
         "holidays": [
@@ -35283,6 +35431,7 @@
         ]
       },
       {
+        "name": "Łódzkie",
         "iso": "PL-10",
         "code": "PL-LU",
         "holidays": [
@@ -35520,6 +35669,7 @@
         ]
       },
       {
+        "name": "Małopolskie",
         "iso": "PL-12",
         "code": "PL-MA",
         "holidays": [
@@ -35757,6 +35907,7 @@
         ]
       },
       {
+        "name": "Mazowieckie",
         "iso": "PL-14",
         "code": "PL-MZ",
         "holidays": [
@@ -35994,6 +36145,7 @@
         ]
       },
       {
+        "name": "Opolskie",
         "iso": "PL-16",
         "code": "PL-OP",
         "holidays": [
@@ -36231,6 +36383,7 @@
         ]
       },
       {
+        "name": "Podkarpackie",
         "iso": "PL-18",
         "code": "PL-PD",
         "holidays": [
@@ -36468,6 +36621,7 @@
         ]
       },
       {
+        "name": "Podlaskie",
         "iso": "PL-20",
         "code": "PL-PK",
         "holidays": [
@@ -36705,6 +36859,7 @@
         ]
       },
       {
+        "name": "Pomorskie",
         "iso": "PL-22",
         "code": "PL-PM",
         "holidays": [
@@ -36942,6 +37097,7 @@
         ]
       },
       {
+        "name": "Śląskie",
         "iso": "PL-24",
         "code": "PL-SK",
         "holidays": [
@@ -37179,6 +37335,7 @@
         ]
       },
       {
+        "name": "Świętokrzyskie",
         "iso": "PL-26",
         "code": "PL-SL",
         "holidays": [
@@ -37416,6 +37573,7 @@
         ]
       },
       {
+        "name": "Warmińsko-mazurskie",
         "iso": "PL-28",
         "code": "PL-WN",
         "holidays": [
@@ -37653,6 +37811,7 @@
         ]
       },
       {
+        "name": "Wielkopolskie",
         "iso": "PL-30",
         "code": "PL-WP",
         "holidays": [
@@ -37890,6 +38049,7 @@
         ]
       },
       {
+        "name": "Zachodniopomorskie",
         "iso": "PL-32",
         "code": "PL-ZP",
         "holidays": [
@@ -38132,6 +38292,7 @@
     "country": "pt",
     "state_holidays": [
       {
+        "name": "Região Autónoma dos Açores",
         "iso": "PT-20",
         "code": "PT-AC",
         "holidays": [
@@ -38628,6 +38789,7 @@
         ]
       },
       {
+        "name": "Aveiro",
         "iso": "PT-01",
         "code": "PT-AV",
         "holidays": [
@@ -39166,6 +39328,7 @@
         ]
       },
       {
+        "name": "Bragança",
         "iso": "PT-04",
         "code": "PT-BA",
         "holidays": [
@@ -39634,6 +39797,7 @@
         ]
       },
       {
+        "name": "Beja",
         "iso": "PT-02",
         "code": "PT-BE",
         "holidays": [
@@ -40074,6 +40238,7 @@
         ]
       },
       {
+        "name": "Braga",
         "iso": "PT-03",
         "code": "PT-BR",
         "holidays": [
@@ -40542,6 +40707,7 @@
         ]
       },
       {
+        "name": "Castelo Branco",
         "iso": "PT-05",
         "code": "PT-CB",
         "holidays": [
@@ -40996,6 +41162,7 @@
         ]
       },
       {
+        "name": "Coimbra",
         "iso": "PT-06",
         "code": "PT-CO",
         "holidays": [
@@ -41506,6 +41673,7 @@
         ]
       },
       {
+        "name": "Évora",
         "iso": "PT-07",
         "code": "PT-EV",
         "holidays": [
@@ -41946,6 +42114,7 @@
         ]
       },
       {
+        "name": "Faro",
         "iso": "PT-08",
         "code": "PT-FA",
         "holidays": [
@@ -42456,6 +42625,7 @@
         ]
       },
       {
+        "name": "Guarda",
         "iso": "PT-09",
         "code": "PT-GU",
         "holidays": [
@@ -42952,6 +43122,7 @@
         ]
       },
       {
+        "name": "Leiria",
         "iso": "PT-10",
         "code": "PT-LE",
         "holidays": [
@@ -43462,6 +43633,7 @@
         ]
       },
       {
+        "name": "Lisboa",
         "iso": "PT-11",
         "code": "PT-LI",
         "holidays": [
@@ -43916,6 +44088,7 @@
         ]
       },
       {
+        "name": "Região Autónoma da Madeira",
         "iso": "PT-30",
         "code": "PT-MA",
         "holidays": [
@@ -44398,6 +44571,7 @@
         ]
       },
       {
+        "name": "Portalegre",
         "iso": "PT-12",
         "code": "PT-PA",
         "holidays": [
@@ -44824,6 +44998,7 @@
         ]
       },
       {
+        "name": "Porto",
         "iso": "PT-13",
         "code": "PT-PO",
         "holidays": [
@@ -45320,6 +45495,7 @@
         ]
       },
       {
+        "name": "Santarém",
         "iso": "PT-14",
         "code": "PT-SA",
         "holidays": [
@@ -45816,6 +45992,7 @@
         ]
       },
       {
+        "name": "Setúbal",
         "iso": "PT-15",
         "code": "PT-SE",
         "holidays": [
@@ -46256,6 +46433,7 @@
         ]
       },
       {
+        "name": "Viana do Castelo",
         "iso": "PT-16",
         "code": "PT-VC",
         "holidays": [
@@ -46696,6 +46874,7 @@
         ]
       },
       {
+        "name": "Viseu",
         "iso": "PT-18",
         "code": "PT-VI",
         "holidays": [
@@ -47206,6 +47385,7 @@
         ]
       },
       {
+        "name": "Vila Real",
         "iso": "PT-17",
         "code": "PT-VR",
         "holidays": [
@@ -47679,6 +47859,7 @@
     "country": "ro",
     "state_holidays": [
       {
+        "name": "Alba",
         "iso": "RO-AB",
         "code": "RO-AB",
         "holidays": [
@@ -47937,6 +48118,7 @@
         ]
       },
       {
+        "name": "Argeș",
         "iso": "RO-AG",
         "code": "RO-AG",
         "holidays": [
@@ -48195,6 +48377,7 @@
         ]
       },
       {
+        "name": "Arad",
         "iso": "RO-AR",
         "code": "RO-AR",
         "holidays": [
@@ -48453,6 +48636,7 @@
         ]
       },
       {
+        "name": "Bacău",
         "iso": "RO-BC",
         "code": "RO-BC",
         "holidays": [
@@ -48711,6 +48895,7 @@
         ]
       },
       {
+        "name": "Bihor",
         "iso": "RO-BH",
         "code": "RO-BH",
         "holidays": [
@@ -48969,6 +49154,7 @@
         ]
       },
       {
+        "name": "Bistrița-Năsăud",
         "iso": "RO-BN",
         "code": "RO-BN",
         "holidays": [
@@ -49227,6 +49413,7 @@
         ]
       },
       {
+        "name": "Brăila",
         "iso": "RO-BR",
         "code": "RO-BR",
         "holidays": [
@@ -49485,6 +49672,7 @@
         ]
       },
       {
+        "name": "Botoșani",
         "iso": "RO-BT",
         "code": "RO-BT",
         "holidays": [
@@ -49743,6 +49931,7 @@
         ]
       },
       {
+        "name": "București",
         "iso": "RO-B",
         "code": "RO-BU",
         "holidays": [
@@ -50001,6 +50190,7 @@
         ]
       },
       {
+        "name": "Brașov",
         "iso": "RO-BV",
         "code": "RO-BV",
         "holidays": [
@@ -50259,6 +50449,7 @@
         ]
       },
       {
+        "name": "Buzău",
         "iso": "RO-BZ",
         "code": "RO-BZ",
         "holidays": [
@@ -50517,6 +50708,7 @@
         ]
       },
       {
+        "name": "Cluj",
         "iso": "RO-CJ",
         "code": "RO-CJ",
         "holidays": [
@@ -50775,6 +50967,7 @@
         ]
       },
       {
+        "name": "Călărași",
         "iso": "RO-CL",
         "code": "RO-CL",
         "holidays": [
@@ -51033,6 +51226,7 @@
         ]
       },
       {
+        "name": "Caraș-Severin",
         "iso": "RO-CS",
         "code": "RO-CS",
         "holidays": [
@@ -51291,6 +51485,7 @@
         ]
       },
       {
+        "name": "Constanța",
         "iso": "RO-CT",
         "code": "RO-CT",
         "holidays": [
@@ -51549,6 +51744,7 @@
         ]
       },
       {
+        "name": "Covasna",
         "iso": "RO-CV",
         "code": "RO-CV",
         "holidays": [
@@ -51807,6 +52003,7 @@
         ]
       },
       {
+        "name": "Dâmbovița",
         "iso": "RO-DB",
         "code": "RO-DB",
         "holidays": [
@@ -52065,6 +52262,7 @@
         ]
       },
       {
+        "name": "Dolj",
         "iso": "RO-DJ",
         "code": "RO-DJ",
         "holidays": [
@@ -52323,6 +52521,7 @@
         ]
       },
       {
+        "name": "Gorj",
         "iso": "RO-GJ",
         "code": "RO-GJ",
         "holidays": [
@@ -52581,6 +52780,7 @@
         ]
       },
       {
+        "name": "Galați",
         "iso": "RO-GL",
         "code": "RO-GL",
         "holidays": [
@@ -52839,6 +53039,7 @@
         ]
       },
       {
+        "name": "Giurgiu",
         "iso": "RO-GR",
         "code": "RO-GR",
         "holidays": [
@@ -53097,6 +53298,7 @@
         ]
       },
       {
+        "name": "Hunedoara",
         "iso": "RO-HD",
         "code": "RO-HD",
         "holidays": [
@@ -53355,6 +53557,7 @@
         ]
       },
       {
+        "name": "Harghita",
         "iso": "RO-HR",
         "code": "RO-HR",
         "holidays": [
@@ -53613,6 +53816,7 @@
         ]
       },
       {
+        "name": "Ilfov",
         "iso": "RO-IF",
         "code": "RO-IF",
         "holidays": [
@@ -53871,6 +54075,7 @@
         ]
       },
       {
+        "name": "Ialomița",
         "iso": "RO-IL",
         "code": "RO-IL",
         "holidays": [
@@ -54129,6 +54334,7 @@
         ]
       },
       {
+        "name": "Iași",
         "iso": "RO-IS",
         "code": "RO-IS",
         "holidays": [
@@ -54387,6 +54593,7 @@
         ]
       },
       {
+        "name": "Mehedinți",
         "iso": "RO-MH",
         "code": "RO-MH",
         "holidays": [
@@ -54645,6 +54852,7 @@
         ]
       },
       {
+        "name": "Maramureș",
         "iso": "RO-MM",
         "code": "RO-MM",
         "holidays": [
@@ -54903,6 +55111,7 @@
         ]
       },
       {
+        "name": "Mureș",
         "iso": "RO-MS",
         "code": "RO-MS",
         "holidays": [
@@ -55161,6 +55370,7 @@
         ]
       },
       {
+        "name": "Neamț",
         "iso": "RO-NT",
         "code": "RO-NT",
         "holidays": [
@@ -55419,6 +55629,7 @@
         ]
       },
       {
+        "name": "Olt",
         "iso": "RO-OT",
         "code": "RO-OT",
         "holidays": [
@@ -55677,6 +55888,7 @@
         ]
       },
       {
+        "name": "Prahova",
         "iso": "RO-PH",
         "code": "RO-PH",
         "holidays": [
@@ -55935,6 +56147,7 @@
         ]
       },
       {
+        "name": "Sibiu",
         "iso": "RO-SB",
         "code": "RO-SB",
         "holidays": [
@@ -56193,6 +56406,7 @@
         ]
       },
       {
+        "name": "Sălaj",
         "iso": "RO-SJ",
         "code": "RO-SJ",
         "holidays": [
@@ -56451,6 +56665,7 @@
         ]
       },
       {
+        "name": "Satu Mare",
         "iso": "RO-SM",
         "code": "RO-SM",
         "holidays": [
@@ -56709,6 +56924,7 @@
         ]
       },
       {
+        "name": "Suceava",
         "iso": "RO-SV",
         "code": "RO-SV",
         "holidays": [
@@ -56967,6 +57183,7 @@
         ]
       },
       {
+        "name": "Tulcea",
         "iso": "RO-TL",
         "code": "RO-TL",
         "holidays": [
@@ -57225,6 +57442,7 @@
         ]
       },
       {
+        "name": "Timiș",
         "iso": "RO-TM",
         "code": "RO-TM",
         "holidays": [
@@ -57483,6 +57701,7 @@
         ]
       },
       {
+        "name": "Teleorman",
         "iso": "RO-TR",
         "code": "RO-TR",
         "holidays": [
@@ -57741,6 +57960,7 @@
         ]
       },
       {
+        "name": "Vâlcea",
         "iso": "RO-VL",
         "code": "RO-VL",
         "holidays": [
@@ -57999,6 +58219,7 @@
         ]
       },
       {
+        "name": "Vrancea",
         "iso": "RO-VN",
         "code": "RO-VN",
         "holidays": [
@@ -58257,6 +58478,7 @@
         ]
       },
       {
+        "name": "Vaslui",
         "iso": "RO-VS",
         "code": "RO-VS",
         "holidays": [
@@ -58524,6 +58746,7 @@
     "country": "se",
     "state_holidays": [
       {
+        "name": "Östra Sverige",
         "iso": "SE1",
         "code": "SE1",
         "holidays": [
@@ -58719,6 +58942,7 @@
         ]
       },
       {
+        "name": "Södra Sverige",
         "iso": "SE2",
         "code": "SE2",
         "holidays": [
@@ -58914,6 +59138,7 @@
         ]
       },
       {
+        "name": "Norra Sverige",
         "iso": "SE3",
         "code": "SE3",
         "holidays": [
@@ -59114,6 +59339,7 @@
     "country": "si",
     "state_holidays": [
       {
+        "name": "vzhodne regije",
         "iso": "",
         "code": "SI-VR",
         "holidays": [
@@ -59365,6 +59591,7 @@
         ]
       },
       {
+        "name": "zahodne regije",
         "iso": "",
         "code": "SI-ZR",
         "holidays": [
@@ -59621,6 +59848,7 @@
     "country": "sk",
     "state_holidays": [
       {
+        "name": "Banskobystrický kraj",
         "iso": "SK-BC",
         "code": "SK-BC",
         "holidays": [
@@ -59907,6 +60135,7 @@
         ]
       },
       {
+        "name": "Bratislavský kraj",
         "iso": "SK-BL",
         "code": "SK-BL",
         "holidays": [
@@ -60193,6 +60422,7 @@
         ]
       },
       {
+        "name": "Košický kraj",
         "iso": "SK-KI",
         "code": "SK-KI",
         "holidays": [
@@ -60479,6 +60709,7 @@
         ]
       },
       {
+        "name": "Nitriansky kraj",
         "iso": "SK-NI",
         "code": "SK-NI",
         "holidays": [
@@ -60765,6 +60996,7 @@
         ]
       },
       {
+        "name": "Prešovský kraj",
         "iso": "SK-PV",
         "code": "SK-PV",
         "holidays": [
@@ -61051,6 +61283,7 @@
         ]
       },
       {
+        "name": "Trnavský kraj",
         "iso": "SK-TA",
         "code": "SK-TA",
         "holidays": [
@@ -61337,6 +61570,7 @@
         ]
       },
       {
+        "name": "Trenčiansky kraj",
         "iso": "SK-TC",
         "code": "SK-TC",
         "holidays": [
@@ -61623,6 +61857,7 @@
         ]
       },
       {
+        "name": "Žilinský kraj",
         "iso": "SK-ZI",
         "code": "SK-ZI",
         "holidays": [

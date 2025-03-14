@@ -38,7 +38,11 @@ class ColorLegend extends StatelessWidget {
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [Text(max.toString()), Text(min.toString())],
+                      children: [
+                        Text(max.toString()),
+                        Text("Overlap"),
+                        Text(min.toString())
+                      ],
                     ),
                     LinearColorBox(cmap: cmap),
                   ],
@@ -62,7 +66,11 @@ class ColorLegend extends StatelessWidget {
                       width: 300,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [Text(min.toString()), Text(max.toString())],
+                        children: [
+                          Text(min.toString()),
+                          Text("Overlap"),
+                          Text(max.toString())
+                        ],
                       ),
                     ),
                     LinearColorBox(
@@ -99,7 +107,7 @@ class LinearColorBox extends StatelessWidget {
             gradient: LinearGradient(
                 begin: vertical ? Alignment.bottomCenter : Alignment.centerLeft,
                 end: vertical ? Alignment.topCenter : Alignment.centerRight,
-                colors: [cmap(200 / 255).toColor(), cmap(1).toColor()])),
+                colors: [cmap(100 / 255).toColor(), cmap(1).toColor()])),
       ),
     );
   }
@@ -113,7 +121,7 @@ List<MapColorMapper> genColorMap(int length, Colormap cmap) {
     ];
   }
   for (int i = 0; i <= length; i++) {
-    final alpha = convert255To1(i, length);
+    final alpha = convert255To1(i, length, offset: 100);
     final colorval = alpha / 256;
     final thisMap =
         MapColorMapper(value: i.toString(), color: cmap(colorval).toColor());

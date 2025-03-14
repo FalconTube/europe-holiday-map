@@ -4,15 +4,16 @@ import 'package:holiday_map/main.dart';
 
 /// Every holiday has a number of days attached to it
 class MapCountryData {
+  final String nuts;
   final String division;
   final List<Holiday> holidays;
   // final List<int> days;
   final int totalDays;
 
   MapCountryData(
-      {required this.division,
+      {required this.nuts,
+      required this.division,
       required this.holidays,
-      // required this.days,
       required this.totalDays});
 }
 
@@ -44,16 +45,19 @@ class NutsDataProvider extends StateNotifier<MapCountryDataAndDays> {
       List<Holiday> foundHolidays = [];
       List<DateTime> foundDays = [];
       String nutsCode = '';
+      String division = '';
       for (final n in nutsEntry) {
         foundHolidays.add(n.holiday);
         foundDays = foundDays + n.dayList;
         nutsCode = n.nutsCode;
+        division = n.division;
       }
       // Remove duplicate dates and get total amount
       int totalDays = foundDays.toSet().length;
 
       data.add(MapCountryData(
-          division: nutsCode,
+          division: division,
+          nuts: nutsCode,
           holidays: foundHolidays,
           // days: foundDays,
           totalDays: totalDays));

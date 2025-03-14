@@ -1,3 +1,4 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'entry.g.dart';
@@ -47,11 +48,13 @@ class AllStateHolidays {
 
 @JsonSerializable()
 class StateHolidays {
+  final String name;
   final String? iso;
   final String? code;
   final List<Holiday> holidays;
   // Add other relevant data like title, description, etc.
   StateHolidays({
+    required this.name,
     required this.iso,
     required this.code,
     required this.holidays,
