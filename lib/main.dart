@@ -158,11 +158,21 @@ List<String>? nutsFromCode(String country, StateHolidays regionEntry) {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // Load data at start
-  holdata = await _loadData();
-  borderdat = await _loadBorderData();
-  final String response =
-      await rootBundle.loadString("assets/geo/codes-map.json");
+  // Load in parallel data at start
+  final holdataFut = _loadData();
+  final borderdatFut = _loadBorderData();
+  String response = "";
+  final responseFut = rootBundle.loadString("assets/geo/codes-map.json");
+  final nutsFut = rootBundle.loadString("assets/geo/eu-nuts.geojson");
+  await Future.wait([holdataFut, borderdatFut, responseFut, nutsFut])
+      .then((results) {
+    holdata = results[0] as List<AllStateHolidays>;
+    borderdat = results[1] as List<BorderCountry>;
+    response = results[2] as String;
+    // nuts result not needed here, but want to load parralel
+    final _ = results[3];
+  });
+
   codesMap = json.decode(response);
   runApp(ProviderScope(child: MyApp()));
 }
