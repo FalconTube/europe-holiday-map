@@ -10,103 +10,66 @@ class ColorLegend extends StatelessWidget {
     required this.cmap,
     required this.min,
     required this.max,
-    this.vertical = true,
   });
 
   final Colormap cmap;
   final int min;
   final int max;
-  final bool vertical;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(30.0),
-      child: vertical
-          ? DecoratedBox(
-              decoration: BoxDecoration(
-                color: const Color.fromRGBO(30, 28, 37, 1),
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  spacing: 10,
-                  children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text(max.toString()),
-                        Text("Overlap"),
-                        Text(min.toString())
-                      ],
-                    ),
-                    LinearColorBox(cmap: cmap),
-                  ],
-                ),
-              ),
-            )
-          : DecoratedBox(
-              decoration: BoxDecoration(
-                color: const Color.fromRGBO(30, 28, 37, 1),
-                border: Border.all(
-                  color: Colors.grey,
-                ),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  spacing: 10,
-                  children: [
-                    SizedBox(
-                      width: 300,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(min.toString()),
-                          Text("Overlap"),
-                          Text(max.toString())
-                        ],
-                      ),
-                    ),
-                    LinearColorBox(
-                      cmap: cmap,
-                      maxExtent: 300,
-                      vertical: false,
-                    ),
-                  ],
-                ),
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: const Color.fromRGBO(30, 28, 37, 1),
+        border: Border.all(
+          color: Colors.grey,
+        ),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          spacing: 10,
+          children: [
+            SizedBox(
+              width: 150,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(min.toString()),
+                  Text("Overlap"),
+                  Text(max.toString())
+                ],
               ),
             ),
+            LinearColorBox(
+              cmap: cmap,
+              maxExtent: 150,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
 
 class LinearColorBox extends StatelessWidget {
   const LinearColorBox(
-      {super.key,
-      required this.cmap,
-      this.vertical = true,
-      this.maxExtent = double.infinity});
+      {super.key, required this.cmap, this.maxExtent = double.infinity});
 
   final Colormap cmap;
-  final bool vertical;
   final double maxExtent;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: vertical ? maxExtent : 10,
-      width: vertical ? 10 : maxExtent,
+      height: 10,
+      width: maxExtent,
       child: DecoratedBox(
         decoration: BoxDecoration(
             gradient: LinearGradient(
-                begin: vertical ? Alignment.bottomCenter : Alignment.centerLeft,
-                end: vertical ? Alignment.topCenter : Alignment.centerRight,
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
                 colors: [cmap(100 / 255).toColor(), cmap(1).toColor()])),
       ),
     );

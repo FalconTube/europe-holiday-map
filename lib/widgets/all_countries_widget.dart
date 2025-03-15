@@ -7,7 +7,7 @@ import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+import 'package:syncfusion_flutter_core/theme.dart';
 import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
@@ -68,79 +68,92 @@ class AllCountriesWidget extends ConsumerWidget {
           Expanded(
             child: ColoredBox(
               color: Color(0xFF65C9FE),
-              child: Stack(
-                  alignment: AlignmentDirectional.bottomCenter,
-                  children: [
-                    SfMaps(
-                      layers: <MapLayer>[
-                        MapShapeLayer(
-                          showDataLabels: true,
-                          dataLabelSettings: MapDataLabelSettings(
-                              textStyle: TextStyle(fontSize: 14),
-                              overflowMode: MapLabelOverflow.hide),
-                          source: borderSource,
-                          controller: _mapController,
-                          strokeWidth: 1.5,
-                          strokeColor: Colors.black.withValues(alpha: 0.8),
-                          tooltipSettings: MapTooltipSettings(
-                              color: const Color.fromRGBO(30, 28, 37, 1)),
-                          sublayers: <MapSublayer>[
-                            MapShapeSublayer(
-                              key: UniqueKey(),
-                              source: nutsSource,
-                              controller: _mapController,
-                              strokeWidth: 0.5,
-                              // showDataLabels: true,
-                              color: Colors.grey.withValues(alpha: 0.0),
-                              strokeColor: Colors.black.withValues(alpha: 0.1),
-                              shapeTooltipBuilder:
-                                  (BuildContext context, int index) {
-                                final totalDays = data.data[index].totalDays;
-                                final division = data.data[index].division;
-                                final holidays = data.data[index].holidays;
-                                // Build holiday display text
-                                String holFormatted = "";
-                                for (final h in holidays) {
-                                  final name = h.nameEN ?? h.name;
-                                  final start =
-                                      h.start.toString().split(' ')[0];
-                                  final end = h.end.toString().split(' ')[0];
-                                  final thisHol =
-                                      "\n\n$name\n$start \u2014 $end";
-                                  holFormatted += thisHol;
-                                }
-                                final text = Text(
-                                  '$division\nOverlap: $totalDays days$holFormatted',
-                                  textAlign: TextAlign.center,
-                                  softWrap: true,
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                );
-                                return ConstrainedBox(
-                                    constraints: BoxConstraints(maxWidth: 300),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: text,
-                                    ));
-                              },
-                            )
-                          ],
-                          zoomPanBehavior: zoomPanBehavior,
-                        ),
-                      ],
-                    ),
-                    Positioned(
-                      bottom: 0,
-                      child: ColorLegend(
-                        cmap: cmap,
-                        min: 1,
-                        max: data.numSelectedDays + 1,
-                        vertical: false,
+              child: SfMapsTheme(
+                data: SfMapsThemeData(
+                  shapeHoverColor: Colors.transparent,
+                  shapeHoverStrokeColor: Colors.grey[900],
+                  shapeHoverStrokeWidth: 1.5,
+                ),
+                child: Stack(
+                    alignment: AlignmentDirectional.bottomCenter,
+                    children: [
+                      SfMaps(
+                        layers: <MapLayer>[
+                          MapShapeLayer(
+                            showDataLabels: true,
+                            dataLabelSettings: MapDataLabelSettings(
+                                textStyle: TextStyle(fontSize: 14),
+                                overflowMode: MapLabelOverflow.hide),
+                            source: borderSource,
+                            controller: _mapController,
+                            strokeWidth: 2.2,
+                            strokeColor: Colors.black,
+                            sublayers: <MapSublayer>[
+                              MapShapeSublayer(
+                                key: UniqueKey(),
+                                source: nutsSource,
+                                controller: _mapController,
+                                strokeWidth: 0.5,
+                                color: Colors.transparent,
+                                strokeColor:
+                                    Colors.black.withValues(alpha: 0.3),
+                                onSelectionChanged: (int index) {
+                                  ScaffoldMessenger.of(context)
+                                      .removeCurrentSnackBar();
+
+                                  final totalDays = data.data[index].totalDays;
+                                  final division = data.data[index].division;
+                                  final holidays = data.data[index].holidays;
+                                  // Build holiday display text
+                                  String holFormatted = "";
+                                  for (final h in holidays) {
+                                    final name = h.nameEN ?? h.name;
+                                    final start =
+                                        h.start.toString().split(' ')[0];
+                                    final end = h.end.toString().split(' ')[0];
+                                    final thisHol =
+                                        "\n\n$name\n$start \u2014 $end";
+                                    holFormatted += thisHol;
+                                  }
+                                  final text = Text(
+                                    '$division\nOverlap: $totalDays days$holFormatted',
+                                    textAlign: TextAlign.center,
+                                    softWrap: true,
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  );
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                          content: ConstrainedBox(
+                                              constraints:
+                                                  BoxConstraints(maxWidth: 300),
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.all(8.0),
+                                                child: text,
+                                              ))));
+                                },
+                              )
+                            ],
+                            zoomPanBehavior: zoomPanBehavior,
+                          ),
+                        ],
                       ),
-                    )
-                  ]),
+                      data.data.isEmpty
+                          ? Container()
+                          : Positioned(
+                              top: 50,
+                              right: 8,
+                              child: ColorLegend(
+                                cmap: cmap,
+                                min: 1,
+                                max: data.numSelectedDays + 1,
+                              ),
+                            )
+                    ]),
+              ),
             ),
           ),
           MyDatePicker(),
