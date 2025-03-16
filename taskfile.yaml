@@ -9,6 +9,10 @@ tasks:
     cmds:
       - flutter run -d chrome
 
+  profile:
+    cmds:
+      - flutter run -d chrome --profile
+
   buildjson:
     cmds:
       - dart run build_runner build --delete-conflicting-outputs
@@ -51,3 +55,14 @@ tasks:
           cat $i | jq '.' > $tmpfile
           mv $tmpfile $i
         done
+
+  favicon:
+    dir: web
+    cmds:
+      - |
+        magick -density 1200 favicon.svg -define icon:auto-resize=32 -colors 256 favicon.ico && \
+        magick -density 1200 favicon.svg -resize 180x180 apple-touch-icon.png && \
+        magick -density 1200 favicon.svg -resize 512x512 icons/Icon-512.png && \
+        magick -density 1200 favicon.svg -resize 192x192 icons/Icon-192.png && \
+        magick -density 1200 favicon.svg -resize 512x512 icons/Icon-maskable-512.png && \
+        magick -density 1200 favicon.svg -resize 192x192 icons/Icon-maskable-192.png 
