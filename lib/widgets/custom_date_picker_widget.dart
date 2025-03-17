@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class MyDatePicker extends ConsumerStatefulWidget {
@@ -17,23 +18,24 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
   final isWebMobile = kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.iOS ||
           defaultTargetPlatform == TargetPlatform.android);
-  Key _key = UniqueKey();
+  // Key _key = UniqueKey();
 
-  void reset() {
-    setState(() {
-      _key = UniqueKey();
-    });
-  }
+  // void reset() {
+  //   setState(() {
+  //     _key = UniqueKey();
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
+    final key = ref.watch(keyProvider);
     return SizedBox(
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
-          key: _key,
+          key: key,
           headerHeight: 50,
           showNavigationArrow: true,
-          showActionButtons: true,
+          // showActionButtons: true,
           monthViewSettings: DateRangePickerMonthViewSettings(
               enableSwipeSelection: isWebMobile ? false : true),
           toggleDaySelection: true,
@@ -43,12 +45,12 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
           maxDate: DateTime(2028),
           extendableRangeSelectionDirection:
               ExtendableRangeSelectionDirection.both,
-          onCancel: () {
-            // Reset data
-            ref.read(nutsDataProvider.notifier).resetData();
-            // Reset picker widget
-            reset();
-          },
+          // onCancel: () {
+          //   // Reset data
+          //   ref.read(nutsDataProvider.notifier).resetData();
+          //   // Reset picker widget
+          //   reset();
+          // },
           onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
             final PickerDateRange selectedRange = args.value;
             final startDate = selectedRange.startDate;

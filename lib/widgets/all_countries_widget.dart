@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
 import 'package:intl/intl.dart';
@@ -64,6 +65,7 @@ class AllCountriesWidget extends ConsumerWidget {
             shapeDataField: 'NUTS_ID');
 
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: Column(
         children: [
           Expanded(
@@ -76,68 +78,94 @@ class AllCountriesWidget extends ConsumerWidget {
                   shapeHoverStrokeWidth: 1.5,
                 ),
                 child: Stack(
-                    alignment: AlignmentDirectional.bottomCenter,
-                    children: [
-                      SfMaps(
-                        layers: <MapLayer>[
-                          MapShapeLayer(
-                            showDataLabels: true,
-                            dataLabelSettings: MapDataLabelSettings(
-                                textStyle: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.w400),
-                                overflowMode: MapLabelOverflow.hide),
-                            source: borderSource,
-                            controller: _mapController,
-                            strokeWidth: 2.2,
-                            strokeColor: Colors.black,
-                            sublayers: <MapSublayer>[
-                              MapShapeSublayer(
-                                key: UniqueKey(),
-                                source: nutsSource,
-                                controller: _mapController,
-                                strokeWidth: 0.5,
-                                color: Colors.transparent,
-                                strokeColor:
-                                    Colors.black.withValues(alpha: 0.3),
-                                onSelectionChanged: (int index) {
-                                  ScaffoldMessenger.of(context)
-                                      .removeCurrentSnackBar();
+                  alignment: AlignmentDirectional.bottomCenter,
+                  children: [
+                    SfMaps(
+                      layers: <MapLayer>[
+                        MapShapeLayer(
+                          showDataLabels: true,
+                          dataLabelSettings: MapDataLabelSettings(
+                              textStyle: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w400),
+                              overflowMode: MapLabelOverflow.hide),
+                          source: borderSource,
+                          controller: _mapController,
+                          strokeWidth: 2.2,
+                          strokeColor: Colors.black,
+                          sublayers: <MapSublayer>[
+                            MapShapeSublayer(
+                              key: UniqueKey(),
+                              source: nutsSource,
+                              controller: _mapController,
+                              strokeWidth: 0.5,
+                              color: Colors.transparent,
+                              strokeColor: Colors.black.withValues(alpha: 0.3),
+                              onSelectionChanged: (int index) {
+                                ScaffoldMessenger.of(context)
+                                    .removeCurrentSnackBar();
 
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          actionOverflowThreshold: 0.7,
-                                          backgroundColor: Theme.of(context)
-                                              .colorScheme
-                                              .primaryContainer,
-                                          duration: Duration(seconds: 300),
-                                          margin: EdgeInsets.all(10),
-                                          padding: EdgeInsets.all(30),
-                                          behavior: SnackBarBehavior.floating,
-                                          showCloseIcon: true,
-                                          closeIconColor: Theme.of(context)
-                                              .colorScheme
-                                              .onPrimaryContainer,
-                                          content: SnackText(
-                                              data: data.data[index])));
-                                },
-                              )
-                            ],
-                            zoomPanBehavior: zoomPanBehavior,
-                          ),
-                        ],
-                      ),
-                      data.data.isEmpty
-                          ? Container()
-                          : Positioned(
-                              top: 50,
-                              right: 8,
-                              child: ColorLegend(
-                                cmap: cmap,
-                                min: 1,
-                                max: data.numSelectedDays + 1,
-                              ),
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                        actionOverflowThreshold: 0.7,
+                                        backgroundColor:
+                                            Theme.of(context)
+                                                .colorScheme
+                                                .primaryContainer,
+                                        duration: Duration(seconds: 300),
+                                        margin: EdgeInsets.all(10),
+                                        padding: EdgeInsets.all(30),
+                                        behavior: SnackBarBehavior.floating,
+                                        showCloseIcon: true,
+                                        closeIconColor:
+                                            Theme.of(context)
+                                                .colorScheme
+                                                .onPrimaryContainer,
+                                        content:
+                                            SnackText(data: data.data[index])));
+                              },
                             )
-                    ]),
+                          ],
+                          zoomPanBehavior: zoomPanBehavior,
+                        ),
+                      ],
+                    ),
+                    data.data.isEmpty
+                        ? Container()
+                        : Positioned(
+                            top: 50,
+                            right: 8,
+                            child: ColorLegend(
+                              cmap: cmap,
+                              min: 1,
+                              max: data.numSelectedDays + 1,
+                            ),
+                          ),
+                    Positioned(
+                      bottom: 8,
+                      right: 8,
+                      child: ElevatedButton.icon(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor: Theme.of(context)
+                                .colorScheme
+                                .onPrimaryContainer,
+                            backgroundColor:
+                                Theme.of(context).colorScheme.primaryContainer,
+                            minimumSize: Size(88, 46),
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            shape: const RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(8)),
+                            ),
+                          ),
+                          icon: Icon(Icons.refresh),
+                          label: Text("Reset"),
+                          onPressed: () {
+                            ref.read(keyProvider.notifier).updateKey();
+                            ref.read(nutsDataProvider.notifier).resetData();
+                          }),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

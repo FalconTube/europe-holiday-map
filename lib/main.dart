@@ -218,26 +218,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MyHomePage extends ConsumerStatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  MyHomePageState createState() => MyHomePageState();
-}
-
-class MyHomePageState extends ConsumerState<MyHomePage>
-    with SingleTickerProviderStateMixin {
-  late TabController controller;
-
-  @override
-  void initState() {
-    controller = TabController(length: 1, initialIndex: 0, vsync: this);
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
-}
