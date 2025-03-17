@@ -7,6 +7,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/widgets/all_countries_widget.dart';
+import 'package:intl/intl_browser.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 // Declare globally
 // late AllStateHolidays holdata;
@@ -182,12 +184,17 @@ void main() async {
     holdata = results[0] as List<AllStateHolidays>;
     borderdat = results[1] as List<BorderCountry>;
     response = results[2] as String;
-    // nuts result not needed here, but want to load parralel
+    // nuts result not needed here, but want to load parallel
     final _ = results[3];
   });
 
   codesMap = json.decode(response);
-  runApp(ProviderScope(child: MyApp()));
+  // Get locale
+  final locale = await findSystemLocale();
+  initializeDateFormatting(locale, null)
+      .then((_) => runApp(ProviderScope(child: MyApp())));
+
+// findSystemLocale().then( runApp(ProviderScope(child: MyApp())));
 }
 
 class MyApp extends StatelessWidget {
@@ -202,7 +209,7 @@ class MyApp extends StatelessWidget {
         fontFamily: "Roboto",
         colorScheme: ColorScheme.fromSeed(
           dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
-          seedColor: Colors.blueGrey,
+          seedColor: Colors.blueAccent,
           brightness: Brightness.dark,
         ),
         useMaterial3: true,

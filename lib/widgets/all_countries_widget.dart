@@ -4,9 +4,12 @@ import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
+import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
 import 'package:color_map/color_map.dart';
+
+// import 'package:intl/date_symbol_data_file.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
@@ -80,7 +83,8 @@ class AllCountriesWidget extends ConsumerWidget {
                           MapShapeLayer(
                             showDataLabels: true,
                             dataLabelSettings: MapDataLabelSettings(
-                                textStyle: TextStyle(fontSize: 14),
+                                textStyle: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.w400),
                                 overflowMode: MapLabelOverflow.hide),
                             source: borderSource,
                             controller: _mapController,
@@ -155,13 +159,13 @@ class SnackText extends StatelessWidget {
     final holidays = data.holidays;
     // Build holiday display text
     List<TextSpan> holFormatted = [];
+    var format = DateFormat.yMd();
     for (final h in holidays) {
       final name = h.nameEN ?? h.name;
-      final start = h.start.toString().split(' ')[0];
-      final end = h.end.toString().split(' ')[0];
-      // final thisHol = "\n\n$name\n$start \u2014 $end";
+      final start = format.format(h.start);
+      final end = format.format(h.end);
       final nameText = TextSpan(
-          text: "\n\n$name\n",
+          text: "\n$name\n",
           style: TextStyle(
             fontWeight: FontWeight.w700,
             color: Theme.of(context).colorScheme.onPrimaryContainer,
@@ -176,7 +180,7 @@ class SnackText extends StatelessWidget {
       holFormatted.add(dateText);
     }
     return RichText(
-      textScaler: TextScaler.linear(1.5),
+      textScaler: TextScaler.linear(1.3),
       textAlign: TextAlign.center,
       softWrap: true,
       text: TextSpan(
