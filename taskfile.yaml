@@ -24,12 +24,16 @@ tasks:
   build:
     cmds:
       - flutter build web --wasm --release
+    sources:
+      - lib/
+    generates:
+      - build/web/
 
   serve:
     dir: build/web
     cmds:
       - task: build
-      - python -m http.server 44322
+      - uv run python -m http.server 44322
 
   mini:
     dir: assets
