@@ -1,7 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
@@ -101,66 +99,22 @@ class AllCountriesWidget extends ConsumerWidget {
                                   ScaffoldMessenger.of(context)
                                       .removeCurrentSnackBar();
 
-                                  final totalDays = data.data[index].totalDays;
-                                  final division = data.data[index].division;
-                                  final holidays = data.data[index].holidays;
-                                  // Build holiday display text
-                                  String holFormatted = "";
-                                  for (final h in holidays) {
-                                    final name = h.nameEN ?? h.name;
-                                    final start =
-                                        h.start.toString().split(' ')[0];
-                                    final end = h.end.toString().split(' ')[0];
-                                    final thisHol =
-                                        "\n\n$name\n$start \u2014 $end";
-                                    holFormatted += thisHol;
-                                  }
-                                  final text = Text(
-                                    '$division\nOverlap: $totalDays days$holFormatted',
-                                    textAlign: TextAlign.center,
-                                    softWrap: true,
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  );
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                          action: SnackBarAction(
-                                            label:
-                                                '', // Empty label, as we'll use a custom widget
-                                            onPressed: () {
-                                              // Action to perform when close button is pressed
-                                            },
-                                            textColor: Colors
-                                                .transparent, //make the text transparent.
-                                            disabledTextColor: Colors
-                                                .transparent, //make the text transparent.
-                                            widget: Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.end,
-                                              children: [
-                                                Spacer(), // Push the close button to the right
-                                                IconButton(
-                                                  icon: Icon(Icons.close,
-                                                      color: Colors.white),
-                                                  onPressed: () {
-                                                    ScaffoldMessenger.of(
-                                                            context)
-                                                        .hideCurrentSnackBar();
-                                                  },
-                                                ),
-                                              ],
-                                            ),
-                                          ),
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
                                           actionOverflowThreshold: 0.7,
-                                          backgroundColor: Colors.blueAccent,
+                                          backgroundColor: Theme.of(context)
+                                              .colorScheme
+                                              .primaryContainer,
                                           duration: Duration(seconds: 300),
                                           margin: EdgeInsets.all(10),
                                           padding: EdgeInsets.all(30),
                                           behavior: SnackBarBehavior.floating,
                                           showCloseIcon: true,
-                                          content: text));
+                                          closeIconColor: Theme.of(context)
+                                              .colorScheme
+                                              .onPrimaryContainer,
+                                          content: SnackText(
+                                              data: data.data[index])));
                                 },
                               )
                             ],
@@ -186,6 +140,66 @@ class AllCountriesWidget extends ConsumerWidget {
           MyDatePicker(),
         ],
       ),
+    );
+  }
+}
+
+class SnackText extends StatelessWidget {
+  const SnackText({super.key, required this.data});
+  final MapCountryData data;
+
+  @override
+  Widget build(BuildContext context) {
+    final totalDays = data.totalDays;
+    final division = data.division;
+    final holidays = data.holidays;
+    // Build holiday display text
+    List<TextSpan> holFormatted = [];
+    for (final h in holidays) {
+      final name = h.nameEN ?? h.name;
+      final start = h.start.toString().split(' ')[0];
+      final end = h.end.toString().split(' ')[0];
+      // final thisHol = "\n\n$name\n$start \u2014 $end";
+      final nameText = TextSpan(
+          text: "\n\n$name\n",
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
+          ));
+      final dateText = TextSpan(
+          text: "$start \u2014 $end",
+          style: TextStyle(
+            fontWeight: FontWeight.w400,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
+          ));
+      holFormatted.add(nameText);
+      holFormatted.add(dateText);
+    }
+    return RichText(
+      textScaler: TextScaler.linear(1.5),
+      textAlign: TextAlign.center,
+      softWrap: true,
+      text: TextSpan(
+          text: "$division\n",
+          style: TextStyle(
+              fontWeight: FontWeight.w700,
+              color: Theme.of(context).colorScheme.onPrimaryContainer),
+          children: <TextSpan>[
+            TextSpan(
+              text: "Overlap: ",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                color: Theme.of(context).colorScheme.onPrimaryContainer,
+              ),
+            ),
+            TextSpan(
+                text: "$totalDays\n",
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                )),
+            ...holFormatted,
+          ]),
     );
   }
 }
