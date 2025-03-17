@@ -124,16 +124,43 @@ class AllCountriesWidget extends ConsumerWidget {
                                       fontWeight: FontWeight.w400,
                                     ),
                                   );
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          content: ConstrainedBox(
-                                              constraints:
-                                                  BoxConstraints(maxWidth: 300),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: text,
-                                              ))));
+                                  ScaffoldMessenger.of(context)
+                                      .showSnackBar(SnackBar(
+                                          action: SnackBarAction(
+                                            label:
+                                                '', // Empty label, as we'll use a custom widget
+                                            onPressed: () {
+                                              // Action to perform when close button is pressed
+                                            },
+                                            textColor: Colors
+                                                .transparent, //make the text transparent.
+                                            disabledTextColor: Colors
+                                                .transparent, //make the text transparent.
+                                            widget: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.end,
+                                              children: [
+                                                Spacer(), // Push the close button to the right
+                                                IconButton(
+                                                  icon: Icon(Icons.close,
+                                                      color: Colors.white),
+                                                  onPressed: () {
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .hideCurrentSnackBar();
+                                                  },
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          actionOverflowThreshold: 0.7,
+                                          backgroundColor: Colors.blueAccent,
+                                          duration: Duration(seconds: 300),
+                                          margin: EdgeInsets.all(10),
+                                          padding: EdgeInsets.all(30),
+                                          behavior: SnackBarBehavior.floating,
+                                          showCloseIcon: true,
+                                          content: text));
                                 },
                               )
                             ],
