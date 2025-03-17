@@ -1,14 +1,15 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
+import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
-import 'package:syncfusion_flutter_datepicker/datepicker.dart';
+import 'package:syncfusion_flutter_core/theme.dart';
 import 'package:color_map/color_map.dart';
+
+// import 'package:intl/date_symbol_data_file.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
@@ -68,84 +69,141 @@ class AllCountriesWidget extends ConsumerWidget {
           Expanded(
             child: ColoredBox(
               color: Color(0xFF65C9FE),
-              child: Stack(
-                  alignment: AlignmentDirectional.bottomCenter,
-                  children: [
-                    SfMaps(
-                      layers: <MapLayer>[
-                        MapShapeLayer(
-                          showDataLabels: true,
-                          dataLabelSettings: MapDataLabelSettings(
-                              textStyle: TextStyle(fontSize: 14),
-                              overflowMode: MapLabelOverflow.hide),
-                          source: borderSource,
-                          controller: _mapController,
-                          strokeWidth: 1.5,
-                          strokeColor: Colors.black.withValues(alpha: 0.8),
-                          tooltipSettings: MapTooltipSettings(
-                              color: const Color.fromRGBO(30, 28, 37, 1)),
-                          sublayers: <MapSublayer>[
-                            MapShapeSublayer(
-                              key: UniqueKey(),
-                              source: nutsSource,
-                              controller: _mapController,
-                              strokeWidth: 0.5,
-                              // showDataLabels: true,
-                              color: Colors.grey.withValues(alpha: 0.0),
-                              strokeColor: Colors.black.withValues(alpha: 0.1),
-                              shapeTooltipBuilder:
-                                  (BuildContext context, int index) {
-                                final totalDays = data.data[index].totalDays;
-                                final division = data.data[index].division;
-                                final holidays = data.data[index].holidays;
-                                // Build holiday display text
-                                String holFormatted = "";
-                                for (final h in holidays) {
-                                  final name = h.nameEN ?? h.name;
-                                  final start =
-                                      h.start.toString().split(' ')[0];
-                                  final end = h.end.toString().split(' ')[0];
-                                  final thisHol =
-                                      "\n\n$name\n$start \u2014 $end";
-                                  holFormatted += thisHol;
-                                }
-                                final text = Text(
-                                  '$division\nOverlap: $totalDays days$holFormatted',
-                                  textAlign: TextAlign.center,
-                                  softWrap: true,
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w400,
-                                  ),
-                                );
-                                return ConstrainedBox(
-                                    constraints: BoxConstraints(maxWidth: 300),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: text,
-                                    ));
-                              },
-                            )
-                          ],
-                          zoomPanBehavior: zoomPanBehavior,
-                        ),
-                      ],
-                    ),
-                    Positioned(
-                      bottom: 0,
-                      child: ColorLegend(
-                        cmap: cmap,
-                        min: 1,
-                        max: data.numSelectedDays + 1,
-                        vertical: false,
+              child: SfMapsTheme(
+                data: SfMapsThemeData(
+                  shapeHoverColor: Colors.transparent,
+                  shapeHoverStrokeColor: Colors.grey[900],
+                  shapeHoverStrokeWidth: 1.5,
+                ),
+                child: Stack(
+                    alignment: AlignmentDirectional.bottomCenter,
+                    children: [
+                      SfMaps(
+                        layers: <MapLayer>[
+                          MapShapeLayer(
+                            showDataLabels: true,
+                            dataLabelSettings: MapDataLabelSettings(
+                                textStyle: TextStyle(
+                                    fontSize: 14, fontWeight: FontWeight.w400),
+                                overflowMode: MapLabelOverflow.hide),
+                            source: borderSource,
+                            controller: _mapController,
+                            strokeWidth: 2.2,
+                            strokeColor: Colors.black,
+                            sublayers: <MapSublayer>[
+                              MapShapeSublayer(
+                                key: UniqueKey(),
+                                source: nutsSource,
+                                controller: _mapController,
+                                strokeWidth: 0.5,
+                                color: Colors.transparent,
+                                strokeColor:
+                                    Colors.black.withValues(alpha: 0.3),
+                                onSelectionChanged: (int index) {
+                                  ScaffoldMessenger.of(context)
+                                      .removeCurrentSnackBar();
+
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                          actionOverflowThreshold: 0.7,
+                                          backgroundColor: Theme.of(context)
+                                              .colorScheme
+                                              .primaryContainer,
+                                          duration: Duration(seconds: 300),
+                                          margin: EdgeInsets.all(10),
+                                          padding: EdgeInsets.all(30),
+                                          behavior: SnackBarBehavior.floating,
+                                          showCloseIcon: true,
+                                          closeIconColor: Theme.of(context)
+                                              .colorScheme
+                                              .onPrimaryContainer,
+                                          content: SnackText(
+                                              data: data.data[index])));
+                                },
+                              )
+                            ],
+                            zoomPanBehavior: zoomPanBehavior,
+                          ),
+                        ],
                       ),
-                    )
-                  ]),
+                      data.data.isEmpty
+                          ? Container()
+                          : Positioned(
+                              top: 50,
+                              right: 8,
+                              child: ColorLegend(
+                                cmap: cmap,
+                                min: 1,
+                                max: data.numSelectedDays + 1,
+                              ),
+                            )
+                    ]),
+              ),
             ),
           ),
           MyDatePicker(),
         ],
       ),
+    );
+  }
+}
+
+class SnackText extends StatelessWidget {
+  const SnackText({super.key, required this.data});
+  final MapCountryData data;
+
+  @override
+  Widget build(BuildContext context) {
+    final totalDays = data.totalDays;
+    final division = data.division;
+    final holidays = data.holidays;
+    // Build holiday display text
+    List<TextSpan> holFormatted = [];
+    var format = DateFormat.yMd();
+    for (final h in holidays) {
+      final name = h.nameEN ?? h.name;
+      final start = format.format(h.start);
+      final end = format.format(h.end);
+      final nameText = TextSpan(
+          text: "\n$name\n",
+          style: TextStyle(
+            fontWeight: FontWeight.w700,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
+          ));
+      final dateText = TextSpan(
+          text: "$start \u2014 $end",
+          style: TextStyle(
+            fontWeight: FontWeight.w400,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
+          ));
+      holFormatted.add(nameText);
+      holFormatted.add(dateText);
+    }
+    return RichText(
+      textScaler: TextScaler.linear(1.3),
+      textAlign: TextAlign.center,
+      softWrap: true,
+      text: TextSpan(
+          text: "$division\n",
+          style: TextStyle(
+              fontWeight: FontWeight.w700,
+              color: Theme.of(context).colorScheme.onPrimaryContainer),
+          children: <TextSpan>[
+            TextSpan(
+              text: "Overlap: ",
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                color: Theme.of(context).colorScheme.onPrimaryContainer,
+              ),
+            ),
+            TextSpan(
+                text: "$totalDays\n",
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                )),
+            ...holFormatted,
+          ]),
     );
   }
 }

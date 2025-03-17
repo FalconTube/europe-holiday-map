@@ -7,6 +7,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/widgets/all_countries_widget.dart';
+import 'package:intl/intl_browser.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 // Declare globally
 // late AllStateHolidays holdata;
@@ -27,8 +29,9 @@ Future<List<AllStateHolidays>> _loadData() async {
 }
 
 Future<List<BorderCountry>> _loadBorderData() async {
-  final String response =
-      await rootBundle.loadString("assets/geo/eu-borders.geojson");
+  final String response = await rootBundle.loadString(
+    "assets/geo/eu-borders.geojson",
+  );
   List<BorderCountry> outList = [];
   final jsonData = json.decode(response);
   for (final entry in jsonData["features"]) {
@@ -55,9 +58,10 @@ class CodeAndHoliday {
 }
 
 List<List<CodeAndHoliday>> findHolidaysForDate(
-// Map<String, String?> findHolidaysForDate(
-    DateTime firstSelectedDate,
-    DateTime lastSelectedDate) {
+  // Map<String, String?> findHolidaysForDate(
+  DateTime firstSelectedDate,
+  DateTime lastSelectedDate,
+) {
   final allCountryEntries = holdata;
 
   List<List<CodeAndHoliday>> results = [];
@@ -83,10 +87,12 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
           }
           final startDateHol = holiday.start;
           final endDateHol = holiday.end;
-          final cleanFirstSelectedDate =
-              firstSelectedDate.subtract(Duration(seconds: 1));
-          final cleanLastSelectedDate =
-              lastSelectedDate.add(Duration(seconds: 1));
+          final cleanFirstSelectedDate = firstSelectedDate.subtract(
+            Duration(seconds: 1),
+          );
+          final cleanLastSelectedDate = lastSelectedDate.add(
+            Duration(seconds: 1),
+          );
           final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
               startDateHol.isBefore(cleanLastSelectedDate);
           final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
@@ -94,15 +100,20 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
           if (startIsInRange || endIsInRange) {
             // Found a matching holiday
             // Now get amount of days
-            final inRangeDates =
-                daysInSelection(holiday, firstSelectedDate, lastSelectedDate);
-            regionResults.add(CodeAndHoliday(
-              nutsCode: nutsCode,
-              division: divisionName,
-              holiday: holiday, // Fall back to non-english name, if not exist
-              dayList: inRangeDates,
-              days: inRangeDates.length,
-            ));
+            final inRangeDates = daysInSelection(
+              holiday,
+              firstSelectedDate,
+              lastSelectedDate,
+            );
+            regionResults.add(
+              CodeAndHoliday(
+                nutsCode: nutsCode,
+                division: divisionName,
+                holiday: holiday, // Fall back to non-english name, if not exist
+                dayList: inRangeDates,
+                days: inRangeDates.length,
+              ),
+            );
             // Helper function for found holidays
             foundHolidayNames.add(holiday.name);
             // break; // Exit inner loop once a holiday is found for the region.
@@ -128,8 +139,11 @@ List<DateTime> datesList(DateTime start, DateTime end) {
 
 /// If includeOutOfRange is true, returns the full range dates, where a holiday is "hit".
 List<DateTime> daysInSelection(
-    Holiday holiday, DateTime selectStart, DateTime selectEnd,
-    {bool includeOutOfRange = false}) {
+  Holiday holiday,
+  DateTime selectStart,
+  DateTime selectEnd, {
+  bool includeOutOfRange = false,
+}) {
   final holDays = datesList(holiday.start, holiday.end);
   final selectDays = datesList(selectStart, selectEnd);
   final iteratorDates = includeOutOfRange ? holDays : selectDays;
@@ -164,17 +178,23 @@ void main() async {
   String response = "";
   final responseFut = rootBundle.loadString("assets/geo/codes-map.json");
   final nutsFut = rootBundle.loadString("assets/geo/eu-nuts.geojson");
-  await Future.wait([holdataFut, borderdatFut, responseFut, nutsFut])
-      .then((results) {
+  await Future.wait([holdataFut, borderdatFut, responseFut, nutsFut]).then((
+    results,
+  ) {
     holdata = results[0] as List<AllStateHolidays>;
     borderdat = results[1] as List<BorderCountry>;
     response = results[2] as String;
-    // nuts result not needed here, but want to load parralel
+    // nuts result not needed here, but want to load parallel
     final _ = results[3];
   });
 
   codesMap = json.decode(response);
-  runApp(ProviderScope(child: MyApp()));
+  // Get locale
+  final locale = await findSystemLocale();
+  initializeDateFormatting(locale, null)
+      .then((_) => runApp(ProviderScope(child: MyApp())));
+
+// findSystemLocale().then( runApp(ProviderScope(child: MyApp())));
 }
 
 class MyApp extends StatelessWidget {
@@ -186,13 +206,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Holiday Map',
       theme: ThemeData(
-          fontFamily: "Roboto",
-          colorScheme: ColorScheme.fromSeed(
-            dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
-            seedColor: Colors.deepPurple,
-            brightness: Brightness.dark,
-          ),
-          useMaterial3: true),
+        fontFamily: "Roboto",
+        colorScheme: ColorScheme.fromSeed(
+          dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
+          seedColor: Colors.blueAccent,
+          brightness: Brightness.dark,
+        ),
+        useMaterial3: true,
+      ),
       home: AllCountriesWidget(),
     );
   }

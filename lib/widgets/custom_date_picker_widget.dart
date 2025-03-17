@@ -1,26 +1,39 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
-class MyDatePicker extends ConsumerWidget {
-  MyDatePicker({
-    super.key,
-  });
+class MyDatePicker extends ConsumerStatefulWidget {
+  const MyDatePicker({super.key});
 
+  @override
+  MyDatePickerState createState() => MyDatePickerState();
+}
+
+class MyDatePickerState extends ConsumerState<MyDatePicker> {
   final isWebMobile = kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.iOS ||
           defaultTargetPlatform == TargetPlatform.android);
+  Key _key = UniqueKey();
+
+  void reset() {
+    setState(() {
+      _key = UniqueKey();
+    });
+  }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return SizedBox(
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
+          key: _key,
           headerHeight: 50,
           showNavigationArrow: true,
+          showActionButtons: true,
           monthViewSettings: DateRangePickerMonthViewSettings(
               enableSwipeSelection: isWebMobile ? false : true),
           toggleDaySelection: true,
@@ -30,6 +43,12 @@ class MyDatePicker extends ConsumerWidget {
           maxDate: DateTime(2028),
           extendableRangeSelectionDirection:
               ExtendableRangeSelectionDirection.both,
+          onCancel: () {
+            // Reset data
+            ref.read(nutsDataProvider.notifier).resetData();
+            // Reset picker widget
+            reset();
+          },
           onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
             final PickerDateRange selectedRange = args.value;
             final startDate = selectedRange.startDate;
@@ -38,8 +57,6 @@ class MyDatePicker extends ConsumerWidget {
             final days =
                 DateTimeRange(start: startDate, end: endDate).duration.inDays;
             final out = findHolidaysForDate(startDate, endDate);
-            // Reset
-            await ref.read(nutsDataProvider.notifier).resetData();
 
             // Update
             await ref
