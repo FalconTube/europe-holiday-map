@@ -206,7 +206,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Holiday Map',
       theme: ThemeData(
-        fontFamily: "Roboto",
+        // fontFamily: "Roboto",
         colorScheme: ColorScheme.fromSeed(
           dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
           seedColor: Colors.blueAccent,
