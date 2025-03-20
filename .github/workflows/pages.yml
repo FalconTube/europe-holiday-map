@@ -39,7 +39,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-          flutter-version: 3.27.1
+          flutter-version: 3.29.2
 
       - name: Install Task
         uses: arduino/setup-task@v2
@@ -67,4 +67,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
