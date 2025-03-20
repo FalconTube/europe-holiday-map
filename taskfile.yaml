@@ -7,11 +7,11 @@ tasks:
 
   debug:
     cmds:
-      - flutter run -d chrome
+      - flutter run -d chrome --wasm
 
   profile:
     cmds:
-      - flutter run -d chrome --profile
+      - flutter run -d chrome --wasm --profile
 
   buildjson:
     cmds:
@@ -20,6 +20,10 @@ tasks:
   watchjson:
     cmds:
       - dart run build_runner watch --delete-conflicting-outputs
+
+  publish:
+    cmds:
+      - flutter build web --wasm --release --base-href "/europe-holiday-map/"
 
   build:
     cmds:
@@ -32,7 +36,7 @@ tasks:
   serve:
     dir: build/web
     cmds:
-      - task: build
+      - task: build-
       - uv run python -m http.server 44322
 
   mini:

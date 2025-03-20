@@ -56,7 +56,7 @@ jobs:
         working-directory: ${{env.working-directory}}
 
       - name: Build web app
-        run: flutter build web --release --base-href "/europe-holiday-map/"
+        run: task publish
         working-directory: ${{env.working-directory}}
 
       - name: Upload artifact
