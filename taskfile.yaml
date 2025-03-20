@@ -36,7 +36,7 @@ tasks:
   serve:
     dir: build/web
     cmds:
-      - task: build-
+      - task: build
       - uv run python -m http.server 44322
 
   mini:
