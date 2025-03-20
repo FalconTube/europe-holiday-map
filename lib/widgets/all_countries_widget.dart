@@ -160,6 +160,14 @@ class AllCountriesWidget extends ConsumerWidget {
                           icon: Icon(Icons.refresh),
                           label: Text("Reset"),
                           onPressed: () {
+                            const bool isRunningWithWasm =
+                                bool.fromEnvironment('dart.tool.dart2wasm');
+                            if (isRunningWithWasm) {
+                              print('Flutter app is running in WASM mode.');
+                            } else {
+                              print(
+                                  'Flutter app is running in JavaScript mode.');
+                            }
                             ref.read(keyProvider.notifier).updateKey();
                             ref.read(nutsDataProvider.notifier).resetData();
                           }),
