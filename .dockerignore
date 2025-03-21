@@ -1,0 +1,44 @@
+# Flutter specific
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+ios/build/
+android/build/
+linux/build/
+macos/build/
+windows/build/
+web/build/ # We will copy the web/build folder in the dockerfile
+*.apk
+*.ipa
+*.dmg
+*.exe
+*.snap
+
+# Version control
+.git/
+.gitignore
+
+# Node modules (if any)
+node_modules/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temp files
+*.log
+tmp/
+temp/
+__pycache__/
+
+# Docker related (to avoid recursion)
+Dockerfile
+.dockerignore
+
+# Taskfile related
+Taskfile.lock.yaml
