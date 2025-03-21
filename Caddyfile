@@ -1,0 +1,8 @@
+:8060
+
+root * /usr/share/caddy
+file_server
+header {
+	Cross-Origin-Embedder-Policy "credentialless"
+	Cross-Origin-Opener-Policy "same-origin"
+}
