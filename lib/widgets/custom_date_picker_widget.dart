@@ -18,53 +18,50 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
   final isWebMobile = kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.iOS ||
           defaultTargetPlatform == TargetPlatform.android);
-  // Key _key = UniqueKey();
-
-  // void reset() {
-  //   setState(() {
-  //     _key = UniqueKey();
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
     final key = ref.watch(keyProvider);
+    final selectedCountryData = ref.watch(selectedCountryDataProvider);
+
     return SizedBox(
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
-          key: key,
-          headerHeight: 50,
-          showNavigationArrow: true,
-          // showActionButtons: true,
-          monthViewSettings: DateRangePickerMonthViewSettings(
-              enableSwipeSelection: isWebMobile ? false : true),
-          toggleDaySelection: true,
-          selectionMode: DateRangePickerSelectionMode.extendableRange,
-          initialSelectedDate: DateTime.now(),
-          minDate: DateTime(2025),
-          maxDate: DateTime(2028),
-          extendableRangeSelectionDirection:
-              ExtendableRangeSelectionDirection.both,
-          // onCancel: () {
-          //   // Reset data
-          //   ref.read(nutsDataProvider.notifier).resetData();
-          //   // Reset picker widget
-          //   reset();
-          // },
-          onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
-            final PickerDateRange selectedRange = args.value;
-            final startDate = selectedRange.startDate;
-            final endDate = selectedRange.endDate;
-            if (startDate == null || endDate == null) return;
-            final days =
-                DateTimeRange(start: startDate, end: endDate).duration.inDays;
-            final out = findHolidaysForDate(startDate, endDate);
+        key: key,
+        headerHeight: 50,
+        showNavigationArrow: true,
+        monthViewSettings: DateRangePickerMonthViewSettings(
+            enableSwipeSelection: isWebMobile ? false : true,
+            // If dates selected, mark them as special
+            specialDates: selectedCountryData?.days),
+        // specialDates: [DateTime(2025, 04, 22), DateTime(2025, 04, 23)]),
+        toggleDaySelection: true,
+        selectionMode: DateRangePickerSelectionMode.extendableRange,
+        initialSelectedDate: DateTime.now(),
+        minDate: DateTime(2025),
+        maxDate: DateTime(2028),
+        extendableRangeSelectionDirection:
+            ExtendableRangeSelectionDirection.both,
+        onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
+          final PickerDateRange selectedRange = args.value;
+          final startDate = selectedRange.startDate;
+          final endDate = selectedRange.endDate;
+          if (startDate == null || endDate == null) return;
+          final days =
+              DateTimeRange(start: startDate, end: endDate).duration.inDays;
+          final out = findHolidaysForDate(startDate, endDate);
 
-            // Update
-            await ref
-                .read(nutsDataProvider.notifier)
-                .updateMultipleIDs(out, days);
-          }),
+          // Update
+          await ref
+              .read(nutsDataProvider.notifier)
+              .updateMultipleIDs(out, days);
+        },
+        monthCellStyle: DateRangePickerMonthCellStyle(
+            specialDatesDecoration: BoxDecoration(
+                color: Colors.greenAccent,
+                border: Border.all(color: const Color(0xFF2B732F), width: 1),
+                shape: BoxShape.circle)),
+      ),
     );
   }
 }

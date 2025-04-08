@@ -5,6 +5,7 @@ import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
@@ -101,27 +102,31 @@ class AllCountriesWidget extends ConsumerWidget {
                               color: Colors.transparent,
                               strokeColor: Colors.black.withValues(alpha: 0.3),
                               onSelectionChanged: (int index) {
-                                ScaffoldMessenger.of(context)
-                                    .removeCurrentSnackBar();
+                                final selectionData = data.data[index];
+                                // Mark overlapping dates in DatePicker
+                                ref
+                                    .read(selectedCountryDataProvider.notifier)
+                                    .setData(selectionData);
+                                // Show Snackbar with holidays of selected region
+                                // ScaffoldMessenger.of(context)
+                                //     .removeCurrentSnackBar();
 
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                        actionOverflowThreshold: 0.7,
-                                        backgroundColor:
-                                            Theme.of(context)
-                                                .colorScheme
-                                                .primaryContainer,
-                                        duration: Duration(seconds: 300),
-                                        margin: EdgeInsets.all(10),
-                                        padding: EdgeInsets.all(30),
-                                        behavior: SnackBarBehavior.floating,
-                                        showCloseIcon: true,
-                                        closeIconColor:
-                                            Theme.of(context)
-                                                .colorScheme
-                                                .onPrimaryContainer,
-                                        content:
-                                            SnackText(data: data.data[index])));
+                                // ScaffoldMessenger.of(context).showSnackBar(
+                                //     SnackBar(
+                                //         actionOverflowThreshold: 0.7,
+                                //         backgroundColor: Theme.of(context)
+                                //             .colorScheme
+                                //             .primaryContainer,
+                                //         duration: Duration(seconds: 300),
+                                //         margin: EdgeInsets.all(10),
+                                //         padding: EdgeInsets.all(30),
+                                //         behavior: SnackBarBehavior.floating,
+                                //         showCloseIcon: true,
+                                //         closeIconColor: Theme.of(context)
+                                //             .colorScheme
+                                //             .onPrimaryContainer,
+                                //         content:
+                                //             SnackText(data: selectionData)));
                               },
                             )
                           ],
