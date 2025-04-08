@@ -31,10 +31,11 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         headerHeight: 50,
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
-            enableSwipeSelection: isWebMobile ? false : true,
-            // If dates selected, mark them as special
-            specialDates: selectedCountryData?.days),
-        // specialDates: [DateTime(2025, 04, 22), DateTime(2025, 04, 23)]),
+          enableSwipeSelection: isWebMobile ? false : true,
+          blackoutDates: selectedCountryData?.days,
+        ),
+
+        // If dates selected, mark them as special
         toggleDaySelection: true,
         selectionMode: DateRangePickerSelectionMode.extendableRange,
         initialSelectedDate: DateTime.now(),
@@ -57,9 +58,9 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
               .updateMultipleIDs(out, days);
         },
         monthCellStyle: DateRangePickerMonthCellStyle(
-            specialDatesDecoration: BoxDecoration(
-                color: Colors.greenAccent,
-                border: Border.all(color: const Color(0xFF2B732F), width: 1),
+            blackoutDateTextStyle: TextStyle(),
+            blackoutDatesDecoration: BoxDecoration(
+                border: Border.all(color: Colors.redAccent, width: 1),
                 shape: BoxShape.circle)),
       ),
     );

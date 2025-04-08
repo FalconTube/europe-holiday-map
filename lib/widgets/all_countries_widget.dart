@@ -175,6 +175,9 @@ class AllCountriesWidget extends ConsumerWidget {
                             }
                             ref.read(keyProvider.notifier).updateKey();
                             ref.read(nutsDataProvider.notifier).resetData();
+                            ref
+                                .read(selectedCountryDataProvider.notifier)
+                                .resetData();
                           }),
                     )
                   ],
