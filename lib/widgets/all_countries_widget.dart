@@ -15,7 +15,6 @@ import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
-
   final _mapController = MapShapeLayerController();
 
   final MapShapeSource borderSource =
@@ -44,6 +43,7 @@ class AllCountriesWidget extends ConsumerWidget {
     enableMouseWheelZooming: true,
   );
   final cmap = Colormaps.seismic;
+  bool isBannerShowing = false;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -68,6 +68,7 @@ class AllCountriesWidget extends ConsumerWidget {
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Expanded(
             child: ColoredBox(
@@ -107,26 +108,25 @@ class AllCountriesWidget extends ConsumerWidget {
                                 ref
                                     .read(selectedCountryDataProvider.notifier)
                                     .setData(selectionData);
-                                // Show Snackbar with holidays of selected region
-                                // ScaffoldMessenger.of(context)
-                                //     .removeCurrentSnackBar();
 
-                                // ScaffoldMessenger.of(context).showSnackBar(
-                                //     SnackBar(
-                                //         actionOverflowThreshold: 0.7,
-                                //         backgroundColor: Theme.of(context)
-                                //             .colorScheme
-                                //             .primaryContainer,
-                                //         duration: Duration(seconds: 300),
-                                //         margin: EdgeInsets.all(10),
-                                //         padding: EdgeInsets.all(30),
-                                //         behavior: SnackBarBehavior.floating,
-                                //         showCloseIcon: true,
-                                //         closeIconColor: Theme.of(context)
-                                //             .colorScheme
-                                //             .onPrimaryContainer,
-                                //         content:
-                                //             SnackText(data: selectionData)));
+                                if (isBannerShowing == true) {
+                                  return;
+                                }
+                                final banner = MaterialBanner(
+                                  content: SnackText(),
+                                  actions: [
+                                    IconButton(
+                                        icon: Icon(Icons.close),
+                                        onPressed: () {
+                                          ScaffoldMessenger.of(context)
+                                              .removeCurrentMaterialBanner();
+                                          isBannerShowing = false;
+                                        })
+                                  ],
+                                );
+                                ScaffoldMessenger.of(context)
+                                    .showMaterialBanner(banner);
+                                isBannerShowing = true;
                               },
                             )
                           ],
@@ -192,12 +192,15 @@ class AllCountriesWidget extends ConsumerWidget {
   }
 }
 
-class SnackText extends StatelessWidget {
-  const SnackText({super.key, required this.data});
-  final MapCountryData data;
+class SnackText extends ConsumerWidget {
+  const SnackText({super.key});
+  // final MapCountryData data;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final data = ref.watch(selectedCountryDataProvider);
+    if (data == null) return Container();
+
     final totalDays = data.totalDays;
     final division = data.division;
     final holidays = data.holidays;

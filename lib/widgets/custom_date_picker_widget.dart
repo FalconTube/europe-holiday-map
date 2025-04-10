@@ -28,14 +28,13 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
         key: key,
+        allowViewNavigation: false,
         headerHeight: 50,
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
-          enableSwipeSelection: isWebMobile ? false : true,
-          blackoutDates: selectedCountryData?.days,
-        ),
-
-        // If dates selected, mark them as special
+            enableSwipeSelection: isWebMobile ? false : true,
+            blackoutDates: selectedCountryData?.days,
+            showTrailingAndLeadingDates: true),
         toggleDaySelection: true,
         selectionMode: DateRangePickerSelectionMode.extendableRange,
         initialSelectedDate: DateTime.now(),
