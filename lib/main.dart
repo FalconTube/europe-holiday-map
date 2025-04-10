@@ -116,7 +116,6 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
             );
             // Helper function for found holidays
             foundHolidayNames.add(holiday.name);
-            // break; // Exit inner loop once a holiday is found for the region.
           }
           results.add(regionResults);
         }

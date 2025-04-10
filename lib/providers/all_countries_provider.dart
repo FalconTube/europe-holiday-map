@@ -7,13 +7,14 @@ class MapCountryData {
   final String nuts;
   final String division;
   final List<Holiday> holidays;
-  // final List<int> days;
+  final List<DateTime> days;
   final int totalDays;
 
   MapCountryData(
       {required this.nuts,
       required this.division,
       required this.holidays,
+      required this.days,
       required this.totalDays});
 }
 
@@ -22,6 +23,23 @@ class MapCountryDataAndDays {
   int numSelectedDays;
 
   MapCountryDataAndDays({required this.data, required this.numSelectedDays});
+}
+
+// Provider for consumption
+final selectedCountryDataProvider =
+    StateNotifierProvider<SelectedCountryDataProvider, MapCountryData?>(
+        (ref) => SelectedCountryDataProvider());
+
+class SelectedCountryDataProvider extends StateNotifier<MapCountryData?> {
+  SelectedCountryDataProvider() : super(null);
+
+  Future<void> resetData() async {
+    state = (null);
+  }
+
+  Future<void> setData(MapCountryData data) async {
+    state = data;
+  }
 }
 
 // Provider for consumption
@@ -53,13 +71,14 @@ class NutsDataProvider extends StateNotifier<MapCountryDataAndDays> {
         division = n.division;
       }
       // Remove duplicate dates and get total amount
-      int totalDays = foundDays.toSet().length;
+      final foundDaysUnique = foundDays.toSet().toList();
+      int totalDays = foundDaysUnique.length;
 
       data.add(MapCountryData(
           division: division,
           nuts: nutsCode,
           holidays: foundHolidays,
-          // days: foundDays,
+          days: foundDaysUnique,
           totalDays: totalDays));
     }
     state = MapCountryDataAndDays(data: data, numSelectedDays: days);

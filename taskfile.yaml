@@ -7,7 +7,7 @@ tasks:
 
   debug:
     cmds:
-      - flutter run -d chrome --wasm
+      - flutter run -d chrome
 
   profile:
     cmds:
