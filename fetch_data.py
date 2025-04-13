@@ -248,6 +248,92 @@ def get_subdivions(country_iso: str) -> list[Subdivision]:
                 short_name="HR",
             ),
         ],
+        "AL": [
+            Subdivision(
+                iso="AL0",
+                code="AL0",
+                name="Shqipëria",
+                name_en="Albania",
+                short_name="AL",
+            ),
+        ],
+        "AD": [
+            Subdivision(
+                iso="AD0",
+                code="AD0",
+                name="Andorra",
+                name_en="Andorra",
+                short_name="AD",
+            ),
+        ],
+        "RS": [
+            Subdivision(
+                iso="RS1",
+                code="RS1",
+                name="Србија - север",
+                name_en="Serbia - sever",
+                short_name="RS1",
+            ),
+            Subdivision(
+                iso="RS2",
+                code="RS2",
+                name="Србија - југ",
+                name_en="Serbia - jug",
+                short_name="RS2",
+            ),
+        ],
+        "BG": [
+            Subdivision(
+                iso="BG3",
+                code="BG3",
+                name="Северна и Югоизточна България",
+                name_en="Severna i Yugoiztochna Bulgaria",
+                short_name="BG3",
+            ),
+            Subdivision(
+                iso="BG4",
+                code="BG4",
+                name="Югозападна и Южна централна България",
+                name_en="Yugozapadna i Yuzhna tsentralna Bulgaria",
+                short_name="BG4",
+            ),
+        ],
+        "MD": [
+            Subdivision(
+                iso="MD0",
+                code="MD0",
+                name="Moldova",
+                name_en="Moldova",
+                short_name="MD0",
+            ),
+        ],
+        "MT": [
+            Subdivision(
+                iso="MT0",
+                code="MT0",
+                name="Malta-Malta",
+                name_en="Malta",
+                short_name="MT0",
+            ),
+        ],
+        "MC": [
+            Subdivision(
+                iso="MC0",
+                code="MC0",
+                name="Malta-Malta",
+                name_en="Malta",
+                short_name="MT0",
+            ),
+        ],
+        "BY": [
+            Subdivision(
+                iso="BY0",
+                code="BY0",
+                name="Беларусь",
+                name_en="Belarus",
+                short_name="BY0",
+            ),
+        ],
     }
     if country_iso in missing_countries.keys():
         return missing_countries[country_iso]
@@ -415,7 +501,8 @@ if __name__ == "__main__":
     # # short()
     # sys.exit()
     countries = get_countries()
-    # countries = [Country(iso="LU", code="LU", name="Espania", name_en="Spain")]
+    # sys.exit()
+    # countries = [Country(iso="AD", code="AL", name="Albania", name_en="Spain")]
     country_list = []
     for country in countries:
         all_hols_list: list[SubdivionHolidays] = []
