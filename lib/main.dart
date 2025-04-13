@@ -87,11 +87,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Holiday Map',
       theme: ThemeData(
-        // fontFamily: "Roboto",
+        fontFamily: "FiraSans",
         colorScheme: ColorScheme.fromSeed(
           dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
           seedColor: Colors.blueAccent,
-          brightness: Brightness.dark,
+          brightness: Brightness.light,
         ),
         useMaterial3: true,
       ),

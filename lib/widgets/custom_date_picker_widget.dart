@@ -29,6 +29,9 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
         key: key,
+        backgroundColor: Theme.of(context).colorScheme.surface,
+        headerStyle: DateRangePickerHeaderStyle(
+            backgroundColor: Theme.of(context).colorScheme.surface),
         allowViewNavigation: false,
         headerHeight: 50,
         showNavigationArrow: true,
