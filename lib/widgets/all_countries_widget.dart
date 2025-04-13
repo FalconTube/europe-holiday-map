@@ -41,7 +41,8 @@ class AllCountriesWidget extends ConsumerWidget {
     enableDoubleTapZooming: true,
     enableMouseWheelZooming: true,
   );
-  final cmap = Colormaps.seismic;
+  // final cmap = Colormaps.seismic;
+  final cmap = Colormaps.YlOrRd;
   bool isBannerShowing = false;
 
   @override
@@ -71,7 +72,7 @@ class AllCountriesWidget extends ConsumerWidget {
         children: [
           Expanded(
             child: ColoredBox(
-              color: Color(0xFF65C9FE),
+              color: Color.fromRGBO(114, 212, 232, 1),
               child: SfMapsTheme(
                 data: SfMapsThemeData(
                   shapeHoverColor: Colors.transparent,

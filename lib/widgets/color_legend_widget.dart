@@ -19,7 +19,7 @@ class ColorLegend extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: const Color.fromRGBO(30, 28, 37, 1),
+        color: Theme.of(context).colorScheme.surface,
         border: Border.all(
           color: Colors.grey,
         ),
@@ -31,7 +31,7 @@ class ColorLegend extends StatelessWidget {
           spacing: 10,
           children: [
             SizedBox(
-              width: 150,
+              width: 95,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -43,7 +43,7 @@ class ColorLegend extends StatelessWidget {
             ),
             LinearColorBox(
               cmap: cmap,
-              maxExtent: 150,
+              maxExtent: 95,
             ),
           ],
         ),
