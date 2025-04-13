@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:holiday_map/classes/icon_holiday_mapping.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
@@ -201,11 +202,13 @@ List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
   // Build holiday display text
   List<RichText> holFormatted = [];
   var format = DateFormat.yMd();
+  final iconMapper = IconHolidayMapping();
   for (final h in holidays) {
     // Name of holiday
     final name = h.nameEN ?? h.name;
+    final matchingIcon = iconMapper.getMatchingIcon(name);
     final nameText = TextSpan(
-        text: "$name\n",
+        text: "$matchingIcon$name\n",
         style: TextStyle(
           fontWeight: FontWeight.w700,
           color: Theme.of(context).colorScheme.onSurface,
