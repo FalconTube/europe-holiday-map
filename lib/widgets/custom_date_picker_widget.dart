@@ -1,7 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:holiday_map/logging/logger.dart';
+import 'package:holiday_map/classes/entry.dart';
+import 'package:holiday_map/classes/internal.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
@@ -64,4 +65,100 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
       ),
     );
   }
+}
+
+List<List<CodeAndHoliday>> findHolidaysForDate(
+  // Map<String, String?> findHolidaysForDate(
+  DateTime firstSelectedDate,
+  DateTime lastSelectedDate,
+) {
+  final allCountryEntries = holdata;
+  List<List<CodeAndHoliday>> results = [];
+
+  // Sometimes you just have to do a long for loop...
+  // Find all holidays in all subdivisions in all countries
+  for (final countryEntry in allCountryEntries) {
+    for (final regionEntry in countryEntry.stateHolidays) {
+      final nutsCodes = nutsFromCode(countryEntry.country, regionEntry);
+      if (nutsCodes == null) {
+        // Log.log(
+        //     "Could not obtain nuts code for: Country: ${countryEntry.country}, Region: ${regionEntry.code}");
+        continue;
+      }
+      final divisionName = regionEntry.name;
+      for (final nutsCode in nutsCodes) {
+        List<CodeAndHoliday> regionResults = [];
+        List<String> foundHolidayNames = [];
+        for (final holiday in regionEntry.holidays) {
+          // Check if found this holiday already
+          if (foundHolidayNames.contains(holiday.name)) {
+            continue;
+          }
+          final startDateHol = holiday.start;
+          final endDateHol = holiday.end;
+          final cleanFirstSelectedDate = firstSelectedDate.subtract(
+            Duration(seconds: 1),
+          );
+          final cleanLastSelectedDate = lastSelectedDate.add(
+            Duration(seconds: 1),
+          );
+          final startIsInRange = startDateHol.isAfter(cleanFirstSelectedDate) &&
+              startDateHol.isBefore(cleanLastSelectedDate);
+          final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
+              endDateHol.isBefore(cleanLastSelectedDate);
+          if (startIsInRange || endIsInRange) {
+            // Found a matching holiday
+            // Now get amount of days
+            final inRangeDates = daysInSelection(
+              holiday,
+              firstSelectedDate,
+              lastSelectedDate,
+            );
+            regionResults.add(
+              CodeAndHoliday(
+                nutsCode: nutsCode,
+                division: divisionName,
+                holiday: holiday, // Fall back to non-english name, if not exist
+                dayList: inRangeDates,
+                days: inRangeDates.length,
+              ),
+            );
+            // Helper function for found holidays
+            foundHolidayNames.add(holiday.name);
+          }
+          results.add(regionResults);
+        }
+      }
+    }
+  }
+
+  return results;
+}
+
+List<DateTime> daysInSelection(
+  Holiday holiday,
+  DateTime selectStart,
+  DateTime selectEnd, {
+  bool includeOutOfRange = false,
+}) {
+  final holDays = datesList(holiday.start, holiday.end);
+  final selectDays = datesList(selectStart, selectEnd);
+  final iteratorDates = includeOutOfRange ? holDays : selectDays;
+  final compareDates = includeOutOfRange ? selectDays : holDays;
+  List<DateTime> matchingDates = [];
+  for (final i in iteratorDates) {
+    if (compareDates.contains(i)) matchingDates.add(i);
+  }
+
+  return matchingDates;
+}
+
+List<DateTime> datesList(DateTime start, DateTime end) {
+  var i = start;
+  List<DateTime> allDates = [];
+  final cleanEnd = end.add(Duration(seconds: 1));
+  for (i; i.isBefore(cleanEnd); i = i.add(Duration(days: 1))) {
+    allDates.add(i);
+  }
+  return allDates;
 }

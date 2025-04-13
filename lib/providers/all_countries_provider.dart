@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
-import 'package:holiday_map/main.dart';
+import 'package:holiday_map/classes/internal.dart';
 
 /// Every holiday has a number of days attached to it
 class MapCountryData {
