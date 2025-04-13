@@ -5,7 +5,6 @@ import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_maps/maps.dart';
 import 'package:syncfusion_flutter_core/theme.dart';
