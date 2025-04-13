@@ -35,9 +35,17 @@ class ColorLegend extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(min.toString()),
-                  Text("Overlap"),
-                  Text(max.toString())
+                  Text(
+                    min.toString(),
+                    style: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface),
+                  ),
+                  Text("Overlap",
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface)),
+                  Text(max.toString(),
+                      style: TextStyle(
+                          color: Theme.of(context).colorScheme.onSurface))
                 ],
               ),
             ),
