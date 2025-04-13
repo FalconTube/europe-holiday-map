@@ -1,11 +1,517 @@
 [
   {
     "country": "ad",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Andorra",
+        "iso": "AD0",
+        "code": "AD0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-06",
+            "name": "Vacances de Nadal",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-24",
+            "end": "2025-03-03",
+            "name": "Vacances de Carnaval",
+            "name_en": "Carnival holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-17",
+            "end": "2025-05-02",
+            "name": "Vacances de Pasqua",
+            "name_en": "Easter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Vacances de Pentecosta",
+            "name_en": "Pentecost holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-30",
+            "end": "2025-06-30",
+            "name": "Final de classe",
+            "name_en": "End of lessons",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Any nou",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-06",
+            "end": "2025-01-06",
+            "name": "Reis",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-03",
+            "end": "2025-03-03",
+            "name": "Carnaval",
+            "name_en": "Carnival",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-14",
+            "end": "2025-03-14",
+            "name": "Dia de la Constitució",
+            "name_en": "Constitution Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Divendres Sant",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Dilluns de Pasqua",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Festa del Treball",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Dilluns de Pentecosta",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Assumpció",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Mare de Déu de Meritxell",
+            "name_en": "National Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Tots Sants",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-08",
+            "end": "2025-12-08",
+            "name": "Immaculada Concepció",
+            "name_en": "Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Nadal",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Sant Esteve",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Any nou",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-06",
+            "end": "2026-01-06",
+            "name": "Reis",
+            "name_en": "Epiphany",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-16",
+            "end": "2026-02-16",
+            "name": "Carnaval",
+            "name_en": "Carnival",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-14",
+            "end": "2026-03-14",
+            "name": "Dia de la Constitució",
+            "name_en": "Constitution Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Divendres Sant",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Dilluns de Pasqua",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Festa del Treball",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Dilluns de Pentecosta",
+            "name_en": "Pentecost Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Assumpció",
+            "name_en": "Assumption Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Mare de Déu de Meritxell",
+            "name_en": "National Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Tots Sants",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-08",
+            "end": "2026-12-08",
+            "name": "Immaculada Concepció",
+            "name_en": "Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Nadal",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Sant Esteve",
+            "name_en": "St. Stephen's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Any nou",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "al",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Shqipëria",
+        "iso": "AL0",
+        "code": "AL0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-03",
+            "name": "Pushimet dimërore",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-31",
+            "end": "2025-04-04",
+            "name": "Pushimet e pranveres",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-13",
+            "end": "2025-06-13",
+            "name": "Fundi i klasës",
+            "name_en": "End of lessons",
+            "hol_type": "Other"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Viti i Ri",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-02",
+            "end": "2025-01-02",
+            "name": "Viti i Ri",
+            "name_en": "New Year's Day Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-14",
+            "end": "2025-03-14",
+            "name": "Dita e Verës",
+            "name_en": "Summer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-24",
+            "end": "2025-03-24",
+            "name": "Dita e Nevruzit",
+            "name_en": "Nowruz (Persian New Year)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-30",
+            "end": "2025-03-30",
+            "name": "Dita e Bajramit të Madh",
+            "name_en": "Eid al-Fitr (Holiday of Breaking the Fast)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Pashkët Katolike",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Pashkët Ortodokse",
+            "name_en": "Orthodox Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Hënen e Pashkët Katolike",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Hënen e Pashkët Ortodokse",
+            "name_en": "Orthodox Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Dita ndërkombëtare e punonjësve",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-06",
+            "end": "2025-06-06",
+            "name": "Dita e Kurban Bajramit",
+            "name_en": "Eid ul-Adha (Feast of Sacrifice)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-10-20",
+            "end": "2025-10-20",
+            "name": "Dita e Lumturimit te Nene Terezës",
+            "name_en": "Mother Teresa Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-28",
+            "end": "2025-11-28",
+            "name": "Dita e Flamurit dhe e Pavarësisë",
+            "name_en": "Flag and Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-01",
+            "end": "2025-12-01",
+            "name": "Dita e Çlirimit të Shqipërisë nga pushtuesit nazifashistë",
+            "name_en": "Liberation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-08",
+            "end": "2025-12-08",
+            "name": "Dita Kombëtare e Rinisë",
+            "name_en": "Youth Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Krishtlindjet",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Viti i Ri",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-02",
+            "end": "2026-01-02",
+            "name": "Viti i Ri",
+            "name_en": "New Year's Day Holiday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-16",
+            "end": "2026-03-16",
+            "name": "Dita e Verës",
+            "name_en": "Summer Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-20",
+            "end": "2026-03-20",
+            "name": "Dita e Bajramit të Madh",
+            "name_en": "Eid al-Fitr (Holiday of Breaking the Fast)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-23",
+            "end": "2026-03-23",
+            "name": "Dita e Nevruzit",
+            "name_en": "Nowruz (Persian New Year)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-05",
+            "end": "2026-04-05",
+            "name": "Pashkët Katolike",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Hënen e Pashkët Katolike",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Pashkët Ortodokse",
+            "name_en": "Orthodox Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Hënen e Pashkët Ortodokse",
+            "name_en": "Orthodox Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Dita ndërkombëtare e punonjësve",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-26",
+            "end": "2026-05-26",
+            "name": "Dita e Kurban Bajramit",
+            "name_en": "Eid ul-Adha (Feast of Sacrifice)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-10-19",
+            "end": "2026-10-19",
+            "name": "Dita e Lumturimit te Nene Terezës",
+            "name_en": "Mother Teresa Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-30",
+            "end": "2026-11-30",
+            "name": "Dita e Flamurit dhe e Pavarësisë",
+            "name_en": "Flag and Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-30",
+            "end": "2026-11-30",
+            "name": "Dita e Çlirimit të Shqipërisë nga pushtuesit nazifashistë",
+            "name_en": "Liberation Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-08",
+            "end": "2026-12-08",
+            "name": "Dita Kombëtare e Rinisë",
+            "name_en": "Youth Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Krishtlindjet",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Viti i Ri",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "at",
@@ -3337,11 +3843,622 @@
   },
   {
     "country": "bg",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Северна и Югоизточна България",
+        "iso": "BG3",
+        "code": "BG3",
+        "holidays": [
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-03",
+            "end": "2025-03-03",
+            "name": "Ден на Освобождението на България от османско иго",
+            "name_en": "Bulgaria’s Liberation from the Ottoman Empire",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Разпети петък",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-19",
+            "end": "2025-04-19",
+            "name": "Велика събота",
+            "name_en": "Holy Saturday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Великден",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Велики понеделник",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Ден на труда",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-06",
+            "end": "2025-05-06",
+            "name": "Гергьовден",
+            "name_en": "St. George's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-24",
+            "end": "2025-05-24",
+            "name": "Ден на Българската просвета и култура и на славянската писменост",
+            "name_en": "Bulgarian Education and Culture",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-06",
+            "end": "2025-09-06",
+            "name": "Ден на Съединението",
+            "name_en": "Unification Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-22",
+            "end": "2025-09-22",
+            "name": "Ден на независимостта на България",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Ден на народните будители",
+            "name_en": "Day of the Bulgarian Enlighteners",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2025-12-24",
+            "name": "Бъдни вечер",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-03",
+            "end": "2026-03-03",
+            "name": "Ден на Освобождението на България от османско иго",
+            "name_en": "Bulgaria’s Liberation from the Ottoman Empire",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-10",
+            "end": "2026-04-10",
+            "name": "Разпети петък",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-11",
+            "end": "2026-04-11",
+            "name": "Велика събота",
+            "name_en": "Holy Saturday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Великден",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Велики понеделник",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Ден на труда",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-06",
+            "end": "2026-05-06",
+            "name": "Гергьовден",
+            "name_en": "St. George's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Ден на Българската просвета и култура и на славянската писменост",
+            "name_en": "Bulgarian Education and Culture",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-06",
+            "end": "2026-09-06",
+            "name": "Ден на Съединението",
+            "name_en": "Unification Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-22",
+            "end": "2026-09-22",
+            "name": "Ден на независимостта на България",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Ден на народните будители",
+            "name_en": "Day of the Bulgarian Enlighteners",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2026-12-24",
+            "name": "Бъдни вечер",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "name": "Югозападна и Южна централна България",
+        "iso": "BG4",
+        "code": "BG4",
+        "holidays": [
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-03",
+            "end": "2025-03-03",
+            "name": "Ден на Освобождението на България от османско иго",
+            "name_en": "Bulgaria’s Liberation from the Ottoman Empire",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Разпети петък",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-19",
+            "end": "2025-04-19",
+            "name": "Велика събота",
+            "name_en": "Holy Saturday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Великден",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Велики понеделник",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Ден на труда",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-06",
+            "end": "2025-05-06",
+            "name": "Гергьовден",
+            "name_en": "St. George's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-24",
+            "end": "2025-05-24",
+            "name": "Ден на Българската просвета и култура и на славянската писменост",
+            "name_en": "Bulgarian Education and Culture",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-06",
+            "end": "2025-09-06",
+            "name": "Ден на Съединението",
+            "name_en": "Unification Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-22",
+            "end": "2025-09-22",
+            "name": "Ден на независимостта на България",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "Ден на народните будители",
+            "name_en": "Day of the Bulgarian Enlighteners",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-24",
+            "end": "2025-12-24",
+            "name": "Бъдни вечер",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-26",
+            "end": "2025-12-26",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-03",
+            "end": "2026-03-03",
+            "name": "Ден на Освобождението на България от османско иго",
+            "name_en": "Bulgaria’s Liberation from the Ottoman Empire",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-10",
+            "end": "2026-04-10",
+            "name": "Разпети петък",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-11",
+            "end": "2026-04-11",
+            "name": "Велика събота",
+            "name_en": "Holy Saturday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Великден",
+            "name_en": "Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Велики понеделник",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Ден на труда",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-06",
+            "end": "2026-05-06",
+            "name": "Гергьовден",
+            "name_en": "St. George's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-24",
+            "end": "2026-05-24",
+            "name": "Ден на Българската просвета и култура и на славянската писменост",
+            "name_en": "Bulgarian Education and Culture",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-06",
+            "end": "2026-09-06",
+            "name": "Ден на Съединението",
+            "name_en": "Unification Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-22",
+            "end": "2026-09-22",
+            "name": "Ден на независимостта на България",
+            "name_en": "Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-01",
+            "end": "2026-11-01",
+            "name": "Ден на народните будители",
+            "name_en": "Day of the Bulgarian Enlighteners",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-24",
+            "end": "2026-12-24",
+            "name": "Бъдни вечер",
+            "name_en": "Christmas Eve",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-26",
+            "end": "2026-12-26",
+            "name": "Рождество Христово",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Нова година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "by",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Беларусь",
+        "iso": "BY0",
+        "code": "BY0",
+        "holidays": [
+          {
+            "start": "2024-12-25",
+            "end": "2025-01-07",
+            "name": "Зімовыя вакацыі",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-23",
+            "end": "2025-03-30",
+            "name": "Вясновыя вакацыі",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-01",
+            "end": "2025-08-31",
+            "name": "Летнія вакацыі",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-02",
+            "name": "Новы год",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-07",
+            "end": "2025-01-07",
+            "name": "Праваслаўнае Раство",
+            "name_en": "Christmas (Orthodox Christmas)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-08",
+            "end": "2025-03-08",
+            "name": "Дзень жанчын",
+            "name_en": "Women's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Свята працы",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-09",
+            "end": "2025-05-09",
+            "name": "Дзень Перамогі",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-14",
+            "end": "2025-05-14",
+            "name": "Радаўніца",
+            "name_en": "Radunitsa",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-07-03",
+            "end": "2025-07-03",
+            "name": "Дзень Рэспублікі",
+            "name_en": "Day of the Republic",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-07",
+            "end": "2025-11-07",
+            "name": "Дзень Кастрычніцкай рэвалюцыі",
+            "name_en": "October Revolution Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Каталіцкае Раство",
+            "name_en": "Catholic Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-02",
+            "name": "Новы год",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-07",
+            "end": "2026-01-07",
+            "name": "Праваслаўнае Раство",
+            "name_en": "Christmas (Orthodox Christmas)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-08",
+            "end": "2026-03-08",
+            "name": "Дзень жанчын",
+            "name_en": "Women's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Свята працы",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-09",
+            "end": "2026-05-09",
+            "name": "Дзень Перамогі",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "Радаўніца",
+            "name_en": "Radunitsa",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-07-03",
+            "end": "2026-07-03",
+            "name": "Дзень Рэспублікі",
+            "name_en": "Day of the Republic",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-07",
+            "end": "2026-11-07",
+            "name": "Дзень Кастрычніцкай рэвалюцыі",
+            "name_en": "October Revolution Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Каталіцкае Раство",
+            "name_en": "Catholic Christmas",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-02",
+            "name": "Новы год",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "ch",
@@ -33725,14 +34842,763 @@
   },
   {
     "country": "mc",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Malta-Malta",
+        "iso": "MC0",
+        "code": "MC0",
+        "holidays": [
+          {
+            "start": "2024-12-21",
+            "end": "2025-01-05",
+            "name": "Vacances de Noël",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-02-08",
+            "end": "2025-02-23",
+            "name": "Vacances d’hiver",
+            "name_en": "Winter half-term-holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-05",
+            "end": "2025-04-21",
+            "name": "Vacances de printemps",
+            "name_en": "Spring half-term-holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-05-22",
+            "end": "2025-05-25",
+            "name": "Grand Prix de Formule 1 et Pentecôte",
+            "name_en": "Grand Prix and Whit Monday",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-28",
+            "end": "2025-09-07",
+            "name": "Vacances d’été",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-10-23",
+            "end": "2025-11-02",
+            "name": "Vacances de la Toussaint",
+            "name_en": "All Saint's Day holiday",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-12-20",
+            "end": "2026-01-04",
+            "name": "Vacances de Noël",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-02-14",
+            "end": "2026-03-01",
+            "name": "Vacances d’hiver",
+            "name_en": "Winter half-term-holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-04-11",
+            "end": "2026-04-26",
+            "name": "Vacances de printemps",
+            "name_en": "Spring half-term-holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-05-21",
+            "end": "2026-05-25",
+            "name": "Grand Prix de Formule 1 et Pentecôte",
+            "name_en": "Grand Prix and Whit Monday",
+            "hol_type": "School"
+          },
+          {
+            "start": "2026-06-27",
+            "end": "2026-09-06",
+            "name": "Vacances d’été",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Le jour de l’An",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-27",
+            "end": "2025-01-27",
+            "name": "La Sainte Dévote",
+            "name_en": "Saint Dévote's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Le lundi de Pâques",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Le 1er mai",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-29",
+            "end": "2025-05-29",
+            "name": "L’Ascension",
+            "name_en": "Ascension's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-09",
+            "end": "2025-06-09",
+            "name": "Le lundi de Pentecôte",
+            "name_en": "Whit Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-19",
+            "end": "2025-06-19",
+            "name": "La Fête Dieu",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "L’Assomption",
+            "name_en": "Assumption's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-01",
+            "end": "2025-11-01",
+            "name": "La Toussaint",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-19",
+            "end": "2025-11-19",
+            "name": "La Fête du Prince",
+            "name_en": "Prince's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-08",
+            "end": "2025-12-08",
+            "name": "L’Immaculée Conception",
+            "name_en": "Immaculate Conception's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Noël",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Le jour de l’An",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-27",
+            "end": "2026-01-27",
+            "name": "La Sainte Dévote",
+            "name_en": "Saint Dévote's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-06",
+            "end": "2026-04-06",
+            "name": "Le lundi de Pâques",
+            "name_en": "Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Le 1er mai",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-14",
+            "end": "2026-05-14",
+            "name": "L’Ascension",
+            "name_en": "Ascension's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-25",
+            "end": "2026-05-25",
+            "name": "Le lundi de Pentecôte",
+            "name_en": "Whit Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-04",
+            "end": "2026-06-04",
+            "name": "La Fête Dieu",
+            "name_en": "Corpus Christi",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "L’Assomption",
+            "name_en": "Assumption's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-02",
+            "end": "2026-11-02",
+            "name": "La Toussaint",
+            "name_en": "All Saints' Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-19",
+            "end": "2026-11-19",
+            "name": "La Fête du Prince",
+            "name_en": "Prince's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-08",
+            "end": "2026-12-08",
+            "name": "L’Immaculée Conception",
+            "name_en": "Immaculate Conception's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Noël",
+            "name_en": "Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Le jour de l’An",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "md",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Moldova",
+        "iso": "MD0",
+        "code": "MD0",
+        "holidays": [
+          {
+            "start": "2024-12-25",
+            "end": "2025-01-08",
+            "name": "Vacanţa de iarnă",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-03",
+            "end": "2025-03-09",
+            "name": "Vacanţa de primăvară",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-19",
+            "end": "2025-04-28",
+            "name": "Vacanţa de Paşti",
+            "name_en": "Easter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-01",
+            "end": "2025-08-31",
+            "name": "Vacanţa de vară",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "Anul Nou",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-07",
+            "end": "2025-01-08",
+            "name": "Naşterea lui Iisus Hristos (Crăciunul pe stil vechi)",
+            "name_en": "Birth of Jesus Christ (Christmas in the old style)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-08",
+            "end": "2025-03-08",
+            "name": "Ziua internaţională a femeii",
+            "name_en": "International Women's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Prima zi de Paşti conform calendarului bisericesc",
+            "name_en": "Orthodox Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "A doua zi de Paște conform calendarului bisericesc",
+            "name_en": "Orthodox Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-28",
+            "end": "2025-04-28",
+            "name": "Ziua Comemorarii (Pastele Blajinilor)",
+            "name_en": "Commemoration Day (Radonitsa)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Ziua internaţională a solidarităţii oamenilor muncii",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-09",
+            "end": "2025-05-09",
+            "name": "Ziua Victoriei şi a comemorării eroilor căzuţi pentru Independenţa Patriei",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-09",
+            "end": "2025-05-09",
+            "name": "Ziua Europei",
+            "name_en": "Europe Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-01",
+            "end": "2025-06-01",
+            "name": "Ziua ocrotirii copilului",
+            "name_en": "Children's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-27",
+            "end": "2025-08-27",
+            "name": "Ziua independenţei Republicii Moldova",
+            "name_en": "Independence Day of the Republic of Moldova",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-31",
+            "end": "2025-08-31",
+            "name": "Sărbătoarea \"Limba noastră\"",
+            "name_en": "National Language Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Naşterea lui Iisus Hristos (Crăciunul pe stil nou)",
+            "name_en": "Birth of Jesus Christ (Christmas in a new style)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "Anul Nou",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-07",
+            "end": "2026-01-08",
+            "name": "Naşterea lui Iisus Hristos (Crăciunul pe stil vechi)",
+            "name_en": "Birth of Jesus Christ (Christmas in the old style)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-08",
+            "end": "2026-03-08",
+            "name": "Ziua internaţională a femeii",
+            "name_en": "International Women's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Prima zi de Paşti conform calendarului bisericesc",
+            "name_en": "Orthodox Easter Sunday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "A doua zi de Paște conform calendarului bisericesc",
+            "name_en": "Orthodox Easter Monday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-20",
+            "end": "2026-04-20",
+            "name": "Ziua Comemorarii (Pastele Blajinilor)",
+            "name_en": "Commemoration Day (Radonitsa)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Ziua internaţională a solidarităţii oamenilor muncii",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-09",
+            "end": "2026-05-09",
+            "name": "Ziua Europei",
+            "name_en": "Europe Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-09",
+            "end": "2026-05-09",
+            "name": "Ziua Victoriei şi a comemorării eroilor căzuţi pentru Independenţa Patriei",
+            "name_en": "Victory Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-01",
+            "end": "2026-06-01",
+            "name": "Ziua ocrotirii copilului",
+            "name_en": "Children's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-27",
+            "end": "2026-08-27",
+            "name": "Ziua independenţei Republicii Moldova",
+            "name_en": "Independence Day of the Republic of Moldova",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-31",
+            "end": "2026-08-31",
+            "name": "Sărbătoarea \"Limba noastră\"",
+            "name_en": "National Language Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Naşterea lui Iisus Hristos (Crăciunul pe stil nou)",
+            "name_en": "Birth of Jesus Christ (Christmas in a new style)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "Anul Nou",
+            "name_en": "New Year",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "mt",
+    "state_holidays": [
+      {
+        "name": "Malta-Malta",
+        "iso": "MT0",
+        "code": "MT0",
+        "holidays": [
+          {
+            "start": "2024-12-23",
+            "end": "2025-01-06",
+            "name": "Vaganzi tal-Milied",
+            "name_en": "Christmas holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-01",
+            "end": "2025-03-04",
+            "name": "Festi tal-Karnival",
+            "name_en": "Carnival holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-03-05",
+            "end": "2025-03-05",
+            "name": "Kumpens għall-vaganzi fi tmiem il-ġimgħa",
+            "name_en": "Compensation for holidays at weekends",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-16",
+            "end": "2025-04-23",
+            "name": "Vaganzi tal-Għid",
+            "name_en": "Easter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-24",
+            "end": "2025-04-25",
+            "name": "Kumpens għall-vaganzi fi tmiem il-ġimgħa",
+            "name_en": "Compensation for holidays at weekends",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-05-30",
+            "end": "2025-05-30",
+            "name": "Kumpens għall-vaganzi fi tmiem il-ġimgħa",
+            "name_en": "Compensation for holidays at weekends",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-27",
+            "end": "2025-09-23",
+            "name": "Vaganzi tas-sajf",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-01",
+            "name": "L-Ewwel tas-Sena",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-10",
+            "end": "2025-02-10",
+            "name": "Il-Festa tan-Nawfraġju ta’ San Pawl",
+            "name_en": "Feast of St. Paul's Shipwreck",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-19",
+            "end": "2025-03-19",
+            "name": "Il-Festa ta’ San Ġużepp",
+            "name_en": "Feast of St. Joseph",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-03-31",
+            "end": "2025-03-31",
+            "name": "Jum il-Ħelsien",
+            "name_en": "Freedom Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Il-Ġimgħa l-Kbira",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-01",
+            "name": "Jum il-Ħaddiem",
+            "name_en": "Worker's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-07",
+            "end": "2025-06-07",
+            "name": "Sette Giugno",
+            "name_en": "​Sette Giugno",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-06-29",
+            "end": "2025-06-29",
+            "name": "Il-Festa ta’ San Pietru u San Pawl",
+            "name_en": "​​​Feast of St.Peter and St.Paul",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-08-15",
+            "end": "2025-08-15",
+            "name": "Il-Festa ta’ Santa Marija",
+            "name_en": "​​​Feast of the Assumption",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-08",
+            "end": "2025-09-08",
+            "name": "Jum il-Vittorja",
+            "name_en": "​​​Feast of Our Lady of Victories",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-09-21",
+            "end": "2025-09-21",
+            "name": "Jum l-Indipendenza",
+            "name_en": "​​​Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-08",
+            "end": "2025-12-08",
+            "name": "Il-Festa tal-Immakulata Kunċizzjoni",
+            "name_en": "​Feast of the Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-13",
+            "end": "2025-12-13",
+            "name": "Jum ir-Repubblika",
+            "name_en": "​​​Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-12-25",
+            "end": "2025-12-25",
+            "name": "Il-Milied​",
+            "name_en": "​​​​Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-01",
+            "name": "L-Ewwel tas-Sena",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-10",
+            "end": "2026-02-10",
+            "name": "Il-Festa tan-Nawfraġju ta’ San Pawl",
+            "name_en": "Feast of St. Paul's Shipwreck",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-19",
+            "end": "2026-03-19",
+            "name": "Il-Festa ta’ San Ġużepp",
+            "name_en": "Feast of St. Joseph",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-03-31",
+            "end": "2026-03-31",
+            "name": "Jum il-Ħelsien",
+            "name_en": "Freedom Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-03",
+            "end": "2026-04-03",
+            "name": "Il-Ġimgħa l-Kbira",
+            "name_en": "Good Friday",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-01",
+            "name": "Jum il-Ħaddiem",
+            "name_en": "Worker's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-07",
+            "end": "2026-06-07",
+            "name": "Sette Giugno",
+            "name_en": "​Sette Giugno",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-06-29",
+            "end": "2026-06-29",
+            "name": "Il-Festa ta’ San Pietru u San Pawl",
+            "name_en": "​​​Feast of St.Peter and St.Paul",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-08-15",
+            "end": "2026-08-15",
+            "name": "Il-Festa ta’ Santa Marija",
+            "name_en": "​​​Feast of the Assumption",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-08",
+            "end": "2026-09-08",
+            "name": "Jum il-Vittorja",
+            "name_en": "​​​Feast of Our Lady of Victories",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-09-21",
+            "end": "2026-09-21",
+            "name": "Jum l-Indipendenza",
+            "name_en": "​​​Independence Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-08",
+            "end": "2026-12-08",
+            "name": "Il-Festa tal-Immakulata Kunċizzjoni",
+            "name_en": "​Feast of the Immaculate Conception",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-13",
+            "end": "2026-12-13",
+            "name": "Jum ir-Repubblika",
+            "name_en": "​​​Republic Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-12-25",
+            "end": "2026-12-25",
+            "name": "Il-Milied​",
+            "name_en": "​​​​Christmas Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-01",
+            "name": "L-Ewwel tas-Sena",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "country": "mx",
     "state_holidays": []
   },
   {
@@ -58740,7 +60606,344 @@
   },
   {
     "country": "rs",
-    "state_holidays": []
+    "state_holidays": [
+      {
+        "name": "Србија - север",
+        "iso": "RS1",
+        "code": "RS1",
+        "holidays": [
+          {
+            "start": "2024-12-30",
+            "end": "2025-01-17",
+            "name": "Зимски распуст",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-16",
+            "end": "2025-04-21",
+            "name": "Пролећни распуст",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-16",
+            "end": "2025-08-29",
+            "name": "Летњи распуст",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-23",
+            "end": "2025-08-29",
+            "name": "Летњи распуст",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-07",
+            "end": "2025-01-07",
+            "name": "Први дан Божића",
+            "name_en": "Christmas (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-15",
+            "end": "2025-02-16",
+            "name": "Дан државности Србије",
+            "name_en": "Sovereignty Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Добар петак",
+            "name_en": "Good Friday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-19",
+            "end": "2025-04-19",
+            "name": "Ускршња субота",
+            "name_en": "Easter Saturday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Ускрс",
+            "name_en": "Easter Sunday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Ускршњи понедељак",
+            "name_en": "Easter Monday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-02",
+            "name": "Празник рада",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Дан примирја у Првом светском рату",
+            "name_en": "Armistice Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-07",
+            "end": "2026-01-07",
+            "name": "Први дан Божића",
+            "name_en": "Christmas (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-15",
+            "end": "2026-02-16",
+            "name": "Дан државности Србије",
+            "name_en": "Sovereignty Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-10",
+            "end": "2026-04-10",
+            "name": "Добар петак",
+            "name_en": "Good Friday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-11",
+            "end": "2026-04-11",
+            "name": "Ускршња субота",
+            "name_en": "Easter Saturday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Ускрс",
+            "name_en": "Easter Sunday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Ускршњи понедељак",
+            "name_en": "Easter Monday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-02",
+            "name": "Празник рада",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Дан примирја у Првом светском рату",
+            "name_en": "Armistice Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      },
+      {
+        "name": "Србија - југ",
+        "iso": "RS2",
+        "code": "RS2",
+        "holidays": [
+          {
+            "start": "2024-12-30",
+            "end": "2025-01-17",
+            "name": "Зимски распуст",
+            "name_en": "Winter holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-04-16",
+            "end": "2025-04-21",
+            "name": "Пролећни распуст",
+            "name_en": "Spring holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-16",
+            "end": "2025-08-29",
+            "name": "Летњи распуст",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-06-23",
+            "end": "2025-08-29",
+            "name": "Летњи распуст",
+            "name_en": "Summer holidays",
+            "hol_type": "School"
+          },
+          {
+            "start": "2025-01-01",
+            "end": "2025-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-01-07",
+            "end": "2025-01-07",
+            "name": "Први дан Божића",
+            "name_en": "Christmas (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-02-15",
+            "end": "2025-02-16",
+            "name": "Дан државности Србије",
+            "name_en": "Sovereignty Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-18",
+            "end": "2025-04-18",
+            "name": "Добар петак",
+            "name_en": "Good Friday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-19",
+            "end": "2025-04-19",
+            "name": "Ускршња субота",
+            "name_en": "Easter Saturday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-20",
+            "end": "2025-04-20",
+            "name": "Ускрс",
+            "name_en": "Easter Sunday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-04-21",
+            "end": "2025-04-21",
+            "name": "Ускршњи понедељак",
+            "name_en": "Easter Monday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-05-01",
+            "end": "2025-05-02",
+            "name": "Празник рада",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2025-11-11",
+            "end": "2025-11-11",
+            "name": "Дан примирја у Првом светском рату",
+            "name_en": "Armistice Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-01",
+            "end": "2026-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-01-07",
+            "end": "2026-01-07",
+            "name": "Први дан Божића",
+            "name_en": "Christmas (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-02-15",
+            "end": "2026-02-16",
+            "name": "Дан државности Србије",
+            "name_en": "Sovereignty Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-10",
+            "end": "2026-04-10",
+            "name": "Добар петак",
+            "name_en": "Good Friday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-11",
+            "end": "2026-04-11",
+            "name": "Ускршња субота",
+            "name_en": "Easter Saturday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-12",
+            "end": "2026-04-12",
+            "name": "Ускрс",
+            "name_en": "Easter Sunday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-04-13",
+            "end": "2026-04-13",
+            "name": "Ускршњи понедељак",
+            "name_en": "Easter Monday (Orthodox)",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-05-01",
+            "end": "2026-05-02",
+            "name": "Празник рада",
+            "name_en": "Labour Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2026-11-11",
+            "end": "2026-11-11",
+            "name": "Дан примирја у Првом светском рату",
+            "name_en": "Armistice Day",
+            "hol_type": "Public"
+          },
+          {
+            "start": "2027-01-01",
+            "end": "2027-01-02",
+            "name": "Нова Година",
+            "name_en": "New Year's Day",
+            "hol_type": "Public"
+          }
+        ]
+      }
+    ]
   },
   {
     "country": "se",
