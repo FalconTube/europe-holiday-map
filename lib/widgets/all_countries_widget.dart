@@ -109,6 +109,7 @@ class AllCountriesWidget extends ConsumerWidget {
                                 ref
                                     .read(selectedCountryDataProvider.notifier)
                                     .setData(selectionData);
+                                ref.read(keyProvider.notifier).reset();
 
                                 if (isBannerShowing == true) {
                                   return;
@@ -175,7 +176,8 @@ class AllCountriesWidget extends ConsumerWidget {
                               print(
                                   'Flutter app is running in JavaScript mode.');
                             }
-                            ref.read(keyProvider.notifier).updateKey();
+                            ref.read(keyProvider.notifier).reset();
+                            ref.read(controllerProvider.notifier).reset();
                             ref.read(nutsDataProvider.notifier).resetData();
                             ref
                                 .read(selectedCountryDataProvider.notifier)

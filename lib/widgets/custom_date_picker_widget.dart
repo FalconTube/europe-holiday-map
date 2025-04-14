@@ -23,12 +23,13 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
   @override
   Widget build(BuildContext context) {
     final key = ref.watch(keyProvider);
-    final selectedCountryData = ref.watch(selectedCountryDataProvider);
+    final controller = ref.watch(controllerProvider);
 
     return SizedBox(
       height: MediaQuery.of(context).size.height / 3,
       child: SfDateRangePicker(
         key: key,
+        controller: controller,
         backgroundColor: Theme.of(context).colorScheme.surface,
         headerStyle: DateRangePickerHeaderStyle(
             backgroundColor: Theme.of(context).colorScheme.surface),
@@ -37,7 +38,8 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
             enableSwipeSelection: isWebMobile ? false : true,
-            blackoutDates: selectedCountryData?.days,
+            // blackoutDates: selectedCountryData?.days,
+            firstDayOfWeek: 1,
             showTrailingAndLeadingDates: true),
         toggleDaySelection: true,
         selectionMode: DateRangePickerSelectionMode.extendableRange,
@@ -51,14 +53,20 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
           final startDate = selectedRange.startDate;
           final endDate = selectedRange.endDate;
           if (startDate == null || endDate == null) return;
-          final days =
-              DateTimeRange(start: startDate, end: endDate).duration.inDays;
+          final days = DateTimeRange(start: startDate, end: endDate);
+          final numDays = days.duration.inDays;
           final out = findHolidaysForDate(startDate, endDate);
 
           // Update
           await ref
               .read(nutsDataProvider.notifier)
-              .updateMultipleIDs(out, days);
+              .updateMultipleIDs(out, numDays);
+        },
+        cellBuilder: (context, details) {
+          final selectedCountryData = ref.watch(selectedCountryDataProvider);
+          final now = DateTime.now().toString();
+          return customCells(context, details, controller.selectedRange,
+              selectedCountryData?.days);
         },
         monthCellStyle: DateRangePickerMonthCellStyle(
             blackoutDateTextStyle: TextStyle(),
@@ -68,6 +76,64 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
       ),
     );
   }
+}
+
+List<DateTime>? pickerRangeToDateTimes(PickerDateRange? pRange) {
+  if (pRange == null) return null;
+  // Check if start and end defined
+  final startDate = pRange.startDate;
+  final endDate = pRange.endDate;
+  if (startDate == null || endDate == null) return null;
+
+  // If both defined, then return range
+  List<DateTime> days = [];
+  for (int i = 0; i <= endDate.difference(startDate).inDays; i++) {
+    days.add(startDate.add(Duration(days: i)));
+  }
+  return days;
+}
+
+Widget customCells(BuildContext context, DateRangePickerCellDetails details,
+    PickerDateRange? selectedRange, List<DateTime>? overlapDates) {
+  // Check if date is today
+  final now = DateTime.now();
+  final today = DateTime(now.year, now.month, now.day);
+  final isToday =
+      DateTime(details.date.year, details.date.month, details.date.day) ==
+          today;
+
+  // Check start, end and range
+  // final isStartDate = selectedRange?.startDate == details.date;
+  // final isEndDate = selectedRange?.endDate == details.date;
+  final isInSelectedRange =
+      pickerRangeToDateTimes(selectedRange)?.contains(details.date) ?? false;
+  final isOverlapping = overlapDates?.contains(details.date) ?? false;
+  final isOverlappingAndInRange = isInSelectedRange && isOverlapping;
+
+  return Container(
+    margin: EdgeInsets.all(2),
+    // padding: EdgeInsets.only(top: 10),
+    decoration: BoxDecoration(
+        color: isOverlappingAndInRange
+            ? Theme.of(context).colorScheme.errorContainer
+            : isInSelectedRange
+                ? Theme.of(context).colorScheme.secondaryContainer
+                : Theme.of(context).colorScheme.surface,
+        border: isToday ? Border.all(color: Colors.black, width: 2) : null),
+    child: Column(
+      mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget>[
+        Text(
+          details.date.day.toString(),
+          style: TextStyle(
+            fontSize: 13,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ],
+    ),
+  );
 }
 
 List<List<CodeAndHoliday>> findHolidaysForDate(
