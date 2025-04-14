@@ -958,7 +958,7 @@
       "code": "RO-GL"
     },
     {
-      "nuts": ["RO124"],
+      "nuts": ["RO314"],
       "iso": "RO-GR",
       "code": "RO-GR"
     },
@@ -1203,6 +1203,72 @@
       "nuts": ["HR0"],
       "iso": "HR0",
       "code": "HR0"
+    }
+  ],
+  "AL": [
+    {
+      "nuts": ["AL0"],
+      "iso": "AL0",
+      "code": "AL0"
+    }
+  ],
+  "AD": [
+    {
+      "nuts": ["AD0"],
+      "iso": "AD0",
+      "code": "AD0"
+    }
+  ],
+  "RS": [
+    {
+      "nuts": ["RS1"],
+      "iso": "RS1",
+      "code": "RS1"
+    },
+    {
+      "nuts": ["RS2"],
+      "iso": "RS2",
+      "code": "RS2"
+    }
+  ],
+  "BG": [
+    {
+      "nuts": ["BG3"],
+      "iso": "BG3",
+      "code": "BG3"
+    },
+    {
+      "nuts": ["BG4"],
+      "iso": "BG4",
+      "code": "BG4"
+    }
+  ],
+  "BY": [
+    {
+      "nuts": ["BY0"],
+      "iso": "BY0",
+      "code": "BY0"
+    }
+  ],
+  "MD": [
+    {
+      "nuts": ["MD0"],
+      "iso": "MD0",
+      "code": "MD0"
+    }
+  ],
+  "MT": [
+    {
+      "nuts": ["MT0"],
+      "iso": "MT0",
+      "code": "MT0"
+    }
+  ],
+  "MC": [
+    {
+      "nuts": ["MC0"],
+      "iso": "MC0",
+      "code": "MC0"
     }
   ]
 }
