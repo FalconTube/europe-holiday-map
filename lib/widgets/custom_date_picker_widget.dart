@@ -175,7 +175,12 @@ List<List<CodeAndHoliday>> findHolidaysForDate(
               startDateHol.isBefore(cleanLastSelectedDate);
           final endIsInRange = endDateHol.isAfter(cleanFirstSelectedDate) &&
               endDateHol.isBefore(cleanLastSelectedDate);
-          if (startIsInRange || endIsInRange) {
+          final selectionBetweenHolDates =
+              cleanFirstSelectedDate.isAfter(startDateHol) &&
+                      cleanFirstSelectedDate.isBefore(endDateHol) ||
+                  cleanLastSelectedDate.isAfter(startDateHol) &&
+                      cleanLastSelectedDate.isBefore(endDateHol);
+          if (startIsInRange || endIsInRange || selectionBetweenHolDates) {
             // Found a matching holiday
             // Now get amount of days
             final inRangeDates = daysInSelection(
