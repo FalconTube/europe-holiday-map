@@ -10,12 +10,13 @@ class MapCountryData {
   final List<DateTime> days;
   final int totalDays;
 
-  MapCountryData(
-      {required this.nuts,
-      required this.division,
-      required this.holidays,
-      required this.days,
-      required this.totalDays});
+  MapCountryData({
+    required this.nuts,
+    required this.division,
+    required this.holidays,
+    required this.days,
+    required this.totalDays,
+  });
 }
 
 class MapCountryDataAndDays {

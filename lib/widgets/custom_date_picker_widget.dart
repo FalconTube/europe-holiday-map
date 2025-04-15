@@ -1,11 +1,17 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/classes/internal.dart';
+import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
+import 'package:holiday_map/providers/selected_dates_provider.dart';
+import 'package:holiday_map/providers/selected_map_index_provider.dart';
+import 'package:logger/logger.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class MyDatePicker extends ConsumerStatefulWidget {
@@ -61,10 +67,32 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
           await ref
               .read(nutsDataProvider.notifier)
               .updateMultipleIDs(out, numDays);
+
+          // Check if a country is selected
+          final selectedNuts = ref.read(selectedMapIndexProvider);
+          if (selectedNuts == null) return;
+
+          // If selected, update selected country data
+          final data = ref.read(nutsDataProvider);
+
+          final selectionData =
+              getSelectedDataFromNuts(data.data, selectedNuts);
+          // If we can't find data, remove banner
+          if (selectionData == null) {
+            ref.read(selectedCountryDataProvider.notifier).resetData();
+          } else {
+            // If we have data, then update it
+            ref
+                .read(selectedCountryDataProvider.notifier)
+                .setData(selectionData);
+          }
+          ref.read(keyProvider.notifier).reset();
         },
         cellBuilder: (context, details) {
           final selectedCountryData = ref.watch(selectedCountryDataProvider);
           final now = DateTime.now().toString();
+          // print(selectedCountryData?.days);
+
           return customCells(context, details, controller.selectedRange,
               selectedCountryData?.days);
         },
@@ -76,6 +104,19 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
       ),
     );
   }
+}
+
+MapCountryData? getSelectedDataFromNuts(
+    List<MapCountryData> data, String nuts) {
+  for (final mapCountryData in data) {
+    final thisNuts = mapCountryData.nuts;
+    if (thisNuts == nuts) {
+      return mapCountryData;
+    }
+  }
+  // We can move outside a holiday range of selected country
+  // In this case, return null
+  return null;
 }
 
 List<DateTime>? pickerRangeToDateTimes(PickerDateRange? pRange) {
@@ -119,7 +160,10 @@ Widget customCells(BuildContext context, DateRangePickerCellDetails details,
             : isInSelectedRange
                 ? Theme.of(context).colorScheme.secondaryContainer
                 : Theme.of(context).colorScheme.surface,
-        border: isToday ? Border.all(color: Colors.black, width: 2) : null),
+        border: isToday
+            ? Border.all(
+                color: Theme.of(context).colorScheme.onSurfaceVariant, width: 2)
+            : null),
     child: Column(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
