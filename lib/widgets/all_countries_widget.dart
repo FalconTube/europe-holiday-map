@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/icon_holiday_mapping.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/providers/selected_map_index_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
 import 'package:holiday_map/widgets/custom_date_picker_widget.dart';
@@ -105,6 +106,11 @@ class AllCountriesWidget extends ConsumerWidget {
                               strokeColor: Colors.black.withValues(alpha: 0.3),
                               onSelectionChanged: (int index) {
                                 final selectionData = data.data[index];
+                                // Keep track of selection index
+                                ref
+                                    .read(selectedMapIndexProvider.notifier)
+                                    .update(selectionData.nuts);
+
                                 // Mark overlapping dates in DatePicker
                                 ref
                                     .read(selectedCountryDataProvider.notifier)
@@ -179,6 +185,7 @@ class AllCountriesWidget extends ConsumerWidget {
                             ref.read(keyProvider.notifier).reset();
                             ref.read(controllerProvider.notifier).reset();
                             ref.read(nutsDataProvider.notifier).resetData();
+                            ref.read(selectedMapIndexProvider.notifier).reset();
                             ref
                                 .read(selectedCountryDataProvider.notifier)
                                 .resetData();
