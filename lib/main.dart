@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
+import 'package:holiday_map/providers/brightness_provider.dart';
 import 'package:holiday_map/widgets/all_countries_widget.dart';
 import 'package:intl/intl_browser.dart';
 import 'package:intl/date_symbol_data_local.dart';
@@ -78,11 +79,12 @@ void main() async {
       .then((_) => runApp(ProviderScope(child: MyApp())));
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final brightness = ref.watch(brightnessProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Holiday Map',
@@ -91,7 +93,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(
           dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
           seedColor: Colors.blueAccent,
-          brightness: Brightness.light,
+          brightness: brightness,
         ),
         useMaterial3: true,
       ),
