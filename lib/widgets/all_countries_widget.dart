@@ -77,7 +77,9 @@ class AllCountriesWidget extends ConsumerWidget {
         children: [
           Expanded(
             child: ColoredBox(
-              color: Color.fromRGBO(114, 212, 232, 1),
+              color: isLightTheme
+                  ? Color.fromRGBO(114, 212, 232, 1)
+                  : Color.fromRGBO(13, 85, 103, 1),
               child: SfMapsTheme(
                 data: SfMapsThemeData(
                   shapeHoverColor: Colors.transparent,
