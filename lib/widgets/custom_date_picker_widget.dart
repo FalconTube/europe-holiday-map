@@ -1,17 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/classes/internal.dart';
-import 'package:holiday_map/logging/logger.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
-import 'package:holiday_map/providers/selected_dates_provider.dart';
 import 'package:holiday_map/providers/selected_map_index_provider.dart';
-import 'package:logger/logger.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 class MyDatePicker extends ConsumerStatefulWidget {
@@ -44,7 +39,6 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
             enableSwipeSelection: isWebMobile ? false : true,
-            // blackoutDates: selectedCountryData?.days,
             firstDayOfWeek: 1,
             showTrailingAndLeadingDates: true),
         toggleDaySelection: true,
@@ -90,7 +84,6 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         },
         cellBuilder: (context, details) {
           final selectedCountryData = ref.watch(selectedCountryDataProvider);
-          final now = DateTime.now().toString();
           // print(selectedCountryData?.days);
 
           return customCells(context, details, controller.selectedRange,
@@ -144,16 +137,14 @@ Widget customCells(BuildContext context, DateRangePickerCellDetails details,
           today;
 
   // Check start, end and range
-  // final isStartDate = selectedRange?.startDate == details.date;
-  // final isEndDate = selectedRange?.endDate == details.date;
   final isInSelectedRange =
       pickerRangeToDateTimes(selectedRange)?.contains(details.date) ?? false;
   final isOverlapping = overlapDates?.contains(details.date) ?? false;
   final isOverlappingAndInRange = isInSelectedRange && isOverlapping;
 
   return Container(
+    key: UniqueKey(),
     margin: EdgeInsets.all(2),
-    // padding: EdgeInsets.only(top: 10),
     decoration: BoxDecoration(
         color: isOverlappingAndInRange
             ? Theme.of(context).colorScheme.errorContainer

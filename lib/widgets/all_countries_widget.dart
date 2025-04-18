@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/icon_holiday_mapping.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/providers/brightness_provider.dart';
 import 'package:holiday_map/providers/selected_map_index_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
@@ -16,7 +17,6 @@ import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
-  final _mapController = MapShapeLayerController();
 
   final MapShapeSource borderSource =
       MapShapeSource.asset('assets/geo/eu-borders.geojson',
@@ -67,6 +67,9 @@ class AllCountriesWidget extends ConsumerWidget {
             shapeColorMappers: genColorMap(data.numSelectedDays + 1, cmap),
             shapeDataField: 'NUTS_ID');
 
+    final brightness = ref.watch(brightnessProvider);
+    final isLightTheme = brightness == Brightness.light;
+
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: Column(
@@ -93,14 +96,11 @@ class AllCountriesWidget extends ConsumerWidget {
                                   fontSize: 14, fontWeight: FontWeight.w700),
                               overflowMode: MapLabelOverflow.hide),
                           source: borderSource,
-                          controller: _mapController,
                           strokeWidth: 2.2,
                           strokeColor: Colors.black,
                           sublayers: <MapSublayer>[
                             MapShapeSublayer(
-                              key: UniqueKey(),
                               source: nutsSource,
-                              controller: _mapController,
                               strokeWidth: 0.5,
                               color: Colors.transparent,
                               strokeColor: Colors.black.withValues(alpha: 0.3),
@@ -174,6 +174,30 @@ class AllCountriesWidget extends ConsumerWidget {
                           icon: Icon(Icons.refresh),
                           label: Text("Reset"),
                           onPressed: () {
+                            ref.read(keyProvider.notifier).reset();
+                            ref.read(controllerProvider.notifier).reset();
+                            ref.read(nutsDataProvider.notifier).resetData();
+                            ref.read(selectedMapIndexProvider.notifier).reset();
+                            ref
+                                .read(selectedCountryDataProvider.notifier)
+                                .resetData();
+                          }),
+                    ),
+                    Positioned(
+                      top: 10,
+                      left: 8,
+                      child: IconButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor:
+                                Theme.of(context).colorScheme.onSurface,
+                            backgroundColor:
+                                Theme.of(context).colorScheme.primaryContainer,
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                          ),
+                          icon: isLightTheme
+                              ? Icon(Icons.dark_mode)
+                              : Icon(Icons.wb_sunny),
+                          onPressed: () {
                             const bool isRunningWithWasm =
                                 bool.fromEnvironment('dart.tool.dart2wasm');
                             if (isRunningWithWasm) {
@@ -182,13 +206,9 @@ class AllCountriesWidget extends ConsumerWidget {
                               print(
                                   'Flutter app is running in JavaScript mode.');
                             }
-                            ref.read(keyProvider.notifier).reset();
-                            ref.read(controllerProvider.notifier).reset();
-                            ref.read(nutsDataProvider.notifier).resetData();
-                            ref.read(selectedMapIndexProvider.notifier).reset();
                             ref
-                                .read(selectedCountryDataProvider.notifier)
-                                .resetData();
+                                .read(brightnessProvider.notifier)
+                                .switchBrightness();
                           }),
                     )
                   ],
@@ -245,9 +265,9 @@ List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
     final widget = Container(
         padding: EdgeInsets.all(4.0),
         decoration: BoxDecoration(
-          border: Border.all(),
-          borderRadius: BorderRadius.circular(8.0),
-        ),
+            border: Border.all(),
+            borderRadius: BorderRadius.circular(8.0),
+            color: Theme.of(context).colorScheme.secondaryContainer),
         child: entry);
     out.add(widget);
   }
