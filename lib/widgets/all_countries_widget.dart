@@ -16,7 +16,6 @@ import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
-  final _mapController = MapShapeLayerController();
 
   final MapShapeSource borderSource =
       MapShapeSource.asset('assets/geo/eu-borders.geojson',
@@ -93,14 +92,11 @@ class AllCountriesWidget extends ConsumerWidget {
                                   fontSize: 14, fontWeight: FontWeight.w700),
                               overflowMode: MapLabelOverflow.hide),
                           source: borderSource,
-                          controller: _mapController,
                           strokeWidth: 2.2,
                           strokeColor: Colors.black,
                           sublayers: <MapSublayer>[
                             MapShapeSublayer(
-                              key: UniqueKey(),
                               source: nutsSource,
-                              controller: _mapController,
                               strokeWidth: 0.5,
                               color: Colors.transparent,
                               strokeColor: Colors.black.withValues(alpha: 0.3),
