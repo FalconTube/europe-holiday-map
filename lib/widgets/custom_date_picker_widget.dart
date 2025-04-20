@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/entry.dart';
 import 'package:holiday_map/classes/internal.dart';
@@ -38,6 +39,7 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         headerHeight: 50,
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
+            dayFormat: "EEE",
             enableSwipeSelection: isWebMobile ? false : true,
             firstDayOfWeek: 1,
             showTrailingAndLeadingDates: true),
@@ -48,6 +50,11 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         maxDate: DateTime(2028),
         extendableRangeSelectionDirection:
             ExtendableRangeSelectionDirection.both,
+        onViewChanged: (DateRangePickerViewChangedArgs dargs) async {
+          SchedulerBinding.instance.addPostFrameCallback((Duration duration) {
+            setState(() {});
+          });
+        },
         onSelectionChanged: (DateRangePickerSelectionChangedArgs args) async {
           final PickerDateRange selectedRange = args.value;
           final startDate = selectedRange.startDate;
@@ -84,10 +91,9 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         },
         cellBuilder: (context, details) {
           final selectedCountryData = ref.watch(selectedCountryDataProvider);
-          // print(selectedCountryData?.days);
 
           return customCells(context, details, controller.selectedRange,
-              selectedCountryData?.days);
+              selectedCountryData?.days, controller.displayDate);
         },
         monthCellStyle: DateRangePickerMonthCellStyle(
             blackoutDateTextStyle: TextStyle(),
@@ -127,8 +133,12 @@ List<DateTime>? pickerRangeToDateTimes(PickerDateRange? pRange) {
   return days;
 }
 
-Widget customCells(BuildContext context, DateRangePickerCellDetails details,
-    PickerDateRange? selectedRange, List<DateTime>? overlapDates) {
+Widget customCells(
+    BuildContext context,
+    DateRangePickerCellDetails details,
+    PickerDateRange? selectedRange,
+    List<DateTime>? overlapDates,
+    DateTime? monthDate) {
   // Check if date is today
   final now = DateTime.now();
   final today = DateTime(now.year, now.month, now.day);
@@ -141,6 +151,9 @@ Widget customCells(BuildContext context, DateRangePickerCellDetails details,
       pickerRangeToDateTimes(selectedRange)?.contains(details.date) ?? false;
   final isOverlapping = overlapDates?.contains(details.date) ?? false;
   final isOverlappingAndInRange = isInSelectedRange && isOverlapping;
+
+  // Check if same month
+  bool dateInMonth = monthDate?.month == details.date.month;
 
   return Container(
     key: UniqueKey(),
@@ -164,6 +177,12 @@ Widget customCells(BuildContext context, DateRangePickerCellDetails details,
           style: TextStyle(
             fontSize: 13,
             fontWeight: FontWeight.bold,
+            color: dateInMonth
+                ? Theme.of(context).colorScheme.onSurface
+                : Theme.of(context)
+                    .colorScheme
+                    .onSurface
+                    .withValues(alpha: 0.4),
           ),
         ),
       ],
