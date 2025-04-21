@@ -18,9 +18,9 @@ class MyDatePicker extends ConsumerStatefulWidget {
 }
 
 class MyDatePickerState extends ConsumerState<MyDatePicker> {
-  final isWebMobile = kIsWeb &&
-      (defaultTargetPlatform == TargetPlatform.iOS ||
-          defaultTargetPlatform == TargetPlatform.android);
+  // final isWebMobile = kIsWeb &&
+  //     (defaultTargetPlatform == TargetPlatform.iOS ||
+  //         defaultTargetPlatform == TargetPlatform.android);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,8 @@ class MyDatePickerState extends ConsumerState<MyDatePicker> {
         showNavigationArrow: true,
         monthViewSettings: DateRangePickerMonthViewSettings(
             dayFormat: "EEE",
-            enableSwipeSelection: isWebMobile ? false : true,
+            // enableSwipeSelection: isWebMobile ? false : true,
+            enableSwipeSelection: true,
             firstDayOfWeek: 1,
             showTrailingAndLeadingDates: true),
         toggleDaySelection: true,
