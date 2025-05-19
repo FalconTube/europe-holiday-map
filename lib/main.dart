@@ -89,7 +89,7 @@ class MyApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       title: 'Holiday Map',
       theme: ThemeData(
-        fontFamily: "FiraSans",
+        fontFamily: "Roboto",
         colorScheme: ColorScheme.fromSeed(
           dynamicSchemeVariant: DynamicSchemeVariant.rainbow,
           seedColor: Colors.blueAccent,

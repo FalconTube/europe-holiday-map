@@ -228,38 +228,38 @@ class AllCountriesWidget extends ConsumerWidget {
   }
 }
 
+class HolidayAndIcon {
+  final RichText holiday;
+  final Icon icon;
+
+  HolidayAndIcon({required this.holiday, required this.icon});
+}
+
 List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
   final holidays = data.holidays;
   // Build holiday display text
-  List<RichText> holFormatted = [];
+  List<HolidayAndIcon> holFormatted = [];
   var format = DateFormat.yMd();
   final iconMapper = IconHolidayMapping();
   for (final h in holidays) {
     // Name of holiday
     final name = h.nameEN ?? h.name;
     final matchingIcon = iconMapper.getMatchingIcon(name);
-    final nameText = TextSpan(
-        text: "$matchingIcon$name\n",
-        style: TextStyle(
-          fontWeight: FontWeight.w700,
-          color: Theme.of(context).colorScheme.onSurface,
-        ));
     // Get date range and check, if only a single day
     final start = format.format(h.start);
     final end = format.format(h.end);
     bool isSingleDay = start == end;
     final dateText = TextSpan(
-        text: isSingleDay ? start : "$start \u2014 $end",
+        text: isSingleDay ? "  $name\n$start" : "  $name\n$start - $end",
         style: TextStyle(
           fontWeight: FontWeight.w400,
           color: Theme.of(context).colorScheme.onSurface,
         ));
     // Combine everything
     RichText output = RichText(
-        textScaler: TextScaler.linear(1.2),
         textAlign: TextAlign.center,
-        text: TextSpan(text: "", children: [nameText, dateText]));
-    holFormatted.add(output);
+        text: TextSpan(text: "", children: [dateText]));
+    holFormatted.add(HolidayAndIcon(holiday: output, icon: matchingIcon));
   }
 
   List<Widget> out = [];
@@ -270,7 +270,11 @@ List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
             border: Border.all(),
             borderRadius: BorderRadius.circular(8.0),
             color: Theme.of(context).colorScheme.secondaryContainer),
-        child: entry);
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          spacing: 4,
+          children: [entry.icon, entry.holiday],
+        ));
     out.add(widget);
   }
   return out;
