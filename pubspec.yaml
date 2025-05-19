@@ -44,6 +44,7 @@ dependencies:
   vector_math: ^2.1.4
   syncfusion_flutter_core: ^28.2.11
   intl: ^0.20.2
+  font_awesome_flutter: ^10.8.0
 
 dev_dependencies:
   flutter_test:
@@ -84,12 +85,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Roboto
-  #     fonts:
-  #       - asset: fonts/FiraSans-Regular.woff2
-  #       - asset: fonts/FiraSans-Bold.woff2
-  #         weight: 700
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.woff2
+        - asset: fonts/Roboto-Bold.woff2
+          weight: 700
+    # - family: FiraSans
+    #   fonts:
+    #     - asset: fonts/FiraSans-Regular.woff2
+    #     - asset: fonts/FiraSans-Bold.woff2
+    #       weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

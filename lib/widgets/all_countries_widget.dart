@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:holiday_map/classes/icon_holiday_mapping.dart';
 import 'package:holiday_map/main.dart';
 import 'package:holiday_map/providers/all_countries_provider.dart';
+import 'package:holiday_map/providers/brightness_provider.dart';
 import 'package:holiday_map/providers/selected_map_index_provider.dart';
 import 'package:holiday_map/providers/rebuild_picker_provider.dart';
 import 'package:holiday_map/widgets/color_legend_widget.dart';
@@ -16,7 +17,6 @@ import 'package:color_map/color_map.dart';
 
 class AllCountriesWidget extends ConsumerWidget {
   AllCountriesWidget({super.key});
-  final _mapController = MapShapeLayerController();
 
   final MapShapeSource borderSource =
       MapShapeSource.asset('assets/geo/eu-borders.geojson',
@@ -67,6 +67,9 @@ class AllCountriesWidget extends ConsumerWidget {
             shapeColorMappers: genColorMap(data.numSelectedDays + 1, cmap),
             shapeDataField: 'NUTS_ID');
 
+    final brightness = ref.watch(brightnessProvider);
+    final isLightTheme = brightness == Brightness.light;
+
     return Scaffold(
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: Column(
@@ -74,7 +77,9 @@ class AllCountriesWidget extends ConsumerWidget {
         children: [
           Expanded(
             child: ColoredBox(
-              color: Color.fromRGBO(114, 212, 232, 1),
+              color: isLightTheme
+                  ? Color.fromRGBO(114, 212, 232, 1)
+                  : Color.fromRGBO(13, 85, 103, 1),
               child: SfMapsTheme(
                 data: SfMapsThemeData(
                   shapeHoverColor: Colors.transparent,
@@ -93,14 +98,11 @@ class AllCountriesWidget extends ConsumerWidget {
                                   fontSize: 14, fontWeight: FontWeight.w700),
                               overflowMode: MapLabelOverflow.hide),
                           source: borderSource,
-                          controller: _mapController,
                           strokeWidth: 2.2,
                           strokeColor: Colors.black,
                           sublayers: <MapSublayer>[
                             MapShapeSublayer(
-                              key: UniqueKey(),
                               source: nutsSource,
-                              controller: _mapController,
                               strokeWidth: 0.5,
                               color: Colors.transparent,
                               strokeColor: Colors.black.withValues(alpha: 0.3),
@@ -174,6 +176,30 @@ class AllCountriesWidget extends ConsumerWidget {
                           icon: Icon(Icons.refresh),
                           label: Text("Reset"),
                           onPressed: () {
+                            ref.read(keyProvider.notifier).reset();
+                            ref.read(controllerProvider.notifier).reset();
+                            ref.read(nutsDataProvider.notifier).resetData();
+                            ref.read(selectedMapIndexProvider.notifier).reset();
+                            ref
+                                .read(selectedCountryDataProvider.notifier)
+                                .resetData();
+                          }),
+                    ),
+                    Positioned(
+                      top: 10,
+                      left: 8,
+                      child: IconButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor:
+                                Theme.of(context).colorScheme.onSurface,
+                            backgroundColor:
+                                Theme.of(context).colorScheme.primaryContainer,
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                          ),
+                          icon: isLightTheme
+                              ? Icon(Icons.dark_mode)
+                              : Icon(Icons.wb_sunny),
+                          onPressed: () {
                             const bool isRunningWithWasm =
                                 bool.fromEnvironment('dart.tool.dart2wasm');
                             if (isRunningWithWasm) {
@@ -182,13 +208,9 @@ class AllCountriesWidget extends ConsumerWidget {
                               print(
                                   'Flutter app is running in JavaScript mode.');
                             }
-                            ref.read(keyProvider.notifier).reset();
-                            ref.read(controllerProvider.notifier).reset();
-                            ref.read(nutsDataProvider.notifier).resetData();
-                            ref.read(selectedMapIndexProvider.notifier).reset();
                             ref
-                                .read(selectedCountryDataProvider.notifier)
-                                .resetData();
+                                .read(brightnessProvider.notifier)
+                                .switchBrightness();
                           }),
                     )
                   ],
@@ -206,38 +228,38 @@ class AllCountriesWidget extends ConsumerWidget {
   }
 }
 
+class HolidayAndIcon {
+  final RichText holiday;
+  final Icon icon;
+
+  HolidayAndIcon({required this.holiday, required this.icon});
+}
+
 List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
   final holidays = data.holidays;
   // Build holiday display text
-  List<RichText> holFormatted = [];
+  List<HolidayAndIcon> holFormatted = [];
   var format = DateFormat.yMd();
   final iconMapper = IconHolidayMapping();
   for (final h in holidays) {
     // Name of holiday
     final name = h.nameEN ?? h.name;
     final matchingIcon = iconMapper.getMatchingIcon(name);
-    final nameText = TextSpan(
-        text: "$matchingIcon$name\n",
-        style: TextStyle(
-          fontWeight: FontWeight.w700,
-          color: Theme.of(context).colorScheme.onSurface,
-        ));
     // Get date range and check, if only a single day
     final start = format.format(h.start);
     final end = format.format(h.end);
     bool isSingleDay = start == end;
     final dateText = TextSpan(
-        text: isSingleDay ? start : "$start \u2014 $end",
+        text: isSingleDay ? "  $name\n$start" : "  $name\n$start - $end",
         style: TextStyle(
           fontWeight: FontWeight.w400,
           color: Theme.of(context).colorScheme.onSurface,
         ));
     // Combine everything
     RichText output = RichText(
-        textScaler: TextScaler.linear(1.2),
         textAlign: TextAlign.center,
-        text: TextSpan(text: "", children: [nameText, dateText]));
-    holFormatted.add(output);
+        text: TextSpan(text: "", children: [dateText]));
+    holFormatted.add(HolidayAndIcon(holiday: output, icon: matchingIcon));
   }
 
   List<Widget> out = [];
@@ -245,10 +267,14 @@ List<Widget> buildHolidayEntries(MapCountryData data, BuildContext context) {
     final widget = Container(
         padding: EdgeInsets.all(4.0),
         decoration: BoxDecoration(
-          border: Border.all(),
-          borderRadius: BorderRadius.circular(8.0),
-        ),
-        child: entry);
+            border: Border.all(),
+            borderRadius: BorderRadius.circular(8.0),
+            color: Theme.of(context).colorScheme.secondaryContainer),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          spacing: 4,
+          children: [entry.icon, entry.holiday],
+        ));
     out.add(widget);
   }
   return out;
