@@ -16,7 +16,8 @@ class IconHolidayMapping {
     "union": FontAwesomeIcons.handshake,
     "victory": FontAwesomeIcons.handshake,
     "carnival": FontAwesomeIcons.martiniGlassCitrus,
-    "lesson": FontAwesomeIcons.graduationCap
+    "lesson": FontAwesomeIcons.graduationCap,
+    "facebook?": FontAwesomeIcons.facebook
   };
 
   Icon getMatchingIcon(String word) {
